@@ -9,8 +9,9 @@
 
 #include <qfont.h>
 
-#include <klocale.h>
 #include <kconfig.h>
+#include <kdialog.h>
+#include <klocale.h>
 #include <kmessagebox.h>
 
 /******************************************************************/
@@ -18,19 +19,24 @@
 /******************************************************************/
 
 //==================================================================
-KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,const QChar &_chr,const QString &_font,int _tableNum)
-  : QDialog(parent,name,false), vChr(_chr), vFont(_font)
+KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
+			       const QChar &_chr,const QString &_font,
+			       int _tableNum)
+  : KDialog(parent,name,false), vChr(_chr), vFont(_font)
 {
-  setCaption("KCharSelect");
-
-  grid = new QGridLayout(this,4,1,5,5);
+  //setCaption("KCharSelect");
+  setCaption(QString::null); // Standard caption
+  grid = new QGridLayout( this, 3, 1, marginHint(), spacingHint() );
 
   charSelect = new KCharSelect(this,"",vFont,vChr,_tableNum);
   charSelect->resize(charSelect->sizeHint());
   grid->addWidget(charSelect,0,0);
-  connect(charSelect,SIGNAL(highlighted(const QChar &)),this,SLOT(charChanged(const QChar &)));
-  connect(charSelect,SIGNAL(activated(const QChar &)),this,SLOT(add(const QChar &)));
-  connect(charSelect,SIGNAL(fontChanged(const QString &)),this,SLOT(fontSelected(const QString &)));
+  connect(charSelect,SIGNAL(highlighted(const QChar &)),
+	  this,SLOT(charChanged(const QChar &)));
+  connect(charSelect,SIGNAL(activated(const QChar &)),
+	  this,SLOT(add(const QChar &)));
+  connect(charSelect,SIGNAL(fontChanged(const QString &)),
+	  this,SLOT(fontSelected(const QString &)));
 
   lined = new QLineEdit(this);
   lined->resize(lined->sizeHint());
@@ -61,7 +67,6 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,const QChar &_ch
   grid->addRowSpacing(1,lined->height());
   grid->addRowSpacing(2,bbox->height());
   grid->setRowStretch(0,1);
-  grid->activate();
 
   charSelect->setFocus();
 

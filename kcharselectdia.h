@@ -7,7 +7,7 @@
 #ifndef kcharselectdia_h
 #define kcharselectdia_h
 
-#include <qdialog.h>
+
 #include <qlabel.h>
 #include <qpushbutton.h>
 #include <qlayout.h>
@@ -17,15 +17,16 @@
 #include <qstring.h>
 #include <qwidget.h>
 
-#include <kbuttonbox.h>
 #include <kapp.h>
+#include <kbuttonbox.h>
 #include <kcharselect.h>
+#include <kdialog.h>
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
 /******************************************************************/
 
-class KCharSelectDia : public QDialog
+class KCharSelectDia : public KDialog
 {
   Q_OBJECT
 
