@@ -22,6 +22,10 @@ int main(int argc, char **argv)
     version, description, KAboutData::License_GPL,
     "(c) 1999, Reginald Stadlbauer");
   aboutData.addAuthor("Reginald Stadlbauer",0, "reggie@kde.org");
+  aboutData.addCredit( "Nadeem Hasan", I18N_NOOP( "GUI cleanup and fixes" ),
+        "nhasan@kde.org" );
+  aboutData.addCredit( "Ryan Cumming", I18N_NOOP( "GUI cleanup and fixes" ),
+        "bodnar42@phalynx.dhs.org" );
   KCmdLineArgs::init( argc, argv, &aboutData );
 
   KApplication app;

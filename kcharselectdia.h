@@ -22,7 +22,7 @@
 #include <kcharselect.h>
 #include <kmainwindow.h>
 
-static const char *version = "v1.0"; 
+static const char *version = "v1.1"; 
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
