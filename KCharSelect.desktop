@@ -76,4 +76,4 @@ Name[xh]=Itshati yokukheta i K
 Name[zh_TW]=KDE 字元選擇
 X-KDE-StartupNotify=true
 X-DCOP-ServiceType=Multi
-Categories=QT;KDE;Utility
+Categories=Qt;KDE;Utility
