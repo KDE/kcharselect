@@ -111,10 +111,13 @@ void KCharSelectDia::fontSelected(const QString &_font)
 void KCharSelectDia::add(const QChar &_chr)
 {
   charChanged(_chr);
-  
-  QString str = lined->text();
-  str += vChr;
+
+  QString str   = lined->text();
+  int cursorPos = lined->cursorPosition();
+  str.insert( cursorPos, vChr );
   lined->setText(str);
+  cursorPos++;
+  lined->setCursorPosition( cursorPos );
 }
 
 //==================================================================
@@ -127,8 +130,8 @@ void KCharSelectDia::toClip()
 //==================================================================
 void KCharSelectDia::about()
 {
-  KMessageBox::about(0L,i18n("KCharSelect 0.1.0\n\n"
-						 "(c) by Reginald Stadlbauer 1999\n\n"
+  KMessageBox::about(0L,i18n("KCharSelect\n\n"
+						 "v0.2 (c) by Reginald Stadlbauer 1999\n\n"
 						 "E-Mail: reggie@kde.org\n\n"
 						 "License: GNU GPL"));
 }
