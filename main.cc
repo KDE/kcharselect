@@ -14,7 +14,7 @@
 static const char *description = 
 	I18N_NOOP("KDE character selection utility");
 
-static const char *version = "v0.5";        // Also in kcharselectdia.cc
+static const char *version = "v0.6";        // Also in kcharselectdia.cc
 
 
 /*================================================================*/

@@ -82,7 +82,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   id = edit->insertSeparator();
   id = edit->insertItem( i18n("&Clear")              , this, SLOT(clear())     );
   id = edit->insertItem( i18n("&Flip")               , this, SLOT(flipText())  );
-  id = edit->insertItem( i18n("Input &Direction")    , this, SLOT(toggleEntryDirection()) );
+  id = edit->insertItem( i18n("&Alignment")          , this, SLOT(toggleEntryDirection()) );
   id = edit->insertSeparator();
   id = edit->insertItem( i18n("A&bout...")           , this, SLOT(about())     );
   id = edit->insertItem( i18n("E&xit")               , this, SLOT(_exit())     );
@@ -148,15 +148,16 @@ void KCharSelectDia::fontSelected(const QString &_font)
 //==================================================================
 void KCharSelectDia::add(const QChar &_chr)
 {
+  QString str;
+  int cursorPos;
+
   charChanged(_chr);
 
-  QString str   = lined->text();
-  int cursorPos = lined->cursorPosition();
-
+  str       = lined->text();
+  cursorPos = lined->cursorPosition();
   str.insert( cursorPos, vChr );
   lined->setText(str);
-  if( entryDirection == 0 )
-    cursorPos++;
+  cursorPos++;
   lined->setCursorPosition( cursorPos );
 }
 
@@ -252,25 +253,13 @@ void KCharSelectDia::flipText()
 }
 
 //==================================================================
-//  Since we add characters one-by-one, we bypass the usual processing
-//  of right-to-left languages (assuming, that is, the version of QT
-//  even supports that).  So we can manually force which end of the
-//  string to append to.  Even with QT 3.0, this will still be
-//  important for creating script for use in "visual" order (e.g. Hebrew
-//  as usually used with iso-8859-8 encoding).
-//
 void KCharSelectDia::toggleEntryDirection()
 {   
     entryDirection ^= 1;
     if( entryDirection )
-      {
         lined->setAlignment( Qt::AlignRight );
-        lined->setCursorPosition( 0 );
-      }
     else
-      {
         lined->setAlignment( Qt::AlignLeft );
-      }
 }
 
 //==================================================================
@@ -287,7 +276,7 @@ void KCharSelectDia::lineEditChanged(void)
 void KCharSelectDia::about()
 {
   KMessageBox::about(0L,i18n("KCharSelect\n\n"
-						 "v0.5 Unicode\n\n"
+						 "v0.6 Unicode\n"
 						 "(c) by Reginald Stadlbauer 1999\n"
 						 "E-Mail: reggie@kde.org\n"
 						 "Maintainer: bryce@obviously.com\n"

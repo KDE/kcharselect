@@ -1,6 +1,5 @@
-o Figure out how to use a horizontal layout for "Clear", "To Clipboard", and the line edit.
 o Remove the useless "What's this?" widget from title bar.
-o Modify kcharselect library to allow "space" to insert a space, rather than 
-  a copy of the current character.
-o Show Unicode glyphs if they are available for a particular font (requires change to
-  kcharselect library).
+o Modify kcharselect library to allow "space" to insert a space.
+o Figure out how to use a horizontal layout for "Clear", "To Clipboard", and the line edit.
+o Mark which glyphs are subsitutes (requires QT support).
+o Don't use the grid layout class - it's more trouble than it's worth.
