@@ -13,5 +13,5 @@ appsdir = $(kde_appsdir)/Utilities
 apps_DATA = KCharSelect.desktop
 
 messages:
-	$(XGETTEXT) -C -ki18n -x $(includedir)/kde.pot $(kcharselect_SOURCES) && mv messages.po ../po/kcharselect.pot 
+	$(XGETTEXT) -C -ki18n -x $(includedir)/kde.pot $(kcharselect_SOURCES) && mv messages.po $(podir)/kcharselect.pot 
 
