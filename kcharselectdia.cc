@@ -86,8 +86,8 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   KAccel *keys = new KAccel( this );
 
   QPopupMenu *file = new QPopupMenu( this );
-  id = file->insertItem( SmallIcon( "exit" ), i18n("&Quit"),
-            this, SLOT(_exit())     );
+  id = file->insertItem( SmallIcon( "exit" ), KStdGuiItem::quit().text(),
+            this, SLOT(_exit()));
   keys->changeMenuAccel(file, id, KStdAccel::Quit);
 
   keys->connectItem( KStdAccel::Paste, this, SLOT(fromClip()));
@@ -110,7 +110,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
             this, SLOT(fromClipUTF8()) );
   i18n("From Clipboard HTML");      // Intended for future use
   id = edit->insertSeparator();
-  id = edit->insertItem( SmallIcon( "locationbar_erase" ), i18n("&Clear"),
+  id = edit->insertItem( SmallIcon( "locationbar_erase" ), KStdGuiItem::clear().text(),
             this, SLOT(clear())     );
   id = edit->insertItem( i18n("&Flip"), this, SLOT(flipText())  );
   id = edit->insertItem( i18n("&Alignment"),
