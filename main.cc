@@ -6,8 +6,6 @@
 
 #include "kcharselectdia.h"
 
-#include <kapp.h>
-#include <qstring.h>
 #include <kconfig.h>
 #include <klocale.h>
 #include <kcmdlineargs.h>

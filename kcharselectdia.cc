@@ -5,21 +5,16 @@
 /*         RTL support by Bryce Nesbitt                           */
 /******************************************************************/
 
-#include "kcharselectdia.h"
 #include "kcharselectdia.moc"
 
 #include <stdlib.h>
 
-#include <qfont.h>
 
 #include <kaccel.h>
 #include <kconfig.h>
-#include <kdialog.h>
 #include <klocale.h>
 #include <kmessagebox.h>
 
-#include <qpopupmenu.h>
-#include <qpushbutton.h>
 #include <kmenubar.h>
 
 
