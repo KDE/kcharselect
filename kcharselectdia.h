@@ -31,7 +31,7 @@ class KCharSelectDia : public KDialog
   Q_OBJECT
 
 public:
-  KCharSelectDia(QWidget *parent,const char *name,const QChar &_chr,const QString &_font,int _tableNum);
+  KCharSelectDia(QWidget *parent,const char *name,const QChar &_chr,const QString &_font,int _tableNum, bool direction);
 
   static bool selectChar(QString &_font,QChar &_chr,int _tableNum);
 
@@ -42,13 +42,15 @@ protected:
   void closeEvent(QCloseEvent *) { _exit(); }
 
   QGridLayout *grid;
-  KButtonBox *bbox;
+  KButtonBox *bbox1;
+  KButtonBox *bbox2;
   QPushButton *bAbout,*bExit,*bAdd,*bClip,*bClear;
   KCharSelect *charSelect;
   QLineEdit *lined;
 
   QChar vChr;
   QString vFont;
+  bool  entryDirection;
 
 protected slots:
   void charChanged(const QChar &_chr);
@@ -57,6 +59,11 @@ protected slots:
   { add(vChr); }
   void add(const QChar &_chr);
   void toClip();
+  void toClipUTF8();
+  void toClipHTML();
+  void flipText();
+  void toggleEntryDirection();
+  void lineEditChanged(void);
   void about();
   void _exit();
   void clear();

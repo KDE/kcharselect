@@ -16,7 +16,7 @@
 static const char *description = 
 	I18N_NOOP("KDE character selection utility");
 
-static const char *version = "v0.0.1";
+static const char *version = "v0.5";        // Also in kcharselectdia.cc
 
 
 /*================================================================*/
@@ -36,8 +36,9 @@ int main(int argc, char **argv)
   QString font(config->readEntry("font","times"));
   QChar c = QChar(static_cast<unsigned short>(config->readNumEntry("char",33)));
   int tn = config->readNumEntry("table",0);
+  bool direction = config->readNumEntry("entryDirection",0);
   
-  KCharSelectDia *dia = new KCharSelectDia(0L,"",c,font,tn);
+  KCharSelectDia *dia = new KCharSelectDia(0L,"",c,font,tn,direction);
 
   app.setMainWidget(dia);
   dia->show();
