@@ -16,3 +16,6 @@ install-data-local:
 	$(mkinstalldirs) $(kde_appsdir)/Utilities
 	$(INSTALL_DATA) $(srcdir)/KCharSelect.kdelnk $(kde_appsdir)/Utilities
 
+
+messages:
+	$(XGETTEXT) -C -ki18n -x $(includedir)/kde.pot $(kcharselect_SOURCES) && mv messages.po ../po/kcharselect.pot 
