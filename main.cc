@@ -11,8 +11,9 @@
 #include <klocale.h>
 #include <kcmdlineargs.h>
 #include <kaboutdata.h>
+#include <kglobalsettings.h>
 
-static const char *description = 
+static const char description[] = 
 	I18N_NOOP("KDE character selection utility");
 
 /*================================================================*/
@@ -33,7 +34,7 @@ int main(int argc, char **argv)
   KConfig *config = kapp->config();
 
   config->setGroup("General");
-  QString font(config->readEntry("font","times"));
+  QString font(config->readEntry("font", KGlobalSettings::generalFont().family()));
   QChar c = QChar(static_cast<unsigned short>(config->readNumEntry("char",33)));
   int tn = config->readNumEntry("table",0);
   bool direction = config->readNumEntry("entryDirection",0);
