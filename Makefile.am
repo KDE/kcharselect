@@ -9,7 +9,7 @@ kcharselect_METASOURCES = kcharselectdia.moc
 
 KDE_ICON = kcharselect
 
-appsdir = $(kde_appsdir)/Programs/Utilities
+appsdir = $(kde_appsdir)/Utilities
 apps_DATA = KCharSelect.desktop
 
 messages:
