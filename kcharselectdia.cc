@@ -4,10 +4,6 @@
 /* E-Mail: reggie@kde.org                                         */
 /*         RTL support by Bryce Nesbitt                           */
 /******************************************************************/
-/*
-    TODO:   It would be nice if hitting the spacebar inserted
-    space, rather than another copy of the current character
-*/
 
 #include "kcharselectdia.h"
 #include "kcharselectdia.moc"
@@ -16,10 +12,16 @@
 
 #include <qfont.h>
 
+#include <kaccel.h>
 #include <kconfig.h>
 #include <kdialog.h>
 #include <klocale.h>
 #include <kmessagebox.h>
+
+#include <qpopupmenu.h>
+#include <qpushbutton.h>
+#include <kmenubar.h>
+
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
@@ -31,72 +33,76 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
 			       int _tableNum, bool direction)
   : KDialog(parent,name,false), vChr(_chr), vFont(_font)
 {
-  //setCaption("KCharSelect");
   setCaption(QString::null); // Standard caption
 
-  grid = new QGridLayout( this, 4, 1, marginHint(), spacingHint() );
+  grid = new QGridLayout( this, 3, 1, marginHint(), spacingHint() );
 
+  // Add character selection widget from library kdeui
   charSelect = new KCharSelect(this,"",vFont,vChr,_tableNum);
   charSelect->resize(charSelect->sizeHint());
-  grid->addWidget(charSelect,0,0);
   connect(charSelect,SIGNAL(highlighted(const QChar &)),
 	  this,SLOT(charChanged(const QChar &)));
   connect(charSelect,SIGNAL(activated(const QChar &)),
 	  this,SLOT(add(const QChar &)));
   connect(charSelect,SIGNAL(fontChanged(const QString &)),
 	  this,SLOT(fontSelected(const QString &)));
+  grid->addWidget(charSelect,0,0);
 
+  // Build line editor
   lined = new QLineEdit(this);
   lined->resize(lined->sizeHint());
   lined->setFont(QFont(vFont));
-  grid->addWidget(lined,1,0);
   connect(lined,SIGNAL(textChanged(const QString &)),
 	  this,SLOT(lineEditChanged(void)));
+  grid->addWidget(lined,1,0);
 
+  // Build some buttons
   bbox1 = new KButtonBox(this,Horizontal);
-//bAdd = bbox1->addButton(i18n("&Add"));
-//connect(bAdd,SIGNAL(clicked()),this,SLOT(add()));
-//bbox1->addStretch();
-//bAdd->setDefault(true);
+  bbox1->addStretch();
   bClear = bbox1->addButton(i18n("&Clear"));
   connect(bClear,SIGNAL(clicked()),this,SLOT(clear()));
-  bbox1->addStretch();
-  bAbout = bbox1->addButton(i18n("&Flip"));
-  connect(bAbout,SIGNAL(clicked()),this,SLOT(flipText()));
-  bbox1->addStretch();
-  bAbout = bbox1->addButton(i18n("Force &Direction"));
-  connect(bAbout,SIGNAL(clicked()),this,SLOT(toggleEntryDirection()));
-  bbox1->addStretch();
-  bAbout = bbox1->addButton(i18n("A&bout..."));
-  connect(bAbout,SIGNAL(clicked()),this,SLOT(about()));
-//bbox1->addStretch();
-  bbox1->layout();
-  grid->addWidget(bbox1,2,0);
-
-  bbox2 = new KButtonBox(this,Horizontal);
-  bClip = bbox2->addButton(i18n("&To Clipboard"));
+  bClip = bbox1->addButton(i18n("&To Clipboard"));
   connect(bClip,SIGNAL(clicked()),this,SLOT(toClip()));
   bClip->setDefault(true);
-  bbox2->addStretch();
-  bClip = bbox2->addButton(i18n("To Clipboard &UTF-8"));
-  connect(bClip,SIGNAL(clicked()),this,SLOT(toClipUTF8()));
-  bbox2->addStretch();
-  bClip = bbox2->addButton(i18n("To Clipboard &HTML"));
-  connect(bClip,SIGNAL(clicked()),this,SLOT(toClipHTML()));
-  bbox2->addStretch();
-  bExit = bbox2->addButton(i18n("E&xit"));
-  connect(bExit,SIGNAL(clicked()),this,SLOT(_exit()));
-//bbox2->addStretch();
-  bbox2->layout(); 
-  grid->addWidget(bbox2,3,0);
+  bbox1->layout(); 
+  grid->addWidget(bbox1,2,0);
 
+  // Build menu
+  KAccel *keys = new KAccel( this );
+  keys->connectItem( KStdAccel::Copy , this, SLOT(toClip())   );
+  keys->connectItem( KStdAccel::Quit , this, SLOT(_exit())    );
+
+  QPopupMenu *edit = new QPopupMenu( this );
+  CHECK_PTR( edit );
+  int id;
+  id = edit->insertItem( i18n("&To Clipboard")       , this, SLOT(toClip())    );
+  keys->changeMenuAccel(edit, id, KStdAccel::Copy);
+  id = edit->insertItem( i18n("To Clipboard &UTF-8") , this, SLOT(toClipUTF8()));
+  id = edit->insertItem( i18n("To Clipboard &HTML" ) , this, SLOT(toClipHTML()));
+  i18n("Paste");                    // For future use
+  i18n("Paste from UTF-8");        // For future use
+  i18n("Paste from HTML");         // For future use
+  id = edit->insertSeparator();
+  id = edit->insertItem( i18n("&Clear")              , this, SLOT(clear())     );
+  id = edit->insertItem( i18n("&Flip")               , this, SLOT(flipText())  );
+  id = edit->insertItem( i18n("Force &Direction")    , this, SLOT(toggleEntryDirection()) );
+  id = edit->insertSeparator();
+  id = edit->insertItem( i18n("A&bout...")           , this, SLOT(about())     );
+  id = edit->insertItem( i18n("E&xit")               , this, SLOT(_exit())     );
+  keys->changeMenuAccel(edit, id, KStdAccel::Quit);
+
+  KMenuBar *menu = new KMenuBar( this );
+  CHECK_PTR( menu );
+  menu->insertItem( i18n("&Edit"), edit );
+  grid->setMenuBar( menu );
+
+  // Set grid spacing
   grid->addColSpacing(0,charSelect->width());
   grid->addColSpacing(0,1);
 
   grid->addRowSpacing(0,charSelect->height());
   grid->addRowSpacing(1,lined->height());
   grid->addRowSpacing(2,bbox1->height());
-  grid->addRowSpacing(3,bbox2->height());
   grid->setRowStretch(0,1);
 
   charSelect->setFocus();

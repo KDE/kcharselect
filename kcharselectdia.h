@@ -42,11 +42,10 @@ protected:
   void closeEvent(QCloseEvent *) { _exit(); }
 
   QGridLayout *grid;
-  KButtonBox *bbox1;
-  KButtonBox *bbox2;
-  QPushButton *bAbout,*bExit,*bAdd,*bClip,*bClear;
   KCharSelect *charSelect;
-  QLineEdit *lined;
+  QLineEdit   *lined;
+  KButtonBox  *bbox1;
+  QPushButton *bClip,*bClear;
 
   QChar vChr;
   QString vFont;
