@@ -10,16 +10,10 @@
 #include <stdlib.h>
 
 #include <kdialog.h>
-#include <kpopupmenu.h>
 #include <kapplication.h>
 #include <kaccel.h>
 #include <kconfig.h>
 #include <klocale.h>
-#include <kmessagebox.h>
-#include <kiconloader.h>
-#include <kmenubar.h>
-#include <kstdguiitem.h>
-#include <kstdaction.h>
 #include <kaction.h>
 
 /******************************************************************/
