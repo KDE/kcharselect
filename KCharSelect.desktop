@@ -58,7 +58,6 @@ Exec=kcharselect %i %m
 Icon=kcharselect
 TerminalOptions=
 Path=
-Extensions=
 Type=Application
 Terminal=0
 Name=KCharSelect
