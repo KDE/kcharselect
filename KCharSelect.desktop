@@ -2,6 +2,7 @@
 Encoding=UTF-8
 BinaryPattern=kcharselect;
 GenericName=Character Selector
+GenericName[af]=karakter kiesser
 GenericName[ar]=خريطة المحارف
 GenericName[az]=Xarakter Seçici
 GenericName[bg]=Програма за избор на символи
