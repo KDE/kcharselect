@@ -151,6 +151,5 @@ void KCharSelectDia::_exit()
 //==================================================================
 void KCharSelectDia::clear()
 {
-  lined->setText("");
+  lined->clear();
 }
-
