@@ -12,8 +12,8 @@ appsdir = $(kde_appsdir)/Utilities/More
 apps_DATA = KCharSelect.desktop
 
 install-data-local: uninstall.desktop
-	$(mkinstalldirs) $(kde_appsdir)/Utilities
-	$(INSTALL_DATA) $(srcdir)/uninstall.desktop $(kde_appsdir)/Utilities/KCharSelect.desktop
+	$(mkinstalldirs) $(DESTDIR)$(kde_appsdir)/Utilities
+	$(INSTALL_DATA) $(srcdir)/uninstall.desktop $(DESTDIR)$(kde_appsdir)/Utilities/KCharSelect.desktop
 
 messages:
 	$(XGETTEXT) $(kcharselect_SOURCES) -o $(podir)/kcharselect.pot 
