@@ -7,10 +7,11 @@
 #include "kcharselectdia.h"
 #include "kcharselectdia.moc"
 
+#include <qfont.h>
+
 #include <klocale.h>
 #include <kconfig.h>
-
-#include <qfont.h>
+#include <kmessagebox.h>
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
@@ -119,10 +120,10 @@ void KCharSelectDia::toClip()
 //==================================================================
 void KCharSelectDia::about()
 {
-  QMessageBox::information(0L,i18n("About"),i18n("KCharSelect 0.1.0\n\n"
+  KMessageBox::about(0L,i18n("KCharSelect 0.1.0\n\n"
 						 "(c) by Reginald Stadlbauer 1999\n\n"
 						 "E-Mail: reggie@kde.org\n\n"
-						 "License: GNU GPL"),i18n("OK"));
+						 "License: GNU GPL"));
 }
 
 //==================================================================

@@ -15,7 +15,6 @@
 #include <qlineedit.h>
 #include <qclipboard.h>
 #include <qstring.h>
-#include <qmessagebox.h>
 #include <qwidget.h>
 
 #include <kbuttonbox.h>
