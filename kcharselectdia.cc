@@ -41,20 +41,23 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   charSelect = new KCharSelect(mainWidget,"",vFont,vChr,_tableNum);
   charSelect->resize(charSelect->sizeHint());
   connect(charSelect,SIGNAL(highlighted(const QChar &)),
-	  this,SLOT(charChanged(const QChar &)));
+	  SLOT(charChanged(const QChar &)));
   connect(charSelect,SIGNAL(activated(const QChar &)),
-	  this,SLOT(add(const QChar &)));
+	  SLOT(add(const QChar &)));
   connect(charSelect,SIGNAL(fontChanged(const QString &)),
-	  this,SLOT(fontSelected(const QString &)));
+	  SLOT(fontSelected(const QString &)));
   grid->addMultiCellWidget(charSelect, 0, 0, 0, 3);
 
   // Build line editor
   lined = new QLineEdit(mainWidget);
   lined->resize(lined->sizeHint());
 
-  lined->setFont(QFont(vFont));
+  QFont font = lined->font();
+  font.setFamily( vFont );
+  lined->setFont( font );
+
   connect(lined,SIGNAL(textChanged(const QString &)),
-	  this,SLOT(lineEditChanged(void)));
+	  SLOT(lineEditChanged()));
   grid->addMultiCellWidget(lined, 1, 1, 0, 3);
 
   // Build some buttons
@@ -74,7 +77,6 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   bClip = new KPushButton( KGuiItem( i18n( "&To Clipboard" ), 
             "editcopy" ), mainWidget );
   bClip->setFixedSize( bClip->sizeHint() );
-  bClip->setDefault(true);
   connect(bClip,SIGNAL(clicked()),this,SLOT(toClip()));
   grid->addWidget( bClip, 2, 3 );
   
@@ -138,7 +140,11 @@ void KCharSelectDia::charChanged(const QChar &_chr)
 void KCharSelectDia::fontSelected(const QString &_font)
 {
   charSelect->setFont(_font);
-  lined->setFont(QFont(_font));
+
+  QFont font = lined->font();
+  font.setFamily( _font );
+  lined->setFont( font );
+
   vFont = _font;
 }
 
@@ -263,7 +269,7 @@ void KCharSelectDia::toggleEntryDirection()
 }
 
 //==================================================================
-void KCharSelectDia::lineEditChanged(void)
+void KCharSelectDia::lineEditChanged()
 {
     if( entryDirection )
       {

@@ -51,7 +51,8 @@ protected:
 
   QChar vChr;
   QString vFont;
-  bool  entryDirection;
+  int pointSize;
+  bool entryDirection;
 
 protected slots:
   void charChanged(const QChar &_chr);
@@ -66,7 +67,7 @@ protected slots:
   void fromClipUTF8();
   void flipText();
   void toggleEntryDirection();
-  void lineEditChanged(void);
+  void lineEditChanged();
   void _exit();
   void clear();
   void help();
