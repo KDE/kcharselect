@@ -20,7 +20,7 @@
 #include <kapplication.h>
 #include <kpushbutton.h>
 #include <kcharselect.h>
-#include <kdialog.h>
+#include <kmainwindow.h>
 
 static const char *version = "v1.0"; 
 
@@ -28,7 +28,7 @@ static const char *version = "v1.0";
 /* class KCharSelectDia                                           */
 /******************************************************************/
 
-class KCharSelectDia : public KDialog
+class KCharSelectDia : public KMainWindow
 {
   Q_OBJECT
 
@@ -67,7 +67,6 @@ protected slots:
   void flipText();
   void toggleEntryDirection();
   void lineEditChanged(void);
-  void about();
   void _exit();
   void clear();
   void help();

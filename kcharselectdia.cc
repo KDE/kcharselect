@@ -9,6 +9,8 @@
 
 #include <stdlib.h>
 
+#include <kdialog.h>
+#include <kpopupmenu.h>
 #include <kapplication.h>
 #include <kaccel.h>
 #include <kconfig.h>
@@ -26,14 +28,17 @@
 KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
 			       const QChar &_chr,const QString &_font,
 			       int _tableNum, bool direction)
-  : KDialog(parent,name,false), vChr(_chr), vFont(_font)
+  : KMainWindow(parent,name), vChr(_chr), vFont(_font)
 {
   setCaption(QString::null); // Standard caption
 
-  grid = new QGridLayout( this, 3, 4, marginHint(), spacingHint() );
+  QWidget *mainWidget = new QWidget(this);
+  setCentralWidget(mainWidget);
+
+  grid = new QGridLayout( mainWidget, 3, 4, KDialog::marginHint(), KDialog::spacingHint() );
 
   // Add character selection widget from library kdeui
-  charSelect = new KCharSelect(this,"",vFont,vChr,_tableNum);
+  charSelect = new KCharSelect(mainWidget,"",vFont,vChr,_tableNum);
   charSelect->resize(charSelect->sizeHint());
   connect(charSelect,SIGNAL(highlighted(const QChar &)),
 	  this,SLOT(charChanged(const QChar &)));
@@ -44,7 +49,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   grid->addMultiCellWidget(charSelect, 0, 0, 0, 3);
 
   // Build line editor
-  lined = new QLineEdit(this);
+  lined = new QLineEdit(mainWidget);
   lined->resize(lined->sizeHint());
 
   lined->setFont(QFont(vFont));
@@ -53,7 +58,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   grid->addMultiCellWidget(lined, 1, 1, 0, 3);
 
   // Build some buttons
-  bHelp = new KPushButton( KStdGuiItem::help(), this );
+  bHelp = new KPushButton( KStdGuiItem::help(), mainWidget );
   connect(bHelp,SIGNAL(clicked()),this,SLOT(help()));
   bHelp->setFixedSize( bHelp->sizeHint() );
   grid->addWidget( bHelp, 2, 0 );
@@ -61,13 +66,13 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   QSpacerItem *space = new QSpacerItem( 20, 20, QSizePolicy::Expanding );
   grid->addItem( space, 2, 1 );
 
-  bClear = new KPushButton( KStdGuiItem::clear(), this );
+  bClear = new KPushButton( KStdGuiItem::clear(), mainWidget );
   connect(bClear,SIGNAL(clicked()),this,SLOT(clear()));
   bClear->setFixedSize( bClear->sizeHint() );
   grid->addWidget( bClear, 2, 2 );
 
   bClip = new KPushButton( KGuiItem( i18n( "&To Clipboard" ), 
-            "editcopy" ), this );
+            "editcopy" ), mainWidget );
   bClip->setFixedSize( bClip->sizeHint() );
   bClip->setDefault(true);
   connect(bClip,SIGNAL(clicked()),this,SLOT(toClip()));
@@ -107,15 +112,10 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   id = edit->insertItem( i18n("&Flip"), this, SLOT(flipText())  );
   id = edit->insertItem( i18n("&Alignment"), 
             this, SLOT(toggleEntryDirection()) );
-  id = edit->insertSeparator();
-  id = edit->insertItem( SmallIcon( "kcharselect" ), 
-            i18n("A&bout KCharSelect..."), 
-            this, SLOT(about())     );
 
-  KMenuBar *menu = new KMenuBar( this );
-  menu->insertItem( i18n("&File"), file );
-  menu->insertItem( i18n("&Edit"), edit );
-  grid->setMenuBar( menu );
+  menuBar()->insertItem( i18n("&File"), file );
+  menuBar()->insertItem( i18n("&Edit"), edit );
+  menuBar()->insertItem( i18n("&Help"), helpMenu() );
 
   charSelect->setFocus();
 
@@ -270,17 +270,6 @@ void KCharSelectDia::lineEditChanged(void)
         if(lined->cursorPosition())
             lined->setCursorPosition( lined->cursorPosition() - 1 );
       }
-}
-
-//==================================================================
-void KCharSelectDia::about()
-{
-  KMessageBox::about(0L,i18n("KCharSelect") + "\n" + version +
-						 i18n(" Unicode\n"
-						 "(c) by Reginald Stadlbauer 1999\n"
-						 "Email: reggie@kde.org\n"
-						 "Maintainer: bryce@obviously.com\n"
-						 "License: GNU GPL"));
 }
 
 //==================================================================
