@@ -9,7 +9,7 @@
 
 #include <stdlib.h>
 
-
+#include <kapplication.h>
 #include <kaccel.h>
 #include <kconfig.h>
 #include <klocale.h>
