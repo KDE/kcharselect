@@ -175,7 +175,7 @@ void KCharSelectDia::toClip()
 }
 
 //==================================================================
-// UTF-8 is rapidly becomming the favored 8-bit encoding for
+// UTF-8 is rapidly becoming the favored 8-bit encoding for
 // Unicode (iso10646-1).
 //
 void KCharSelectDia::toClipUTF8()
@@ -225,7 +225,7 @@ void KCharSelectDia::fromClip()
 }
 
 //==================================================================
-// UTF-8 is rapidly becomming the favored 8-bit encoding for
+// UTF-8 is rapidly becoming the favored 8-bit encoding for
 // Unicode (iso10646-1).  This function is handy for decoding
 // UTF-8 found in legacy applications, consoles, filenames, webpages,
 // etc.
