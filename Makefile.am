@@ -10,11 +10,11 @@ kcharselect_METASOURCES = kcharselectdia.moc
 kde_icon_DATA = kcharselect.xpm
 
 uninstall-local:
-	rm -f $(kde_appsdir)/Utilities/KCharSelect.kdelnk
+	rm -f $(kde_appsdir)/Utilities/KCharSelect.desktop
 
 install-data-local:
 	$(mkinstalldirs) $(kde_appsdir)/Utilities
-	$(INSTALL_DATA) $(srcdir)/KCharSelect.kdelnk $(kde_appsdir)/Utilities
+	$(INSTALL_DATA) $(srcdir)/KCharSelect.desktop $(kde_appsdir)/Utilities
 
 
 messages:
