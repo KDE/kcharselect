@@ -4,4 +4,3 @@ o Gridview refresh bug -- sometimes trash appears the empty space when
 o Don't use the grid layout class - it's more trouble than it's worth.
 o Should remove the useless "What's this?" widget from title bar.
 o Use a horizontal layout for "Clear", "To Clipboard", and the line edit.
-o Convert to KAction
