@@ -8,8 +8,12 @@ kcharselect_METASOURCES = kcharselectdia.moc
 
 KDE_ICON = kcharselect
 
-appsdir = $(kde_appsdir)/Utilities
+appsdir = $(kde_appsdir)/Utilities/More
 apps_DATA = KCharSelect.desktop
+
+install-data-local: uninstall.desktop
+	$(mkinstalldirs) $(kde_appsdir)/Utilities
+	$(INSTALL_DATA) $(srcdir)/uninstall.desktop $(kde_appsdir)/Utilities/KCharSelect.desktop
 
 messages:
 	$(XGETTEXT) $(kcharselect_SOURCES) -o $(podir)/kcharselect.pot 
