@@ -22,6 +22,8 @@
 #include <kcharselect.h>
 #include <kdialog.h>
 
+static const char *version = "v1.0"; 
+
 /******************************************************************/
 /* class KCharSelectDia                                           */
 /******************************************************************/

@@ -277,8 +277,8 @@ void KCharSelectDia::lineEditChanged(void)
 //==================================================================
 void KCharSelectDia::about()
 {
-  KMessageBox::about(0L,i18n("KCharSelect\n\n"
-						 "v0.6 Unicode\n"
+  KMessageBox::about(0L,i18n("KCharSelect") + "\n" + version +
+						 i18n(" Unicode\n"
 						 "(c) by Reginald Stadlbauer 1999\n"
 						 "E-Mail: reggie@kde.org\n"
 						 "Maintainer: bryce@obviously.com\n"
