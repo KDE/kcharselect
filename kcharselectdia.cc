@@ -19,7 +19,8 @@
 #include <kiconloader.h>
 #include <kmenubar.h>
 #include <kstdguiitem.h>
-
+#include <kstdaction.h>
+#include <kaction.h>
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
@@ -82,53 +83,38 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   grid->addWidget( bClip, 2, 3 );
 
   // Build menu
-  int id;
-  KAccel *keys = new KAccel( this );
+  KStdAction::quit( this, SLOT(_exit()), actionCollection() );
+  
+  new KAction(i18n("&To Clipboard"), "editcopy",
+         KStdAccel::shortcut(KStdAccel::Copy), this, SLOT(toClip()), actionCollection(), "copy_clip" );
 
-  QPopupMenu *file = new QPopupMenu( this );
-  id = file->insertItem( SmallIcon( "exit" ), KStdGuiItem::quit().text(),
-            this, SLOT(_exit()));
-  keys->changeMenuAccel(file, id, KStdAccel::Quit);
-
-  keys->insert( KStdAccel::Paste, this, SLOT(fromClip()));
-  keys->insert( KStdAccel::Copy , this, SLOT(toClip()));
-  keys->insert( KStdAccel::Quit , this, SLOT(_exit()));
-  keys->insert( KStdAccel::Help , this, SLOT(help()));
-
-  QPopupMenu *edit = new QPopupMenu( this );
-  id = edit->insertItem( SmallIcon( "editcopy" ), i18n("&To Clipboard"),
-            this, SLOT(toClip()) );
-  keys->changeMenuAccel(edit, id, KStdAccel::Copy);
-  id = edit->insertItem( i18n("To Clipboard &UTF-8"),
-            this, SLOT(toClipUTF8()) );
-  id = edit->insertItem( i18n("To Clipboard &HTML"),
-            this, SLOT(toClipHTML()) );
-  id = edit->insertItem( SmallIcon( "editpaste"), i18n("From Clipboard"),
-            this, SLOT(fromClip()) );
-  keys->changeMenuAccel(edit, id, KStdAccel::Paste);
-  id = edit->insertItem( i18n("From Clipboard UTF-8"),
-            this, SLOT(fromClipUTF8()) );
+  (void)new KAction(i18n("To Clipboard &UTF-8"), 0, this,
+    SLOT(toClipUTF8()), actionCollection(), "copy_utf_8" );
+  (void)new KAction(i18n("To Clipboard &HTML"), 0, this,
+      SLOT(toClipHTML()), actionCollection(), "copy_html" );
+ 
+  new KAction(i18n("&From Clipboard"), "editpaste",
+         KStdAccel::shortcut(KStdAccel::Paste), this, SLOT(fromClip()), actionCollection(), "from_clip" );
+  (void)new KAction(i18n("From Clipboard UTF-8"), 0, this,
+      SLOT(fromClipUTF8()), actionCollection(), "from_clip_utf8" );
+  
   i18n("From Clipboard HTML");      // Intended for future use
-  id = edit->insertSeparator();
-  id = edit->insertItem( SmallIcon( "locationbar_erase" ), KStdGuiItem::clear().text(),
-            this, SLOT(clear())     );
-  id = edit->insertItem( i18n("&Flip"), this, SLOT(flipText())  );
-  id = edit->insertItem( i18n("&Alignment"),
-            this, SLOT(toggleEntryDirection()) );
-
-  menuBar()->insertItem( i18n("&File"), file );
-  menuBar()->insertItem( i18n("&Edit"), edit );
-  menuBar()->insertItem( KStdGuiItem::help().text(), helpMenu() );
-
+  
+  KStdAction::clear(this, SLOT(clear()), actionCollection(), "clear");
+  (void)new KAction(i18n("&Flip"), 0, this,
+      SLOT(flipText()), actionCollection(), "flip" );
+  (void)new KAction(i18n("&Alignment"), 0, this,
+      SLOT(toggleEntryDirection()), actionCollection(), "alignment" );
+  
   charSelect->setFocus();
-
-  resize(grid->sizeHint());
 
   entryDirection = direction;
   if( entryDirection )
     lined->setAlignment( Qt::AlignRight );
   else
     lined->setAlignment( Qt::AlignLeft );
+
+  setupGUI();
 }
 
 //==================================================================
@@ -306,3 +292,4 @@ void KCharSelectDia::help()
 {
   kapp->invokeHelp();
 }
+

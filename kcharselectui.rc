@@ -1,0 +1,16 @@
+<!DOCTYPE kpartgui>
+<kpartgui name="kcharselect" version="1">
+<MenuBar>
+  <Menu name="edit"><text>&amp;Edit</text>
+    <Action name="copy_clip"/>
+		<Action name="copy_utf_8"/>
+    <Action name="copy_html"/>
+    <Action name="from_clip"/>
+    <Action name="from_clip_utf8"/>
+    <Separator/>
+		<Action name="clear"/>
+    <Action name="flip"/>
+    <Action name="alignment"/>
+ </Menu>
+</MenuBar>
+</kpartgui>
