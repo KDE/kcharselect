@@ -167,6 +167,9 @@ void KCharSelectDia::add(const QChar &_chr)
 void KCharSelectDia::toClip()
 {
   QClipboard *cb = QApplication::clipboard();
+  cb->setSelectionMode( true );
+  cb->setText(lined->text());
+  cb->setSelectionMode( false );
   cb->setText(lined->text());
 }
 
