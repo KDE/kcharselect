@@ -2,7 +2,7 @@
 Encoding=UTF-8
 BinaryPattern=kcharselect;
 GenericName=Character Selector
-GenericName[af]=karakter kiesser
+GenericName[af]=Karakter Kiesser
 GenericName[ar]=خريطة المحارف
 GenericName[az]=Xarakter Seçici
 GenericName[bg]=Програма за избор на символи
@@ -63,7 +63,7 @@ Path=
 Type=Application
 Terminal=0
 Name=KCharSelect
-Name[af]=kcharselect
+Name[af]=Kcharselect
 Name[eo]=Signoelektilo
 Name[nl]=KCharSelect (speciale tekens)
 Name[pl]=Wybór znaków
