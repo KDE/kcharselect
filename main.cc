@@ -13,7 +13,7 @@
 /*================================================================*/
 int main(int argc, char **argv)
 {
-  KApplication app(argc,argv);
+  KApplication app(argc,argv, "kcharselect" );
 
   KConfig *config = kapp->config();
 
