@@ -18,6 +18,7 @@
 #include <kmessagebox.h>
 #include <kiconloader.h>
 #include <kmenubar.h>
+#include <kstdguiitem.h>
 
 
 /******************************************************************/
@@ -74,18 +75,18 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   bClear->setFixedSize( bClear->sizeHint() );
   grid->addWidget( bClear, 2, 2 );
 
-  bClip = new KPushButton( KGuiItem( i18n( "&To Clipboard" ), 
+  bClip = new KPushButton( KGuiItem( i18n( "&To Clipboard" ),
             "editcopy" ), mainWidget );
   bClip->setFixedSize( bClip->sizeHint() );
   connect(bClip,SIGNAL(clicked()),this,SLOT(toClip()));
   grid->addWidget( bClip, 2, 3 );
-  
+
   // Build menu
   int id;
   KAccel *keys = new KAccel( this );
 
   QPopupMenu *file = new QPopupMenu( this );
-  id = file->insertItem( SmallIcon( "exit" ), i18n("&Quit"), 
+  id = file->insertItem( SmallIcon( "exit" ), i18n("&Quit"),
             this, SLOT(_exit())     );
   keys->changeMenuAccel(file, id, KStdAccel::Quit);
 
@@ -95,29 +96,29 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   keys->connectItem( KStdAccel::Help , this, SLOT(help()));
 
   QPopupMenu *edit = new QPopupMenu( this );
-  id = edit->insertItem( SmallIcon( "editcopy" ), i18n("&To Clipboard"), 
+  id = edit->insertItem( SmallIcon( "editcopy" ), i18n("&To Clipboard"),
             this, SLOT(toClip()) );
   keys->changeMenuAccel(edit, id, KStdAccel::Copy);
-  id = edit->insertItem( i18n("To Clipboard &UTF-8"), 
+  id = edit->insertItem( i18n("To Clipboard &UTF-8"),
             this, SLOT(toClipUTF8()) );
-  id = edit->insertItem( i18n("To Clipboard &HTML"), 
+  id = edit->insertItem( i18n("To Clipboard &HTML"),
             this, SLOT(toClipHTML()) );
-  id = edit->insertItem( SmallIcon( "editpaste"), i18n("From Clipboard"), 
+  id = edit->insertItem( SmallIcon( "editpaste"), i18n("From Clipboard"),
             this, SLOT(fromClip()) );
   keys->changeMenuAccel(edit, id, KStdAccel::Paste);
-  id = edit->insertItem( i18n("From Clipboard UTF-8"), 
+  id = edit->insertItem( i18n("From Clipboard UTF-8"),
             this, SLOT(fromClipUTF8()) );
   i18n("From Clipboard HTML");      // Intended for future use
   id = edit->insertSeparator();
-  id = edit->insertItem( SmallIcon( "locationbar_erase" ), i18n("&Clear"), 
+  id = edit->insertItem( SmallIcon( "locationbar_erase" ), i18n("&Clear"),
             this, SLOT(clear())     );
   id = edit->insertItem( i18n("&Flip"), this, SLOT(flipText())  );
-  id = edit->insertItem( i18n("&Alignment"), 
+  id = edit->insertItem( i18n("&Alignment"),
             this, SLOT(toggleEntryDirection()) );
 
   menuBar()->insertItem( i18n("&File"), file );
   menuBar()->insertItem( i18n("&Edit"), edit );
-  menuBar()->insertItem( i18n("&Help"), helpMenu() );
+  menuBar()->insertItem( KStdGuiItem::help().text(), helpMenu() );
 
   charSelect->setFocus();
 
@@ -186,9 +187,9 @@ void KCharSelectDia::toClipUTF8()
 }
 
 //==================================================================
-//  Put valid HTML 4.0 into the clipboard.  Valid ISO-8859-1 Latin 1 
+//  Put valid HTML 4.0 into the clipboard.  Valid ISO-8859-1 Latin 1
 //  characters are left undisturbed.  Everything else, including the
-//  "c0 control characters" often used by Windows, are clipped 
+//  "c0 control characters" often used by Windows, are clipped
 //  as a HTML entity.
 //
 void KCharSelectDia::toClipHTML()
@@ -240,7 +241,7 @@ void KCharSelectDia::fromClipUTF8()
 
 //==================================================================
 //  Reverse the text held in the line edit buffer.  This is crucial
-//  for dealing with visual vs. logical representations of 
+//  for dealing with visual vs. logical representations of
 //  right to left languages, and handy for working around all
 //  manner of legacy character order issues.
 //
@@ -249,7 +250,7 @@ void KCharSelectDia::flipText()
   QString input;
   QString output;
   uint i;
- 
+
   input = lined->text();
   for(i=0; i< input.length(); i++ )
     {
@@ -260,7 +261,7 @@ void KCharSelectDia::flipText()
 
 //==================================================================
 void KCharSelectDia::toggleEntryDirection()
-{   
+{
     entryDirection ^= 1;
     if( entryDirection )
         lined->setAlignment( Qt::AlignRight );
