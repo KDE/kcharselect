@@ -17,7 +17,7 @@
 #include <qstring.h>
 #include <qwidget.h>
 
-#include <kapp.h>
+#include <kapplication.h>
 #include <kbuttonbox.h>
 #include <kcharselect.h>
 #include <kdialog.h>
