@@ -85,7 +85,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   id = edit->insertSeparator();
   id = edit->insertItem( i18n("&Clear")              , this, SLOT(clear())     );
   id = edit->insertItem( i18n("&Flip")               , this, SLOT(flipText())  );
-  id = edit->insertItem( i18n("Force &Direction")    , this, SLOT(toggleEntryDirection()) );
+  id = edit->insertItem( i18n("Input &Direction")    , this, SLOT(toggleEntryDirection()) );
   id = edit->insertSeparator();
   id = edit->insertItem( i18n("A&bout...")           , this, SLOT(about())     );
   id = edit->insertItem( i18n("E&xit")               , this, SLOT(_exit())     );
