@@ -53,6 +53,8 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
 
   // Build some buttons
   bbox1 = new KButtonBox(this,Horizontal);
+  bHelp = bbox1->addButton(i18n("Help"));
+  connect(bHelp,SIGNAL(clicked()),this,SLOT(help()));
   bbox1->addStretch();
   bClear = bbox1->addButton(i18n("&Clear"));
   connect(bClear,SIGNAL(clicked()),this,SLOT(clear()));
@@ -303,4 +305,9 @@ void KCharSelectDia::_exit()
 void KCharSelectDia::clear()
 {
   lined->clear();
+}
+
+//==================================================================
+void KCharSelectDia::help()
+{
 }

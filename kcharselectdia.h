@@ -46,6 +46,7 @@ protected:
   QLineEdit   *lined;
   KButtonBox  *bbox1;
   QPushButton *bClip,*bClear;
+  QPushButton *bHelp;
 
   QChar vChr;
   QString vFont;
@@ -68,6 +69,7 @@ protected slots:
   void about();
   void _exit();
   void clear();
+  void help();
 
 };
 
