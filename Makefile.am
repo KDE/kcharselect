@@ -1,4 +1,3 @@
-
 INCLUDES = $(all_includes)
 LDADD	= $(LIB_KFILE)
 bin_PROGRAMS = kcharselect
