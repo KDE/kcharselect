@@ -74,15 +74,20 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   grid->addWidget( bClip, 2, 3 );
   
   // Build menu
+  int id;
   KAccel *keys = new KAccel( this );
+
+  QPopupMenu *file = new QPopupMenu( this );
+  id = file->insertItem( SmallIcon( "exit" ), i18n("&Quit"), 
+            this, SLOT(_exit())     );
+  keys->changeMenuAccel(file, id, KStdAccel::Quit);
+
   keys->connectItem( KStdAccel::Paste, this, SLOT(fromClip()));
   keys->connectItem( KStdAccel::Copy , this, SLOT(toClip()));
   keys->connectItem( KStdAccel::Quit , this, SLOT(_exit()));
   keys->connectItem( KStdAccel::Help , this, SLOT(help()));
 
   QPopupMenu *edit = new QPopupMenu( this );
-  CHECK_PTR( edit );
-  int id;
   id = edit->insertItem( SmallIcon( "editcopy" ), i18n("&To Clipboard"), 
             this, SLOT(toClip()) );
   keys->changeMenuAccel(edit, id, KStdAccel::Copy);
@@ -106,12 +111,9 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   id = edit->insertItem( SmallIcon( "kcharselect" ), 
             i18n("A&bout KCharSelect..."), 
             this, SLOT(about())     );
-  id = edit->insertItem( SmallIcon( "exit" ), i18n("&Quit"), 
-            this, SLOT(_exit())     );
-  keys->changeMenuAccel(edit, id, KStdAccel::Quit);
 
   KMenuBar *menu = new KMenuBar( this );
-  CHECK_PTR( menu );
+  menu->insertItem( i18n("&File"), file );
   menu->insertItem( i18n("&Edit"), edit );
   grid->setMenuBar( menu );
 
