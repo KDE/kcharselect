@@ -7,6 +7,8 @@
 #include "kcharselectdia.h"
 #include "kcharselectdia.moc"
 
+#include <stdlib.h>
+
 #include <qfont.h>
 
 #include <kconfig.h>
