@@ -18,7 +18,7 @@
 #include <qwidget.h>
 
 #include <kapplication.h>
-#include <kbuttonbox.h>
+#include <kpushbutton.h>
 #include <kcharselect.h>
 #include <kdialog.h>
 
@@ -46,9 +46,8 @@ protected:
   QGridLayout *grid;
   KCharSelect *charSelect;
   QLineEdit   *lined;
-  KButtonBox  *bbox1;
-  QPushButton *bClip,*bClear;
-  QPushButton *bHelp;
+  KPushButton *bClip,*bClear;
+  KPushButton *bHelp;
 
   QChar vChr;
   QString vFont;

@@ -14,7 +14,7 @@
 #include <kconfig.h>
 #include <klocale.h>
 #include <kmessagebox.h>
-
+#include <kiconloader.h>
 #include <kmenubar.h>
 
 
@@ -30,7 +30,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
 {
   setCaption(QString::null); // Standard caption
 
-  grid = new QGridLayout( this, 3, 1, marginHint(), spacingHint() );
+  grid = new QGridLayout( this, 3, 4, marginHint(), spacingHint() );
 
   // Add character selection widget from library kdeui
   charSelect = new KCharSelect(this,"",vFont,vChr,_tableNum);
@@ -41,68 +41,79 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
 	  this,SLOT(add(const QChar &)));
   connect(charSelect,SIGNAL(fontChanged(const QString &)),
 	  this,SLOT(fontSelected(const QString &)));
-  grid->addWidget(charSelect,0,0);
+  grid->addMultiCellWidget(charSelect, 0, 0, 0, 3);
 
   // Build line editor
   lined = new QLineEdit(this);
   lined->resize(lined->sizeHint());
+
   lined->setFont(QFont(vFont));
   connect(lined,SIGNAL(textChanged(const QString &)),
 	  this,SLOT(lineEditChanged(void)));
-  grid->addWidget(lined,1,0);
+  grid->addMultiCellWidget(lined, 1, 1, 0, 3);
 
   // Build some buttons
-  bbox1 = new KButtonBox(this,Horizontal);
-  bHelp = bbox1->addButton(i18n("Help"));
+  bHelp = new KPushButton( KStdGuiItem::help(), this );
   connect(bHelp,SIGNAL(clicked()),this,SLOT(help()));
-  bbox1->addStretch();
-  bClear = bbox1->addButton(i18n("&Clear"));
-  connect(bClear,SIGNAL(clicked()),this,SLOT(clear()));
-  bClip = bbox1->addButton(i18n("&To Clipboard"));
-  connect(bClip,SIGNAL(clicked()),this,SLOT(toClip()));
-  bClip->setDefault(true);
-  bbox1->layout(); 
-  grid->addWidget(bbox1,2,0);
+  bHelp->setFixedSize( bHelp->sizeHint() );
+  grid->addWidget( bHelp, 2, 0 );
 
+  QSpacerItem *space = new QSpacerItem( 20, 20, QSizePolicy::Expanding );
+  grid->addItem( space, 2, 1 );
+
+  bClear = new KPushButton( KStdGuiItem::clear(), this );
+  connect(bClear,SIGNAL(clicked()),this,SLOT(clear()));
+  bClear->setFixedSize( bClear->sizeHint() );
+  grid->addWidget( bClear, 2, 2 );
+
+  bClip = new KPushButton( KGuiItem( i18n( "&To Clipboard" ), 
+            "editcopy" ), this );
+  bClip->setFixedSize( bClip->sizeHint() );
+  bClip->setDefault(true);
+  connect(bClip,SIGNAL(clicked()),this,SLOT(toClip()));
+  grid->addWidget( bClip, 2, 3 );
+  
   // Build menu
   KAccel *keys = new KAccel( this );
-  keys->connectItem( KStdAccel::Paste, this, SLOT(fromClip())   );
-  keys->connectItem( KStdAccel::Copy , this, SLOT(toClip())   );
-  keys->connectItem( KStdAccel::Quit , this, SLOT(_exit())    );
+  keys->connectItem( KStdAccel::Paste, this, SLOT(fromClip()));
+  keys->connectItem( KStdAccel::Copy , this, SLOT(toClip()));
+  keys->connectItem( KStdAccel::Quit , this, SLOT(_exit()));
+  keys->connectItem( KStdAccel::Help , this, SLOT(help()));
 
   QPopupMenu *edit = new QPopupMenu( this );
   CHECK_PTR( edit );
   int id;
-  id = edit->insertItem( i18n("&To Clipboard")       , this, SLOT(toClip()) );
+  id = edit->insertItem( SmallIcon( "editcopy" ), i18n("&To Clipboard"), 
+            this, SLOT(toClip()) );
   keys->changeMenuAccel(edit, id, KStdAccel::Copy);
-  id = edit->insertItem( i18n("To Clipboard &UTF-8") , this, SLOT(toClipUTF8()) );
-  id = edit->insertItem( i18n("To Clipboard &HTML")  , this, SLOT(toClipHTML()) );
-  id = edit->insertItem( i18n("From Clipboard")      , this, SLOT(fromClip()) );
+  id = edit->insertItem( i18n("To Clipboard &UTF-8"), 
+            this, SLOT(toClipUTF8()) );
+  id = edit->insertItem( i18n("To Clipboard &HTML"), 
+            this, SLOT(toClipHTML()) );
+  id = edit->insertItem( SmallIcon( "editpaste"), i18n("From Clipboard"), 
+            this, SLOT(fromClip()) );
   keys->changeMenuAccel(edit, id, KStdAccel::Paste);
-  id = edit->insertItem( i18n("From Clipboard UTF-8"), this, SLOT(fromClipUTF8()) );
+  id = edit->insertItem( i18n("From Clipboard UTF-8"), 
+            this, SLOT(fromClipUTF8()) );
   i18n("From Clipboard HTML");      // Intended for future use
   id = edit->insertSeparator();
-  id = edit->insertItem( i18n("&Clear")              , this, SLOT(clear())     );
-  id = edit->insertItem( i18n("&Flip")               , this, SLOT(flipText())  );
-  id = edit->insertItem( i18n("&Alignment")          , this, SLOT(toggleEntryDirection()) );
+  id = edit->insertItem( SmallIcon( "locationbar_erase" ), i18n("&Clear"), 
+            this, SLOT(clear())     );
+  id = edit->insertItem( i18n("&Flip"), this, SLOT(flipText())  );
+  id = edit->insertItem( i18n("&Alignment"), 
+            this, SLOT(toggleEntryDirection()) );
   id = edit->insertSeparator();
-  id = edit->insertItem( i18n("A&bout...")           , this, SLOT(about())     );
-  id = edit->insertItem( i18n("E&xit")               , this, SLOT(_exit())     );
+  id = edit->insertItem( SmallIcon( "kcharselect" ), 
+            i18n("A&bout KCharSelect..."), 
+            this, SLOT(about())     );
+  id = edit->insertItem( SmallIcon( "exit" ), i18n("&Quit"), 
+            this, SLOT(_exit())     );
   keys->changeMenuAccel(edit, id, KStdAccel::Quit);
 
   KMenuBar *menu = new KMenuBar( this );
   CHECK_PTR( menu );
   menu->insertItem( i18n("&Edit"), edit );
   grid->setMenuBar( menu );
-
-  // Set grid spacing
-  grid->addColSpacing(0,charSelect->width());
-  grid->addColSpacing(0,1);
-
-  grid->addRowSpacing(0,charSelect->height());
-  grid->addRowSpacing(1,lined->height());
-  grid->addRowSpacing(2,bbox1->height());
-  grid->setRowStretch(0,1);
 
   charSelect->setFocus();
 
@@ -113,24 +124,6 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
     lined->setAlignment( Qt::AlignRight );
   else
     lined->setAlignment( Qt::AlignLeft );
-}
-
-//==================================================================
-bool KCharSelectDia::selectChar(QString &_font,QChar &_chr,int _tableNum)
-{
-  bool res = false;
-
-  KCharSelectDia *dlg = new KCharSelectDia(0L,"",_chr,_font,_tableNum,0);
-  if (dlg->exec() == QDialog::Accepted)
-    {
-      _font = dlg->font();
-      _chr = dlg->chr();
-      res = true;
-    }
-
-  delete dlg;
-
-  return res;
 }
 
 //==================================================================
@@ -313,4 +306,5 @@ void KCharSelectDia::clear()
 //==================================================================
 void KCharSelectDia::help()
 {
+  kapp->invokeHelp();
 }
