@@ -128,7 +128,7 @@ void KCharSelectDia::about()
 //==================================================================
 void KCharSelectDia::_exit()
 {
-  KConfig *config = kapp->getConfig();
+  KConfig *config = kapp->config();
 
   config->setGroup("General");
   config->writeEntry("font",vFont);

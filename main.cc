@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 {
   KApplication app(argc,argv);
 
-  KConfig *config = kapp->getConfig();
+  KConfig *config = kapp->config();
 
   config->setGroup("General");
   QString font(config->readEntry("font","times"));
