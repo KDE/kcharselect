@@ -9,11 +9,21 @@
 #include <kapp.h>
 #include <qstring.h>
 #include <kconfig.h>
+#include <klocale.h>
+#include <kcmdlineargs.h>
+
+static const char *description = 
+	I18N_NOOP("KDE character selection utility");
+
+static const char *version = "v0.0.1";
+
 
 /*================================================================*/
 int main(int argc, char **argv)
 {
-  KApplication app(argc,argv, "kcharselect" );
+  KCmdLineArgs::init(argc, argv, "kcharselect", description, version);
+
+  KApplication app;
 
   KConfig *config = kapp->config();
 
