@@ -90,10 +90,10 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
             this, SLOT(_exit()));
   keys->changeMenuAccel(file, id, KStdAccel::Quit);
 
-  keys->connectItem( KStdAccel::Paste, this, SLOT(fromClip()));
-  keys->connectItem( KStdAccel::Copy , this, SLOT(toClip()));
-  keys->connectItem( KStdAccel::Quit , this, SLOT(_exit()));
-  keys->connectItem( KStdAccel::Help , this, SLOT(help()));
+  keys->insert( KStdAccel::Paste, this, SLOT(fromClip()));
+  keys->insert( KStdAccel::Copy , this, SLOT(toClip()));
+  keys->insert( KStdAccel::Quit , this, SLOT(_exit()));
+  keys->insert( KStdAccel::Help , this, SLOT(help()));
 
   QPopupMenu *edit = new QPopupMenu( this );
   id = edit->insertItem( SmallIcon( "editcopy" ), i18n("&To Clipboard"),
