@@ -69,19 +69,21 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
 
   // Build menu
   KAccel *keys = new KAccel( this );
+  keys->connectItem( KStdAccel::Paste, this, SLOT(fromClip())   );
   keys->connectItem( KStdAccel::Copy , this, SLOT(toClip())   );
   keys->connectItem( KStdAccel::Quit , this, SLOT(_exit())    );
 
   QPopupMenu *edit = new QPopupMenu( this );
   CHECK_PTR( edit );
   int id;
-  id = edit->insertItem( i18n("&To Clipboard")       , this, SLOT(toClip())    );
+  id = edit->insertItem( i18n("&To Clipboard")       , this, SLOT(toClip()) );
   keys->changeMenuAccel(edit, id, KStdAccel::Copy);
-  id = edit->insertItem( i18n("To Clipboard &UTF-8") , this, SLOT(toClipUTF8()));
-  id = edit->insertItem( i18n("To Clipboard &HTML" ) , this, SLOT(toClipHTML()));
-  i18n("Paste");                    // For future use
-  i18n("Paste from UTF-8");        // For future use
-  i18n("Paste from HTML");         // For future use
+  id = edit->insertItem( i18n("To Clipboard &UTF-8") , this, SLOT(toClipUTF8()) );
+  id = edit->insertItem( i18n("To Clipboard &HTML")  , this, SLOT(toClipHTML()) );
+  id = edit->insertItem( i18n("From Clipboard")      , this, SLOT(fromClip()) );
+  keys->changeMenuAccel(edit, id, KStdAccel::Paste);
+  id = edit->insertItem( i18n("From Clipboard UTF-8"), this, SLOT(fromClipUTF8()) );
+  i18n("From Clipboard HTML");      // Intended for future use
   id = edit->insertSeparator();
   id = edit->insertItem( i18n("&Clear")              , this, SLOT(clear())     );
   id = edit->insertItem( i18n("&Flip")               , this, SLOT(flipText())  );
@@ -210,6 +212,28 @@ void KCharSelectDia::toClipHTML()
         }
     }
   cb->setText(html);
+}
+
+//==================================================================
+//
+void KCharSelectDia::fromClip()
+{
+  QClipboard *cb = QApplication::clipboard();
+  lined->setText( cb->text() );
+}
+
+//==================================================================
+// UTF-8 is rapidly becomming the favored 8-bit encoding for
+// Unicode (iso10646-1).  This function is handy for decoding
+// UTF-8 found in legacy applications, consoles, filenames, webpages,
+// etc.
+//
+void KCharSelectDia::fromClipUTF8()
+{
+  QClipboard *cb = QApplication::clipboard();
+  QString str = cb->text();
+
+  lined->setText( str.fromUtf8( str.latin1() ) );
 }
 
 //==================================================================

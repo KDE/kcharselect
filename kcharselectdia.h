@@ -60,6 +60,8 @@ protected slots:
   void toClip();
   void toClipUTF8();
   void toClipHTML();
+  void fromClip();
+  void fromClipUTF8();
   void flipText();
   void toggleEntryDirection();
   void lineEditChanged(void);

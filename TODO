@@ -4,4 +4,3 @@ o Modify kcharselect library to allow "space" to insert a space, rather than
   a copy of the current character.
 o Show Unicode glyphs if they are available for a particular font (requires change to
   kcharselect library).
-o Add "paste from UTF-8".
