@@ -45,7 +45,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   lined->setFont(QFont(vFont));
   grid->addWidget(lined,1,0);
 
-  bbox = new KButtonBox(this,KButtonBox::HORIZONTAL);
+  bbox = new KButtonBox(this,Horizontal);
   bAdd = bbox->addButton(i18n("&Add"));
   connect(bAdd,SIGNAL(clicked()),this,SLOT(add()));
   bAdd->setDefault(true);
