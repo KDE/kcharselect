@@ -285,7 +285,7 @@ void KCharSelectDia::_exit()
   KConfig *config = kapp->config();
 
   config->setGroup("General");
-  config->writeEntry("font",vFont);
+  config->writeEntry("selectedFont",vFont);
   config->writeEntry("char",static_cast<int>(vChr.unicode()));
   config->writeEntry("table",charSelect->tableNum());
   config->writeEntry("entryDirection",entryDirection);
