@@ -103,4 +103,4 @@ Name[vi]=Trình chọn kí tự
 Name[xh]=Umkhethi womsebenzi
 Name[zh_CN.GB2312]=字符选择
 Name[zh_TW.Big5]=字元選擇器
-KDE-X-StartupNotify=true
+X-KDE-StartupNotify=true
