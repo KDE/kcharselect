@@ -11,6 +11,7 @@
 #include <kconfig.h>
 #include <klocale.h>
 #include <kcmdlineargs.h>
+#include <kaboutdata.h>
 
 static const char *description = 
 	I18N_NOOP("KDE character selection utility");
@@ -21,7 +22,11 @@ static const char *version = "v0.0.1";
 /*================================================================*/
 int main(int argc, char **argv)
 {
-  KCmdLineArgs::init(argc, argv, "kcharselect", description, version);
+  KAboutData aboutData( "kcharselect", I18N_NOOP("KCharSelect"),
+    version, description, KAboutData::License_GPL,
+    "(c) 1999, Reginald Stadlbauer");
+  aboutData.addAuthor("Reginald Stadlbauer",0, "reggie@kde.org");
+  KCmdLineArgs::init( argc, argv, &aboutData );
 
   KApplication app;
 
