@@ -8,7 +8,6 @@
 
 #include <kapplication.h>
 #include <kconfig.h>
-#include <klocale.h>
 #include <kcmdlineargs.h>
 #include <kaboutdata.h>
 #include <kglobalsettings.h>

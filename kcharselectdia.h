@@ -8,16 +8,10 @@
 #define kcharselectdia_h
 
 
-#include <qlabel.h>
-#include <qpushbutton.h>
 #include <qlayout.h>
-#include <qcombobox.h>
 #include <qlineedit.h>
 #include <qclipboard.h>
-#include <qstring.h>
-#include <qwidget.h>
 
-#include <kapplication.h>
 #include <kpushbutton.h>
 #include <kcharselect.h>
 #include <kmainwindow.h>
