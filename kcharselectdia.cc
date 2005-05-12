@@ -108,7 +108,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   else
     lined->setAlignment( Qt::AlignLeft );
 
-  setupGUI();
+  setupGUI(Keys|StatusBar|Save|Create);
 }
 
 //==================================================================
