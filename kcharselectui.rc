@@ -12,8 +12,5 @@
     <Action name="flip"/>
     <Action name="alignment"/>
  </Menu>
- <Menu noMerge="1" name="settings"><text>&amp;Settings</text>
-     <Action name="options_configure_keybinding"/>
- </Menu>
 </MenuBar>
 </kpartgui>
