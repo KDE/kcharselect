@@ -15,6 +15,8 @@
 #include <kconfig.h>
 #include <klocale.h>
 #include <kaction.h>
+//Added by qt3to4:
+#include <QGridLayout>
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
