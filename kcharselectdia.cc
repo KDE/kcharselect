@@ -231,7 +231,7 @@ void KCharSelectDia::flipText()
 {
   QString input;
   QString output;
-  uint i;
+  int i;
 
   input = lined->text();
   for(i=0; i< input.length(); i++ )
