@@ -34,7 +34,7 @@ public:
 
   static bool selectChar(QString &_font,QChar &_chr,int _tableNum);
 
-  int chr() { return vChr; }
+  QChar chr() { return vChr; }
   QString font() { return vFont; }
 
 protected:
