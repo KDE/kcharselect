@@ -15,6 +15,8 @@
 #include <kconfig.h>
 #include <klocale.h>
 #include <kaction.h>
+//Added by qt3to4:
+#include <QGridLayout>
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
@@ -149,10 +151,11 @@ void KCharSelectDia::add(const QChar &_chr)
 void KCharSelectDia::toClip()
 {
   QClipboard *cb = QApplication::clipboard();
-  cb->setSelectionMode( true );
-  cb->setText(lined->text());
-  cb->setSelectionMode( false );
-  cb->setText(lined->text());
+#warning "Port kde4/qt4 correct ????"  
+  //cb->setSelectionMode( true );
+  cb->setText(lined->text(),QClipboard::Clipboard);
+  //cb->setSelectionMode( false );
+  cb->setText(lined->text(),QClipboard::Selection);
 }
 
 //==================================================================
@@ -179,7 +182,7 @@ void KCharSelectDia::toClipHTML()
   QString html;
   QString tempstring;
   QChar   tempchar;
-  uint i;
+  int i;
 
   input = lined->text();
   for(i=0; i< input.length(); i++ )
@@ -229,7 +232,7 @@ void KCharSelectDia::flipText()
 {
   QString input;
   QString output;
-  uint i;
+  int i;
 
   input = lined->text();
   for(i=0; i< input.length(); i++ )

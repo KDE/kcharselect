@@ -11,6 +11,9 @@
 #include <qlayout.h>
 #include <qlineedit.h>
 #include <qclipboard.h>
+//Added by qt3to4:
+#include <QGridLayout>
+#include <QCloseEvent>
 
 #include <kpushbutton.h>
 #include <kcharselect.h>
@@ -31,7 +34,7 @@ public:
 
   static bool selectChar(QString &_font,QChar &_chr,int _tableNum);
 
-  int chr() { return vChr; }
+  QChar chr() { return vChr; }
   QString font() { return vFont; }
 
 protected:
