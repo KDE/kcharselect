@@ -11,6 +11,7 @@
 #include <kcmdlineargs.h>
 #include <kaboutdata.h>
 #include <kglobalsettings.h>
+#include <kglobal.h>
 
 static const char description[] = 
 	I18N_NOOP("KDE character selection utility");
@@ -31,7 +32,7 @@ int main(int argc, char **argv)
 
   KApplication app;
 
-  KConfig *config = kapp->config();
+  KConfig *config = KGlobal::config();
 
   config->setGroup("General");
   QString font(config->readEntry("selectedFont", KGlobalSettings::generalFont().family()));

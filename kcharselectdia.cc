@@ -18,6 +18,7 @@
 //Added by qt3to4:
 #include <QGridLayout>
 #include <ktoolinvocation.h>
+#include <kglobal.h>
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
@@ -266,7 +267,7 @@ void KCharSelectDia::lineEditChanged()
 //==================================================================
 void KCharSelectDia::_exit()
 {
-  KConfig *config = kapp->config();
+  KConfig *config = KGlobal::config();
 
   config->setGroup("General");
   config->writeEntry("selectedFont",vFont);
