@@ -12,7 +12,7 @@
 #include <kaboutdata.h>
 #include <kglobalsettings.h>
 #include <kglobal.h>
-
+#include <klocale.h>
 static const char description[] = 
 	I18N_NOOP("KDE character selection utility");
 
