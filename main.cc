@@ -36,9 +36,9 @@ int main(int argc, char **argv)
 
   config->setGroup("General");
   QString font(config->readEntry("selectedFont", KGlobalSettings::generalFont().family()));
-  QChar c = QChar(static_cast<unsigned short>(config->readNumEntry("char",33)));
-  int tn = config->readNumEntry("table",0);
-  bool direction = config->readNumEntry("entryDirection",0);
+  QChar c = QChar(static_cast<unsigned short>(config->readEntry("char",33)));
+  int tn = config->readEntry("table",0);
+  bool direction = config->readEntry("entryDirection",0);
   
   KCharSelectDia *dia = new KCharSelectDia(0L,"",c,font,tn,direction);
 
