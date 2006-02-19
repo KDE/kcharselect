@@ -1,6 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 GenericName=Character Selector
+GenericName[fr]=Sélecteur de caractères
 GenericName[x-test]=xxCharacter Selectorxx
 Exec=kcharselect -caption "%c"
 Icon=kcharselect
