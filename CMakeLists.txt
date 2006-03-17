@@ -1,4 +1,5 @@
 kde4_header()
+project(kcharselect)
 
 include_directories( ${KDE4_INCLUDE_DIR} ${QT_INCLUDES} ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR}  )
 
@@ -11,7 +12,7 @@ kde4_automoc(${kcharselect_SRCS})
 
 kde4_add_executable(kcharselect ${kcharselect_SRCS})
 
-target_link_libraries(kcharselect  ${QT_AND_KDECORE_LIBS} )
+target_link_libraries(kcharselect  ${LIB_KDEUI} )
 
 install_targets(/bin kcharselect )
 
