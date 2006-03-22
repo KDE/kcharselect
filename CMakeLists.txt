@@ -12,7 +12,7 @@ kde4_automoc(${kcharselect_SRCS})
 
 kde4_add_executable(kcharselect ${kcharselect_SRCS})
 
-target_link_libraries(kcharselect  ${LIB_KDEUI} )
+target_link_libraries(kcharselect  ${KDE4_KDEUI_LIBRARIES} )
 
 install_targets(/bin kcharselect )
 
