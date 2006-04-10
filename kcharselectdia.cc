@@ -8,10 +8,9 @@
 #include "kcharselectdia.moc"
 
 #include <stdlib.h>
-
+#include <kstdaccel.h>
 #include <kdialog.h>
 #include <kapplication.h>
-#include <kaccel.h>
 #include <kconfig.h>
 #include <klocale.h>
 #include <kaction.h>
