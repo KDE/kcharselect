@@ -16,6 +16,4 @@ xdg_apps_DATA = KCharSelect.desktop
 rcdir = $(kde_datadir)/kcharselect
 rc_DATA = kcharselectui.rc
 
-messages: rc.cpp
-	$(XGETTEXT) *.cc *.cpp -o $(podir)/kcharselect.pot 
 
