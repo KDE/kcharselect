@@ -34,7 +34,9 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   QWidget *mainWidget = new QWidget(this);
   setCentralWidget(mainWidget);
 
-  grid = new QGridLayout( mainWidget, 3, 4, KDialog::marginHint(), KDialog::spacingHint() );
+  grid = new QGridLayout( mainWidget );
+  grid->setMargin( KDialog::marginHint() );
+  grid->setSpacing( KDialog::spacingHint() );
 
   // Add character selection widget from library kdeui
   charSelect = new KCharSelect(mainWidget,vFont,vChr,_tableNum);
@@ -81,7 +83,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
 
   // Build menu
   KStdAction::quit( this, SLOT(_exit()), actionCollection() );
-  
+
   new KAction(i18n("&To Clipboard"), "editcopy",
          KStdAccel::shortcut(KStdAccel::Copy), this, SLOT(toClip()), actionCollection(), "copy_clip" );
 
@@ -89,20 +91,20 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
     SLOT(toClipUTF8()), actionCollection(), "copy_utf_8" );
   (void)new KAction(i18n("To Clipboard &HTML"), 0, this,
       SLOT(toClipHTML()), actionCollection(), "copy_html" );
- 
+
   new KAction(i18n("&From Clipboard"), "editpaste",
          KStdAccel::shortcut(KStdAccel::Paste), this, SLOT(fromClip()), actionCollection(), "from_clip" );
   (void)new KAction(i18n("From Clipboard UTF-8"), 0, this,
       SLOT(fromClipUTF8()), actionCollection(), "from_clip_utf8" );
-  
+
   i18n("From Clipboard HTML");      // Intended for future use
-  
+
   KStdAction::clear(this, SLOT(clear()), actionCollection(), "clear");
   (void)new KAction(i18n("&Flip"), 0, this,
       SLOT(flipText()), actionCollection(), "flip" );
   (void)new KAction(i18n("&Alignment"), 0, this,
       SLOT(toggleEntryDirection()), actionCollection(), "alignment" );
-  
+
   charSelect->setFocus();
 
   entryDirection = direction;
@@ -152,7 +154,7 @@ void KCharSelectDia::add(const QChar &_chr)
 void KCharSelectDia::toClip()
 {
   QClipboard *cb = QApplication::clipboard();
-#warning "Port kde4/qt4 correct ????"  
+#warning "Port kde4/qt4 correct ????"
   //cb->setSelectionMode( true );
   cb->setText(lined->text(),QClipboard::Clipboard);
   //cb->setSelectionMode( false );
