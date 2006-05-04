@@ -87,23 +87,23 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   new KAction(i18n("&To Clipboard"), "editcopy",
          KStdAccel::shortcut(KStdAccel::Copy), this, SLOT(toClip()), actionCollection(), "copy_clip" );
 
-  (void)new KAction(i18n("To Clipboard &UTF-8"), 0, this,
-    SLOT(toClipUTF8()), actionCollection(), "copy_utf_8" );
-  (void)new KAction(i18n("To Clipboard &HTML"), 0, this,
-      SLOT(toClipHTML()), actionCollection(), "copy_html" );
+  KAction *action = new KAction(i18n("To Clipboard &UTF-8"), actionCollection(), "copy_utf_8" );
+  connect(action, SIGNAL(triggered(bool) ), SLOT(toClipUTF8()));
+  action = new KAction(i18n("To Clipboard &HTML"), actionCollection(), "copy_html" );
+  connect(action, SIGNAL(triggered(bool) ), SLOT(toClipHTML()));
 
   new KAction(i18n("&From Clipboard"), "editpaste",
          KStdAccel::shortcut(KStdAccel::Paste), this, SLOT(fromClip()), actionCollection(), "from_clip" );
-  (void)new KAction(i18n("From Clipboard UTF-8"), 0, this,
-      SLOT(fromClipUTF8()), actionCollection(), "from_clip_utf8" );
+  action = new KAction(i18n("From Clipboard UTF-8"), actionCollection(), "from_clip_utf8" );
+  connect(action, SIGNAL(triggered(bool) ), SLOT(fromClipUTF8()));
 
   i18n("From Clipboard HTML");      // Intended for future use
 
   KStdAction::clear(this, SLOT(clear()), actionCollection(), "clear");
-  (void)new KAction(i18n("&Flip"), 0, this,
-      SLOT(flipText()), actionCollection(), "flip" );
-  (void)new KAction(i18n("&Alignment"), 0, this,
-      SLOT(toggleEntryDirection()), actionCollection(), "alignment" );
+  action = new KAction(i18n("&Flip"), actionCollection(), "flip" );
+  connect(action, SIGNAL(triggered(bool) ), SLOT(flipText()));
+  action = new KAction(i18n("&Alignment"), actionCollection(), "alignment" );
+  connect(action, SIGNAL(triggered(bool) ), SLOT(toggleEntryDirection()));
 
   charSelect->setFocus();
 
