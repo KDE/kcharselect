@@ -84,16 +84,18 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   // Build menu
   KStdAction::quit( this, SLOT(_exit()), actionCollection() );
 
-  new KAction(i18n("&To Clipboard"), "editcopy",
-         KStdAccel::shortcut(KStdAccel::Copy), this, SLOT(toClip()), actionCollection(), "copy_clip" );
+  KAction *action = new KAction(KIcon("editcopy"), i18n("&To Clipboard"), actionCollection(), "copy_clip" );
+  connect(action, SIGNAL(triggered(bool)), SLOT(toClip()));
+  action->setShortcut(KStdAccel::shortcut(KStdAccel::Copy));
 
-  KAction *action = new KAction(i18n("To Clipboard &UTF-8"), actionCollection(), "copy_utf_8" );
+  action = new KAction(i18n("To Clipboard &UTF-8"), actionCollection(), "copy_utf_8" );
   connect(action, SIGNAL(triggered(bool) ), SLOT(toClipUTF8()));
   action = new KAction(i18n("To Clipboard &HTML"), actionCollection(), "copy_html" );
   connect(action, SIGNAL(triggered(bool) ), SLOT(toClipHTML()));
 
-  new KAction(i18n("&From Clipboard"), "editpaste",
-         KStdAccel::shortcut(KStdAccel::Paste), this, SLOT(fromClip()), actionCollection(), "from_clip" );
+  action = new KAction(KIcon("editpaste"), i18n("&From Clipboard"), actionCollection(), "from_clip" );
+  connect(action, SIGNAL(triggered(bool)), SLOT(fromClip()));
+  action->setShortcut(KStdAccel::shortcut(KStdAccel::Paste));
   action = new KAction(i18n("From Clipboard UTF-8"), actionCollection(), "from_clip_utf8" );
   connect(action, SIGNAL(triggered(bool) ), SLOT(fromClipUTF8()));
 
