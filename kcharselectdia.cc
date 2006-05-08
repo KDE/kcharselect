@@ -18,6 +18,7 @@
 #include <QGridLayout>
 #include <ktoolinvocation.h>
 #include <kglobal.h>
+#include <kstdaction.h>
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
