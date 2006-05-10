@@ -8,8 +8,8 @@
 #define kcharselectdia_h
 
 
-#include <qlayout.h>
-#include <qlineedit.h>
+#include <QLayout>
+#include <QLineEdit>
 #include <qclipboard.h>
 //Added by qt3to4:
 #include <QGridLayout>
