@@ -1,4 +1,3 @@
-kde4_header()
 project(kcharselect)
 
 
@@ -25,7 +24,6 @@ install_files( ${DATA_INSTALL_DIR}/kconf_update FILES kcharselect.upd )
 
 kde4_install_icons( ${ICON_INSTALL_DIR}  hicolor )
 
-kde4_footer()
 
 
 
