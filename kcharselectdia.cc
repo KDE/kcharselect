@@ -172,7 +172,7 @@ void KCharSelectDia::toClipUTF8()
 {
   QClipboard *cb = QApplication::clipboard();
   QString str = lined->text();
-  cb->setText(str.utf8());
+  cb->setText(str.toUtf8());
 }
 
 //==================================================================
@@ -194,7 +194,7 @@ void KCharSelectDia::toClipHTML()
   for(i=0; i< input.length(); i++ )
     {
       tempchar = input.at(i);
-      if(  tempchar.latin1() && ((tempchar.unicode() < 128) || (tempchar.unicode() >= 128+32)) )
+      if(  tempchar.toLatin1() && ((tempchar.unicode() < 128) || (tempchar.unicode() >= 128+32)) )
         {
           html.append(input.at(i));
         }
@@ -225,7 +225,7 @@ void KCharSelectDia::fromClipUTF8()
   QClipboard *cb = QApplication::clipboard();
   QString str = cb->text();
 
-  lined->setText( str.fromUtf8( str.latin1() ) );
+  lined->setText( str.fromUtf8( str.toLatin1() ) );
 }
 
 //==================================================================
