@@ -19,6 +19,7 @@
 #include <ktoolinvocation.h>
 #include <kglobal.h>
 #include <kstdaction.h>
+#include <kicon.h>
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
