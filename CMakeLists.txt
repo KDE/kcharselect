@@ -7,7 +7,7 @@ project(kcharselect)
 
 set(kcharselect_SRCS kcharselectdia.cc main.cc )
 
-kde4_automoc(kcharselect ${kcharselect_SRCS})
+kde4_automoc(${kcharselect_SRCS})
 
 kde4_add_executable(kcharselect ${kcharselect_SRCS})
 
