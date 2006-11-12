@@ -12,5 +12,5 @@ DocPath=kcharselect/index.html
 Name=KCharSelect
 Name[x-test]=xxKCharSelectxx
 X-KDE-StartupNotify=true
-X-DCOP-ServiceType=Multi
+X-DBUS-StartupType=Multi
 Categories=Qt;KDE;Utility;X-KDE-More;
