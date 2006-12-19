@@ -18,7 +18,7 @@
 #include <QGridLayout>
 #include <ktoolinvocation.h>
 #include <kglobal.h>
-#include <kstdaction.h>
+#include <kstandardaction.h>
 #include <kicon.h>
 
 /******************************************************************/
@@ -84,7 +84,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   grid->addWidget( bClip, 2, 3 );
 
   // Build menu
-  KStdAction::quit( this, SLOT(_exit()), actionCollection() );
+  KStandardAction::quit( this, SLOT(_exit()), actionCollection() );
 
   KAction *action = new KAction(KIcon("editcopy"), i18n("&To Clipboard"), actionCollection(), "copy_clip" );
   connect(action, SIGNAL(triggered(bool)), SLOT(toClip()));
@@ -103,7 +103,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
 
   i18n("From Clipboard HTML");      // Intended for future use
 
-  KStdAction::clear(this, SLOT(clear()), actionCollection(), "clear");
+  KStandardAction::clear(this, SLOT(clear()), actionCollection(), "clear");
   action = new KAction(i18n("&Flip"), actionCollection(), "flip" );
   connect(action, SIGNAL(triggered(bool) ), SLOT(flipText()));
   action = new KAction(i18n("&Alignment"), actionCollection(), "alignment" );
