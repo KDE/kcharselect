@@ -8,7 +8,7 @@
 #include "kcharselectdia.moc"
 
 #include <stdlib.h>
-#include <kstdaccel.h>
+#include <kstandardshortcut.h>
 #include <kdialog.h>
 #include <kapplication.h>
 #include <kconfig.h>
@@ -64,7 +64,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   grid->addMultiCellWidget(lined, 1, 1, 0, 3);
 
   // Build some buttons
-  bHelp = new KPushButton( KStdGuiItem::help(), mainWidget );
+  bHelp = new KPushButton( KStandardGuiItem::help(), mainWidget );
   connect(bHelp,SIGNAL(clicked()),this,SLOT(help()));
   bHelp->setFixedSize( bHelp->sizeHint() );
   grid->addWidget( bHelp, 2, 0 );
@@ -72,7 +72,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   QSpacerItem *space = new QSpacerItem( 20, 20, QSizePolicy::Expanding );
   grid->addItem( space, 2, 1 );
 
-  bClear = new KPushButton( KStdGuiItem::clear(), mainWidget );
+  bClear = new KPushButton( KStandardGuiItem::clear(), mainWidget );
   connect(bClear,SIGNAL(clicked()),this,SLOT(clear()));
   bClear->setFixedSize( bClear->sizeHint() );
   grid->addWidget( bClear, 2, 2 );
@@ -88,7 +88,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
 
   KAction *action = new KAction(KIcon("editcopy"), i18n("&To Clipboard"), actionCollection(), "copy_clip" );
   connect(action, SIGNAL(triggered(bool)), SLOT(toClip()));
-  action->setShortcut(KStdAccel::shortcut(KStdAccel::Copy));
+  action->setShortcut(KStandardShortcut::shortcut(KStandardShortcut::Copy));
 
   action = new KAction(i18n("To Clipboard &UTF-8"), actionCollection(), "copy_utf_8" );
   connect(action, SIGNAL(triggered(bool) ), SLOT(toClipUTF8()));
@@ -97,7 +97,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
 
   action = new KAction(KIcon("editpaste"), i18n("&From Clipboard"), actionCollection(), "from_clip" );
   connect(action, SIGNAL(triggered(bool)), SLOT(fromClip()));
-  action->setShortcut(KStdAccel::shortcut(KStdAccel::Paste));
+  action->setShortcut(KStandardShortcut::shortcut(KStandardShortcut::Paste));
   action = new KAction(i18n("From Clipboard UTF-8"), actionCollection(), "from_clip_utf8" );
   connect(action, SIGNAL(triggered(bool) ), SLOT(fromClipUTF8()));
 
