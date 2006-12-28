@@ -13,6 +13,8 @@
 #include <kglobalsettings.h>
 #include <kglobal.h>
 #include <klocale.h>
+
+static const char *version = "v1.1"; 
 static const char description[] = 
 	I18N_NOOP("KDE character selection utility");
 
@@ -28,7 +30,7 @@ int main(int argc, char **argv)
   aboutData.addCredit( "Ryan Cumming", I18N_NOOP( "GUI cleanup and fixes" ),
         "bodnar42@phalynx.dhs.org" );
   aboutData.addCredit("Benjamin C. Meyer",I18N_NOOP("XMLUI conversion"),"ben+kcharselect@meyerhome.net");
-	KCmdLineArgs::init( argc, argv, &aboutData );
+  KCmdLineArgs::init( argc, argv, &aboutData );
 
   KApplication app;
 
@@ -40,9 +42,7 @@ int main(int argc, char **argv)
   int tn = config->readEntry("table",0);
   bool direction = config->readEntry("entryDirection",0);
   
-  KCharSelectDia *dia = new KCharSelectDia(0L,"",c,font,tn,direction);
-
-  app.setMainWidget(dia);
+  KCharSelectDia *dia = new KCharSelectDia(0L,c,font,tn,direction);
   dia->show();
 
   return app.exec();
