@@ -9,7 +9,7 @@
 
 
 #include <QLayout>
-#include <QLineEdit>
+#include <KLineEdit>
 #include <qclipboard.h>
 //Added by qt3to4:
 #include <QGridLayout>
@@ -18,8 +18,6 @@
 #include <kpushbutton.h>
 #include <kcharselect.h>
 #include <kmainwindow.h>
-
-static const char *version = "v1.1"; 
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
@@ -30,7 +28,7 @@ class KCharSelectDia : public KMainWindow
   Q_OBJECT
 
 public:
-  KCharSelectDia(QWidget *parent,const char *name,const QChar &_chr,const QString &_font,int _tableNum, bool direction);
+  KCharSelectDia(QWidget *parent,const QChar &_chr,const QString &_font,int _tableNum, bool direction);
 
   static bool selectChar(QString &_font,QChar &_chr,int _tableNum);
 
@@ -42,8 +40,8 @@ protected:
 
   QGridLayout *grid;
   KCharSelect *charSelect;
-  QLineEdit   *lined;
-  KPushButton *bClip,*bClear;
+  KLineEdit   *lined;
+  KPushButton *bClip/*,*bClear*/;
   KPushButton *bHelp;
 
   QChar vChr;

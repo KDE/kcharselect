@@ -26,10 +26,10 @@
 /******************************************************************/
 
 //==================================================================
-KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
+KCharSelectDia::KCharSelectDia(QWidget *parent,
 			       const QChar &_chr,const QString &_font,
 			       int _tableNum, bool direction)
-  : KMainWindow(parent,name), vChr(_chr), vFont(_font)
+  : KMainWindow(parent), vChr(_chr), vFont(_font)
 {
   setCaption(QString::null); // Standard caption
 
@@ -49,11 +49,12 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
 	  SLOT(add(const QChar &)));
   connect(charSelect,SIGNAL(fontChanged(const QString &)),
 	  SLOT(fontSelected(const QString &)));
-  grid->addMultiCellWidget(charSelect, 0, 0, 0, 3);
+  grid->addWidget(charSelect, 0, 0, 1, 4);
 
   // Build line editor
-  lined = new QLineEdit(mainWidget);
+  lined = new KLineEdit(mainWidget);
   lined->resize(lined->sizeHint());
+  lined->setClearButtonShown(true);
 
   QFont font = lined->font();
   font.setFamily( vFont );
@@ -61,7 +62,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
 
   connect(lined,SIGNAL(textChanged(const QString &)),
 	  SLOT(lineEditChanged()));
-  grid->addMultiCellWidget(lined, 1, 1, 0, 3);
+  grid->addWidget(lined, 1, 0, 1, 3);
 
   // Build some buttons
   bHelp = new KPushButton( KStandardGuiItem::help(), mainWidget );
@@ -72,16 +73,16 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,const char *name,
   QSpacerItem *space = new QSpacerItem( 20, 20, QSizePolicy::Expanding );
   grid->addItem( space, 2, 1 );
 
-  bClear = new KPushButton( KStandardGuiItem::clear(), mainWidget );
+/*  bClear = new KPushButton( KStandardGuiItem::clear(), mainWidget );
   connect(bClear,SIGNAL(clicked()),this,SLOT(clear()));
   bClear->setFixedSize( bClear->sizeHint() );
-  grid->addWidget( bClear, 2, 2 );
+  grid->addWidget( bClear, 2, 2 );*/
 
   bClip = new KPushButton( KGuiItem( i18n( "&To Clipboard" ),
             "editcopy" ), mainWidget );
   bClip->setFixedSize( bClip->sizeHint() );
   connect(bClip,SIGNAL(clicked()),this,SLOT(toClip()));
-  grid->addWidget( bClip, 2, 3 );
+  grid->addWidget(bClip, 1, 3);
 
   // Build menu
   KStandardAction::quit( this, SLOT(_exit()), actionCollection() );
@@ -158,10 +159,7 @@ void KCharSelectDia::add(const QChar &_chr)
 void KCharSelectDia::toClip()
 {
   QClipboard *cb = QApplication::clipboard();
-#warning "Port kde4/qt4 correct ????"
-  //cb->setSelectionMode( true );
   cb->setText(lined->text(),QClipboard::Clipboard);
-  //cb->setSelectionMode( false );
   cb->setText(lined->text(),QClipboard::Selection);
 }
 
