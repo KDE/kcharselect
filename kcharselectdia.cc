@@ -20,6 +20,7 @@
 #include <kglobal.h>
 #include <kstandardaction.h>
 #include <kicon.h>
+#include <kactioncollection.h>
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
@@ -87,27 +88,39 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,
   // Build menu
   KStandardAction::quit( this, SLOT(_exit()), actionCollection() );
 
-  KAction *action = new KAction(KIcon("editcopy"), i18n("&To Clipboard"), actionCollection(), "copy_clip" );
+  QAction *action = actionCollection()->addAction( "copy_clip" );
+  action->setText( i18n("&To Clipboard") );
+  action->setIcon( KIcon("editcopy") );
   connect(action, SIGNAL(triggered(bool)), SLOT(toClip()));
-  action->setShortcut(KStandardShortcut::shortcut(KStandardShortcut::Copy));
+  action->setShortcut(/*KStandardShortcut::shortcut*/(KStandardShortcut::Copy));
 
-  action = new KAction(i18n("To Clipboard &UTF-8"), actionCollection(), "copy_utf_8" );
+  action = actionCollection()->addAction( "copy_utf_8" );
+  action->setText( i18n("To Clipboard &UTF-8") );
   connect(action, SIGNAL(triggered(bool) ), SLOT(toClipUTF8()));
-  action = new KAction(i18n("To Clipboard &HTML"), actionCollection(), "copy_html" );
+  action = actionCollection()->addAction( "copy_html" );
+  action->setText( i18n("To Clipboard &HTML") );
   connect(action, SIGNAL(triggered(bool) ), SLOT(toClipHTML()));
 
-  action = new KAction(KIcon("editpaste"), i18n("&From Clipboard"), actionCollection(), "from_clip" );
+  action = actionCollection()->addAction( "from_clip" );
+  action->setText( i18n("&From Clipboard") );
+  action->setIcon( KIcon("editpaste") );
   connect(action, SIGNAL(triggered(bool)), SLOT(fromClip()));
-  action->setShortcut(KStandardShortcut::shortcut(KStandardShortcut::Paste));
-  action = new KAction(i18n("From Clipboard UTF-8"), actionCollection(), "from_clip_utf8" );
+  action->setShortcut(/*KStandardShortcut::shortcut*/(KStandardShortcut::Paste));
+  action = actionCollection()->addAction( "from_clip_utf8" );
+  action->setText( i18n( "From Clipboard UTF-8") );
   connect(action, SIGNAL(triggered(bool) ), SLOT(fromClipUTF8()));
 
   i18n("From Clipboard HTML");      // Intended for future use
 
-  KStandardAction::clear(this, SLOT(clear()), actionCollection(), "clear");
-  action = new KAction(i18n("&Flip"), actionCollection(), "flip" );
+  action =  KStandardAction::clear(this, SLOT(clear()), actionCollection());
+  actionCollection()->addAction("clear", action);
+
+
+  action = actionCollection()->addAction( "flip" );
+  action->setText( i18n("&Flip") );
   connect(action, SIGNAL(triggered(bool) ), SLOT(flipText()));
-  action = new KAction(i18n("&Alignment"), actionCollection(), "alignment" );
+  action = actionCollection()->addAction( "alignment" );
+  action->setText( i18n("&Alignment") );
   connect(action, SIGNAL(triggered(bool) ), SLOT(toggleEntryDirection()));
 
   charSelect->setFocus();
