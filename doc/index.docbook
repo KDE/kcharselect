@@ -1,6 +1,5 @@
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
-  <!ENTITY kappname "&kcharselect;">
   <!ENTITY package "kdeutils">
   <!ENTITY % English "INCLUDE">
   <!ENTITY % addindex "IGNORE">
@@ -40,7 +39,7 @@
 
 <chapter id="introduction">
 <title>Introduction</title>
-<para>The documentation for &kappname; was not finished when &kde; was installed on this computer.</para> 
+<para>The documentation for &kcharselect; was not finished when &kde; was installed on this computer.</para> 
 <para>If you need help, please check <ulink url="http://www.kde.org">The &kde; Web site</ulink> for updates, or by submitting your question to <ulink url="mailto:kde@kde.org">The &kde; User Mailing list</ulink>.</para>
 <para><emphasis>The &kde; Team</emphasis></para>
 
