@@ -283,7 +283,7 @@ void KCharSelectDia::lineEditChanged()
 //==================================================================
 void KCharSelectDia::_exit()
 {
-  KConfig *config = KGlobal::config();
+  KSharedConfig::Ptr config = KGlobal::config();
 
   config->setGroup("General");
   config->writeEntry("selectedFont",vFont);

@@ -34,7 +34,7 @@ int main(int argc, char **argv)
 
   KApplication app;
 
-  KConfig *config = KGlobal::config();
+  KSharedConfig::Ptr config = KGlobal::config();
 
   config->setGroup("General");
   QString font(config->readEntry("selectedFont", KGlobalSettings::generalFont().family()));
