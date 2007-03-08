@@ -80,7 +80,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,
   grid->addWidget( bClear, 2, 2 );*/
 
   bClip = new KPushButton( KGuiItem( i18n( "&To Clipboard" ),
-            "editcopy" ), mainWidget );
+            "edit-copy" ), mainWidget );
   bClip->setFixedSize( bClip->sizeHint() );
   connect(bClip,SIGNAL(clicked()),this,SLOT(toClip()));
   grid->addWidget(bClip, 1, 3);
@@ -90,7 +90,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,
 
   QAction *action = actionCollection()->addAction( "copy_clip" );
   action->setText( i18n("&To Clipboard") );
-  action->setIcon( KIcon("editcopy") );
+  action->setIcon( KIcon("edit-copy") );
   connect(action, SIGNAL(triggered(bool)), SLOT(toClip()));
   action->setShortcut(/*KStandardShortcut::shortcut*/(KStandardShortcut::Copy));
 
@@ -103,7 +103,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,
 
   action = actionCollection()->addAction( "from_clip" );
   action->setText( i18n("&From Clipboard") );
-  action->setIcon( KIcon("editpaste") );
+  action->setIcon( KIcon("edit-paste") );
   connect(action, SIGNAL(triggered(bool)), SLOT(fromClip()));
   action->setShortcut(/*KStandardShortcut::shortcut*/(KStandardShortcut::Paste));
   action = actionCollection()->addAction( "from_clip_utf8" );
