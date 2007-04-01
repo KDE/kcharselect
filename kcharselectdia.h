@@ -28,12 +28,12 @@ class KCharSelectDia : public KMainWindow
   Q_OBJECT
 
 public:
-  KCharSelectDia(QWidget *parent,const QChar &_chr,const QString &_font,int _tableNum, bool direction);
+  KCharSelectDia(QWidget *parent,const QChar &_chr,const QFont &_font, bool direction);
 
   static bool selectChar(QString &_font,QChar &_chr,int _tableNum);
 
   QChar chr() { return vChr; }
-  QString font() { return vFont; }
+  QFont font() { return vFont; }
 
 protected:
   void closeEvent(QCloseEvent *) { _exit(); }
@@ -41,17 +41,17 @@ protected:
   QGridLayout *grid;
   KCharSelect *charSelect;
   KLineEdit   *lined;
-  KPushButton *bClip/*,*bClear*/;
+  KPushButton *bClip;
   KPushButton *bHelp;
 
   QChar vChr;
-  QString vFont;
+  QFont vFont;
   int pointSize;
   bool entryDirection;
 
 protected slots:
   void charChanged(const QChar &_chr);
-  void fontSelected(const QString &_font);
+  void fontSelected(const QFont &_font);
   void add()
   { add(vChr); }
   void add(const QChar &_chr);

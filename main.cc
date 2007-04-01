@@ -37,12 +37,11 @@ int main(int argc, char **argv)
   KSharedConfig::Ptr config = KGlobal::config();
 
   config->setGroup("General");
-  QString font(config->readEntry("selectedFont", KGlobalSettings::generalFont().family()));
+  QFont font(config->readEntry("selectedFont", KGlobalSettings::generalFont()));
   QChar c = QChar(static_cast<unsigned short>(config->readEntry("char",33)));
-  int tn = config->readEntry("table",0);
   bool direction = config->readEntry("entryDirection",0);
   
-  KCharSelectDia *dia = new KCharSelectDia(0L,c,font,tn,direction);
+  KCharSelectDia *dia = new KCharSelectDia(0L,c,font,direction);
   dia->show();
 
   return app.exec();

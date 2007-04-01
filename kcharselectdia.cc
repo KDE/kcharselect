@@ -28,8 +28,8 @@
 
 //==================================================================
 KCharSelectDia::KCharSelectDia(QWidget *parent,
-			       const QChar &_chr,const QString &_font,
-			       int _tableNum, bool direction)
+			       const QChar &_chr,const QFont &_font,
+			       bool direction)
   : KMainWindow(parent), vChr(_chr), vFont(_font)
 {
   setCaption(QString::null); // Standard caption
@@ -42,14 +42,14 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,
   grid->setSpacing( KDialog::spacingHint() );
 
   // Add character selection widget from library kdeui
-  charSelect = new KCharSelect(mainWidget,vFont,vChr,_tableNum);
+  charSelect = new KCharSelect(mainWidget,vChr,vFont);
   charSelect->resize(charSelect->sizeHint());
-  connect(charSelect,SIGNAL(highlighted(const QChar &)),
+  connect(charSelect,SIGNAL(currentCharChanged(const QChar &)),
 	  SLOT(charChanged(const QChar &)));
-  connect(charSelect,SIGNAL(activated(const QChar &)),
+  connect(charSelect,SIGNAL(charSelected(const QChar &)),
 	  SLOT(add(const QChar &)));
-  connect(charSelect,SIGNAL(fontChanged(const QString &)),
-	  SLOT(fontSelected(const QString &)));
+  connect(charSelect,SIGNAL(fontChanged(const QFont &)),
+	  SLOT(fontSelected(const QFont &)));
   grid->addWidget(charSelect, 0, 0, 1, 4);
 
   // Build line editor
@@ -57,9 +57,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,
   lined->resize(lined->sizeHint());
   lined->setClearButtonShown(true);
 
-  QFont font = lined->font();
-  font.setFamily( vFont );
-  lined->setFont( font );
+  lined->setFont( vFont );
 
   connect(lined,SIGNAL(textChanged(const QString &)),
 	  SLOT(lineEditChanged()));
@@ -73,11 +71,6 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,
 
   QSpacerItem *space = new QSpacerItem( 20, 20, QSizePolicy::Expanding );
   grid->addItem( space, 2, 1 );
-
-/*  bClear = new KPushButton( KStandardGuiItem::clear(), mainWidget );
-  connect(bClear,SIGNAL(clicked()),this,SLOT(clear()));
-  bClear->setFixedSize( bClear->sizeHint() );
-  grid->addWidget( bClear, 2, 2 );*/
 
   bClip = new KPushButton( KGuiItem( i18n( "&To Clipboard" ),
             "edit-copy" ), mainWidget );
@@ -141,13 +134,9 @@ void KCharSelectDia::charChanged(const QChar &_chr)
 }
 
 //==================================================================
-void KCharSelectDia::fontSelected(const QString &_font)
+void KCharSelectDia::fontSelected(const QFont &_font)
 {
-  charSelect->setFont(_font);
-
-  QFont font = lined->font();
-  font.setFamily( _font );
-  lined->setFont( font );
+  lined->setFont( _font );
 
   vFont = _font;
 }
@@ -288,7 +277,6 @@ void KCharSelectDia::_exit()
   config->setGroup("General");
   config->writeEntry("selectedFont",vFont);
   config->writeEntry("char",static_cast<int>(vChr.unicode()));
-  config->writeEntry("table",charSelect->tableNum());
   config->writeEntry("entryDirection",entryDirection);
   config->sync();
 
