@@ -50,7 +50,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,
 	  SLOT(charChanged(const QChar &)));
   connect(charSelect,SIGNAL(charSelected(const QChar &)),
 	  SLOT(add(const QChar &)));
-  connect(charSelect,SIGNAL(fontChanged(const QFont &)),
+  connect(charSelect,SIGNAL(currentFontChanged(const QFont &)),
 	  SLOT(fontSelected(const QFont &)));
   grid->addWidget(charSelect, 0, 0, 1, 4);
 
