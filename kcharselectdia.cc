@@ -30,7 +30,7 @@
 KCharSelectDia::KCharSelectDia(QWidget *parent,
 			       const QChar &_chr,const QFont &_font,
 			       bool direction)
-  : KMainWindow(parent), vChr(_chr), vFont(_font)
+  : KXmlGuiWindow(parent), vChr(_chr), vFont(_font)
 {
   setCaption(QString::null); // Standard caption
 

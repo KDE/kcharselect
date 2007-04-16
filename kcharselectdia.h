@@ -17,13 +17,13 @@
 
 #include <kpushbutton.h>
 #include <kcharselect.h>
-#include <kmainwindow.h>
+#include <kxmlguiwindow.h>
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
 /******************************************************************/
 
-class KCharSelectDia : public KMainWindow
+class KCharSelectDia : public KXmlGuiWindow
 {
   Q_OBJECT
 
