@@ -275,12 +275,12 @@ void KCharSelectDia::lineEditChanged()
 void KCharSelectDia::_exit()
 {
   KSharedConfig::Ptr config = KGlobal::config();
+  KConfigGroup gr = config->group("General");
 
-  config->setGroup("General");
-  config->writeEntry("selectedFont",vFont);
-  config->writeEntry("char",static_cast<int>(vChr.unicode()));
-  config->writeEntry("entryDirection",entryDirection);
-  config->sync();
+  gr.writeEntry("selectedFont",vFont);
+  gr.writeEntry("char",static_cast<int>(vChr.unicode()));
+  gr.writeEntry("entryDirection",entryDirection);
+  gr.sync();
 
   delete this;
   exit(0);
