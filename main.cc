@@ -35,15 +35,14 @@ int main(int argc, char **argv)
   KApplication app;
 
   KSharedConfig::Ptr config = KGlobal::config();
+  KConfigGroup gr = config->group("General");
 
-  config->setGroup("General");
-  QFont font(config->readEntry("selectedFont", KGlobalSettings::generalFont()));
-  QChar c = QChar(static_cast<unsigned short>(config->readEntry("char",33)));
-  bool direction = config->readEntry("entryDirection",0);
+  QFont font(gr.readEntry("selectedFont", KGlobalSettings::generalFont()));
+  QChar c = QChar(static_cast<unsigned short>(gr.readEntry("char",33)));
+  bool direction = gr.readEntry("entryDirection",0);
   
   KCharSelectDia *dia = new KCharSelectDia(0L,c,font,direction);
   dia->show();
 
   return app.exec();
 }
-
