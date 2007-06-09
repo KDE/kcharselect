@@ -87,7 +87,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,
   action->setText( i18n("&To Clipboard") );
   action->setIcon( KIcon("edit-copy") );
   connect(action, SIGNAL(triggered(bool)), SLOT(toClip()));
-  action->setShortcut(/*KStandardShortcut::shortcut*/(KStandardShortcut::Copy));
+  action->setShortcuts(KStandardShortcut::shortcut(KStandardShortcut::Copy));
 
   action = actionCollection()->addAction( "copy_utf_8" );
   action->setText( i18n("To Clipboard &UTF-8") );
@@ -100,7 +100,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,
   action->setText( i18n("&From Clipboard") );
   action->setIcon( KIcon("edit-paste") );
   connect(action, SIGNAL(triggered(bool)), SLOT(fromClip()));
-  action->setShortcut(/*KStandardShortcut::shortcut*/(KStandardShortcut::Paste));
+  action->setShortcuts(KStandardShortcut::shortcut(KStandardShortcut::Paste));
   action = actionCollection()->addAction( "from_clip_utf8" );
   action->setText( i18n( "From Clipboard UTF-8") );
   connect(action, SIGNAL(triggered(bool) ), SLOT(fromClipUTF8()));
