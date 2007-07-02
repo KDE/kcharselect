@@ -21,15 +21,15 @@ static const char description[] =
 /*================================================================*/
 int main(int argc, char **argv)
 {
-  KAboutData aboutData( "kcharselect", I18N_NOOP("KCharSelect"),
-    version, description, KAboutData::License_GPL,
-    "(c) 1999, Reginald Stadlbauer");
-  aboutData.addAuthor("Reginald Stadlbauer",0, "reggie@kde.org");
-  aboutData.addCredit( "Nadeem Hasan", I18N_NOOP( "GUI cleanup and fixes" ),
+  KAboutData aboutData( "kcharselect", 0, ki18n("KCharSelect"),
+    version, ki18n(description), KAboutData::License_GPL,
+    ki18n("(c) 1999, Reginald Stadlbauer"));
+  aboutData.addAuthor(ki18n("Reginald Stadlbauer"),KLocalizedString(), "reggie@kde.org");
+  aboutData.addCredit( ki18n("Nadeem Hasan"), ki18n( "GUI cleanup and fixes" ),
         "nhasan@kde.org" );
-  aboutData.addCredit( "Ryan Cumming", I18N_NOOP( "GUI cleanup and fixes" ),
+  aboutData.addCredit( ki18n("Ryan Cumming"), ki18n( "GUI cleanup and fixes" ),
         "bodnar42@phalynx.dhs.org" );
-  aboutData.addCredit("Benjamin C. Meyer",I18N_NOOP("XMLUI conversion"),"ben+kcharselect@meyerhome.net");
+  aboutData.addCredit(ki18n("Benjamin C. Meyer"),ki18n("XMLUI conversion"),"ben+kcharselect@meyerhome.net");
   KCmdLineArgs::init( argc, argv, &aboutData );
 
   KApplication app;
