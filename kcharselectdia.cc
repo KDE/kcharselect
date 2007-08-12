@@ -32,7 +32,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,
 			       bool direction)
   : KXmlGuiWindow(parent), vChr(_chr), vFont(_font)
 {
-  setCaption(QString::null); // Standard caption
+  setCaption(QString()); // Standard caption
 
   QWidget *mainWidget = new QWidget(this);
   setCentralWidget(mainWidget);
