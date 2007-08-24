@@ -1,22 +1,16 @@
 /******************************************************************/
-/* KCharSelectDia - (c) by Reginald Stadlbauer 1999               */
-/* Author: Reginald Stadlbauer                                    */
-/* E-Mail: reggie@kde.org                                         */
+/* Copyright 1999 Reginald Stadlbauer <reggie@kde.org>            */
 /******************************************************************/
 
-#ifndef kcharselectdia_h
-#define kcharselectdia_h
-
+#ifndef KCHARSELECTDIA_H
+#define KCHARSELECTDIA_H
 
 #include <QLayout>
-#include <KLineEdit>
 #include <qclipboard.h>
-//Added by qt3to4:
-#include <QGridLayout>
-#include <QCloseEvent>
 
 #include <kpushbutton.h>
 #include <kcharselect.h>
+#include <KLineEdit>
 #include <kxmlguiwindow.h>
 
 /******************************************************************/
@@ -42,7 +36,6 @@ protected:
   KCharSelect *charSelect;
   KLineEdit   *lined;
   KPushButton *bClip;
-  KPushButton *bHelp;
 
   QChar vChr;
   QFont vFont;
@@ -64,8 +57,6 @@ protected slots:
   void toggleEntryDirection();
   void lineEditChanged();
   void _exit();
-  void clear();
-  void help();
 
 };
 

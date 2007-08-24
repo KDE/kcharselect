@@ -1,7 +1,5 @@
 /******************************************************************/
-/* KCharSelectDia - (c) by Reginald Stadlbauer 1999               */
-/* Author: Reginald Stadlbauer                                    */
-/* E-Mail: reggie@kde.org                                         */
+/* Copyright 1999 Reginald Stadlbauer <reggie@kde.org>            */
 /*         RTL support by Bryce Nesbitt                           */
 /******************************************************************/
 
@@ -14,8 +12,6 @@
 #include <kconfig.h>
 #include <klocale.h>
 #include <kaction.h>
-//Added by qt3to4:
-#include <QGridLayout>
 #include <ktoolinvocation.h>
 #include <kglobal.h>
 #include <kstandardaction.h>
@@ -32,8 +28,6 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,
 			       bool direction)
   : KXmlGuiWindow(parent), vChr(_chr), vFont(_font)
 {
-  setCaption(QString()); // Standard caption
-
   QWidget *mainWidget = new QWidget(this);
   setCentralWidget(mainWidget);
 
@@ -64,15 +58,6 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,
   connect(lined,SIGNAL(textChanged(const QString &)),
 	  SLOT(lineEditChanged()));
   grid->addWidget(lined, 1, 0, 1, 3);
-
-  // Build some buttons
-  bHelp = new KPushButton( KStandardGuiItem::help(), mainWidget );
-  connect(bHelp,SIGNAL(clicked()),this,SLOT(help()));
-  bHelp->setFixedSize( bHelp->sizeHint() );
-  grid->addWidget( bHelp, 2, 0 );
-
-  QSpacerItem *space = new QSpacerItem( 20, 20, QSizePolicy::Expanding );
-  grid->addItem( space, 2, 1 );
 
   bClip = new KPushButton( KGuiItem( i18n( "&To Clipboard" ),
             "edit-copy" ), mainWidget );
@@ -106,10 +91,6 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,
   connect(action, SIGNAL(triggered(bool) ), SLOT(fromClipUTF8()));
 
   i18n("From Clipboard HTML");      // Intended for future use
-
-  action =  KStandardAction::clear(this, SLOT(clear()), actionCollection());
-  actionCollection()->addAction("clear", action);
-
 
   action = actionCollection()->addAction( "flip" );
   action->setText( i18n("&Flip") );
@@ -285,16 +266,3 @@ void KCharSelectDia::_exit()
   delete this;
   exit(0);
 }
-
-//==================================================================
-void KCharSelectDia::clear()
-{
-  lined->clear();
-}
-
-//==================================================================
-void KCharSelectDia::help()
-{
-  KToolInvocation::invokeHelp();
-}
-

@@ -1,7 +1,5 @@
 /******************************************************************/
-/* KCharSelectDia - (c) by Reginald Stadlbauer 1999               */
-/* Author: Reginald Stadlbauer                                    */
-/* E-Mail: reggie@kde.org                                         */
+/* Copyright 1999 Reginald Stadlbauer <reggie@kde.org>            */
 /******************************************************************/
 
 #include "kcharselectdia.h"
@@ -14,9 +12,8 @@
 #include <kglobal.h>
 #include <klocale.h>
 
-static const char *version = "v1.1"; 
-static const char description[] = 
-	I18N_NOOP("KDE character selection utility");
+static const char *version = "v1.2";
+static const char description[] = I18N_NOOP("KDE character selection utility");
 
 /*================================================================*/
 int main(int argc, char **argv)
