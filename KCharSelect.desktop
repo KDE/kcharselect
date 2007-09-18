@@ -54,6 +54,7 @@ GenericName[vi]=Trình chọn kí tự
 GenericName[wa]=Tchoezixheu di caracteres
 GenericName[x-test]=xxCharacter Selectorxx
 GenericName[xh]=Umkhethi womsebenzi
+GenericName[zh_CN]=字符选择器
 GenericName[zh_TW]=字元選擇器
 Exec=kcharselect -caption "%c"
 Icon=kcharselect
