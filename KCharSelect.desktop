@@ -2,6 +2,7 @@
 Encoding=UTF-8
 GenericName=Character Selector
 GenericName[af]=Karakter Kiesser
+GenericName[ar]=أداة اختيار الرموز
 GenericName[br]=Dibaber arouezenn
 GenericName[ca]=Selector de caràcters
 GenericName[cs]=Vyběr znaků
@@ -64,6 +65,7 @@ Terminal=false
 DocPath=kcharselect/index.html
 Name=KCharSelect
 Name[af]=Kcharselect
+Name[ar]=كشارت سلكت
 Name[cy]=KDewisNod
 Name[eo]=Signoelektilo
 Name[ne]=केडीई क्यारेक्टर चयन
