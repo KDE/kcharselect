@@ -6,6 +6,7 @@
 
 #include <kapplication.h>
 #include <kconfig.h>
+#include <kconfiggroup.h>
 #include <kcmdlineargs.h>
 #include <kaboutdata.h>
 #include <kglobalsettings.h>
