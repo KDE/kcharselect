@@ -11,6 +11,7 @@
 #include <kglobalsettings.h>
 #include <kglobal.h>
 #include <klocale.h>
+#include <kconfiggroup.h>
 
 static const char *version = "v1.2";
 static const char description[] = I18N_NOOP("KDE character selection utility");
