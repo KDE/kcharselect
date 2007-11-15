@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=Character Selector
 GenericName[af]=Karakter Kiesser
 GenericName[ar]=أداة اختيار الرموز
@@ -59,10 +58,9 @@ GenericName[zh_CN]=字符选择器
 GenericName[zh_TW]=字元選擇器
 Exec=kcharselect -caption "%c"
 Icon=kcharselect
-Path=
 Type=Application
 Terminal=false
-DocPath=kcharselect/index.html
+X-DocPath=kcharselect/index.html
 Name=KCharSelect
 Name[af]=Kcharselect
 Name[ar]=كشارت سلكت
