@@ -33,6 +33,8 @@ int main(int argc, char **argv)
 
   KApplication app;
 
+  QApplication::setWindowIcon(KIcon("accessories-character-map"));
+
   KSharedConfig::Ptr config = KGlobal::config();
   KConfigGroup gr = config->group("General");
 
