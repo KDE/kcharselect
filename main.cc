@@ -29,11 +29,10 @@ int main(int argc, char **argv)
   aboutData.addCredit( ki18n("Ryan Cumming"), ki18n( "GUI cleanup and fixes" ),
         "bodnar42@phalynx.dhs.org" );
   aboutData.addCredit(ki18n("Benjamin C. Meyer"),ki18n("XMLUI conversion"),"ben+kcharselect@meyerhome.net");
+  aboutData.setProgramIconName("accessories-character-map");
   KCmdLineArgs::init( argc, argv, &aboutData );
 
   KApplication app;
-
-  QApplication::setWindowIcon(KIcon("accessories-character-map"));
 
   KSharedConfig::Ptr config = KGlobal::config();
   KConfigGroup gr = config->group("General");
