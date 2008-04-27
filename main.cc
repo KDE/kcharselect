@@ -17,9 +17,9 @@
 
 #include "kcharselectdia.h"
 
-#include <kapplication.h>
-#include <kcmdlineargs.h>
-#include <kaboutdata.h>
+#include <KAboutData>
+#include <KApplication>
+#include <KCmdLineArgs>
 
 static const char *version = "v1.2";
 static const char description[] = I18N_NOOP("KDE character selection utility");
@@ -41,7 +41,8 @@ int main(int argc, char **argv)
         "nhasan@kde.org" );
   aboutData.addCredit( ki18n("Ryan Cumming"), ki18n( "GUI cleanup and fixes" ),
         "bodnar42@phalynx.dhs.org" );
-  aboutData.addCredit(ki18n("Benjamin C. Meyer"),ki18n("XMLUI conversion"),"ben+kcharselect@meyerhome.net");
+  aboutData.addCredit( ki18n("Benjamin C. Meyer"), ki18n("XMLUI conversion"),
+        "ben+kcharselect@meyerhome.net" );
   aboutData.addCredit( ki18n("Bryce Nesbitt"), ki18n("RTL support") );
 
   aboutData.setProgramIconName("accessories-character-map");

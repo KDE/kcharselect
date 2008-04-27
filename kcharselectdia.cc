@@ -15,19 +15,18 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "kcharselectdia.moc"
+#include "kcharselectdia.h"
 
-#include <kstandardshortcut.h>
-#include <kdialog.h>
-#include <kapplication.h>
-#include <kconfig.h>
-#include <klocale.h>
-#include <kaction.h>
-#include <ktoolinvocation.h>
-#include <kglobal.h>
-#include <kstandardaction.h>
-#include <kicon.h>
-#include <kactioncollection.h>
+#include <KAction>
+#include <KActionCollection>
+#include <KApplication>
+#include <KConfig>
+#include <KDialog>
+#include <KGlobal>
+#include <KIcon>
+#include <KLocale>
+#include <KStandardAction>
+#include <KStandardShortcut>
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
@@ -279,3 +278,5 @@ void KCharSelectDia::lineEditChanged()
             lined->setCursorPosition( lined->cursorPosition() - 1 );
       }
 }
+
+#include "kcharselectdia.moc"

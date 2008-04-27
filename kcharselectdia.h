@@ -18,13 +18,13 @@
 #ifndef KCHARSELECTDIA_H
 #define KCHARSELECTDIA_H
 
+#include <QClipboard>
 #include <QLayout>
-#include <qclipboard.h>
 
-#include <kpushbutton.h>
-#include <kcharselect.h>
+#include <KCharSelect>
 #include <KLineEdit>
-#include <kxmlguiwindow.h>
+#include <KPushButton>
+#include <KXmlGuiWindow>
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
