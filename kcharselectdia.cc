@@ -34,11 +34,16 @@
 /******************************************************************/
 
 //==================================================================
-KCharSelectDia::KCharSelectDia(QWidget *parent,
-			       const QChar &_chr,const QFont &_font,
-			       bool direction)
-  : KXmlGuiWindow(parent), vChr(_chr), vFont(_font)
+KCharSelectDia::KCharSelectDia()
+    : KXmlGuiWindow()
 {
+  KSharedConfig::Ptr config = KGlobal::config();
+  KConfigGroup gr = config->group("General");
+
+  vFont = gr.readEntry("selectedFont", KGlobalSettings::generalFont());
+  vChr = QChar(static_cast<unsigned short>(gr.readEntry("char", 33)));
+  entryDirection = gr.readEntry("entryDirection", 0);
+  
   QWidget *mainWidget = new QWidget(this);
   setCentralWidget(mainWidget);
 
@@ -112,7 +117,6 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,
 
   charSelect->setFocus();
 
-  entryDirection = direction;
   if( entryDirection )
     lined->setAlignment( Qt::AlignRight );
   else

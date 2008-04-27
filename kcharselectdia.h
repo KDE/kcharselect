@@ -35,12 +35,7 @@ class KCharSelectDia : public KXmlGuiWindow
   Q_OBJECT
 
 public:
-  KCharSelectDia(QWidget *parent,const QChar &_chr,const QFont &_font, bool direction);
-
-  static bool selectChar(QString &_font,QChar &_chr,int _tableNum);
-
-  QChar chr() { return vChr; }
-  QFont font() { return vFont; }
+  KCharSelectDia();
 
 protected:
   virtual bool queryExit();

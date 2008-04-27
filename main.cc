@@ -18,13 +18,8 @@
 #include "kcharselectdia.h"
 
 #include <kapplication.h>
-#include <kconfig.h>
-#include <kconfiggroup.h>
 #include <kcmdlineargs.h>
 #include <kaboutdata.h>
-#include <kglobalsettings.h>
-#include <kglobal.h>
-#include <klocale.h>
 
 static const char *version = "v1.2";
 static const char description[] = I18N_NOOP("KDE character selection utility");
@@ -54,14 +49,7 @@ int main(int argc, char **argv)
 
   KApplication app;
 
-  KSharedConfig::Ptr config = KGlobal::config();
-  KConfigGroup gr = config->group("General");
-
-  QFont font(gr.readEntry("selectedFont", KGlobalSettings::generalFont()));
-  QChar c = QChar(static_cast<unsigned short>(gr.readEntry("char",33)));
-  bool direction = gr.readEntry("entryDirection",0);
-  
-  KCharSelectDia *dia = new KCharSelectDia(0L,c,font,direction);
+  KCharSelectDia *dia = new KCharSelectDia;
   dia->show();
 
   return app.exec();
