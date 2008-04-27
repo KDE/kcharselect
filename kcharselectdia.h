@@ -30,7 +30,7 @@ public:
   QFont font() { return vFont; }
 
 protected:
-  void closeEvent(QCloseEvent *) { _exit(); }
+  virtual bool queryExit();
 
   QGridLayout *grid;
   KCharSelect *charSelect;
@@ -56,7 +56,6 @@ protected slots:
   void flipText();
   void toggleEntryDirection();
   void lineEditChanged();
-  void _exit();
 
 };
 

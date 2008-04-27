@@ -5,7 +5,6 @@
 
 #include "kcharselectdia.moc"
 
-#include <stdlib.h>
 #include <kstandardshortcut.h>
 #include <kdialog.h>
 #include <kapplication.h>
@@ -66,7 +65,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,
   grid->addWidget(bClip, 1, 3);
 
   // Build menu
-  KStandardAction::quit( this, SLOT(_exit()), actionCollection() );
+  KStandardAction::quit( this, SLOT(close()), actionCollection() );
 
   QAction *action = actionCollection()->addAction( "copy_clip" );
   action->setText( i18n("&To Clipboard") );
@@ -108,6 +107,19 @@ KCharSelectDia::KCharSelectDia(QWidget *parent,
     lined->setAlignment( Qt::AlignLeft );
 
   setupGUI(Keys|Save|Create);
+}
+
+//==================================================================
+bool KCharSelectDia::queryExit()
+{
+  KSharedConfig::Ptr config = KGlobal::config();
+  KConfigGroup gr = config->group("General");
+
+  gr.writeEntry("selectedFont",vFont);
+  gr.writeEntry("char",static_cast<int>(vChr.unicode()));
+  gr.writeEntry("entryDirection",entryDirection);
+
+  return true;
 }
 
 //==================================================================
@@ -250,19 +262,4 @@ void KCharSelectDia::lineEditChanged()
         if(lined->cursorPosition())
             lined->setCursorPosition( lined->cursorPosition() - 1 );
       }
-}
-
-//==================================================================
-void KCharSelectDia::_exit()
-{
-  KSharedConfig::Ptr config = KGlobal::config();
-  KConfigGroup gr = config->group("General");
-
-  gr.writeEntry("selectedFont",vFont);
-  gr.writeEntry("char",static_cast<int>(vChr.unicode()));
-  gr.writeEntry("entryDirection",entryDirection);
-  gr.sync();
-
-  delete this;
-  exit(0);
 }
