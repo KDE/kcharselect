@@ -9,7 +9,7 @@
     <Action name="from_clip_utf8"/>
     <Separator/>
     <Action name="flip"/>
-    <Action name="alignment"/>
+    <Action name="rtl"/>
  </Menu>
 </MenuBar>
 </kpartgui>

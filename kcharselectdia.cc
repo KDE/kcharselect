@@ -21,12 +21,14 @@
 #include <KActionCollection>
 #include <KApplication>
 #include <KConfig>
+#include <KDebug>
 #include <KDialog>
 #include <KGlobal>
 #include <KIcon>
 #include <KLocale>
 #include <KStandardAction>
 #include <KStandardShortcut>
+#include <KToggleAction>
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
@@ -41,7 +43,7 @@ KCharSelectDia::KCharSelectDia()
 
   vFont = gr.readEntry("selectedFont", KGlobalSettings::generalFont());
   vChr = QChar(static_cast<unsigned short>(gr.readEntry("char", 33)));
-  entryDirection = gr.readEntry("entryDirection", 0);
+  _rtl = gr.readEntry("rtl", false);
   
   QWidget *mainWidget = new QWidget(this);
   setCentralWidget(mainWidget);
@@ -108,15 +110,17 @@ KCharSelectDia::KCharSelectDia()
   i18n("From Clipboard HTML");      // Intended for future use
 
   action = actionCollection()->addAction( "flip" );
-  action->setText( i18n("&Flip") );
+  action->setText( i18n("&Flip Text") );
   connect(action, SIGNAL(triggered(bool) ), SLOT(flipText()));
-  action = actionCollection()->addAction( "alignment" );
-  action->setText( i18n("&Alignment") );
-  connect(action, SIGNAL(triggered(bool) ), SLOT(toggleEntryDirection()));
+
+  action = new KToggleAction( i18n("&Reverse Direction"), this );
+  action->setChecked(_rtl);
+  actionCollection()->addAction( "rtl", action );
+  connect(action, SIGNAL(toggled(bool) ), SLOT(setRtl(bool)));
 
   charSelect->setFocus();
 
-  if( entryDirection )
+  if(_rtl)
     lined->setAlignment( Qt::AlignRight );
   else
     lined->setAlignment( Qt::AlignLeft );
@@ -130,9 +134,9 @@ bool KCharSelectDia::queryExit()
   KSharedConfig::Ptr config = KGlobal::config();
   KConfigGroup gr = config->group("General");
 
-  gr.writeEntry("selectedFont",vFont);
-  gr.writeEntry("char",static_cast<int>(vChr.unicode()));
-  gr.writeEntry("entryDirection",entryDirection);
+  gr.writeEntry("selectedFont", vFont);
+  gr.writeEntry("char", static_cast<int>(vChr.unicode()));
+  gr.writeEntry("rtl", _rtl);
 
   return true;
 }
@@ -154,17 +158,13 @@ void KCharSelectDia::fontSelected(const QFont &_font)
 //==================================================================
 void KCharSelectDia::add(const QChar &_chr)
 {
-  QString str;
-  int cursorPos;
-
   charChanged(_chr);
 
-  str       = lined->text();
-  cursorPos = lined->cursorPosition();
-  str.insert( cursorPos, vChr );
+  QString str = lined->text();
+  int pos = lined->cursorPosition();
+  str.insert(pos, _chr);
   lined->setText(str);
-  cursorPos++;
-  lined->setCursorPosition( cursorPos );
+  lined->setCursorPosition(pos + 1);
 }
 
 //==================================================================
@@ -260,10 +260,10 @@ void KCharSelectDia::flipText()
 }
 
 //==================================================================
-void KCharSelectDia::toggleEntryDirection()
+void KCharSelectDia::setRtl(bool rtl)
 {
-    entryDirection ^= 1;
-    if( entryDirection )
+    _rtl = rtl;
+    if(_rtl)
         lined->setAlignment( Qt::AlignRight );
     else
         lined->setAlignment( Qt::AlignLeft );
@@ -272,7 +272,7 @@ void KCharSelectDia::toggleEntryDirection()
 //==================================================================
 void KCharSelectDia::lineEditChanged()
 {
-    if( entryDirection )
+    if(_rtl)
       {
         if(lined->cursorPosition())
             lined->setCursorPosition( lined->cursorPosition() - 1 );
