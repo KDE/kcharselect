@@ -8,7 +8,7 @@ kde4_add_executable(kcharselect ${kcharselect_SRCS})
 
 target_link_libraries(kcharselect  ${KDE4_KDEUI_LIBS} )
 
-install(TARGETS kcharselect  DESTINATION ${BIN_INSTALL_DIR} )
+install(TARGETS kcharselect  ${INSTALL_TARGETS_DEFAULT_ARGS} )
 
 ########### install files ###############
 
