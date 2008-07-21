@@ -21,16 +21,17 @@
 #include <KApplication>
 #include <KCmdLineArgs>
 
-static const char *version = "v1.2";
+static const char *version = "v1.4";
 static const char description[] = I18N_NOOP("KDE character selection utility");
 static const char text[] = I18N_NOOP("A wrapper around the KCharSelect widget.");
+static const char homepageUrl[] = "http://utils.kde.org/projects/kcharselect";
 
 /*================================================================*/
 int main(int argc, char **argv)
 {
   KAboutData aboutData( "kcharselect", 0, ki18n("KCharSelect"),
     version, ki18n(description), KAboutData::License_GPL,
-    KLocalizedString(), ki18n(text) );
+    KLocalizedString(), ki18n(text), homepageUrl );
 
   aboutData.addAuthor(ki18n("Constantin Berzan"), ki18n("Maintainer"), "exit3219@gmail.com");
   aboutData.addAuthor(ki18n("Reginald Stadlbauer"), ki18n("Author"), "reggie@kde.org");
