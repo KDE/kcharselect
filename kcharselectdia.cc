@@ -53,7 +53,7 @@ KCharSelectDia::KCharSelectDia()
   grid->setSpacing( KDialog::spacingHint() );
 
   // Add character selection widget from library kdeui
-  charSelect = new KCharSelect(mainWidget);
+  charSelect = new KCharSelect(mainWidget, actionCollection());
   charSelect->setCurrentChar(vChr);
   charSelect->setCurrentFont(vFont);
   charSelect->resize(charSelect->sizeHint());
