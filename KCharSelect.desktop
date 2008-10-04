@@ -77,4 +77,4 @@ Name[xh]=Itshati yokukheta i K
 Name[zh_TW]=KDE 字元選擇
 X-KDE-StartupNotify=true
 X-DBUS-StartupType=Multi
-Categories=Qt;KDE;Utility;X-KDE-More;
+Categories=Qt;KDE;Utility;
