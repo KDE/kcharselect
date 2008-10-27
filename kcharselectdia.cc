@@ -85,7 +85,7 @@ KCharSelectDia::KCharSelectDia()
   // Build menu
   KStandardAction::quit( this, SLOT(close()), actionCollection() );
 
-  QAction *action = actionCollection()->addAction( "copy_clip" );
+  KAction *action = actionCollection()->addAction( "copy_clip" );
   action->setText( i18n("&To Clipboard") );
   action->setIcon( KIcon("edit-copy") );
   connect(action, SIGNAL(triggered(bool)), SLOT(toClip()));
