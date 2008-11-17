@@ -125,7 +125,7 @@ KCharSelectDia::KCharSelectDia()
   else
     lined->setAlignment( Qt::AlignLeft );
 
-  setupGUI(Keys|Save|Create);
+  setupGUI(ToolBar|Keys|Save|Create);
 }
 
 //==================================================================
