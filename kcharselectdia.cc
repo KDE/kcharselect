@@ -161,7 +161,7 @@ void KCharSelectDia::add(const QChar &_chr)
   charChanged(_chr);
 
   QString str = lined->text();
-  int pos = lined->cursorPosition();
+  const int pos = lined->cursorPosition();
   str.insert(pos, _chr);
   lined->setText(str);
   lined->setCursorPosition(pos + 1);
@@ -182,7 +182,7 @@ void KCharSelectDia::toClip()
 void KCharSelectDia::toClipUTF8()
 {
   QClipboard *cb = QApplication::clipboard();
-  QString str = lined->text();
+  const QString str = lined->text();
   cb->setText(str.toUtf8());
 }
 
@@ -199,10 +199,11 @@ void KCharSelectDia::toClipHTML()
   QString html;
   QString tempstring;
   QChar   tempchar;
-  int i;
+  int i = 0;
 
   input = lined->text();
-  for(i=0; i< input.length(); i++ )
+  const int inputLength = input.length();
+  for(i=0; i< inputLength; ++i )
     {
       tempchar = input.at(i);
       if(  tempchar.toLatin1() && ((tempchar.unicode() < 128) || (tempchar.unicode() >= 128+32)) )
@@ -234,7 +235,7 @@ void KCharSelectDia::fromClip()
 void KCharSelectDia::fromClipUTF8()
 {
   QClipboard *cb = QApplication::clipboard();
-  QString str = cb->text();
+  const QString str = cb->text();
 
   lined->setText( str.fromUtf8( str.toLatin1() ) );
 }
@@ -252,7 +253,8 @@ void KCharSelectDia::flipText()
   int i;
 
   input = lined->text();
-  for(i=0; i< input.length(); i++ )
+  const int nbLength = input.length();
+  for(i=0; i< nbLength; ++i )
     {
       output.prepend( input.at(i) );
     }
