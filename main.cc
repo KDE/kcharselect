@@ -33,11 +33,12 @@ int main(int argc, char **argv)
     version, ki18n(description), KAboutData::License_GPL,
     KLocalizedString(), ki18n(text), homepageUrl );
 
-  aboutData.addAuthor(ki18n("Constantin Berzan"), ki18n("Maintainer"), "exit3219@gmail.com");
+  aboutData.addAuthor(ki18n("Daniel Laidig"), ki18n("Author and maintainer"), "d.laidig@gmx.de" );
   aboutData.addAuthor(ki18n("Reginald Stadlbauer"), ki18n("Author"), "reggie@kde.org");
 
-  aboutData.addCredit( ki18n("Daniel Laidig"), ki18n("New GUI, Unicode information, and general improvements"),
-        "d.laidig@gmx.de" );
+  aboutData.addCredit( ki18n("Daniel Laidig"), ki18n("New GUI, Unicode information, incremental search,"
+        " and general improvements"), "d.laidig@gmx.de" );
+  aboutData.addCredit( ki18n("Constantin Berzan"), ki18n("Previous maintainer"), "exit3219@gmail.com" );
   aboutData.addCredit( ki18n("Nadeem Hasan"), ki18n( "GUI cleanup and fixes" ),
         "nhasan@kde.org" );
   aboutData.addCredit( ki18n("Ryan Cumming"), ki18n( "GUI cleanup and fixes" ),
