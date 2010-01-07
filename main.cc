@@ -21,7 +21,7 @@
 #include <KApplication>
 #include <KCmdLineArgs>
 
-static const char *version = "v1.6";
+static const char version[] = "v1.7";
 static const char description[] = I18N_NOOP("KDE character selection utility");
 static const char text[] = I18N_NOOP("A wrapper around the KCharSelect widget.");
 static const char homepageUrl[] = "http://utils.kde.org/projects/kcharselect";
