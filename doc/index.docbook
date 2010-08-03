@@ -1,62 +1,69 @@
 <?xml version="1.0" ?>
-<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+
   <!ENTITY kappname "&kcharselect;">
   <!ENTITY package "kdeutils">
-  <!ENTITY % English "INCLUDE">
   <!ENTITY % addindex "IGNORE">
+  <!ENTITY % English "INCLUDE">
 ]>
 
-<book lang="&language;">
+<article lang="&language;">
 
-<bookinfo>
-<title>The &kcharselect; Handbook</title>
-
+<articleinfo>
+<title>KCharSelect</title>
 <authorgroup>
-<author>
-<othername>Yet unknown</othername>
+<author><firstname>Daniel</firstname> <surname>Laidig</surname>
+<address><email>laidig@kde.org</email></address>
 </author>
+
 <!-- TRANS:ROLES_OF_TRANSLATORS -->
 </authorgroup>
 
-<legalnotice>&FDLNotice;</legalnotice>
-
-<date>2001-01-20</date>
-<releaseinfo>0.00.00</releaseinfo>
-
-<abstract>
-<para>
-&kcharselect; is part of the kdeutils package.
-</para>
-</abstract>
-
+<date>2010-07-23</date>
+<releaseinfo>v1.8 (&kde; 4.5)</releaseinfo>
 
 <keywordset>
 <keyword>KDE</keyword>
-<keyword>kdeutils</keyword>
-<keyword>kcharselect</keyword>
+<keyword>character</keyword>
+<keyword>font</keyword>
 </keywordset>
+</articleinfo>
 
-</bookinfo>
+<para>&kcharselect; is a tool to select special characters from all installed 
+fonts and copy them into the clipboard.</para>
 
-<chapter id="introduction">
-<title>Introduction</title>
-<para>The documentation for &kcharselect; was not finished when &kde; was installed on this computer.</para> 
-<para>If you need help, please check <ulink url="http://www.kde.org">The &kde; Web site</ulink> for updates, or by submitting your question to <ulink url="mailto:kde@kde.org">The &kde; User Mailing list</ulink>.</para>
-<para><emphasis>The &kde; Team</emphasis></para>
+<para>
+<screenshot>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="kcharselect.png" format="PNG"/>
+    </imageobject>
+  </mediaobject>
+</screenshot>
+</para>
 
-<!-- TRANS:CREDIT_FOR_TRANSLATORS -->
-&underFDL;
-&underGPL;
+<para>You can browse characters by their category or quickly find a certain 
+character by searching for its name. &kcharselect; displays various information 
+about the selected character. This includes not only the Unicode character 
+name, but also aliases, general notes and cross references to similar characters. 
+</para>
+<para>
+For technical use, different representations of the character are shown. 
+&kcharselect; also contains Unihan data for East Asian characters to display 
+English definitions and different pronunciations.
+</para>
 
-</chapter>
+</article>
 
-&documentation.index; 
-</book>
 <!--
 Local Variables:
-mode: sgml
-sgml-minimize-attributes: nil
-sgml-general-insert-case: lower
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
 End:
--->
 
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
