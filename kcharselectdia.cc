@@ -3,7 +3,7 @@
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation; either version 2 of 
+ * published by the Free Software Foundation; either version 2 of
  * the License, or (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -44,7 +44,7 @@ KCharSelectDia::KCharSelectDia()
   vFont = gr.readEntry("selectedFont", KGlobalSettings::generalFont());
   vChr = QChar(static_cast<unsigned short>(gr.readEntry("char", 33)));
   _rtl = gr.readEntry("rtl", false);
-  
+
   QWidget *mainWidget = new QWidget(this);
   setCentralWidget(mainWidget);
 
@@ -77,7 +77,7 @@ KCharSelectDia::KCharSelectDia()
   grid->addWidget(lined, 1, 0, 1, 3);
 
   bClip = new KPushButton( KGuiItem( i18n( "&To Clipboard" ),
-            "edit-copy" ), mainWidget );
+            QLatin1String( "edit-copy" ) ), mainWidget );
   bClip->setFixedSize( bClip->sizeHint() );
   connect(bClip,SIGNAL(clicked()),this,SLOT(toClip()));
   grid->addWidget(bClip, 1, 3);
@@ -85,37 +85,37 @@ KCharSelectDia::KCharSelectDia()
   // Build menu
   KStandardAction::quit( this, SLOT(close()), actionCollection() );
 
-  KAction *action = actionCollection()->addAction( "copy_clip" );
+  KAction *action = actionCollection()->addAction( QLatin1String( "copy_clip" ) );
   action->setText( i18n("&To Clipboard") );
   action->setIcon( KIcon( QLatin1String( "edit-copy" )) );
   connect(action, SIGNAL(triggered(bool)), SLOT(toClip()));
   action->setShortcuts(KStandardShortcut::shortcut(KStandardShortcut::Copy));
 
-  action = actionCollection()->addAction( "copy_utf_8" );
+  action = actionCollection()->addAction( QLatin1String( "copy_utf_8" ) );
   action->setText( i18n("To Clipboard &UTF-8") );
   connect(action, SIGNAL(triggered(bool) ), SLOT(toClipUTF8()));
-  action = actionCollection()->addAction( "copy_html" );
+  action = actionCollection()->addAction( QLatin1String( "copy_html" ) );
   action->setText( i18n("To Clipboard &HTML") );
   connect(action, SIGNAL(triggered(bool) ), SLOT(toClipHTML()));
 
-  action = actionCollection()->addAction( "from_clip" );
+  action = actionCollection()->addAction( QLatin1String( "from_clip" ) );
   action->setText( i18n("&From Clipboard") );
   action->setIcon( KIcon( QLatin1String( "edit-paste" )) );
   connect(action, SIGNAL(triggered(bool)), SLOT(fromClip()));
   action->setShortcuts(KStandardShortcut::shortcut(KStandardShortcut::Paste));
-  action = actionCollection()->addAction( "from_clip_utf8" );
+  action = actionCollection()->addAction( QLatin1String( "from_clip_utf8" ) );
   action->setText( i18n( "From Clipboard UTF-8") );
   connect(action, SIGNAL(triggered(bool) ), SLOT(fromClipUTF8()));
 
   i18n("From Clipboard HTML");      // Intended for future use
 
-  action = actionCollection()->addAction( "flip" );
+  action = actionCollection()->addAction( QLatin1String( "flip" ) );
   action->setText( i18n("&Flip Text") );
   connect(action, SIGNAL(triggered(bool) ), SLOT(flipText()));
 
   action = new KToggleAction( i18n("&Reverse Direction"), this );
   action->setChecked(_rtl);
-  actionCollection()->addAction( "rtl", action );
+  actionCollection()->addAction( QLatin1String( "rtl" ), action );
   connect(action, SIGNAL(toggled(bool) ), SLOT(setRtl(bool)));
 
   charSelect->setFocus();
@@ -183,7 +183,7 @@ void KCharSelectDia::toClipUTF8()
 {
   QClipboard *cb = QApplication::clipboard();
   const QString str = lined->text();
-  cb->setText(str.toUtf8());
+  cb->setText(QLatin1String( str.toUtf8() ));
 }
 
 //==================================================================
