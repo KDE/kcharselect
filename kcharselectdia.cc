@@ -87,7 +87,7 @@ KCharSelectDia::KCharSelectDia()
 
   KAction *action = actionCollection()->addAction( "copy_clip" );
   action->setText( i18n("&To Clipboard") );
-  action->setIcon( KIcon("edit-copy") );
+  action->setIcon( KIcon( QLatin1String( "edit-copy" )) );
   connect(action, SIGNAL(triggered(bool)), SLOT(toClip()));
   action->setShortcuts(KStandardShortcut::shortcut(KStandardShortcut::Copy));
 
@@ -100,7 +100,7 @@ KCharSelectDia::KCharSelectDia()
 
   action = actionCollection()->addAction( "from_clip" );
   action->setText( i18n("&From Clipboard") );
-  action->setIcon( KIcon("edit-paste") );
+  action->setIcon( KIcon( QLatin1String( "edit-paste" )) );
   connect(action, SIGNAL(triggered(bool)), SLOT(fromClip()));
   action->setShortcuts(KStandardShortcut::shortcut(KStandardShortcut::Paste));
   action = actionCollection()->addAction( "from_clip_utf8" );
