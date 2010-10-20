@@ -14,7 +14,7 @@ install(TARGETS kcharselect  ${INSTALL_TARGETS_DEFAULT_ARGS} )
 
 ########### install files ###############
 
-install( FILES KCharSelect.desktop  DESTINATION ${XDG_APPS_INSTALL_DIR})
+install( PROGRAMS KCharSelect.desktop  DESTINATION ${XDG_APPS_INSTALL_DIR})
 install( FILES kcharselectui.rc  DESTINATION ${DATA_INSTALL_DIR}/kcharselect)
 install( FILES kcharselect.upd  DESTINATION ${DATA_INSTALL_DIR}/kconf_update)
 
