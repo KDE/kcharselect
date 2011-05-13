@@ -2,6 +2,10 @@ project(kcharselect)
 
 ########### next target ###############
 
+find_package(KDE4)
+include( KDE4Defaults )
+include_directories(${KDE4_INCLUDES})
+
 set(kcharselect_SRCS kcharselectdia.cc main.cc )
 
 kde4_add_app_icon(kcharselect_SRCS "${KDE4_INSTALL_DIR}/share/icons/oxygen/*/apps/accessories-character-map.png")
