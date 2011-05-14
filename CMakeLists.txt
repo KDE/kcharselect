@@ -23,3 +23,4 @@ install( FILES kcharselectui.rc  DESTINATION ${DATA_INSTALL_DIR}/kcharselect)
 install( FILES kcharselect.upd  DESTINATION ${DATA_INSTALL_DIR}/kconf_update)
 
 kde4_install_icons( ${ICON_INSTALL_DIR}   )
+add_subdirectory(doc)
