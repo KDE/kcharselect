@@ -170,9 +170,12 @@ void KCharSelectDia::add(const QChar &_chr)
 //==================================================================
 void KCharSelectDia::toClip()
 {
+  QString str = lined->text();
+  if (str.isEmpty())
+    str = vChr;
   QClipboard *cb = QApplication::clipboard();
-  cb->setText(lined->text(),QClipboard::Clipboard);
-  cb->setText(lined->text(),QClipboard::Selection);
+  cb->setText(str,QClipboard::Clipboard);
+  cb->setText(str,QClipboard::Selection);
 }
 
 //==================================================================
@@ -182,7 +185,9 @@ void KCharSelectDia::toClip()
 void KCharSelectDia::toClipUTF8()
 {
   QClipboard *cb = QApplication::clipboard();
-  const QString str = lined->text();
+  QString str = lined->text();
+  if (str.isEmpty())
+    str = vChr;
   cb->setText(QLatin1String( str.toUtf8() ));
 }
 
@@ -202,6 +207,8 @@ void KCharSelectDia::toClipHTML()
   int i = 0;
 
   input = lined->text();
+  if (input.isEmpty())
+    input = vChr;
   const int inputLength = input.length();
   for(i=0; i< inputLength; ++i )
     {
