@@ -7,9 +7,9 @@
   <!ENTITY % English "INCLUDE">
 ]>
 
-<article lang="&language;">
+<article id="kcharselect" lang="&language;">
 
-<articleinfo>
+<article id="kcharselect"info>
 <title>KCharSelect</title>
 <authorgroup>
 <author><firstname>Daniel</firstname> <surname>Laidig</surname>
