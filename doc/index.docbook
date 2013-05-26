@@ -30,14 +30,14 @@
 </articleinfo>
 
 <para>&kcharselect; is a tool to select special characters from all installed 
-fonts and copy them in diferrent format (Plain text, Unicode or &HTML;) into the clipboard.</para>
+fonts and copy them in different format (Plain text, Unicode or &HTML;) into the clipboard.</para>
 
 <para>Double clicking on a character in the preview or pressing &Enter; adds it to the bar below the 
 font preview. This feature allows to collect a word or a group of several characters and copy 
 them together to the clipboard.</para> 
-<para>Use <guimenuitem>Flip Text</guimenuitem> to reverse the order of the choosen characters.</para>
+<para>Use <guimenuitem>Flip Text</guimenuitem> to reverse the order of the chosen characters.</para>
 <para>By default characters are added to the right end of the group or cursor position.
-With <guimenuitem>Reverse Direction</guimenuitem> you can change this behaviour and add characters 
+With <guimenuitem>Reverse Direction</guimenuitem> you can change this behavior and add characters 
 in the left direction.</para>
 
 <para>
