@@ -129,7 +129,7 @@ KCharSelectDia::KCharSelectDia()
 }
 
 //==================================================================
-bool KCharSelectDia::queryExit()
+void KCharSelectDia::closeEvent(QCloseEvent *event)
 {
   KSharedConfig::Ptr config = KGlobal::config();
   KConfigGroup gr = config->group("General");
@@ -138,7 +138,7 @@ bool KCharSelectDia::queryExit()
   gr.writeEntry("char", static_cast<int>(vChr.unicode()));
   gr.writeEntry("rtl", _rtl);
 
-  return true;
+  KXmlGuiWindow::closeEvent(event);
 }
 
 //==================================================================

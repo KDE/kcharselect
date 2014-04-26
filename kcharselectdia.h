@@ -38,7 +38,7 @@ public:
   KCharSelectDia();
 
 protected:
-  virtual bool queryExit();
+  void closeEvent(QCloseEvent *event);
 
   QGridLayout *grid;
   KCharSelect *charSelect;
