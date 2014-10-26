@@ -17,17 +17,17 @@
 
 #include "kcharselectdia.h"
 
-#include <KAction>
+#include <QAction>
+#include <QApplication>
+#include <QFontDatabase>
+#include <QIcon>
+
 #include <KActionCollection>
-#include <KApplication>
-#include <KConfig>
-#include <KDebug>
-#include <KDialog>
-#include <KGlobal>
-#include <KIcon>
-#include <KLocale>
+#include <KConfigGroup>
+#include <KLocalizedString>
 #include <KStandardAction>
 #include <KStandardShortcut>
+#include <KSharedConfig>
 #include <KToggleAction>
 
 /******************************************************************/
@@ -38,10 +38,10 @@
 KCharSelectDia::KCharSelectDia()
     : KXmlGuiWindow()
 {
-  KSharedConfig::Ptr config = KGlobal::config();
+  KSharedConfig::Ptr config = KSharedConfig::openConfig();
   KConfigGroup gr = config->group("General");
 
-  vFont = gr.readEntry("selectedFont", KGlobalSettings::generalFont());
+  vFont = gr.readEntry("selectedFont", QFontDatabase::systemFont(QFontDatabase::GeneralFont));
   vChr = QChar(static_cast<unsigned short>(gr.readEntry("char", 33)));
   _rtl = gr.readEntry("rtl", false);
 
@@ -49,8 +49,6 @@ KCharSelectDia::KCharSelectDia()
   setCentralWidget(mainWidget);
 
   grid = new QGridLayout( mainWidget );
-  grid->setMargin( KDialog::marginHint() );
-  grid->setSpacing( KDialog::spacingHint() );
 
   // Add character selection widget from library kdeui
   charSelect = new KCharSelect(mainWidget, actionCollection());
@@ -66,9 +64,9 @@ KCharSelectDia::KCharSelectDia()
   grid->addWidget(charSelect, 0, 0, 1, 4);
 
   // Build line editor
-  lined = new KLineEdit(mainWidget);
+  lined = new QLineEdit(mainWidget);
   lined->resize(lined->sizeHint());
-  lined->setClearButtonShown(true);
+  lined->setClearButtonEnabled(true);
 
   lined->setFont( vFont );
 
@@ -76,8 +74,8 @@ KCharSelectDia::KCharSelectDia()
 	  SLOT(lineEditChanged()));
   grid->addWidget(lined, 1, 0, 1, 3);
 
-  bClip = new KPushButton( KGuiItem( i18n( "&To Clipboard" ),
-            QLatin1String( "edit-copy" ) ), mainWidget );
+  bClip = new QPushButton( i18n( "&To Clipboard" ), mainWidget );
+  bClip->setIcon( QIcon::fromTheme( QLatin1String( "edit-copy" ) ));
   bClip->setFixedSize( bClip->sizeHint() );
   connect(bClip,SIGNAL(clicked()),this,SLOT(toClip()));
   grid->addWidget(bClip, 1, 3);
@@ -85,11 +83,11 @@ KCharSelectDia::KCharSelectDia()
   // Build menu
   KStandardAction::quit( this, SLOT(close()), actionCollection() );
 
-  KAction *action = actionCollection()->addAction( QLatin1String( "copy_clip" ) );
+  QAction *action = actionCollection()->addAction( QLatin1String( "copy_clip" ) );
   action->setText( i18n("&To Clipboard") );
-  action->setIcon( KIcon( QLatin1String( "edit-copy" )) );
+  action->setIcon( QIcon::fromTheme( QLatin1String( "edit-copy" )) );
   connect(action, SIGNAL(triggered(bool)), SLOT(toClip()));
-  action->setShortcuts(KStandardShortcut::shortcut(KStandardShortcut::Copy));
+  actionCollection()->setDefaultShortcuts(action, KStandardShortcut::shortcut(KStandardShortcut::Copy));
 
   action = actionCollection()->addAction( QLatin1String( "copy_utf_8" ) );
   action->setText( i18n("To Clipboard &UTF-8") );
@@ -100,9 +98,9 @@ KCharSelectDia::KCharSelectDia()
 
   action = actionCollection()->addAction( QLatin1String( "from_clip" ) );
   action->setText( i18n("&From Clipboard") );
-  action->setIcon( KIcon( QLatin1String( "edit-paste" )) );
+  action->setIcon( QIcon::fromTheme( QLatin1String( "edit-paste" )) );
   connect(action, SIGNAL(triggered(bool)), SLOT(fromClip()));
-  action->setShortcuts(KStandardShortcut::shortcut(KStandardShortcut::Paste));
+  actionCollection()->setDefaultShortcuts(action, KStandardShortcut::shortcut(KStandardShortcut::Paste));
   action = actionCollection()->addAction( QLatin1String( "from_clip_utf8" ) );
   action->setText( i18n( "From Clipboard UTF-8") );
   connect(action, SIGNAL(triggered(bool) ), SLOT(fromClipUTF8()));
@@ -131,7 +129,7 @@ KCharSelectDia::KCharSelectDia()
 //==================================================================
 void KCharSelectDia::closeEvent(QCloseEvent *event)
 {
-  KSharedConfig::Ptr config = KGlobal::config();
+  KSharedConfig::Ptr config = KSharedConfig::openConfig();
   KConfigGroup gr = config->group("General");
 
   gr.writeEntry("selectedFont", vFont);
@@ -287,5 +285,3 @@ void KCharSelectDia::lineEditChanged()
             lined->setCursorPosition( lined->cursorPosition() - 1 );
       }
 }
-
-#include "kcharselectdia.moc"

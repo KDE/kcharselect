@@ -1,37 +1,44 @@
 project(kcharselect)
 
-########### next target ###############
+cmake_minimum_required (VERSION 2.8.12 FATAL_ERROR)
+set (QT_MIN_VERSION "5.2.0")
 
-if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_CURRENT_SOURCE_DIR})
-    find_package(KDE4)
-    include( KDE4Defaults )
-    include_directories(${KDE4_INCLUDES})
+find_package (ECM 1.3.0 REQUIRED NO_MODULE)
+set (CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
-    add_definitions(${QT_DEFINITIONS} ${KDE4_DEFINITIONS})
-    add_definitions(-DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
+add_definitions(-DTRANSLATION_DOMAIN="kcharselect")
 
-    # If definitions like -D_GNU_SOURCE are needed for these checks they
-    # should be added to _KDE4_PLATFORM_DEFINITIONS when it is originally
-    # defined outside this file.  Here we include these definitions in
-    # CMAKE_REQUIRED_DEFINITIONS so they will be included in the build of
-    # checks below.
-    set( CMAKE_REQUIRED_DEFINITIONS ${_KDE4_PLATFORM_DEFINITIONS} )
-endif()
+include(KDEInstallDirs)
+include(KDECompilerSettings)
+include(KDECMakeSettings)
+
+find_package (Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
+    Core
+    Widgets
+)
+
+find_package(KF5 REQUIRED COMPONENTS
+    DocTools
+    I18n
+    WidgetsAddons
+    XmlGui
+)
+
+add_definitions(-DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
 
 set(kcharselect_SRCS kcharselectdia.cc main.cc )
 
-kde4_add_app_icon(kcharselect_SRCS "${KDE4_INSTALL_DIR}/share/icons/oxygen/*/apps/accessories-character-map.png")
+#kde4_add_app_icon(kcharselect_SRCS "${KDE4_INSTALL_DIR}/share/icons/oxygen/*/apps/accessories-character-map.png")
 
-kde4_add_executable(kcharselect ${kcharselect_SRCS})
+add_executable(kcharselect ${kcharselect_SRCS})
 
-target_link_libraries(kcharselect  ${KDE4_KDEUI_LIBS} )
+target_link_libraries(kcharselect  KF5::I18n KF5::WidgetsAddons KF5::XmlGui )
 
 install(TARGETS kcharselect  ${INSTALL_TARGETS_DEFAULT_ARGS} )
 
 ########### install files ###############
 
 install( PROGRAMS KCharSelect.desktop  DESTINATION ${XDG_APPS_INSTALL_DIR})
-install( FILES kcharselectui.rc  DESTINATION ${DATA_INSTALL_DIR}/kcharselect)
+install( FILES kcharselectui.rc  DESTINATION ${KXMLGUI_INSTALL_DIR}/kcharselect)
 
-kde4_install_icons( ${ICON_INSTALL_DIR}   )
 add_subdirectory(doc)

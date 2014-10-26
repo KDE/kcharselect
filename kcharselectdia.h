@@ -20,10 +20,10 @@
 
 #include <QClipboard>
 #include <QLayout>
+#include <QLineEdit>
+#include <QPushButton>
 
 #include <KCharSelect>
-#include <KLineEdit>
-#include <KPushButton>
 #include <KXmlGuiWindow>
 
 /******************************************************************/
@@ -42,8 +42,8 @@ protected:
 
   QGridLayout *grid;
   KCharSelect *charSelect;
-  KLineEdit   *lined;
-  KPushButton *bClip;
+  QLineEdit   *lined;
+  QPushButton *bClip;
 
   QChar vChr;
   QFont vFont;
