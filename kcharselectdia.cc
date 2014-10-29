@@ -21,6 +21,8 @@
 #include <QApplication>
 #include <QFontDatabase>
 #include <QIcon>
+#include <QClipboard>
+#include <QGridLayout>
 
 #include <KActionCollection>
 #include <KConfigGroup>
