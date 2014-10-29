@@ -20,11 +20,16 @@
 
 #include <KAboutData>
 #include <KLocalizedString>
-
+#include <Kdelibs4ConfigMigrator>
 #include "kcharselectdia.h"
 
 int main(int argc, char **argv)
 {
+  Kdelibs4ConfigMigrator migrate(QLatin1String("kcharselect"));
+  migrate.setConfigFiles(QStringList() << QLatin1String("kcharselectrc"));
+  migrate.setUiFiles(QStringList() << QLatin1String("kcharselectui.rc"));
+  migrate.migrate();
+
   KAboutData aboutData( "kcharselect", i18n("KCharSelect"),
     "1.12", i18n("KDE character selection utility"), KAboutLicense::GPL,
     QString(), i18n("A wrapper around the KCharSelect widget."), "http://utils.kde.org/projects/kcharselect" );
