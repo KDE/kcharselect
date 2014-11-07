@@ -52,10 +52,13 @@ int main(int argc, char **argv)
   KAboutData::setApplicationData( aboutData );
   app.setWindowIcon( QIcon::fromTheme( QLatin1String( "accessories-character-map" )));
 
+
   QCommandLineParser parser;
   parser.addHelpOption();
   parser.addVersionOption();
+  aboutData.setupCommandLine(&parser);
   parser.process(app);
+  aboutData.processCommandLine(&parser);
 
   KCharSelectDia *dia = new KCharSelectDia;
   dia->show();
