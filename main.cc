@@ -15,42 +15,50 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "kcharselectdia.h"
+#include <QApplication>
+#include <QCommandLineParser>
 
 #include <KAboutData>
-#include <KApplication>
-#include <KCmdLineArgs>
+#include <KLocalizedString>
+#include <Kdelibs4ConfigMigrator>
+#include "kcharselectdia.h"
 
-static const char version[] = "v1.11";
-static const char description[] = I18N_NOOP("KDE character selection utility");
-static const char text[] = I18N_NOOP("A wrapper around the KCharSelect widget.");
-static const char homepageUrl[] = "http://utils.kde.org/projects/kcharselect";
-
-/*================================================================*/
 int main(int argc, char **argv)
 {
-  KAboutData aboutData( "kcharselect", 0, ki18n("KCharSelect"),
-    version, ki18n(description), KAboutData::License_GPL,
-    KLocalizedString(), ki18n(text), homepageUrl );
+  Kdelibs4ConfigMigrator migrate(QLatin1String("kcharselect"));
+  migrate.setConfigFiles(QStringList() << QLatin1String("kcharselectrc"));
+  migrate.setUiFiles(QStringList() << QLatin1String("kcharselectui.rc"));
+  migrate.migrate();
 
-  aboutData.addAuthor(ki18n("Daniel Laidig"), ki18n("Author and maintainer"), "d.laidig@gmx.de" );
-  aboutData.addAuthor(ki18n("Reginald Stadlbauer"), ki18n("Author"), "reggie@kde.org");
+  KAboutData aboutData( "kcharselect", i18n("KCharSelect"),
+    "1.12", i18n("KDE character selection utility"), KAboutLicense::GPL,
+    QString(), i18n("A wrapper around the KCharSelect widget."), "http://utils.kde.org/projects/kcharselect" );
 
-  aboutData.addCredit( ki18n("Daniel Laidig"), ki18n("New GUI, Unicode information, incremental search,"
+  aboutData.addAuthor(i18n("Daniel Laidig"), i18n("Author and maintainer"), "d.laidig@gmx.de" );
+  aboutData.addAuthor(i18n("Reginald Stadlbauer"), i18n("Author"), "reggie@kde.org");
+
+  aboutData.addCredit( i18n("Daniel Laidig"), i18n("New GUI, Unicode information, incremental search,"
         " and general improvements"), "d.laidig@gmx.de" );
-  aboutData.addCredit( ki18n("Constantin Berzan"), ki18n("Previous maintainer"), "exit3219@gmail.com" );
-  aboutData.addCredit( ki18n("Nadeem Hasan"), ki18n( "GUI cleanup and fixes" ),
+  aboutData.addCredit( i18n("Constantin Berzan"), i18n("Previous maintainer"), "exit3219@gmail.com" );
+  aboutData.addCredit( i18n("Nadeem Hasan"), i18n( "GUI cleanup and fixes" ),
         "nhasan@kde.org" );
-  aboutData.addCredit( ki18n("Ryan Cumming"), ki18n( "GUI cleanup and fixes" ),
+  aboutData.addCredit( i18n("Ryan Cumming"), i18n( "GUI cleanup and fixes" ),
         "bodnar42@phalynx.dhs.org" );
-  aboutData.addCredit( ki18n("Benjamin C. Meyer"), ki18n("XMLUI conversion"),
+  aboutData.addCredit( i18n("Benjamin C. Meyer"), i18n("XMLUI conversion"),
         "ben+kcharselect@meyerhome.net" );
-  aboutData.addCredit( ki18n("Bryce Nesbitt"), ki18n("RTL support") );
+  aboutData.addCredit( i18n("Bryce Nesbitt"), i18n("RTL support") );
 
-  aboutData.setProgramIconName(QLatin1String( "accessories-character-map" ));
-  KCmdLineArgs::init( argc, argv, &aboutData );
+  QApplication app( argc, argv );
+  KAboutData::setApplicationData( aboutData );
+  app.setWindowIcon( QIcon::fromTheme( QLatin1String( "accessories-character-map" )));
 
-  KApplication app;
+
+  QCommandLineParser parser;
+  parser.addHelpOption();
+  parser.addVersionOption();
+  aboutData.setupCommandLine(&parser);
+  parser.process(app);
+  aboutData.processCommandLine(&parser);
 
   KCharSelectDia *dia = new KCharSelectDia;
   dia->show();

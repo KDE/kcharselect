@@ -18,18 +18,16 @@
 #ifndef KCHARSELECTDIA_H
 #define KCHARSELECTDIA_H
 
-#include <QClipboard>
-#include <QLayout>
+#include <QLineEdit>
+#include <QPushButton>
 
 #include <KCharSelect>
-#include <KLineEdit>
-#include <KPushButton>
 #include <KXmlGuiWindow>
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
 /******************************************************************/
-
+class QGridLayout;
 class KCharSelectDia : public KXmlGuiWindow
 {
   Q_OBJECT
@@ -42,8 +40,8 @@ protected:
 
   QGridLayout *grid;
   KCharSelect *charSelect;
-  KLineEdit   *lined;
-  KPushButton *bClip;
+  QLineEdit   *lined;
+  QPushButton *bClip;
 
   QChar vChr;
   QFont vFont;
