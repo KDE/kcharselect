@@ -42,3 +42,4 @@ install( PROGRAMS org.kde.KCharSelect.desktop  DESTINATION ${XDG_APPS_INSTALL_DI
 install( FILES kcharselectui.rc  DESTINATION ${KXMLGUI_INSTALL_DIR}/kcharselect)
 
 add_subdirectory(doc)
+feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
