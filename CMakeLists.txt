@@ -3,7 +3,7 @@ project(kcharselect)
 cmake_minimum_required (VERSION 2.8.12 FATAL_ERROR)
 set (QT_MIN_VERSION "5.2.0")
 
-find_package (ECM 1.3.0 REQUIRED NO_MODULE)
+find_package (ECM 1.7.0 REQUIRED NO_MODULE)
 set (CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 add_definitions(-DTRANSLATION_DOMAIN="kcharselect")
@@ -34,12 +34,12 @@ add_executable(kcharselect ${kcharselect_SRCS})
 
 target_link_libraries(kcharselect  KF5::I18n KF5::WidgetsAddons KF5::XmlGui )
 
-install(TARGETS kcharselect  ${INSTALL_TARGETS_DEFAULT_ARGS} )
+install(TARGETS kcharselect  ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} )
 
 ########### install files ###############
 
-install( PROGRAMS org.kde.KCharSelect.desktop  DESTINATION ${XDG_APPS_INSTALL_DIR})
-install( FILES kcharselectui.rc  DESTINATION ${KXMLGUI_INSTALL_DIR}/kcharselect)
+install( PROGRAMS org.kde.KCharSelect.desktop  DESTINATION ${KDE_INSTALL_APPDIR})
+install( FILES kcharselectui.rc  DESTINATION ${KDE_INSTALL_KXMLGUI5DIR}/kcharselect)
 
 add_subdirectory(doc)
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
