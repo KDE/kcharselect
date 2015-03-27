@@ -151,5 +151,5 @@ Name[xh]=Itshati yokukheta i K
 Name[x-test]=xxKCharSelectxx
 Name[zh_CN]=KCharSelect
 Name[zh_TW]=KDE 字元選擇
-X-KDE-StartupNotify=true
+StartupNotify=true
 Categories=Qt;KDE;Utility;
