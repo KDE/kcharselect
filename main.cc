@@ -25,6 +25,8 @@
 
 int main(int argc, char **argv)
 {
+  QApplication app( argc, argv );
+
   Kdelibs4ConfigMigrator migrate(QLatin1String("kcharselect"));
   migrate.setConfigFiles(QStringList() << QLatin1String("kcharselectrc"));
   migrate.setUiFiles(QStringList() << QLatin1String("kcharselectui.rc"));
@@ -48,7 +50,6 @@ int main(int argc, char **argv)
         "ben+kcharselect@meyerhome.net" );
   aboutData.addCredit( i18n("Bryce Nesbitt"), i18n("RTL support") );
 
-  QApplication app( argc, argv );
   KAboutData::setApplicationData( aboutData );
   app.setWindowIcon( QIcon::fromTheme( QLatin1String( "accessories-character-map" )));
 
