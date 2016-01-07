@@ -27,6 +27,8 @@ int main(int argc, char **argv)
 {
   QApplication app( argc, argv );
 
+  KLocalizedString::setApplicationDomain("kcharselect");
+
   /**
    * enable high dpi support
    */
