@@ -38,7 +38,7 @@ install(TARGETS kcharselect  ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} )
 
 ########### install files ###############
 
-install( PROGRAMS org.kde.KCharSelect.desktop  DESTINATION ${KDE_INSTALL_APPDIR})
+install( PROGRAMS org.kde.kcharselect.desktop  DESTINATION ${KDE_INSTALL_APPDIR})
 install( FILES kcharselectui.rc  DESTINATION ${KDE_INSTALL_KXMLGUI5DIR}/kcharselect)
 
 add_subdirectory(doc)
