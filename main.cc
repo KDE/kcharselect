@@ -43,11 +43,13 @@ int main(int argc, char **argv)
     "1.12", i18n("KDE character selection utility"), KAboutLicense::GPL,
     QString(), i18n("A wrapper around the KCharSelect widget."), "http://utils.kde.org/projects/kcharselect" );
 
-  aboutData.addAuthor(i18n("Daniel Laidig"), i18n("Author and maintainer"), "d.laidig@gmx.de" );
+  aboutData.addAuthor(i18n("Christoph Feck"), i18n("KF5 port and current maintainer"), "cfeck@kde.org");
+  aboutData.addAuthor(i18n("Daniel Laidig"), i18n("Author and previous maintainer"), "d.laidig@gmx.de" );
   aboutData.addAuthor(i18n("Reginald Stadlbauer"), i18n("Author"), "reggie@kde.org");
 
   aboutData.addCredit( i18n("Daniel Laidig"), i18n("New GUI, Unicode information, incremental search,"
         " and general improvements"), "d.laidig@gmx.de" );
+  aboutData.addCredit( i18n("Laurent Montel"), i18n("Porting help"), "montel@kde.org" );
   aboutData.addCredit( i18n("Constantin Berzan"), i18n("Previous maintainer"), "exit3219@gmail.com" );
   aboutData.addCredit( i18n("Nadeem Hasan"), i18n( "GUI cleanup and fixes" ),
         "nhasan@kde.org" );
