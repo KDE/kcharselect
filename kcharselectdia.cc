@@ -44,7 +44,7 @@ KCharSelectDia::KCharSelectDia()
   KConfigGroup gr = config->group("General");
 
   vFont = gr.readEntry("selectedFont", QFontDatabase::systemFont(QFontDatabase::GeneralFont));
-  vChr = QChar(static_cast<unsigned short>(gr.readEntry("char", 33)));
+  vChr = gr.readEntry("char", 33);
   _rtl = gr.readEntry("rtl", false);
 
   QWidget *mainWidget = new QWidget(this);
@@ -54,12 +54,13 @@ KCharSelectDia::KCharSelectDia()
 
   // Add character selection widget from library kdeui
   charSelect = new KCharSelect(mainWidget, actionCollection());
-  charSelect->setCurrentChar(vChr);
+  charSelect->setAllPlanesEnabled(true);
+  charSelect->setCurrentCodePoint(vChr);
   charSelect->setCurrentFont(vFont);
   charSelect->resize(charSelect->sizeHint());
-  connect(charSelect, &KCharSelect::currentCharChanged, this, &KCharSelectDia::charChanged);
-  connect(charSelect,SIGNAL(charSelected(QChar)),
-         SLOT(add(QChar)));
+  connect(charSelect, &KCharSelect::currentCodePointChanged, this, &KCharSelectDia::charChanged);
+  connect(charSelect,SIGNAL(codePointSelected(uint)),
+         SLOT(add(uint)));
 
   connect(charSelect, &KCharSelect::currentFontChanged, this, &KCharSelectDia::fontSelected);
   grid->addWidget(charSelect, 0, 0, 1, 4);
@@ -133,14 +134,14 @@ void KCharSelectDia::closeEvent(QCloseEvent *event)
   KConfigGroup gr = config->group("General");
 
   gr.writeEntry("selectedFont", vFont);
-  gr.writeEntry("char", static_cast<int>(vChr.unicode()));
+  gr.writeEntry("char", vChr);
   gr.writeEntry("rtl", _rtl);
 
   KXmlGuiWindow::closeEvent(event);
 }
 
 //==================================================================
-void KCharSelectDia::charChanged(const QChar &_chr)
+void KCharSelectDia::charChanged(uint _chr)
 {
   vChr = _chr;
 }
@@ -154,15 +155,15 @@ void KCharSelectDia::fontSelected(const QFont &_font)
 }
 
 //==================================================================
-void KCharSelectDia::add(const QChar &_chr)
+void KCharSelectDia::add(uint _chr)
 {
   charChanged(_chr);
 
   QString str = lined->text();
   const int pos = lined->cursorPosition();
-  str.insert(pos, _chr);
+  str.insert(pos, QString::fromUcs4(&_chr, 1));
   lined->setText(str);
-  lined->setCursorPosition(pos + 1);
+  lined->setCursorPosition(pos + QString::fromUcs4(&_chr, 1).size());
 }
 
 //==================================================================
@@ -170,7 +171,7 @@ void KCharSelectDia::toClip()
 {
   QString str = lined->text();
   if (str.isEmpty())
-    str = vChr;
+    str = QString::fromUcs4(&vChr, 1);
   QClipboard *cb = QApplication::clipboard();
   cb->setText(str,QClipboard::Clipboard);
   cb->setText(str,QClipboard::Selection);
@@ -185,7 +186,7 @@ void KCharSelectDia::toClipUTF8()
   QClipboard *cb = QApplication::clipboard();
   QString str = lined->text();
   if (str.isEmpty())
-    str = vChr;
+    str = QString::fromUcs4(&vChr, 1);
   cb->setText(QLatin1String( str.toUtf8() ));
 }
 
@@ -206,7 +207,7 @@ void KCharSelectDia::toClipHTML()
 
   input = lined->text();
   if (input.isEmpty())
-    input = vChr;
+    input = QString::fromUcs4(&vChr, 1);
   const int inputLength = input.length();
   for(i=0; i< inputLength; ++i )
     {
