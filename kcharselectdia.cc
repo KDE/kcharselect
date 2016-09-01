@@ -19,18 +19,67 @@
 
 #include <QAction>
 #include <QApplication>
-#include <QFontDatabase>
-#include <QIcon>
 #include <QClipboard>
+#include <QDir>
+#include <QFontDatabase>
 #include <QGridLayout>
+#include <QIcon>
+#include <QMenu>
 
 #include <KActionCollection>
+#include <KBookmarkManager>
+#include <KBookmarkMenu>
 #include <KConfigGroup>
 #include <KLocalizedString>
 #include <KStandardAction>
 #include <KStandardShortcut>
 #include <KSharedConfig>
 #include <KToggleAction>
+
+class KCharSelectBookmarkOwner : public KBookmarkOwner
+{
+public:
+    KCharSelectBookmarkOwner(KCharSelectDia *dia)
+        : d(dia) { }
+    ~KCharSelectBookmarkOwner() { }
+
+    QString currentTitle() const Q_DECL_OVERRIDE
+    {
+        uint ucs4 = d->charSelect->currentCodePoint();
+        if (QChar::isPrint(ucs4)) {
+            return QString::fromUcs4(&ucs4, 1) + QLatin1Char(' ') + formatCodePoint(ucs4);
+        } else {
+            return formatCodePoint(ucs4);
+        }
+    }
+
+    QUrl currentUrl() const Q_DECL_OVERRIDE
+    {
+        return QUrl(formatCodePoint(d->charSelect->currentCodePoint()));
+    }
+
+    void openBookmark(const KBookmark &bm, Qt::MouseButtons, Qt::KeyboardModifiers) Q_DECL_OVERRIDE
+    {
+        QString c = bm.url().toString(QUrl::PreferLocalFile | QUrl::RemoveScheme);
+        if (c.startsWith(QLatin1String("U+"))) {
+            uint uc = c.mid(2).toUInt(Q_NULLPTR, 16);
+            d->charSelect->setCurrentCodePoint(uc);
+        }
+    }
+
+private:
+    static QString formatCodePoint(uint ucs4)
+    {
+        QString c = QString::number(ucs4, 16).toUpper();
+        while (c.length() < 4) {
+            c.prepend(QLatin1Char('0'));
+        }
+        return QStringLiteral("U+") + c;
+    }
+
+private:
+    KCharSelectDia *d;
+};
 
 /******************************************************************/
 /* class KCharSelectDia                                           */
@@ -123,6 +172,21 @@ KCharSelectDia::KCharSelectDia()
     lined->setAlignment( Qt::AlignRight );
   else
     lined->setAlignment( Qt::AlignLeft );
+
+  QString filename = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("kcharselect/bookmarks.xml"));
+  if (filename.isEmpty()) {
+    filename = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QStringLiteral("/kcharselect");
+    QDir().mkpath(filename);
+    filename += QStringLiteral("/bookmarks.xml");
+  }
+  KBookmarkManager* manager = KBookmarkManager::managerForFile(filename, QStringLiteral("kcharselect"));
+
+  action = actionCollection()->addAction(QStringLiteral("bookmarks"));
+  action->setText(i18n("Bookmarks"));
+  QMenu *bmmenu = new QMenu(this);
+  action->setMenu(bmmenu);
+  KBookmarkMenu *bm = new KBookmarkMenu(manager, new KCharSelectBookmarkOwner(this), bmmenu, actionCollection());
+  bm->setParent(this);
 
   setupGUI(ToolBar|Keys|Save|Create);
 }

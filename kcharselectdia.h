@@ -35,6 +35,8 @@ class KCharSelectDia : public KXmlGuiWindow
 public:
   KCharSelectDia();
 
+  friend class KCharSelectBookmarkOwner;
+
 protected:
   void closeEvent(QCloseEvent *event);
 
