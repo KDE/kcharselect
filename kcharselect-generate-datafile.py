@@ -7,6 +7,7 @@
 ##############################################################################
 # Copyright (C) 2007 Daniel Laidig <d.laidig@gmx.de>
 # Copyright (C) 2016 John Zaitseff <J.Zaitseff@zap.org.au>
+# Copyright (c) 2016 DaeHyun Sung  <sungdh86@gmail.com>
 #
 # This script is free software; you can redistribute it and/or modify it under
 # the terms of the GNU Library General Public License as published by the Free
@@ -90,7 +91,7 @@
 # For example 0x0403 means the fourth section includes the third block.
 #
 # unihan_offsets:
-# each entry 30 bytes
+# each entry 38 bytes
 # 16bit: unicode
 # 32bit: offset to unihan_strings for Definition
 # 32bit: offset to unihan_strings for Cantonese
@@ -99,6 +100,8 @@
 # 32bit: offset to unihan_strings for Korean
 # 32bit: offset to unihan_strings for JapaneseKun
 # 32bit: offset to unihan_strings for JapaneseOn
+# 32bit: offset to unihan_strings for kHangul
+# 32bit: offset to unihan_strings for kVietnamese
 
 from struct import *
 import sys
@@ -582,10 +585,10 @@ class Unihan:
 
     def addUnihan(self, uni, category, value):
         uni = int(uni, 16)
-        if category != "kDefinition" and category != "kCantonese" and category != "kMandarin" and category != "kTang" and category != "kKorean" and category != "kJapaneseKun" and category != "kJapaneseOn":
+        if category != "kDefinition" and category != "kCantonese" and category != "kMandarin" and category != "kTang" and category != "kKorean" and category != "kJapaneseKun" and category != "kJapaneseOn" and category != "kHangul" and category != "kVietnamese":
             return
         if not self.unihan.has_key(uni):
-            self.unihan[uni] = [None, None, None, None, None, None, None]
+            self.unihan[uni] = [None, None, None, None, None, None, None, None, None]
         if category == "kDefinition":
             self.unihan[uni][0] = value
         elif category == "kCantonese":
@@ -600,6 +603,10 @@ class Unihan:
             self.unihan[uni][5] = value
         elif category == "kJapaneseOn":
             self.unihan[uni][6] = value
+        elif category == "kHangul":
+            self.unihan[uni][7] = value
+        elif category == "kVietnamese":
+            self.unihan[uni][8] = value
 
     def calculateStringSize(self):
         size = 0
@@ -610,11 +617,11 @@ class Unihan:
         return size
 
     def calculateOffsetSize(self):
-        return len(self.unihan) * 30
+        return len(self.unihan) * 38
 
     def writeStrings(self, out, pos):
         for char in self.unihan.keys():
-            for i in range(0, 7):
+            for i in range(0, 9):
                 if self.unihan[char][i] != None:
                     out.write(self.unihan[char][i] + "\0")
                     size = len(self.unihan[char][i]) + 1
@@ -625,12 +632,12 @@ class Unihan:
     def writeOffsets(self, out, pos):
         for char in self.unihan.keys():
             out.write(pack("=H", char))
-            for i in range(0, 7):
+            for i in range(0, 9):
                 if self.unihan[char][i] != None:
                     out.write(pack("=I", self.unihan[char][i]))
                 else:
                     out.write(pack("=I", 0))
-            pos += 30
+            pos += 38
         return pos
 
 class Parser:
@@ -746,6 +753,7 @@ def writeTranslationDummy(out, data):
 
    Copyright (C) 2007 Daniel Laidig <d.laidig@gmx.de>
    Copyright (C) 2016 John Zaitseff <J.Zaitseff@zap.org.au>
+   Copyright (c) 2016 DaeHyun Sung  <sungdh86@gmail.com>
 
    This library is free software; you can redistribute it and/or modify it
    under the terms of the GNU Library General Public License as published by
