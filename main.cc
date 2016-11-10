@@ -40,7 +40,7 @@ int main(int argc, char **argv)
   migrate.migrate();
 
   KAboutData aboutData( "kcharselect", i18n("KCharSelect"),
-    "1.12", i18n("KDE character selection utility"), KAboutLicense::GPL,
+    "1.13", i18n("KDE character selection utility"), KAboutLicense::GPL,
     QString(), i18n("A wrapper around the KCharSelect widget."), "http://utils.kde.org/projects/kcharselect" );
 
   aboutData.addAuthor(i18n("Christoph Feck"), i18n("KF5 port and current maintainer"), "cfeck@kde.org");
