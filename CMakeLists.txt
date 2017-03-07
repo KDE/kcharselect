@@ -18,6 +18,7 @@ find_package (Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
 
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     Bookmarks
+    Crash
     DocTools
     I18n
     WidgetsAddons
@@ -32,7 +33,13 @@ set(kcharselect_SRCS kcharselectdia.cc main.cc )
 
 add_executable(kcharselect ${kcharselect_SRCS})
 
-target_link_libraries(kcharselect  KF5::Bookmarks KF5::I18n KF5::WidgetsAddons KF5::XmlGui )
+target_link_libraries(kcharselect
+    KF5::Bookmarks
+    KF5::Crash
+    KF5::I18n
+    KF5::WidgetsAddons
+    KF5::XmlGui
+)
 
 install(TARGETS kcharselect  ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} )
 

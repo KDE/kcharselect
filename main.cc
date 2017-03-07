@@ -19,6 +19,7 @@
 #include <QCommandLineParser>
 
 #include <KAboutData>
+#include <KCrash>
 #include <KLocalizedString>
 #include <Kdelibs4ConfigMigrator>
 #include "kcharselectdia.h"
@@ -26,6 +27,7 @@
 int main(int argc, char **argv)
 {
   QApplication app( argc, argv );
+  KCrash::initialize();
 
   KLocalizedString::setApplicationDomain("kcharselect");
 
