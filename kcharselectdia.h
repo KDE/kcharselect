@@ -38,7 +38,7 @@ public:
   friend class KCharSelectBookmarkOwner;
 
 protected:
-  void closeEvent(QCloseEvent *event);
+  void closeEvent(QCloseEvent *event) Q_DECL_OVERRIDE;
 
   QGridLayout *grid;
   KCharSelect *charSelect;
