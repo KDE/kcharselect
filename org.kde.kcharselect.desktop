@@ -171,5 +171,6 @@ Comment[sr@latin]=Pregledanje svih Unicode znakova
 Comment[sv]=Bläddra bland alla Unicode-tecken
 Comment[uk]=Навігація таблицею усіх символів Unicode
 Comment[x-test]=xxBrowse all unicode charactersxx
+Comment[zh_CN]=浏览所有 Unicode 字符
 StartupNotify=true
 Categories=Qt;KDE;Utility;
