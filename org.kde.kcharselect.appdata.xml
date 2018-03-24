@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="desktop-application">
+  <id>org.kde.kcharselect</id>
+  <metadata_license>FSFAP</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>KCharSelect</name>
+  <summary>Character Selector</summary>
+  <description>
+    <p>
+      KCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.
+    </p>
+    <p>
+      You can browse characters by their category or quickly find a certain character by searching for its name.
+    </p>
+    <p>
+      KCharSelect displays various information about the selected character. This includes not only the Unicode character name, but also aliases, general notes and cross references to similar characters. 
+    </p>
+    <p>
+      For technical use, different representations of the character are shown. 
+    </p>
+    <p>
+      KCharSelect also contains Unihan data for East Asian characters to display English definitions and different pronunciations.
+    </p>
+  </description>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kcharselect</url>
+  <url type="donation">https://www.kde.org/community/donations/</url>
+  <url type="help">https://docs.kde.org/?application=kcharselect</url>
+  <url type="homepage">https://utils.kde.org/projects/kcharselect/</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://www.kde.org/images/screenshots/kcharselect.png</image>
+    </screenshot>
+  </screenshots>
+  <project_group>KDE</project_group>
+  <provides>
+    <binary>kcharselect</binary>
+  </provides>
+  <launchable type="desktop-id">org.kde.kcharselect.desktop</launchable>
+</component>

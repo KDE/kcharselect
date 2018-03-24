@@ -59,6 +59,7 @@ install(TARGETS kcharselect  ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} )
 ########### install files ###############
 
 install( PROGRAMS org.kde.kcharselect.desktop  DESTINATION ${KDE_INSTALL_APPDIR})
+install(FILES org.kde.kcharselect.appdata.xml DESTINATION ${CMAKE_INSTALL_METAINFODIR})
 
 add_subdirectory(doc)
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
