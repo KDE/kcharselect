@@ -4,23 +4,65 @@
   <metadata_license>FSFAP</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <name>KCharSelect</name>
+  <name xml:lang="ca">KCharSelect</name>
+  <name xml:lang="ca-valencia">KCharSelect</name>
+  <name xml:lang="nl">KCharSelect</name>
+  <name xml:lang="sv">Kcharselect</name>
+  <name xml:lang="uk">KCharSelect</name>
+  <name xml:lang="x-test">xxKCharSelectxx</name>
   <summary>Character Selector</summary>
+  <summary xml:lang="ca">Selector de caràcters</summary>
+  <summary xml:lang="ca-valencia">Selector de caràcters</summary>
+  <summary xml:lang="nl">Speciale tekens</summary>
+  <summary xml:lang="sv">Teckenväljare</summary>
+  <summary xml:lang="uk">Таблиця символів</summary>
+  <summary xml:lang="x-test">xxCharacter Selectorxx</summary>
   <description>
     <p>
       KCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.
     </p>
+    <p xml:lang="ca">El KCharSelect és una eina per seleccionar els caràcters especials de tots els tipus de lletra instal·lats i els copia al porta-retalls.</p>
+    <p xml:lang="ca-valencia">El KCharSelect és una eina per seleccionar els caràcters especials de tots els tipus de lletra instal·lats i els copia al porta-retalls.</p>
+    <p xml:lang="nl">KCharSelect is een hulpmiddel om speciale tekens uit alle geïnstalleerde lettertypen te selecteren en deze daarna naar het klembord te kopiëren.</p>
+    <p xml:lang="sv">Teckenväljaren är ett verktyg för att välja specialtecken från alla installerade teckensnitt och kopiera dem till klippbordet.</p>
+    <p xml:lang="uk">KCharSelect — програма для вибору спеціальних символів з усіх встановлених шрифтів і копіювання цих символів до буфера обміну даними.</p>
+    <p xml:lang="x-test">xxKCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.xx</p>
     <p>
       You can browse characters by their category or quickly find a certain character by searching for its name.
     </p>
+    <p xml:lang="ca">Podeu navegar pels caràcters per categoria o trobar ràpidament un caràcter determinat mitjançant la cerca pel seu nom.</p>
+    <p xml:lang="ca-valencia">Podeu navegar pels caràcters per categoria o trobar ràpidament un caràcter determinat mitjançant la cerca pel seu nom.</p>
+    <p xml:lang="nl">U kunt tekens per category bekijken of snel een bepaald teken vinden door naar zijn naam te zoeken.</p>
+    <p xml:lang="sv">Det går att bläddra bland tecken enligt deras kategori eller snabbt hitta ett visst tecken genom att söka efter dess namn.</p>
+    <p xml:lang="uk">Ви можете переглядати символи за категоріями або швидко знайти певний символ за його назвою.</p>
+    <p xml:lang="x-test">xxYou can browse characters by their category or quickly find a certain character by searching for its name.xx</p>
     <p>
       KCharSelect displays various information about the selected character. This includes not only the Unicode character name, but also aliases, general notes and cross references to similar characters. 
     </p>
+    <p xml:lang="ca">El KCharSelect mostra diversa informació sobre el caràcter seleccionat. Això inclou no només el nom de caràcter Unicode, sinó també els seus àlies, notes generals i referències a caràcters similars.</p>
+    <p xml:lang="ca-valencia">El KCharSelect mostra diversa informació sobre el caràcter seleccionat. Això inclou no només el nom de caràcter Unicode, sinó també els seus àlies, notes generals i referències a caràcters similars.</p>
+    <p xml:lang="nl">KCharSelect toont verschillende soorten informatie over het geselecteerde teken. Dit bevat niet alleen de tekennaam in Unicode, maar ook aliassen, algemene notities en kruisverwijzingen naar soortgelijke tekens.</p>
+    <p xml:lang="sv">Teckenväljaren visar diverse information om det valda tecknet. Det omfattar inte bara tecknets Unicode-namn, utan också alias, allmänna anmärkningar och korsreferenser till liknande tecken.</p>
+    <p xml:lang="uk">Програма KCharSelect здатна показувати різноманітну інформацію щодо позначеного символу. Серед показаних даних буде не лише назва символу Unicode, але і його альтернативні назви, загальні нотатки та посилання на подібні символи.</p>
+    <p xml:lang="x-test">xxKCharSelect displays various information about the selected character. This includes not only the Unicode character name, but also aliases, general notes and cross references to similar characters.xx</p>
     <p>
       For technical use, different representations of the character are shown. 
     </p>
+    <p xml:lang="ca">Per a ús tècnic, es mostren diferents representacions del caràcter.</p>
+    <p xml:lang="ca-valencia">Per a ús tècnic, es mostren diferents representacions del caràcter.</p>
+    <p xml:lang="nl">Om technische redenen worden verschillende representaties van het teken getoond .</p>
+    <p xml:lang="sv">För teknisk användning visas olika representationer av tecknet.</p>
+    <p xml:lang="uk">З метою технічного використання буде показано різноманітні представлення позначеного символу.</p>
+    <p xml:lang="x-test">xxFor technical use, different representations of the character are shown.xx</p>
     <p>
       KCharSelect also contains Unihan data for East Asian characters to display English definitions and different pronunciations.
     </p>
+    <p xml:lang="ca">El KCharSelect també conté dades Unihan per a caràcters asiàtics orientals, mostrant les definicions angleses i les pronunciacions diferents.</p>
+    <p xml:lang="ca-valencia">El KCharSelect també conté dades Unihan per a caràcters asiàtics orientals, mostrant les definicions angleses i les pronunciacions diferents.</p>
+    <p xml:lang="nl">KCharSelect bevat ook Unihan-gegevens voor Oost-Aziatische tekens om Engelse definities te tonen en verschillen in uitspraak.</p>
+    <p xml:lang="sv">Teckenväljaren innehåller också Unihan-data för östasiatiska tecken för att visa engelska definitioner och olika uttal.</p>
+    <p xml:lang="uk">Крім того, KCharSelect показує дані Unihan для східноазійських мов, зокрема визначень англійською та різноманітних вимов.</p>
+    <p xml:lang="x-test">xxKCharSelect also contains Unihan data for East Asian characters to display English definitions and different pronunciations.xx</p>
   </description>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kcharselect</url>
   <url type="donation">https://www.kde.org/community/donations/</url>
