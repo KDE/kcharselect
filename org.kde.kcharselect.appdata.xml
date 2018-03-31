@@ -6,6 +6,7 @@
   <name>KCharSelect</name>
   <name xml:lang="ca">KCharSelect</name>
   <name xml:lang="ca-valencia">KCharSelect</name>
+  <name xml:lang="en-GB">KCharSelect</name>
   <name xml:lang="nl">KCharSelect</name>
   <name xml:lang="pt">KCharSelect</name>
   <name xml:lang="sk">KCharSelect</name>
@@ -16,6 +17,7 @@
   <summary>Character Selector</summary>
   <summary xml:lang="ca">Selector de caràcters</summary>
   <summary xml:lang="ca-valencia">Selector de caràcters</summary>
+  <summary xml:lang="en-GB">Character Selector</summary>
   <summary xml:lang="nl">Speciale tekens</summary>
   <summary xml:lang="pt">Selector de Caracteres</summary>
   <summary xml:lang="sk">Výber znakov</summary>
@@ -29,6 +31,7 @@
     </p>
     <p xml:lang="ca">El KCharSelect és una eina per seleccionar els caràcters especials de tots els tipus de lletra instal·lats i els copia al porta-retalls.</p>
     <p xml:lang="ca-valencia">El KCharSelect és una eina per seleccionar els caràcters especials de tots els tipus de lletra instal·lats i els copia al porta-retalls.</p>
+    <p xml:lang="en-GB">KCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.</p>
     <p xml:lang="nl">KCharSelect is een hulpmiddel om speciale tekens uit alle geïnstalleerde lettertypen te selecteren en deze daarna naar het klembord te kopiëren.</p>
     <p xml:lang="pt">O KCharSelect é uma ferramenta para seleccionar caracteres especiais de todos os tipos de letra instalados e copiá-los para a área de transferência.</p>
     <p xml:lang="sv">Teckenväljaren är ett verktyg för att välja specialtecken från alla installerade teckensnitt och kopiera dem till klippbordet.</p>
@@ -39,6 +42,7 @@
     </p>
     <p xml:lang="ca">Podeu navegar pels caràcters per categoria o trobar ràpidament un caràcter determinat mitjançant la cerca pel seu nom.</p>
     <p xml:lang="ca-valencia">Podeu navegar pels caràcters per categoria o trobar ràpidament un caràcter determinat mitjançant la cerca pel seu nom.</p>
+    <p xml:lang="en-GB">You can browse characters by their category or quickly find a certain character by searching for its name.</p>
     <p xml:lang="nl">U kunt tekens per category bekijken of snel een bepaald teken vinden door naar zijn naam te zoeken.</p>
     <p xml:lang="pt">Poderá navegar pelos caracteres de acordo com a sua categoria ou descobrir rapidamente um dado carácter, pesquisando pelo seu nome.</p>
     <p xml:lang="sv">Det går att bläddra bland tecken enligt deras kategori eller snabbt hitta ett visst tecken genom att söka efter dess namn.</p>
@@ -49,6 +53,7 @@
     </p>
     <p xml:lang="ca">El KCharSelect mostra diversa informació sobre el caràcter seleccionat. Això inclou no només el nom de caràcter Unicode, sinó també els seus àlies, notes generals i referències a caràcters similars.</p>
     <p xml:lang="ca-valencia">El KCharSelect mostra diversa informació sobre el caràcter seleccionat. Això inclou no només el nom de caràcter Unicode, sinó també els seus àlies, notes generals i referències a caràcters similars.</p>
+    <p xml:lang="en-GB">KCharSelect displays various information about the selected character. This includes not only the Unicode character name, but also aliases, general notes and cross references to similar characters.</p>
     <p xml:lang="nl">KCharSelect toont verschillende soorten informatie over het geselecteerde teken. Dit bevat niet alleen de tekennaam in Unicode, maar ook aliassen, algemene notities en kruisverwijzingen naar soortgelijke tekens.</p>
     <p xml:lang="pt">O KCharSelect mostra diversas informações sobre o carácter seleccionado. Isto inclui não só o nome do carácter em Unicode, como também nomes alternativos, notas gerais e referências cruzadas para outros caracteres semelhantes.</p>
     <p xml:lang="sv">Teckenväljaren visar diverse information om det valda tecknet. Det omfattar inte bara tecknets Unicode-namn, utan också alias, allmänna anmärkningar och korsreferenser till liknande tecken.</p>
@@ -59,6 +64,7 @@
     </p>
     <p xml:lang="ca">Per a ús tècnic, es mostren diferents representacions del caràcter.</p>
     <p xml:lang="ca-valencia">Per a ús tècnic, es mostren diferents representacions del caràcter.</p>
+    <p xml:lang="en-GB">For technical use, different representations of the character are shown.</p>
     <p xml:lang="nl">Om technische redenen worden verschillende representaties van het teken getoond .</p>
     <p xml:lang="pt">Para uso técnico, são apresentadas diferentes representações do mesmo carácter.</p>
     <p xml:lang="sv">För teknisk användning visas olika representationer av tecknet.</p>
@@ -69,6 +75,7 @@
     </p>
     <p xml:lang="ca">El KCharSelect també conté dades Unihan per a caràcters asiàtics orientals, mostrant les definicions angleses i les pronunciacions diferents.</p>
     <p xml:lang="ca-valencia">El KCharSelect també conté dades Unihan per a caràcters asiàtics orientals, mostrant les definicions angleses i les pronunciacions diferents.</p>
+    <p xml:lang="en-GB">KCharSelect also contains Unihan data for East Asian characters to display English definitions and different pronunciations.</p>
     <p xml:lang="nl">KCharSelect bevat ook Unihan-gegevens voor Oost-Aziatische tekens om Engelse definities te tonen en verschillen in uitspraak.</p>
     <p xml:lang="pt">O KCharSelect também contém os dados Unihan, dos caracteres da Ásia Oriental, para mostrar as definições em Inglês e as diferentes pronúncias.</p>
     <p xml:lang="sv">Teckenväljaren innehåller också Unihan-data för östasiatiska tecken för att visa engelska definitioner och olika uttal.</p>
