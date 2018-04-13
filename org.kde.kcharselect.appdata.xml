@@ -7,8 +7,10 @@
   <name xml:lang="ca">KCharSelect</name>
   <name xml:lang="ca-valencia">KCharSelect</name>
   <name xml:lang="cs">KCharSelect</name>
+  <name xml:lang="de">KCharSelect</name>
   <name xml:lang="en-GB">KCharSelect</name>
   <name xml:lang="es">KCharSelect</name>
+  <name xml:lang="fr">KCharSelect</name>
   <name xml:lang="nl">KCharSelect</name>
   <name xml:lang="pt">KCharSelect</name>
   <name xml:lang="sk">KCharSelect</name>
@@ -19,6 +21,7 @@
   <summary>Character Selector</summary>
   <summary xml:lang="ca">Selector de caràcters</summary>
   <summary xml:lang="ca-valencia">Selector de caràcters</summary>
+  <summary xml:lang="de">Zeichenauswahl</summary>
   <summary xml:lang="en-GB">Character Selector</summary>
   <summary xml:lang="es">Selector de caracteres</summary>
   <summary xml:lang="nl">Speciale tekens</summary>
