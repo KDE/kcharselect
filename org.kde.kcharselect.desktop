@@ -181,5 +181,6 @@ Comment[tr]=Tüm unicode karakterlere gözat
 Comment[uk]=Навігація таблицею усіх символів Unicode
 Comment[x-test]=xxBrowse all unicode charactersxx
 Comment[zh_CN]=浏览所有 Unicode 字符
+Comment[zh_TW]=顯示所有的 Unicode 字符
 StartupNotify=true
 Categories=Qt;KDE;Utility;
