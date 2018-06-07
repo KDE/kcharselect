@@ -16,6 +16,7 @@
   <name xml:lang="ia">KCharSelect</name>
   <name xml:lang="it">KCharSelect</name>
   <name xml:lang="nl">KCharSelect</name>
+  <name xml:lang="nn">KCharSelect</name>
   <name xml:lang="pl">KCharSelect</name>
   <name xml:lang="pt">KCharSelect</name>
   <name xml:lang="sk">KCharSelect</name>
@@ -35,6 +36,7 @@
   <summary xml:lang="ia">Selector de character</summary>
   <summary xml:lang="it">Selettore di caratteri</summary>
   <summary xml:lang="nl">Speciale tekens</summary>
+  <summary xml:lang="nn">Teiknveljar</summary>
   <summary xml:lang="pl">Tablica znaków</summary>
   <summary xml:lang="pt">Selector de Caracteres</summary>
   <summary xml:lang="sk">Výber znakov</summary>
@@ -55,6 +57,7 @@
     <p xml:lang="gl">KCharSelect é unha ferramenta para seleccionar caracteres especiais de todos os tipos de letra instalados e copialos no portapapeis.</p>
     <p xml:lang="it">KCharSelect è uno strumento per selezionare i caratteri speciali da tutti i tipi di carattere installati e per copiarli negli appunti.</p>
     <p xml:lang="nl">KCharSelect is een hulpmiddel om speciale tekens uit alle geïnstalleerde lettertypen te selecteren en deze daarna naar het klembord te kopiëren.</p>
+    <p xml:lang="nn">KCharSelect er eit verktøy for å finna spesialteikna i alle installerte skrifter og kopiera dei til utklippstavla.</p>
     <p xml:lang="pl">KCharSelect jest narzędziem do wybierania i kopiowania do schowka znaków specjalnych z wgranych czcionek.</p>
     <p xml:lang="pt">O KCharSelect é uma ferramenta para seleccionar caracteres especiais de todos os tipos de letra instalados e copiá-los para a área de transferência.</p>
     <p xml:lang="sv">Teckenväljaren är ett verktyg för att välja specialtecken från alla installerade teckensnitt och kopiera dem till klippbordet.</p>
@@ -72,6 +75,7 @@
     <p xml:lang="gl">Pode explorar os caracteres por categoría ou atopar un carácter concreto rapidamente buscándoo polo seu nome.</p>
     <p xml:lang="it">Puoi sfogliare i caratteri per categoria, oppure trovare facilmente determinati caratteri cercandoli per nome.</p>
     <p xml:lang="nl">U kunt tekens per category bekijken of snel een bepaald teken vinden door naar zijn naam te zoeken.</p>
+    <p xml:lang="nn">Du kan finna teikn ved bla gjennom teiknkategoriar eller ved å søkja etter namna på teikna.</p>
     <p xml:lang="pl">Możesz przeglądać znaki po ich kategorii lub szybko znaleźć jakiś znak wyszukując po jego nazwie.</p>
     <p xml:lang="pt">Poderá navegar pelos caracteres de acordo com a sua categoria ou descobrir rapidamente um dado carácter, pesquisando pelo seu nome.</p>
     <p xml:lang="sv">Det går att bläddra bland tecken enligt deras kategori eller snabbt hitta ett visst tecken genom att söka efter dess namn.</p>
