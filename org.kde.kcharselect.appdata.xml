@@ -23,7 +23,7 @@
   <name xml:lang="sv">Kcharselect</name>
   <name xml:lang="uk">KCharSelect</name>
   <name xml:lang="x-test">xxKCharSelectxx</name>
-  <name xml:lang="zh-CN">KCharSelect</name>
+  <name xml:lang="zh-CN">字符选取器</name>
   <summary>Character Selector</summary>
   <summary xml:lang="ast">Seleutor de caráuteres</summary>
   <summary xml:lang="ca">Selector de caràcters</summary>
@@ -63,7 +63,7 @@
     <p xml:lang="sv">Teckenväljaren är ett verktyg för att välja specialtecken från alla installerade teckensnitt och kopiera dem till klippbordet.</p>
     <p xml:lang="uk">KCharSelect — програма для вибору спеціальних символів з усіх встановлених шрифтів і копіювання цих символів до буфера обміну даними.</p>
     <p xml:lang="x-test">xxKCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.xx</p>
-    <p xml:lang="zh-CN">KCharSelect 是一个用于从所有已安装字体中选择特殊字符并且把它们复制到剪贴板中的工具。</p>
+    <p xml:lang="zh-CN">字符选取器 是一个用于从所有已安装字体中选择特殊字符并且把它们复制到剪贴板中的工具。</p>
     <p>
       You can browse characters by their category or quickly find a certain character by searching for its name.
     </p>
@@ -100,7 +100,7 @@
     <p xml:lang="sv">Teckenväljaren visar diverse information om det valda tecknet. Det omfattar inte bara tecknets Unicode-namn, utan också alias, allmänna anmärkningar och korsreferenser till liknande tecken.</p>
     <p xml:lang="uk">Програма KCharSelect здатна показувати різноманітну інформацію щодо позначеного символу. Серед показаних даних буде не лише назва символу Unicode, але і його альтернативні назви, загальні нотатки та посилання на подібні символи.</p>
     <p xml:lang="x-test">xxKCharSelect displays various information about the selected character. This includes not only the Unicode character name, but also aliases, general notes and cross references to similar characters.xx</p>
-    <p xml:lang="zh-CN">KCharSelect 会显示选中字符的各种信息。这不仅包括它的 Unicode 字符名，也包括别名、一般注释以及和相似字符的交叉引用。</p>
+    <p xml:lang="zh-CN">字符选取器 会显示选中字符的各种信息。这不仅包括它的 Unicode 字符名，也包括别名、一般注释以及和相似字符的交叉引用。</p>
     <p>
       For technical use, different representations of the character are shown. 
     </p>
@@ -136,7 +136,7 @@
     <p xml:lang="sv">Teckenväljaren innehåller också Unihan-data för östasiatiska tecken för att visa engelska definitioner och olika uttal.</p>
     <p xml:lang="uk">Крім того, KCharSelect показує дані Unihan для східноазійських мов, зокрема визначень англійською та різноманітних вимов.</p>
     <p xml:lang="x-test">xxKCharSelect also contains Unihan data for East Asian characters to display English definitions and different pronunciations.xx</p>
-    <p xml:lang="zh-CN">KCharSelect 也包括了东亚字符的 Unihan 数据，用于显示它们的英语定义和不同发音。</p>
+    <p xml:lang="zh-CN">字符选取器 也包括了东亚字符的 Unihan 数据，用于显示它们的英语定义和不同发音。</p>
   </description>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kcharselect</url>
   <url type="donation">https://www.kde.org/community/donations/</url>
