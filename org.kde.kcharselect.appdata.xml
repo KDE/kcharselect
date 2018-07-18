@@ -20,6 +20,7 @@
   <name xml:lang="nn">KCharSelect</name>
   <name xml:lang="pl">KCharSelect</name>
   <name xml:lang="pt">KCharSelect</name>
+  <name xml:lang="pt-BR">KCharSelect</name>
   <name xml:lang="sk">KCharSelect</name>
   <name xml:lang="sv">Kcharselect</name>
   <name xml:lang="uk">KCharSelect</name>
@@ -41,6 +42,7 @@
   <summary xml:lang="nn">Teiknveljar</summary>
   <summary xml:lang="pl">Tablica znaków</summary>
   <summary xml:lang="pt">Selector de Caracteres</summary>
+  <summary xml:lang="pt-BR">Seletor de caracteres</summary>
   <summary xml:lang="sk">Výber znakov</summary>
   <summary xml:lang="sv">Teckenväljare</summary>
   <summary xml:lang="uk">Таблиця символів</summary>
