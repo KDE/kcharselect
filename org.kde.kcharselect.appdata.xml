@@ -82,7 +82,7 @@
     <p xml:lang="gl">Pode explorar os caracteres por categoría ou atopar un carácter concreto rapidamente buscándoo polo seu nome.</p>
     <p xml:lang="it">Puoi sfogliare i caratteri per categoria, oppure trovare facilmente determinati caratteri cercandoli per nome.</p>
     <p xml:lang="nl">U kunt tekens per category bekijken of snel een bepaald teken vinden door naar zijn naam te zoeken.</p>
-    <p xml:lang="nn">Du kan finna teikn ved bla gjennom teiknkategoriar eller ved å søkja etter namna på teikna.</p>
+    <p xml:lang="nn">Du kan finna teikn ved å bla gjennom teiknkategoriar eller ved å søkja etter namna på teikna.</p>
     <p xml:lang="pl">Możesz przeglądać znaki po ich kategorii lub szybko znaleźć jakiś znak wyszukując po jego nazwie.</p>
     <p xml:lang="pt">Poderá navegar pelos caracteres de acordo com a sua categoria ou descobrir rapidamente um dado carácter, pesquisando pelo seu nome.</p>
     <p xml:lang="sv">Det går att bläddra bland tecken enligt deras kategori eller snabbt hitta ett visst tecken genom att söka efter dess namn.</p>
@@ -102,6 +102,7 @@
     <p xml:lang="gl">KCharSelect mostra diversa información sobre o carácter seleccionado. A información inclúe non só o nome do carácter Unicode, senón tamén nomes alternativos, notas xerais e referencias a caracteres similares.</p>
     <p xml:lang="it">KCharSelect visualizza numerose informazioni sul carattere selezionato; queste includono non solo il nome Unicode, ma anche gli alias, le note generali ed i riferimenti incrociati ai caratteri simili.</p>
     <p xml:lang="nl">KCharSelect toont verschillende soorten informatie over het geselecteerde teken. Dit bevat niet alleen de tekennaam in Unicode, maar ook aliassen, algemene notities en kruisverwijzingen naar soortgelijke tekens.</p>
+    <p xml:lang="nn">KCharSelect kan finna teiknnamn i Unicode, aliasnamn, generelle merknadar og kryssreferansar til liknande teikn.</p>
     <p xml:lang="pl">KCharSelect wyświetla różne informacje o wybranym znaku. Zawiera nie tylko nazwę znaku Unikodu, lecz także aliasy, ogólne uwagi i odwołania do podobnych znaków</p>
     <p xml:lang="pt">O KCharSelect mostra diversas informações sobre o carácter seleccionado. Isto inclui não só o nome do carácter em Unicode, como também nomes alternativos, notas gerais e referências cruzadas para outros caracteres semelhantes.</p>
     <p xml:lang="sv">Teckenväljaren visar diverse information om det valda tecknet. Det omfattar inte bara tecknets Unicode-namn, utan också alias, allmänna anmärkningar och korsreferenser till liknande tecken.</p>
@@ -121,6 +122,7 @@
     <p xml:lang="gl">Para uso técnico, móstranse distintas representacións do carácter.</p>
     <p xml:lang="it">Per l'uso tecnico vengono visualizzate diverse rappresentazioni del carattere.</p>
     <p xml:lang="nl">Om technische redenen worden verschillende representaties van het teken getoond .</p>
+    <p xml:lang="nn">Det viser òg ymse representasjonar av teikna for teknisk bruk.</p>
     <p xml:lang="pl">Ze względów technicznych, wyświetlane są różne przedstawienia znaku.</p>
     <p xml:lang="pt">Para uso técnico, são apresentadas diferentes representações do mesmo carácter.</p>
     <p xml:lang="sv">För teknisk användning visas olika representationer av tecknet.</p>
