@@ -23,7 +23,7 @@
 #include <KLocalizedString>
 #include <Kdelibs4ConfigMigrator>
 #include "kcharselectdia.h"
-#include "config-kcharselect.h"
+#include <config-kcharselect.h>
 
 int main(int argc, char **argv)
 {
