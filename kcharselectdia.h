@@ -49,7 +49,7 @@ protected:
   QFont vFont;
   bool _rtl;
 
-protected slots:
+protected Q_SLOTS:
   void charChanged(uint _chr);
   void fontSelected(const QFont &_font);
   void add()

@@ -17,7 +17,7 @@ find_package (ECM ${ECM_VERSION} REQUIRED NO_MODULE)
 set (CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 include(KDEInstallDirs)
-include(KDECompilerSettings NO_POLICY_SCOPE)
+include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(KDECMakeSettings)
 
 find_package (Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
@@ -34,7 +34,6 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     XmlGui
 )
 
-add_definitions(-DQT_USE_QSTRINGBUILDER)
 
 configure_file(config-kcharselect.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kcharselect.h)
 
