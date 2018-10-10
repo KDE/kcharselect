@@ -4,7 +4,6 @@
   <metadata_license>FSFAP</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <name>KCharSelect</name>
-  <name xml:lang="ast">KCharSelect</name>
   <name xml:lang="ca">KCharSelect</name>
   <name xml:lang="ca-valencia">KCharSelect</name>
   <name xml:lang="cs">KCharSelect</name>
@@ -29,7 +28,6 @@
   <name xml:lang="x-test">xxKCharSelectxx</name>
   <name xml:lang="zh-CN">字符选取器</name>
   <summary>Character Selector</summary>
-  <summary xml:lang="ast">Seleutor de caráuteres</summary>
   <summary xml:lang="ca">Selector de caràcters</summary>
   <summary xml:lang="ca-valencia">Selector de caràcters</summary>
   <summary xml:lang="de">Zeichenauswahl</summary>
