@@ -2,7 +2,6 @@
 GenericName=Character Selector
 GenericName[af]=Karakter Kiesser
 GenericName[ar]=منتقي المحارف
-GenericName[ast]=Seleutor de caráuteres
 GenericName[bg]=Избор на знаци
 GenericName[br]=Dibaber arouezenn
 GenericName[bs]=Birač znakova
@@ -81,7 +80,6 @@ X-DocPath=kcharselect/index.html
 Name=KCharSelect
 Name[af]=Kcharselect
 Name[ar]=منتقي محارفك
-Name[ast]=KCharSelect
 Name[bg]=CharSelect
 Name[br]=KCharSelect
 Name[bs]=KCharSelect
