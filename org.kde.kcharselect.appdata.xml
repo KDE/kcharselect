@@ -22,6 +22,7 @@
   <name xml:lang="pl">KCharSelect</name>
   <name xml:lang="pt">KCharSelect</name>
   <name xml:lang="pt-BR">KCharSelect</name>
+  <name xml:lang="ru">KCharSelect</name>
   <name xml:lang="sk">KCharSelect</name>
   <name xml:lang="sv">Kcharselect</name>
   <name xml:lang="uk">KCharSelect</name>
@@ -45,6 +46,7 @@
   <summary xml:lang="pl">Tablica znaków</summary>
   <summary xml:lang="pt">Selector de Caracteres</summary>
   <summary xml:lang="pt-BR">Seletor de caracteres</summary>
+  <summary xml:lang="ru">Выбор символа</summary>
   <summary xml:lang="sk">Výber znakov</summary>
   <summary xml:lang="sv">Teckenväljare</summary>
   <summary xml:lang="uk">Таблиця символів</summary>
@@ -70,6 +72,7 @@
     <p xml:lang="pl">KCharSelect jest narzędziem do wybierania i kopiowania do schowka znaków specjalnych z wgranych czcionek.</p>
     <p xml:lang="pt">O KCharSelect é uma ferramenta para seleccionar caracteres especiais de todos os tipos de letra instalados e copiá-los para a área de transferência.</p>
     <p xml:lang="pt-BR">KCharSelect é uma ferramenta para selecionar caracteres especiais de todas as fontes instaladas e copiá-los para a área de transferência.</p>
+    <p xml:lang="ru">KCharSelect служит для выбора и копирования в буфер обмена символов, которые содержатся в шрифтах, но отсутствуют на клавиатуре.</p>
     <p xml:lang="sv">Teckenväljaren är ett verktyg för att välja specialtecken från alla installerade teckensnitt och kopiera dem till klippbordet.</p>
     <p xml:lang="uk">KCharSelect — програма для вибору спеціальних символів з усіх встановлених шрифтів і копіювання цих символів до буфера обміну даними.</p>
     <p xml:lang="x-test">xxKCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.xx</p>
@@ -93,6 +96,7 @@
     <p xml:lang="pl">Możesz przeglądać znaki po ich kategorii lub szybko znaleźć jakiś znak wyszukując po jego nazwie.</p>
     <p xml:lang="pt">Poderá navegar pelos caracteres de acordo com a sua categoria ou descobrir rapidamente um dado carácter, pesquisando pelo seu nome.</p>
     <p xml:lang="pt-BR">Você pode navegar pelos caracteres pela sua categoria, ou localizar rapidamente por um determinado caractere, procurando pelo seu nome.</p>
+    <p xml:lang="ru">Приложение позволяет просматривать категории символов </p>
     <p xml:lang="sv">Det går att bläddra bland tecken enligt deras kategori eller snabbt hitta ett visst tecken genom att söka efter dess namn.</p>
     <p xml:lang="uk">Ви можете переглядати символи за категоріями або швидко знайти певний символ за його назвою.</p>
     <p xml:lang="x-test">xxYou can browse characters by their category or quickly find a certain character by searching for its name.xx</p>
@@ -116,6 +120,7 @@
     <p xml:lang="pl">KCharSelect wyświetla różne informacje o wybranym znaku. Zawiera nie tylko nazwę znaku Unikodu, lecz także aliasy, ogólne uwagi i odwołania do podobnych znaków</p>
     <p xml:lang="pt">O KCharSelect mostra diversas informações sobre o carácter seleccionado. Isto inclui não só o nome do carácter em Unicode, como também nomes alternativos, notas gerais e referências cruzadas para outros caracteres semelhantes.</p>
     <p xml:lang="pt-BR">O KCharSelect mostra várias informações sobre o caractere selecionado. Isso inclui não somente o nome do caractere Unicode, mas também os seus nomes alternativos, as notas gerais e as referências cruzadas para outros caracteres semelhantes.</p>
+    <p xml:lang="ru">KCharSelect отображает следующую информацию о выбранном символе: код символа, название, общие сведения и перекрёстные ссылки на похожие символы.</p>
     <p xml:lang="sv">Teckenväljaren visar diverse information om det valda tecknet. Det omfattar inte bara tecknets Unicode-namn, utan också alias, allmänna anmärkningar och korsreferenser till liknande tecken.</p>
     <p xml:lang="uk">Програма KCharSelect здатна показувати різноманітну інформацію щодо позначеного символу. Серед показаних даних буде не лише назва символу Unicode, але і його альтернативні назви, загальні нотатки та посилання на подібні символи.</p>
     <p xml:lang="x-test">xxKCharSelect displays various information about the selected character. This includes not only the Unicode character name, but also aliases, general notes and cross references to similar characters.xx</p>
