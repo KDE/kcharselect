@@ -46,7 +46,7 @@
   <summary xml:lang="pl">Tablica znaków</summary>
   <summary xml:lang="pt">Selector de Caracteres</summary>
   <summary xml:lang="pt-BR">Seletor de caracteres</summary>
-  <summary xml:lang="ru">Выбор символа</summary>
+  <summary xml:lang="ru">Выбор символов</summary>
   <summary xml:lang="sk">Výber znakov</summary>
   <summary xml:lang="sv">Teckenväljare</summary>
   <summary xml:lang="uk">Таблиця символів</summary>
@@ -96,7 +96,7 @@
     <p xml:lang="pl">Możesz przeglądać znaki po ich kategorii lub szybko znaleźć jakiś znak wyszukując po jego nazwie.</p>
     <p xml:lang="pt">Poderá navegar pelos caracteres de acordo com a sua categoria ou descobrir rapidamente um dado carácter, pesquisando pelo seu nome.</p>
     <p xml:lang="pt-BR">Você pode navegar pelos caracteres pela sua categoria, ou localizar rapidamente por um determinado caractere, procurando pelo seu nome.</p>
-    <p xml:lang="ru">Приложение позволяет просматривать категории символов </p>
+    <p xml:lang="ru">Приложение позволяет просматривать категории символов</p>
     <p xml:lang="sv">Det går att bläddra bland tecken enligt deras kategori eller snabbt hitta ett visst tecken genom att söka efter dess namn.</p>
     <p xml:lang="uk">Ви можете переглядати символи за категоріями або швидко знайти певний символ за його назвою.</p>
     <p xml:lang="x-test">xxYou can browse characters by their category or quickly find a certain character by searching for its name.xx</p>
@@ -144,6 +144,7 @@
     <p xml:lang="pl">Ze względów technicznych, wyświetlane są różne przedstawienia znaku.</p>
     <p xml:lang="pt">Para uso técnico, são apresentadas diferentes representações do mesmo carácter.</p>
     <p xml:lang="pt-BR">Para uso técnico, são apresentadas as diferentes representações do mesmo caractere.</p>
+    <p xml:lang="ru">Приложение выводит сведения о различных представлениях символа.</p>
     <p xml:lang="sv">För teknisk användning visas olika representationer av tecknet.</p>
     <p xml:lang="uk">З метою технічного використання буде показано різноманітні представлення позначеного символу.</p>
     <p xml:lang="x-test">xxFor technical use, different representations of the character are shown.xx</p>
@@ -167,6 +168,7 @@
     <p xml:lang="pl">KCharSelect zawiera także dane Unihan dla wschodnioazjatyckich znaków do wyświetlania definicji po angielsku i różnych wymów.</p>
     <p xml:lang="pt">O KCharSelect também contém os dados Unihan, dos caracteres da Ásia Oriental, para mostrar as definições em Inglês e as diferentes pronúncias.</p>
     <p xml:lang="pt-BR">O KCharSelect também contém os dados Unihan dos caracteres asiáticos, para mostrar as definições em inglês e as diferentes pronúncias.</p>
+    <p xml:lang="ru">В составе KCharSelect также есть данные от проекта UniHan, среди которых — английские толкования и варианты чтения иероглифов.</p>
     <p xml:lang="sv">Teckenväljaren innehåller också Unihan-data för östasiatiska tecken för att visa engelska definitioner och olika uttal.</p>
     <p xml:lang="uk">Крім того, KCharSelect показує дані Unihan для східноазійських мов, зокрема визначень англійською та різноманітних вимов.</p>
     <p xml:lang="x-test">xxKCharSelect also contains Unihan data for East Asian characters to display English definitions and different pronunciations.xx</p>
