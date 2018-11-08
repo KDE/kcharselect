@@ -175,7 +175,7 @@
     <p xml:lang="zh-CN">字符选取器 也包括了东亚字符的 Unihan 数据，用于显示它们的英语定义和不同发音。</p>
   </description>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kcharselect</url>
-  <url type="donation">https://www.kde.org/community/donations/</url>
+  <url type="donation">https://www.kde.org/community/donations/?app=kcharselect&amp;source=appdata</url>
   <url type="help">https://docs.kde.org/?application=kcharselect</url>
   <url type="homepage">https://utils.kde.org/projects/kcharselect/</url>
   <screenshots>
