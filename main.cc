@@ -44,7 +44,7 @@ int main(int argc, char **argv)
 
   KAboutData aboutData( QStringLiteral("kcharselect"), i18n("KCharSelect"),
     QLatin1String(KCHARSELECT_VERSION), i18n("KDE character selection utility"), KAboutLicense::GPL,
-    QString(), i18n("A wrapper around the KCharSelect widget."), QStringLiteral("http://utils.kde.org/projects/kcharselect") );
+    QString(), i18n("A wrapper around the KCharSelect widget."), QStringLiteral("https://utils.kde.org/projects/kcharselect/") );
 
   aboutData.addAuthor(i18n("Christoph Feck"), i18n("KF5 port and current maintainer"), QStringLiteral("cfeck@kde.org"));
   aboutData.addAuthor(i18n("Daniel Laidig"), i18n("Author and previous maintainer"), QStringLiteral("d.laidig@gmx.de") );
