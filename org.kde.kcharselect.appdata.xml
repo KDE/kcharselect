@@ -67,6 +67,7 @@
     <p xml:lang="fi">KCharSelect on työkalu merkkien valitsemiseksi ja kopioimiseksi leikepöydälle kaikista asennetuista fonteista.</p>
     <p xml:lang="fr">KCharSelect est un outil qui vous permet de sélectionner des caractères spéciaux parmi les polices de caractères installées et de les copier dans le presse-papiers.</p>
     <p xml:lang="gl">KCharSelect é unha ferramenta para seleccionar caracteres especiais de todos os tipos de letra instalados e copialos no portapapeis.</p>
+    <p xml:lang="ia">KCharSelect es un intrumento pro seliger characteres ab fontes installate e copiar los in le area de transferentia.</p>
     <p xml:lang="id">KCharSelect adalah alat untuk memilih karakter khusus dari semua font yang diinstal dan menyalinnya ke clipboard.</p>
     <p xml:lang="it">KCharSelect è uno strumento per selezionare i caratteri speciali da tutti i tipi di carattere installati e per copiarli negli appunti.</p>
     <p xml:lang="ko">KCharSelec는 설치된 글꼴에서 사용할 수 있는 특수 문자를 보고 복사하는 도구입니다.</p>
@@ -92,6 +93,7 @@
     <p xml:lang="fi">Voit selata merkkejä niiden luokan mukaan tai etsiä merkkiä nopeasti sen nimen perusteella.</p>
     <p xml:lang="fr">Vous pouvez parcourir les caractères par catégorie ou trouver rapidement un caractère donné en cherchant son nom.</p>
     <p xml:lang="gl">Pode explorar os caracteres por categoría ou atopar un carácter concreto rapidamente buscándoo polo seu nome.</p>
+    <p xml:lang="ia">Tu pote cercar characteres per lor categoria o trovar rapidemente un certe character per cercar lo per le sue nomine.</p>
     <p xml:lang="id">Kamu bisa menelusuri karakter berdasarkan kategorinya atau dengan cepat menemukan karakter tertentu dengan mencari namanya.</p>
     <p xml:lang="it">Puoi sfogliare i caratteri per categoria, oppure trovare facilmente determinati caratteri cercandoli per nome.</p>
     <p xml:lang="ko">분류별로 문자 목록을 보거나 이름으로 검색할 수 있습니다.</p>
@@ -117,6 +119,7 @@
     <p xml:lang="fi">KCharSelect näyttää kustakin merkistä eri tietoja, ei vain Unicode-nimeä vaan myös aliakset, yleiset huomautukset ja ristiviittaukset samankaltaisiin merkkeihin.</p>
     <p xml:lang="fr">KCharSelect affiche des informations relatives au caractère sélectionné. Celles-ci incluent non seulement le nom Unicode du caractère, mais aussi ses alias, des remarques générales et des références à des caractères similaires.</p>
     <p xml:lang="gl">KCharSelect mostra diversa información sobre o carácter seleccionado. A información inclúe non só o nome do carácter Unicode, senón tamén nomes alternativos, notas xerais e referencias a caracteres similares.</p>
+    <p xml:lang="ia">KCharSelect monstra varie information re le character seligite. Isto include non solmente nomine de character Unicode, sed tamben aliases, notas general e referentias cruciate per simil characteres.</p>
     <p xml:lang="id">KCharSelect menampilkan berbagai informasi tentang karakter yang dipilih. Ini tidak hanya mencakup nama karakter Unicode, tetapi juga alias, catatan umum dan referensi silang ke karakter yang serupa.</p>
     <p xml:lang="it">KCharSelect visualizza numerose informazioni sul carattere selezionato; queste includono non solo il nome Unicode, ma anche gli alias, le note generali ed i riferimenti incrociati ai caratteri simili.</p>
     <p xml:lang="ko">KCharSelect는 유니코드 글자 이름, 별명, 일반 설명 및 비슷한 글자 참조 등 선택한 글자의 정보를 보여 줍니다.</p>
@@ -142,6 +145,7 @@
     <p xml:lang="fi">Teknistä käyttöä varten merkistä näytetään eri esitysasut.</p>
     <p xml:lang="fr">Pour un usage technique, plusieurs représentations du caractère sont affichées.</p>
     <p xml:lang="gl">Para uso técnico, móstranse distintas representacións do carácter.</p>
+    <p xml:lang="ia">Per uso technic, on monstra differente rappresentationes del character.</p>
     <p xml:lang="id">Untuk penggunaan teknis, berbagai representasi karakter ditampilkan.</p>
     <p xml:lang="it">Per l'uso tecnico vengono visualizzate diverse rappresentazioni del carattere.</p>
     <p xml:lang="ko">기술적인 사용을 위해서 글자를 표시할 수 있는 다른 방법도 표시합니다.</p>
@@ -167,6 +171,7 @@
     <p xml:lang="fi">KCharSelect sisältää myös itäaasialaisten merkkien Unihan-tiedon englanninkielisin määritelmin ja eri ääntöasuin.</p>
     <p xml:lang="fr">KCharSelect contient également les données Unihan pour les caractères des langues d'Extrême-Orient, afin d'afficher leurs définitions en Anglais et leurs différentes prononciations.</p>
     <p xml:lang="gl">KCharSelect tamén contén datos de Unihan para que os caracteres de Asia do leste mostren definicións en inglés e distintas pronuncias.</p>
+    <p xml:lang="ia">KCharSelect anque contine datos de Unihan per characteres de Asia Oriental per monstrar definitiones de Anglese e pronuntiationes differente.</p>
     <p xml:lang="id">KCharSelect juga berisi data Unihan untuk karakter Asia Timur untuk menampilkan definisi bahasa Inggris dan pengucapan yang berbeda.</p>
     <p xml:lang="it">KCharSelect contiene anche i dati Unihan per i caratteri dell'est asiatico, per visualizzare le definizioni inglesi e per le varie pronunce.</p>
     <p xml:lang="ko">KCharSelect는 Unihan 한자 데이터베이스를 지원하며 각 글자의 뜻 및 지역별 발음을 표시합니다.</p>
