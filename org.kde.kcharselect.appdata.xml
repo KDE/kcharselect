@@ -28,6 +28,7 @@
   <name xml:lang="uk">KCharSelect</name>
   <name xml:lang="x-test">xxKCharSelectxx</name>
   <name xml:lang="zh-CN">字符选取器</name>
+  <name xml:lang="zh-TW">KCharSelect</name>
   <summary>Character Selector</summary>
   <summary xml:lang="ca">Selector de caràcters</summary>
   <summary xml:lang="ca-valencia">Selector de caràcters</summary>
@@ -52,6 +53,7 @@
   <summary xml:lang="uk">Таблиця символів</summary>
   <summary xml:lang="x-test">xxCharacter Selectorxx</summary>
   <summary xml:lang="zh-CN">字符选择器</summary>
+  <summary xml:lang="zh-TW">符號選取器</summary>
   <description>
     <p>
       KCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.
@@ -77,6 +79,7 @@
     <p xml:lang="uk">KCharSelect — програма для вибору спеціальних символів з усіх встановлених шрифтів і копіювання цих символів до буфера обміну даними.</p>
     <p xml:lang="x-test">xxKCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.xx</p>
     <p xml:lang="zh-CN">字符选取器 是一个用于从所有已安装字体中选择特殊字符并且把它们复制到剪贴板中的工具。</p>
+    <p xml:lang="zh-TW">KCharSelect 是個能從所有安裝字體中選取特殊符號，並複製到剪貼板的工具。</p>
     <p>
       You can browse characters by their category or quickly find a certain character by searching for its name.
     </p>
