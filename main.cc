@@ -37,13 +37,13 @@ int main(int argc, char **argv)
    */
   app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
-  Kdelibs4ConfigMigrator migrate(QLatin1String("kcharselect"));
-  migrate.setConfigFiles(QStringList() << QLatin1String("kcharselectrc"));
-  migrate.setUiFiles(QStringList() << QLatin1String("kcharselectui.rc"));
+  Kdelibs4ConfigMigrator migrate(QStringLiteral("kcharselect"));
+  migrate.setConfigFiles(QStringList() << QStringLiteral("kcharselectrc"));
+  migrate.setUiFiles(QStringList() << QStringLiteral("kcharselectui.rc"));
   migrate.migrate();
 
   KAboutData aboutData( QStringLiteral("kcharselect"), i18n("KCharSelect"),
-    QLatin1String(KCHARSELECT_VERSION), i18n("KDE character selection utility"), KAboutLicense::GPL,
+    QStringLiteral(KCHARSELECT_VERSION), i18n("KDE character selection utility"), KAboutLicense::GPL,
     QString(), i18n("A wrapper around the KCharSelect widget."), QStringLiteral("https://utils.kde.org/projects/kcharselect/") );
 
   aboutData.addAuthor(i18n("Christoph Feck"), i18n("KF5 port and current maintainer"), QStringLiteral("cfeck@kde.org"));
@@ -63,7 +63,7 @@ int main(int argc, char **argv)
   aboutData.addCredit( i18n("Bryce Nesbitt"), i18n("RTL support") );
 
   KAboutData::setApplicationData( aboutData );
-  app.setWindowIcon( QIcon::fromTheme( QLatin1String( "accessories-character-map" )));
+  app.setWindowIcon( QIcon::fromTheme( QStringLiteral( "accessories-character-map" )));
 
 
   QCommandLineParser parser;

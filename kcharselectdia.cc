@@ -62,7 +62,7 @@ public:
     {
         QString c = bm.url().toString(QUrl::PreferLocalFile | QUrl::RemoveScheme);
         if (c.startsWith(QLatin1String("U+"))) {
-            uint uc = c.mid(2).toUInt(Q_NULLPTR, 16);
+            uint uc = c.midRef(2).toUInt(Q_NULLPTR, 16);
             d->charSelect->setCurrentCodePoint(uc);
         }
     }
@@ -125,7 +125,7 @@ KCharSelectDia::KCharSelectDia()
   grid->addWidget(lined, 1, 0, 1, 3);
 
   bClip = new QPushButton( i18n( "&To Clipboard" ), mainWidget );
-  bClip->setIcon( QIcon::fromTheme( QLatin1String( "edit-copy" ) ));
+  bClip->setIcon( QIcon::fromTheme( QStringLiteral( "edit-copy" ) ));
   bClip->setFixedSize( bClip->sizeHint() );
   connect(bClip, &QPushButton::clicked, this, &KCharSelectDia::toClip);
   grid->addWidget(bClip, 1, 3);
@@ -133,37 +133,37 @@ KCharSelectDia::KCharSelectDia()
   // Build menu
   KStandardAction::quit( this, SLOT(close()), actionCollection() );
 
-  QAction *action = actionCollection()->addAction( QLatin1String( "copy_clip" ) );
+  QAction *action = actionCollection()->addAction( QStringLiteral( "copy_clip" ) );
   action->setText( i18n("&To Clipboard") );
-  action->setIcon( QIcon::fromTheme( QLatin1String( "edit-copy" )) );
+  action->setIcon( QIcon::fromTheme( QStringLiteral( "edit-copy" )) );
   connect(action, &QAction::triggered, this, &KCharSelectDia::toClip);
   actionCollection()->setDefaultShortcuts(action, KStandardShortcut::shortcut(KStandardShortcut::Copy));
 
-  action = actionCollection()->addAction( QLatin1String( "copy_utf_8" ) );
+  action = actionCollection()->addAction( QStringLiteral( "copy_utf_8" ) );
   action->setText( i18n("To Clipboard &UTF-8") );
   connect(action, &QAction::triggered, this, &KCharSelectDia::toClipUTF8);
-  action = actionCollection()->addAction( QLatin1String( "copy_html" ) );
+  action = actionCollection()->addAction( QStringLiteral( "copy_html" ) );
   action->setText( i18n("To Clipboard &HTML") );
   connect(action, &QAction::triggered, this, &KCharSelectDia::toClipHTML);
 
-  action = actionCollection()->addAction( QLatin1String( "from_clip" ) );
+  action = actionCollection()->addAction( QStringLiteral( "from_clip" ) );
   action->setText( i18n("&From Clipboard") );
-  action->setIcon( QIcon::fromTheme( QLatin1String( "edit-paste" )) );
+  action->setIcon( QIcon::fromTheme( QStringLiteral( "edit-paste" )) );
   connect(action, &QAction::triggered, this, &KCharSelectDia::fromClip);
   actionCollection()->setDefaultShortcuts(action, KStandardShortcut::shortcut(KStandardShortcut::Paste));
-  action = actionCollection()->addAction( QLatin1String( "from_clip_utf8" ) );
+  action = actionCollection()->addAction( QStringLiteral( "from_clip_utf8" ) );
   action->setText( i18n( "From Clipboard UTF-8") );
   connect(action, &QAction::triggered, this, &KCharSelectDia::fromClipUTF8);
 
   i18n("From Clipboard HTML");      // Intended for future use
 
-  action = actionCollection()->addAction( QLatin1String( "flip" ) );
+  action = actionCollection()->addAction( QStringLiteral( "flip" ) );
   action->setText( i18n("&Flip Text") );
   connect(action, &QAction::triggered, this, &KCharSelectDia::flipText);
 
   action = new KToggleAction( i18n("&Reverse Direction"), this );
   action->setChecked(_rtl);
-  actionCollection()->addAction( QLatin1String( "rtl" ), action );
+  actionCollection()->addAction( QStringLiteral( "rtl" ), action );
   connect(action, &QAction::toggled, this, &KCharSelectDia::setRtl);
 
   charSelect->setFocus();
