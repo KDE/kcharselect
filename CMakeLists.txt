@@ -37,6 +37,11 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
 
 configure_file(config-kcharselect.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kcharselect.h)
 
+add_definitions( -DQT_DISABLE_DEPRECATED_BEFORE=0x060000 )
+add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
+add_definitions(-DQT_NO_FOREACH)
+
+
 set(kcharselect_SRCS kcharselectdia.cc main.cc )
 qt5_add_resources(kcharselect_SRCS kcharselect.qrc)
 
