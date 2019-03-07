@@ -1,5 +1,5 @@
-<!DOCTYPE kpartgui>
-<kpartgui name="kcharselect" version="3">
+<!DOCTYPE gui SYSTEM "kpartgui.dtd">
+<gui name="kcharselect" version="3">
 <MenuBar>
   <Menu name="edit"><text>&amp;Edit</text>
     <Action name="copy_clip"/>
@@ -16,4 +16,4 @@
 <ToolBar name="mainToolBar" hidden="true">
   <text>Main Toolbar</text>
 </ToolBar>
-</kpartgui>
+</gui>
