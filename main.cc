@@ -67,8 +67,6 @@ int main(int argc, char **argv)
 
 
   QCommandLineParser parser;
-  parser.addHelpOption();
-  parser.addVersionOption();
   aboutData.setupCommandLine(&parser);
   parser.process(app);
   aboutData.processCommandLine(&parser);
