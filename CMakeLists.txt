@@ -39,7 +39,10 @@ configure_file(config-kcharselect.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kch
 
 add_definitions( -DQT_DISABLE_DEPRECATED_BEFORE=0x060000 )
 add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
-add_definitions(-DQT_NO_FOREACH)
+if (${KF5Config_VERSION} STRGREATER "5.56.0")
+        add_definitions(-DQT_NO_FOREACH)
+        MESSAGE(STATUS "compile without foreach")
+endif()
 
 
 set(kcharselect_SRCS kcharselectdia.cc main.cc )
