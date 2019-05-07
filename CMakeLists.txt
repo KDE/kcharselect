@@ -1,19 +1,11 @@
-cmake_minimum_required (VERSION 3.0 FATAL_ERROR)
+cmake_minimum_required (VERSION 3.5 FATAL_ERROR)
 set(KCHARSELECT_VERSION "1.13")
 project(kcharselect VERSION ${KCHARSELECT_VERSION})
 
-set (QT_MIN_VERSION "5.5.0")
-set (KF5_MIN_VERSION "5.25.0")
+set (QT_MIN_VERSION "5.9.0")
+set (KF5_MIN_VERSION "5.46.0")
 
-option(RUN_UNINSTALL "test run uninstalled apps (experimental)" FALSE)
-
-set(ECM_VERSION "5.30.0")
-# ECM setup
-if (RUN_UNINSTALL)
-   set(ECM_VERSION "5.38.0")
-endif()
-
-find_package (ECM ${ECM_VERSION} REQUIRED NO_MODULE)
+find_package (ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
 set (CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 include(KDEInstallDirs)
@@ -38,7 +30,6 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
 configure_file(config-kcharselect.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kcharselect.h)
 
 add_definitions( -DQT_DISABLE_DEPRECATED_BEFORE=0x060000 )
-add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
 if (${KF5Config_VERSION} STRGREATER "5.56.0")
         add_definitions(-DQT_NO_FOREACH)
         MESSAGE(STATUS "compile without foreach")
