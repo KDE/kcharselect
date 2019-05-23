@@ -30,7 +30,7 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
 configure_file(config-kcharselect.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kcharselect.h)
 
 add_definitions( -DQT_DISABLE_DEPRECATED_BEFORE=0x060000 )
-if (${KF5Config_VERSION} STRGREATER "5.56.0")
+if (KF5Config_VERSION VERSION_GREATER "5.56.0")
         add_definitions(-DQT_NO_FOREACH)
         MESSAGE(STATUS "compile without foreach")
 endif()
