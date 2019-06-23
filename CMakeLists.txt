@@ -1,6 +1,12 @@
 cmake_minimum_required (VERSION 3.5 FATAL_ERROR)
-set(KCHARSELECT_VERSION "1.13")
-project(kcharselect VERSION ${KCHARSELECT_VERSION})
+
+# KDE Application Version, managed by release script
+set(KDE_APPLICATIONS_VERSION_MAJOR "19")
+set(KDE_APPLICATIONS_VERSION_MINOR "07")
+set(KDE_APPLICATIONS_VERSION_MICRO "70")
+set(KDE_APPLICATIONS_VERSION "${KDE_APPLICATIONS_VERSION_MAJOR}.${KDE_APPLICATIONS_VERSION_MINOR}.${KDE_APPLICATIONS_VERSION_MICRO}")
+
+project(kcharselect VERSION ${KDE_APPLICATIONS_VERSION})
 
 set (QT_MIN_VERSION "5.9.0")
 set (KF5_MIN_VERSION "5.46.0")
@@ -11,6 +17,7 @@ set (CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 include(KDEInstallDirs)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(KDECMakeSettings)
+include(ECMSetupVersion)
 
 find_package (Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
     Core
@@ -27,7 +34,7 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
 )
 
 
-configure_file(config-kcharselect.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kcharselect.h)
+ecm_setup_version(${KDE_APPLICATIONS_VERSION} VARIABLE_PREFIX KCHARSELECT VERSION_HEADER kcharselect_version.h)
 
 add_definitions( -DQT_DISABLE_DEPRECATED_BEFORE=0x060000 )
 if (KF5Config_VERSION VERSION_GREATER "5.56.0")

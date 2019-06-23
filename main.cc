@@ -23,7 +23,7 @@
 #include <KLocalizedString>
 #include <Kdelibs4ConfigMigrator>
 #include "kcharselectdia.h"
-#include <config-kcharselect.h>
+#include "kcharselect_version.h"
 
 int main(int argc, char **argv)
 {
@@ -43,7 +43,7 @@ int main(int argc, char **argv)
   migrate.migrate();
 
   KAboutData aboutData( QStringLiteral("kcharselect"), i18n("KCharSelect"),
-    QStringLiteral(KCHARSELECT_VERSION), i18n("KDE character selection utility"), KAboutLicense::GPL,
+    QStringLiteral(KCHARSELECT_VERSION_STRING), i18n("KDE character selection utility"), KAboutLicense::GPL,
     QString(), i18n("A wrapper around the KCharSelect widget."), QStringLiteral("https://utils.kde.org/projects/kcharselect/") );
 
   aboutData.addAuthor(i18n("Christoph Feck"), i18n("KF5 port and current maintainer"), QStringLiteral("cfeck@kde.org"));
