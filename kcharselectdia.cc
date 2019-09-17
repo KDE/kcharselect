@@ -265,7 +265,6 @@ void KCharSelectDia::toClipHTML()
   QClipboard *cb = QApplication::clipboard();
   QString input;
   QString html;
-  QString tempstring;
   QChar   tempchar;
   int i = 0;
 
@@ -282,7 +281,7 @@ void KCharSelectDia::toClipHTML()
         }
       else
         {
-          html.append(tempstring.sprintf("&#x%x;", tempchar.unicode()));
+          html.append(QString::asprintf("&#x%x;", tempchar.unicode()));
         }
     }
   cb->setText(html);
