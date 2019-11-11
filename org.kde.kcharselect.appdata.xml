@@ -11,6 +11,7 @@
   <name xml:lang="el">KCharSelect</name>
   <name xml:lang="en-GB">KCharSelect</name>
   <name xml:lang="es">KCharSelect</name>
+  <name xml:lang="et">KCharSelect</name>
   <name xml:lang="eu">KCharSelect</name>
   <name xml:lang="fi">KCharSelect</name>
   <name xml:lang="fr">KCharSelect</name>
@@ -38,6 +39,7 @@
   <summary xml:lang="el">Επιλογέας χαρακτήρων</summary>
   <summary xml:lang="en-GB">Character Selector</summary>
   <summary xml:lang="es">Selector de caracteres</summary>
+  <summary xml:lang="et">Märgivalija</summary>
   <summary xml:lang="eu">Karaktere hautatzailea</summary>
   <summary xml:lang="fi">Merkkivalitsin</summary>
   <summary xml:lang="fr">Sélecteur de caractères</summary>
@@ -68,6 +70,7 @@
     <p xml:lang="el">Το KCharSelect είναι ένα εργαλείο για να επιλέγετε ειδικούς χαρακτήρες από όλες τις εγκατεστημένες γραμματοσειρές και να τους αντιγράφετε στο πρόχειρο.</p>
     <p xml:lang="en-GB">KCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.</p>
     <p xml:lang="es">KCharSelect es una herramienta para seleccionar caracteres especiales de cualquier tipo de letra instalado y copiarlos en el portapapeles.</p>
+    <p xml:lang="et">KCharSelect on tööriist erimärkide valimiseks kõigist paigaldatud fontidest ja nende kopeerimiseks lõikepuhvrisse.</p>
     <p xml:lang="eu">KCharSelect instalatutako letra-tipo guztietako karaktere bereziak hautatu eta arbelean kopiatzeko tresna bat da.</p>
     <p xml:lang="fi">KCharSelect on työkalu merkkien valitsemiseksi ja kopioimiseksi leikepöydälle kaikista asennetuista fonteista.</p>
     <p xml:lang="fr">KCharSelect est un outil qui vous permet de sélectionner des caractères spéciaux parmi les polices de caractères installées et de les copier dans le presse-papiers.</p>
@@ -97,6 +100,7 @@
     <p xml:lang="el">Μπορείτε να περιηγηθείτε στους χαρακτήρες με βάση την κατηγορία τους ή να βρείτε γρήγορα έναν ορισμένο χαρακτήρα αναζητώντας το όνομά του.</p>
     <p xml:lang="en-GB">You can browse characters by their category or quickly find a certain character by searching for its name.</p>
     <p xml:lang="es">Puede explorar los caracteres por su categoría o encontrar cualquiera de ellos de forma rápida por su nombre.</p>
+    <p xml:lang="et">Märke saab sirvida kategooriate kaupa, aga neid saab nime järgi ka kiiresti leida.</p>
     <p xml:lang="eu">Karaktereak araka ditzakezu haien kategorien arabera edo karaktere zehatz bat azkar aurki dezakezu bere izenagatik bilatuz.</p>
     <p xml:lang="fi">Voit selata merkkejä niiden luokan mukaan tai etsiä merkkiä nopeasti sen nimen perusteella.</p>
     <p xml:lang="fr">Vous pouvez parcourir les caractères par catégorie ou trouver rapidement un caractère donné en cherchant son nom.</p>
@@ -125,6 +129,7 @@
     <p xml:lang="el">Το KCharSelect εμφανίζει διάφορες πληροφορίες σχετικά με το επιλεγμένο χαρακτήρα. Αυτές περιλαμβάνουν όχι μόνο το όνομα του Unicode χαρακτήρα, αλλά και ψευδώνυμα, γενικές σημειώσεις και αναφορές σε παρόμοιους χαρακτήρες.</p>
     <p xml:lang="en-GB">KCharSelect displays various information about the selected character. This includes not only the Unicode character name, but also aliases, general notes and cross references to similar characters.</p>
     <p xml:lang="es">KCharSelect muestra información variada sobre el carácter seleccionado. Se incluye no solo el nombre del carácter Unicode, sino también sus alias, notas generales y referencias cruzadas a caracteres similares.</p>
+    <p xml:lang="et">KCharSelect näitab valitud märgi kohta mitmesugust teavet: lisaks märgi Unicode'i nimele veel paralleelnimesid, üldisi märkusi ja ristviiteid sarnastele märkidele.</p>
     <p xml:lang="eu">KCharSelectek hautatutako karaktereari buruzko hainbat informazio azaltzen ditu. Unicode karaktere izenak ditu, baita ezizenak, ohar orokorrak eta antzeko karaktereetara erreferentzia gurutzatuak ere.</p>
     <p xml:lang="fi">KCharSelect näyttää kustakin merkistä eri tietoja, ei vain Unicode-nimeä vaan myös aliakset, yleiset huomautukset ja ristiviittaukset samankaltaisiin merkkeihin.</p>
     <p xml:lang="fr">KCharSelect affiche des informations relatives au caractère sélectionné. Celles-ci incluent non seulement le nom Unicode du caractère, mais aussi ses alias, des remarques générales et des références à des caractères similaires.</p>
@@ -153,6 +158,7 @@
     <p xml:lang="el">Για τεχνική χρήση, εμφανίζονται διαφορετικές αναπαραστάσεις του χαρακτήρα.</p>
     <p xml:lang="en-GB">For technical use, different representations of the character are shown.</p>
     <p xml:lang="es">Para usos técnicos, se muestran diferentes representaciones del carácter.</p>
+    <p xml:lang="et">Tehniliseks kasutuseks näidatakse märgi mitmesuguseid vorme.</p>
     <p xml:lang="eu">Erabilera teknikorako, karakterearen irudikapen ezberdinak erakusten dira.</p>
     <p xml:lang="fi">Teknistä käyttöä varten merkistä näytetään eri esitysasut.</p>
     <p xml:lang="fr">Pour un usage technique, plusieurs représentations du caractère sont affichées.</p>
@@ -181,6 +187,7 @@
     <p xml:lang="el">Το KCharSelect περιέχει και δεδομένα Unihan για τους χαρακτήρες της Άπω Ανατολής για να εμφανίζονται ορισμοί στα Αγγλικά και διαφορετικές προφορές.</p>
     <p xml:lang="en-GB">KCharSelect also contains Unihan data for East Asian characters to display English definitions and different pronunciations.</p>
     <p xml:lang="es">KCharSelect también contiene datos Unihan para los caracteres del Este asiático para mostrar definiciones en inglés y diferentes pronunciaciones.</p>
+    <p xml:lang="et">Ida-Aasia märkide puhul kasutab KCharSelect Unihani andmeid ingliskeelsete definitsioonide ja erinevate häälduste näitamiseks.</p>
     <p xml:lang="eu">KCharSelectek Unihan datuak ere baditu Asia Ekialdeko karaktereen definizioak eta ahoskera ezberdinak ingeleraz erakusteko.</p>
     <p xml:lang="fi">KCharSelect sisältää myös itäaasialaisten merkkien Unihan-tiedon englanninkielisin määritelmin ja eri ääntöasuin.</p>
     <p xml:lang="fr">KCharSelect contient également les données Unihan pour les caractères des langues d'Extrême-Orient, afin d'afficher leurs définitions en Anglais et leurs différentes prononciations.</p>
