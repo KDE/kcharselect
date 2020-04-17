@@ -27,6 +27,7 @@
 #include <QMenu>
 
 #include <KActionCollection>
+#include <kbookmarks_version.h>
 #include <KBookmarkManager>
 #include <KBookmarkMenu>
 #include <KConfigGroup>
@@ -185,7 +186,14 @@ KCharSelectDia::KCharSelectDia()
   action->setText(i18n("Bookmarks"));
   QMenu *bmmenu = new QMenu(this);
   action->setMenu(bmmenu);
+
+#if KBOOKMARKS_VERSION < QT_VERSION_CHECK(5, 69, 0)
   KBookmarkMenu *bm = new KBookmarkMenu(manager, new KCharSelectBookmarkOwner(this), bmmenu, actionCollection());
+#else
+  KBookmarkMenu *bm = new KBookmarkMenu(manager, new KCharSelectBookmarkOwner(this), bmmenu);
+  actionCollection()->addActions(bmmenu->actions());
+#endif
+
   bm->setParent(this);
 
   setupGUI(ToolBar|Keys|Save|Create);
