@@ -66,7 +66,7 @@
     <p>
       KCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.
     </p>
-    <p xml:lang="ca">El KCharSelect és una eina per seleccionar els caràcters especials de tots els tipus de lletra instal·lats i els copia al porta-retalls.</p>
+    <p xml:lang="ca">El KCharSelect és una eina per a seleccionar els caràcters especials de tots els tipus de lletra instal·lats i els copia al porta-retalls.</p>
     <p xml:lang="ca-valencia">El KCharSelect és una eina per seleccionar els caràcters especials de tots els tipus de lletra instal·lats i els copia al porta-retalls.</p>
     <p xml:lang="de">KCharSelect ist ein Hilfsprogramm um Sonderzeichen aus allen installierten Schriftarten auszuwählen und in verschieden Formaten (Einfacher Text, Unicode oder ) in die Zwischenablage zu kopieren.</p>
     <p xml:lang="el">Το KCharSelect είναι ένα εργαλείο για να επιλέγετε ειδικούς χαρακτήρες από όλες τις εγκατεστημένες γραμματοσειρές και να τους αντιγράφετε στο πρόχειρο.</p>
@@ -127,7 +127,7 @@
     <p>
       KCharSelect displays various information about the selected character. This includes not only the Unicode character name, but also aliases, general notes and cross references to similar characters. 
     </p>
-    <p xml:lang="ca">El KCharSelect mostra diversa informació sobre el caràcter seleccionat. Això inclou no només el nom de caràcter Unicode, sinó també els seus àlies, notes generals i referències a caràcters similars.</p>
+    <p xml:lang="ca">El KCharSelect mostra diversa informació sobre el caràcter seleccionat. Això inclou no només el nom del caràcter Unicode, sinó també els seus àlies, notes generals i referències a caràcters similars.</p>
     <p xml:lang="ca-valencia">El KCharSelect mostra diversa informació sobre el caràcter seleccionat. Això inclou no només el nom de caràcter Unicode, sinó també els seus àlies, notes generals i referències a caràcters similars.</p>
     <p xml:lang="de">KCharSelect zeigt verschiedene Informationen über das ausgewählte Zeichen an: den Unicodenamen, Anmerkungen und Querverweise zu ähnlichen Zeichen, allgemeine Zeichen-Eigenschaften und verschiedene nützliche Repräsentationen.</p>
     <p xml:lang="el">Το KCharSelect εμφανίζει διάφορες πληροφορίες σχετικά με το επιλεγμένο χαρακτήρα. Αυτές περιλαμβάνουν όχι μόνο το όνομα του Unicode χαρακτήρα, αλλά και ψευδώνυμα, γενικές σημειώσεις και αναφορές σε παρόμοιους χαρακτήρες.</p>
@@ -187,7 +187,7 @@
     <p>
       KCharSelect also contains Unihan data for East Asian characters to display English definitions and different pronunciations.
     </p>
-    <p xml:lang="ca">El KCharSelect també conté dades Unihan per a caràcters asiàtics orientals, mostrant les definicions angleses i les pronunciacions diferents.</p>
+    <p xml:lang="ca">El KCharSelect també conté dades Unihan per a caràcters asiàtics orientals, mostrant les definicions angleses i les diferents pronunciacions.</p>
     <p xml:lang="ca-valencia">El KCharSelect també conté dades Unihan per a caràcters asiàtics orientals, mostrant les definicions angleses i les pronunciacions diferents.</p>
     <p xml:lang="de">KCharSelect enthält außerdem Unihan-Daten für Ostasiatische Zeichen, damit sind für diese Zeichen englische Definitionen und verschiedene Ausprachen verfügbar.</p>
     <p xml:lang="el">Το KCharSelect περιέχει και δεδομένα Unihan για τους χαρακτήρες της Άπω Ανατολής για να εμφανίζονται ορισμοί στα Αγγλικά και διαφορετικές προφορές.</p>
