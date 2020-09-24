@@ -33,12 +33,12 @@ class KCharSelectDia : public KXmlGuiWindow
   Q_OBJECT
 
 public:
-  KCharSelectDia();
+  explicit KCharSelectDia(QWidget *parent = nullptr);
 
   friend class KCharSelectBookmarkOwner;
 
 protected:
-  void closeEvent(QCloseEvent *event) Q_DECL_OVERRIDE;
+  void closeEvent(QCloseEvent *event) override;
 
   QGridLayout *grid;
   KCharSelect *charSelect;

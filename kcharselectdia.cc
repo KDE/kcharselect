@@ -44,7 +44,7 @@ public:
         : d(dia) { }
     ~KCharSelectBookmarkOwner() { }
 
-    QString currentTitle() const Q_DECL_OVERRIDE
+    QString currentTitle() const override
     {
         uint ucs4 = d->charSelect->currentCodePoint();
         if (QChar::isPrint(ucs4)) {
@@ -54,12 +54,12 @@ public:
         }
     }
 
-    QUrl currentUrl() const Q_DECL_OVERRIDE
+    QUrl currentUrl() const override
     {
         return QUrl(formatCodePoint(d->charSelect->currentCodePoint()));
     }
 
-    void openBookmark(const KBookmark &bm, Qt::MouseButtons, Qt::KeyboardModifiers) Q_DECL_OVERRIDE
+    void openBookmark(const KBookmark &bm, Qt::MouseButtons, Qt::KeyboardModifiers) override
     {
         QString c = bm.url().toString(QUrl::PreferLocalFile | QUrl::RemoveScheme);
         if (c.startsWith(QLatin1String("U+"))) {
@@ -87,8 +87,8 @@ private:
 /******************************************************************/
 
 //==================================================================
-KCharSelectDia::KCharSelectDia()
-    : KXmlGuiWindow()
+KCharSelectDia::KCharSelectDia(QWidget *parent)
+    : KXmlGuiWindow(parent)
 {
   KSharedConfig::Ptr config = KSharedConfig::openConfig();
   KConfigGroup gr = config->group("General");
