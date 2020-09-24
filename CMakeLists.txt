@@ -8,8 +8,8 @@ set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_
 
 project(kcharselect VERSION ${RELEASE_SERVICE_VERSION})
 
-set (QT_MIN_VERSION "5.9.0")
-set (KF5_MIN_VERSION "5.46.0")
+set (QT_MIN_VERSION "5.12.0")
+set (KF5_MIN_VERSION "5.56.0")
 
 find_package (ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
 set (CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -37,17 +37,11 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
 ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KCHARSELECT VERSION_HEADER kcharselect_version.h)
 
 
-if (KF5Config_VERSION VERSION_GREATER "5.56.0")
-        add_definitions(-DQT_NO_FOREACH)
-        MESSAGE(STATUS "compile without foreach")
-endif()
+add_definitions(-DQT_NO_FOREACH)
 
 
 set(kcharselect_SRCS kcharselectdia.cc main.cc )
 qt5_add_resources(kcharselect_SRCS kcharselect.qrc)
-
-
-#kde4_add_app_icon(kcharselect_SRCS "${KDE4_INSTALL_DIR}/share/icons/oxygen/*/apps/accessories-character-map.png")
 
 add_executable(kcharselect ${kcharselect_SRCS})
 
