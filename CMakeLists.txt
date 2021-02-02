@@ -39,9 +39,7 @@ ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KCHARSELECT VERSION
 
 add_definitions(-DQT_NO_FOREACH)
 
-
-set(kcharselect_SRCS kcharselectdia.cc main.cc )
-qt5_add_resources(kcharselect_SRCS kcharselect.qrc)
+set(kcharselect_SRCS kcharselectdia.cc main.cc kcharselect.qrc)
 
 add_executable(kcharselect ${kcharselect_SRCS})
 
