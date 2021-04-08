@@ -36,6 +36,7 @@
 #include <KStandardShortcut>
 #include <KSharedConfig>
 #include <KToggleAction>
+#include <KBookmarkOwner>
 
 class KCharSelectBookmarkOwner : public KBookmarkOwner
 {
