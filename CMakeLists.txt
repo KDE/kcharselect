@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.5 FATAL_ERROR)
+cmake_minimum_required (VERSION 3.16 FATAL_ERROR)
 
 # KDE Application Version, managed by release script
 set(RELEASE_SERVICE_VERSION_MAJOR "21")
@@ -8,8 +8,8 @@ set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_
 
 project(kcharselect VERSION ${RELEASE_SERVICE_VERSION})
 
-set (QT_MIN_VERSION "5.12.0")
-set (KF5_MIN_VERSION "5.56.0")
+set (QT_MIN_VERSION "5.15.0")
+set (KF5_MIN_VERSION "5.80.0")
 
 find_package (ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
 set (CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -33,15 +33,18 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     XmlGui
 )
 
-
 ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KCHARSELECT VERSION_HEADER kcharselect_version.h)
-
 
 add_definitions(-DQT_NO_FOREACH)
 
-set(kcharselect_SRCS kcharselectdia.cc main.cc kcharselect.qrc)
+add_executable(kcharselect)
 
-add_executable(kcharselect ${kcharselect_SRCS})
+target_sources(kcharselect PRIVATE
+    kcharselectdia.cc
+    main.cc
+
+    kcharselect.qrc
+)
 
 target_link_libraries(kcharselect
     KF5::Bookmarks
@@ -53,10 +56,9 @@ target_link_libraries(kcharselect
 
 install(TARGETS kcharselect  ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} )
 
-########### install files ###############
-
 install( PROGRAMS org.kde.kcharselect.desktop  DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.kcharselect.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 
 add_subdirectory(doc)
+
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
