@@ -188,12 +188,8 @@ KCharSelectDia::KCharSelectDia(QWidget *parent)
   QMenu *bmmenu = new QMenu(this);
   action->setMenu(bmmenu);
 
-#if KBOOKMARKS_VERSION < QT_VERSION_CHECK(5, 69, 0)
-  KBookmarkMenu *bm = new KBookmarkMenu(manager, new KCharSelectBookmarkOwner(this), bmmenu, actionCollection());
-#else
   KBookmarkMenu *bm = new KBookmarkMenu(manager, new KCharSelectBookmarkOwner(this), bmmenu);
   actionCollection()->addActions(bmmenu->actions());
-#endif
 
   bm->setParent(this);
 
