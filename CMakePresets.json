@@ -29,7 +29,7 @@
             "binaryDir": "${sourceDir}/build-unity",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Debug",
-		"USE_UNITY_CMAKE_SUPPORT": "ON",
+		"CMAKE_UNITY_BUILD": "ON",
 		"CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
             }
         },
@@ -70,6 +70,14 @@
         {
             "name": "dev",
             "configurePreset": "dev"
+        },
+        {
+            "name": "asan",
+            "configurePreset": "asan"
+        },
+	{
+            "name": "unity",
+            "configurePreset": "unity"
         },
         {
             "name": "clazy",
