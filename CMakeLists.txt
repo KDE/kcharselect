@@ -35,8 +35,6 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
 
 ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KCHARSELECT VERSION_HEADER kcharselect_version.h)
 
-add_definitions(-DQT_NO_FOREACH)
-
 add_executable(kcharselect)
 
 target_sources(kcharselect PRIVATE
