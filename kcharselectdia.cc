@@ -16,23 +16,27 @@
 #include <QMenu>
 
 #include <KActionCollection>
-#include <kbookmarks_version.h>
 #include <KBookmarkManager>
 #include <KBookmarkMenu>
+#include <KBookmarkOwner>
 #include <KConfigGroup>
 #include <KLocalizedString>
+#include <KSharedConfig>
 #include <KStandardAction>
 #include <KStandardShortcut>
-#include <KSharedConfig>
 #include <KToggleAction>
-#include <KBookmarkOwner>
+#include <kbookmarks_version.h>
 
 class KCharSelectBookmarkOwner : public KBookmarkOwner
 {
 public:
     KCharSelectBookmarkOwner(KCharSelectDia *dia)
-        : d(dia) { }
-    ~KCharSelectBookmarkOwner() { }
+        : d(dia)
+    {
+    }
+    ~KCharSelectBookmarkOwner()
+    {
+    }
 
     QString currentTitle() const override
     {
@@ -80,159 +84,158 @@ private:
 KCharSelectDia::KCharSelectDia(QWidget *parent)
     : KXmlGuiWindow(parent)
 {
-  KSharedConfig::Ptr config = KSharedConfig::openConfig();
-  KConfigGroup gr = config->group("General");
+    KSharedConfig::Ptr config = KSharedConfig::openConfig();
+    KConfigGroup gr = config->group("General");
 
-  vFont = gr.readEntry("selectedFont", QFontDatabase::systemFont(QFontDatabase::GeneralFont));
-  vChr = gr.readEntry("char", 33);
-  _rtl = gr.readEntry("rtl", false);
+    vFont = gr.readEntry("selectedFont", QFontDatabase::systemFont(QFontDatabase::GeneralFont));
+    vChr = gr.readEntry("char", 33);
+    _rtl = gr.readEntry("rtl", false);
 
-  QWidget *mainWidget = new QWidget(this);
-  setCentralWidget(mainWidget);
+    QWidget *mainWidget = new QWidget(this);
+    setCentralWidget(mainWidget);
 
-  grid = new QGridLayout( mainWidget );
+    grid = new QGridLayout(mainWidget);
 
-  // Add character selection widget from library kdeui
-  charSelect = new KCharSelect(mainWidget, actionCollection());
-  charSelect->setAllPlanesEnabled(true);
-  charSelect->setCurrentCodePoint(vChr);
-  charSelect->setCurrentFont(vFont);
-  charSelect->resize(charSelect->sizeHint());
-  connect(charSelect, &KCharSelect::currentCodePointChanged, this, &KCharSelectDia::charChanged);
-  connect(charSelect,SIGNAL(codePointSelected(uint)),
-         SLOT(add(uint)));
+    // Add character selection widget from library kdeui
+    charSelect = new KCharSelect(mainWidget, actionCollection());
+    charSelect->setAllPlanesEnabled(true);
+    charSelect->setCurrentCodePoint(vChr);
+    charSelect->setCurrentFont(vFont);
+    charSelect->resize(charSelect->sizeHint());
+    connect(charSelect, &KCharSelect::currentCodePointChanged, this, &KCharSelectDia::charChanged);
+    connect(charSelect, SIGNAL(codePointSelected(uint)), SLOT(add(uint)));
 
-  connect(charSelect, &KCharSelect::currentFontChanged, this, &KCharSelectDia::fontSelected);
-  grid->addWidget(charSelect, 0, 0, 1, 4);
+    connect(charSelect, &KCharSelect::currentFontChanged, this, &KCharSelectDia::fontSelected);
+    grid->addWidget(charSelect, 0, 0, 1, 4);
 
-  // Build line editor
-  lined = new QLineEdit(mainWidget);
-  lined->resize(lined->sizeHint());
-  lined->setClearButtonEnabled(true);
+    // Build line editor
+    lined = new QLineEdit(mainWidget);
+    lined->resize(lined->sizeHint());
+    lined->setClearButtonEnabled(true);
 
-  lined->setFont( vFont );
+    lined->setFont(vFont);
 
-  connect(lined, &QLineEdit::textChanged, this, &KCharSelectDia::lineEditChanged);
-  grid->addWidget(lined, 1, 0, 1, 3);
+    connect(lined, &QLineEdit::textChanged, this, &KCharSelectDia::lineEditChanged);
+    grid->addWidget(lined, 1, 0, 1, 3);
 
-  bClip = new QPushButton( i18n( "&To Clipboard" ), mainWidget );
-  bClip->setIcon( QIcon::fromTheme( QStringLiteral( "edit-copy" ) ));
-  bClip->setFixedSize( bClip->sizeHint() );
-  connect(bClip, &QPushButton::clicked, this, &KCharSelectDia::toClip);
-  grid->addWidget(bClip, 1, 3);
+    bClip = new QPushButton(i18n("&To Clipboard"), mainWidget);
+    bClip->setIcon(QIcon::fromTheme(QStringLiteral("edit-copy")));
+    bClip->setFixedSize(bClip->sizeHint());
+    connect(bClip, &QPushButton::clicked, this, &KCharSelectDia::toClip);
+    grid->addWidget(bClip, 1, 3);
 
-  // Build menu
-  KStandardAction::quit( this, SLOT(close()), actionCollection() );
+    // Build menu
+    KStandardAction::quit(this, SLOT(close()), actionCollection());
 
-  QAction *action = actionCollection()->addAction( QStringLiteral( "copy_clip" ) );
-  action->setText( i18n("&To Clipboard") );
-  action->setIcon( QIcon::fromTheme( QStringLiteral( "edit-copy" )) );
-  connect(action, &QAction::triggered, this, &KCharSelectDia::toClip);
-  actionCollection()->setDefaultShortcuts(action, KStandardShortcut::shortcut(KStandardShortcut::Copy));
+    QAction *action = actionCollection()->addAction(QStringLiteral("copy_clip"));
+    action->setText(i18n("&To Clipboard"));
+    action->setIcon(QIcon::fromTheme(QStringLiteral("edit-copy")));
+    connect(action, &QAction::triggered, this, &KCharSelectDia::toClip);
+    actionCollection()->setDefaultShortcuts(action, KStandardShortcut::shortcut(KStandardShortcut::Copy));
 
-  action = actionCollection()->addAction( QStringLiteral( "copy_utf_8" ) );
-  action->setText( i18n("To Clipboard &UTF-8") );
-  connect(action, &QAction::triggered, this, &KCharSelectDia::toClipUTF8);
-  action = actionCollection()->addAction( QStringLiteral( "copy_html" ) );
-  action->setText( i18n("To Clipboard &HTML") );
-  connect(action, &QAction::triggered, this, &KCharSelectDia::toClipHTML);
+    action = actionCollection()->addAction(QStringLiteral("copy_utf_8"));
+    action->setText(i18n("To Clipboard &UTF-8"));
+    connect(action, &QAction::triggered, this, &KCharSelectDia::toClipUTF8);
+    action = actionCollection()->addAction(QStringLiteral("copy_html"));
+    action->setText(i18n("To Clipboard &HTML"));
+    connect(action, &QAction::triggered, this, &KCharSelectDia::toClipHTML);
 
-  action = actionCollection()->addAction( QStringLiteral( "from_clip" ) );
-  action->setText( i18n("&From Clipboard") );
-  action->setIcon( QIcon::fromTheme( QStringLiteral( "edit-paste" )) );
-  connect(action, &QAction::triggered, this, &KCharSelectDia::fromClip);
-  actionCollection()->setDefaultShortcuts(action, KStandardShortcut::shortcut(KStandardShortcut::Paste));
-  action = actionCollection()->addAction( QStringLiteral( "from_clip_utf8" ) );
-  action->setText( i18n( "From Clipboard UTF-8") );
-  connect(action, &QAction::triggered, this, &KCharSelectDia::fromClipUTF8);
+    action = actionCollection()->addAction(QStringLiteral("from_clip"));
+    action->setText(i18n("&From Clipboard"));
+    action->setIcon(QIcon::fromTheme(QStringLiteral("edit-paste")));
+    connect(action, &QAction::triggered, this, &KCharSelectDia::fromClip);
+    actionCollection()->setDefaultShortcuts(action, KStandardShortcut::shortcut(KStandardShortcut::Paste));
+    action = actionCollection()->addAction(QStringLiteral("from_clip_utf8"));
+    action->setText(i18n("From Clipboard UTF-8"));
+    connect(action, &QAction::triggered, this, &KCharSelectDia::fromClipUTF8);
 
-  i18n("From Clipboard HTML");      // Intended for future use
+    i18n("From Clipboard HTML"); // Intended for future use
 
-  action = actionCollection()->addAction( QStringLiteral( "flip" ) );
-  action->setText( i18n("&Flip Text") );
-  connect(action, &QAction::triggered, this, &KCharSelectDia::flipText);
+    action = actionCollection()->addAction(QStringLiteral("flip"));
+    action->setText(i18n("&Flip Text"));
+    connect(action, &QAction::triggered, this, &KCharSelectDia::flipText);
 
-  action = new KToggleAction( i18n("&Reverse Direction"), this );
-  action->setChecked(_rtl);
-  actionCollection()->addAction( QStringLiteral( "rtl" ), action );
-  connect(action, &QAction::toggled, this, &KCharSelectDia::setRtl);
+    action = new KToggleAction(i18n("&Reverse Direction"), this);
+    action->setChecked(_rtl);
+    actionCollection()->addAction(QStringLiteral("rtl"), action);
+    connect(action, &QAction::toggled, this, &KCharSelectDia::setRtl);
 
-  charSelect->setFocus();
+    charSelect->setFocus();
 
-  if(_rtl)
-    lined->setAlignment( Qt::AlignRight );
-  else
-    lined->setAlignment( Qt::AlignLeft );
+    if (_rtl)
+        lined->setAlignment(Qt::AlignRight);
+    else
+        lined->setAlignment(Qt::AlignLeft);
 
-  QString filename = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("kcharselect/bookmarks.xml"));
-  if (filename.isEmpty()) {
-    filename = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QStringLiteral("/kcharselect");
-    QDir().mkpath(filename);
-    filename += QStringLiteral("/bookmarks.xml");
-  }
-  KBookmarkManager* manager = KBookmarkManager::managerForFile(filename, QStringLiteral("kcharselect"));
+    QString filename = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("kcharselect/bookmarks.xml"));
+    if (filename.isEmpty()) {
+        filename = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QStringLiteral("/kcharselect");
+        QDir().mkpath(filename);
+        filename += QStringLiteral("/bookmarks.xml");
+    }
+    KBookmarkManager *manager = KBookmarkManager::managerForFile(filename, QStringLiteral("kcharselect"));
 
-  action = actionCollection()->addAction(QStringLiteral("bookmarks"));
-  action->setText(i18n("Bookmarks"));
-  QMenu *bmmenu = new QMenu(this);
-  action->setMenu(bmmenu);
+    action = actionCollection()->addAction(QStringLiteral("bookmarks"));
+    action->setText(i18n("Bookmarks"));
+    QMenu *bmmenu = new QMenu(this);
+    action->setMenu(bmmenu);
 
-  KBookmarkMenu *bm = new KBookmarkMenu(manager, new KCharSelectBookmarkOwner(this), bmmenu);
-  actionCollection()->addActions(bmmenu->actions());
+    KBookmarkMenu *bm = new KBookmarkMenu(manager, new KCharSelectBookmarkOwner(this), bmmenu);
+    actionCollection()->addActions(bmmenu->actions());
 
-  bm->setParent(this);
+    bm->setParent(this);
 
-  setupGUI(ToolBar|Keys|Save|Create);
+    setupGUI(ToolBar | Keys | Save | Create);
 }
 
 //==================================================================
 void KCharSelectDia::closeEvent(QCloseEvent *event)
 {
-  KSharedConfig::Ptr config = KSharedConfig::openConfig();
-  KConfigGroup gr = config->group("General");
+    KSharedConfig::Ptr config = KSharedConfig::openConfig();
+    KConfigGroup gr = config->group("General");
 
-  gr.writeEntry("selectedFont", vFont);
-  gr.writeEntry("char", vChr);
-  gr.writeEntry("rtl", _rtl);
+    gr.writeEntry("selectedFont", vFont);
+    gr.writeEntry("char", vChr);
+    gr.writeEntry("rtl", _rtl);
 
-  KXmlGuiWindow::closeEvent(event);
+    KXmlGuiWindow::closeEvent(event);
 }
 
 //==================================================================
 void KCharSelectDia::charChanged(uint _chr)
 {
-  vChr = _chr;
+    vChr = _chr;
 }
 
 //==================================================================
 void KCharSelectDia::fontSelected(const QFont &_font)
 {
-  lined->setFont( _font );
+    lined->setFont(_font);
 
-  vFont = _font;
+    vFont = _font;
 }
 
 //==================================================================
 void KCharSelectDia::add(uint _chr)
 {
-  charChanged(_chr);
+    charChanged(_chr);
 
-  QString str = lined->text();
-  const int pos = lined->cursorPosition();
-  str.insert(pos, QString::fromUcs4(&_chr, 1));
-  lined->setText(str);
-  lined->setCursorPosition(pos + QString::fromUcs4(&_chr, 1).size());
+    QString str = lined->text();
+    const int pos = lined->cursorPosition();
+    str.insert(pos, QString::fromUcs4(&_chr, 1));
+    lined->setText(str);
+    lined->setCursorPosition(pos + QString::fromUcs4(&_chr, 1).size());
 }
 
 //==================================================================
 void KCharSelectDia::toClip()
 {
-  QString str = lined->text();
-  if (str.isEmpty())
-    str = QString::fromUcs4(&vChr, 1);
-  QClipboard *cb = QApplication::clipboard();
-  cb->setText(str,QClipboard::Clipboard);
-  cb->setText(str,QClipboard::Selection);
+    QString str = lined->text();
+    if (str.isEmpty())
+        str = QString::fromUcs4(&vChr, 1);
+    QClipboard *cb = QApplication::clipboard();
+    cb->setText(str, QClipboard::Clipboard);
+    cb->setText(str, QClipboard::Selection);
 }
 
 //==================================================================
@@ -241,11 +244,11 @@ void KCharSelectDia::toClip()
 //
 void KCharSelectDia::toClipUTF8()
 {
-  QClipboard *cb = QApplication::clipboard();
-  QString str = lined->text();
-  if (str.isEmpty())
-    str = QString::fromUcs4(&vChr, 1);
-  cb->setText(QLatin1String( str.toUtf8() ));
+    QClipboard *cb = QApplication::clipboard();
+    QString str = lined->text();
+    if (str.isEmpty())
+        str = QString::fromUcs4(&vChr, 1);
+    cb->setText(QLatin1String(str.toUtf8()));
 }
 
 //==================================================================
@@ -256,37 +259,33 @@ void KCharSelectDia::toClipUTF8()
 //
 void KCharSelectDia::toClipHTML()
 {
-  QClipboard *cb = QApplication::clipboard();
-  QString input;
-  QString html;
-  QChar   tempchar;
-  int i = 0;
+    QClipboard *cb = QApplication::clipboard();
+    QString input;
+    QString html;
+    QChar tempchar;
+    int i = 0;
 
-  input = lined->text();
-  if (input.isEmpty())
-    input = QString::fromUcs4(&vChr, 1);
-  const int inputLength = input.length();
-  for(i=0; i< inputLength; ++i )
-    {
-      tempchar = input.at(i);
-      if(  tempchar.toLatin1() && ((tempchar.unicode() < 128) || (tempchar.unicode() >= 128+32)) )
-        {
-          html.append(input.at(i));
-        }
-      else
-        {
-          html.append(QString::asprintf("&#x%x;", tempchar.unicode()));
+    input = lined->text();
+    if (input.isEmpty())
+        input = QString::fromUcs4(&vChr, 1);
+    const int inputLength = input.length();
+    for (i = 0; i < inputLength; ++i) {
+        tempchar = input.at(i);
+        if (tempchar.toLatin1() && ((tempchar.unicode() < 128) || (tempchar.unicode() >= 128 + 32))) {
+            html.append(input.at(i));
+        } else {
+            html.append(QString::asprintf("&#x%x;", tempchar.unicode()));
         }
     }
-  cb->setText(html);
+    cb->setText(html);
 }
 
 //==================================================================
 //
 void KCharSelectDia::fromClip()
 {
-  QClipboard *cb = QApplication::clipboard();
-  lined->setText( cb->text() );
+    QClipboard *cb = QApplication::clipboard();
+    lined->setText(cb->text());
 }
 
 //==================================================================
@@ -297,10 +296,10 @@ void KCharSelectDia::fromClip()
 //
 void KCharSelectDia::fromClipUTF8()
 {
-  QClipboard *cb = QApplication::clipboard();
-  const QString str = cb->text();
+    QClipboard *cb = QApplication::clipboard();
+    const QString str = cb->text();
 
-  lined->setText( str.fromUtf8( str.toLatin1() ) );
+    lined->setText(str.fromUtf8(str.toLatin1()));
 }
 
 //==================================================================
@@ -311,35 +310,33 @@ void KCharSelectDia::fromClipUTF8()
 //
 void KCharSelectDia::flipText()
 {
-  QString input;
-  QString output;
-  int i;
+    QString input;
+    QString output;
+    int i;
 
-  input = lined->text();
-  const int nbLength = input.length();
-  for(i=0; i< nbLength; ++i )
-    {
-      output.prepend( input.at(i) );
+    input = lined->text();
+    const int nbLength = input.length();
+    for (i = 0; i < nbLength; ++i) {
+        output.prepend(input.at(i));
     }
-  lined->setText(output);
+    lined->setText(output);
 }
 
 //==================================================================
 void KCharSelectDia::setRtl(bool rtl)
 {
     _rtl = rtl;
-    if(_rtl)
-        lined->setAlignment( Qt::AlignRight );
+    if (_rtl)
+        lined->setAlignment(Qt::AlignRight);
     else
-        lined->setAlignment( Qt::AlignLeft );
+        lined->setAlignment(Qt::AlignLeft);
 }
 
 //==================================================================
 void KCharSelectDia::lineEditChanged()
 {
-    if(_rtl)
-      {
-        if(lined->cursorPosition())
-            lined->setCursorPosition( lined->cursorPosition() - 1 );
-      }
+    if (_rtl) {
+        if (lined->cursorPosition())
+            lined->setCursorPosition(lined->cursorPosition() - 1);
+    }
 }

@@ -19,40 +19,41 @@
 class QGridLayout;
 class KCharSelectDia : public KXmlGuiWindow
 {
-  Q_OBJECT
+    Q_OBJECT
 
 public:
-  explicit KCharSelectDia(QWidget *parent = nullptr);
+    explicit KCharSelectDia(QWidget *parent = nullptr);
 
-  friend class KCharSelectBookmarkOwner;
+    friend class KCharSelectBookmarkOwner;
 
 protected:
-  void closeEvent(QCloseEvent *event) override;
+    void closeEvent(QCloseEvent *event) override;
 
-  QGridLayout *grid;
-  KCharSelect *charSelect;
-  QLineEdit   *lined;
-  QPushButton *bClip;
+    QGridLayout *grid;
+    KCharSelect *charSelect;
+    QLineEdit *lined;
+    QPushButton *bClip;
 
-  uint vChr;
-  QFont vFont;
-  bool _rtl;
+    uint vChr;
+    QFont vFont;
+    bool _rtl;
 
 protected Q_SLOTS:
-  void charChanged(uint _chr);
-  void fontSelected(const QFont &_font);
-  void add()
-  { add(vChr); }
-  void add(uint _chr);
-  void toClip();
-  void toClipUTF8();
-  void toClipHTML();
-  void fromClip();
-  void fromClipUTF8();
-  void flipText();
-  void setRtl(bool rtl);
-  void lineEditChanged();
-
+    void charChanged(uint _chr);
+    void fontSelected(const QFont &_font);
+    void add()
+    {
+        add(vChr);
+    }
+    void add(uint _chr);
+    void toClip();
+    void toClipUTF8();
+    void toClipHTML();
+    void fromClip();
+    void fromClipUTF8();
+    void flipText();
+    void setRtl(bool rtl);
+    void lineEditChanged();
 };
 
 #endif
