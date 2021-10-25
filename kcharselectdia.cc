@@ -34,7 +34,7 @@ public:
         : d(dia)
     {
     }
-    ~KCharSelectBookmarkOwner()
+    ~KCharSelectBookmarkOwner() override
     {
     }
 
