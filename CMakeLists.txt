@@ -48,6 +48,7 @@ add_executable(kcharselect)
 
 target_sources(kcharselect PRIVATE
     kcharselectdia.cc
+    kcharselectdia.h
     main.cc
 
     kcharselect.qrc
