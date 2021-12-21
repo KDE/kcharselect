@@ -29,11 +29,17 @@ find_package (Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     Bookmarks
     Crash
-    DocTools
     I18n
     WidgetsAddons
     XmlGui
 )
+
+find_package(KF5DocTools ${KF5_MIN_VERSION})
+set_package_properties(KF5DocTools PROPERTIES DESCRIPTION
+    "Tools to generate documentation"
+    TYPE OPTIONAL
+)
+
 
 ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KCHARSELECT VERSION_HEADER kcharselect_version.h)
 
@@ -67,7 +73,10 @@ install(TARGETS kcharselect ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 install(FILES org.kde.kcharselect.desktop  DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.kcharselect.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 
-add_subdirectory(doc)
+if (KF5DocTools_FOUND)
+    add_subdirectory(doc)
+endif()
+
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
