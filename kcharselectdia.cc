@@ -25,7 +25,6 @@
 #include <KStandardAction>
 #include <KStandardShortcut>
 #include <KToggleAction>
-#include <kbookmarks_version.h>
 
 class KCharSelectBookmarkOwner : public KBookmarkOwner
 {
