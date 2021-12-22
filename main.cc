@@ -22,6 +22,7 @@ int main(int argc, char **argv)
 
     KLocalizedString::setApplicationDomain("kcharselect");
 
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     /**
      * enable high dpi support
      */
@@ -31,6 +32,7 @@ int main(int argc, char **argv)
     migrate.setConfigFiles(QStringList() << QStringLiteral("kcharselectrc"));
     migrate.setUiFiles(QStringList() << QStringLiteral("kcharselectui.rc"));
     migrate.migrate();
+#endif
 
     KAboutData aboutData(QStringLiteral("kcharselect"),
                          i18n("KCharSelect"),
