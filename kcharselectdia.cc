@@ -56,7 +56,7 @@ public:
     {
         QString c = bm.url().toString(QUrl::PreferLocalFile | QUrl::RemoveScheme);
         if (c.startsWith(QLatin1String("U+"))) {
-            uint uc = c.midRef(2).toUInt(Q_NULLPTR, 16);
+            uint uc = c.midRef(2).toUInt(nullptr, 16);
             d->charSelect->setCurrentCodePoint(uc);
         }
     }
