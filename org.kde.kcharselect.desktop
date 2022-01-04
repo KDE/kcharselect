@@ -1,7 +1,7 @@
 [Desktop Entry]
 GenericName=Character Selector
 GenericName[af]=Karakter Kiesser
-GenericName[ar]=منتقي المحارف
+GenericName[ar]=محدد الأحرف
 GenericName[ast]=Seleutor de caráuteres
 GenericName[bg]=Избор на знаци
 GenericName[br]=Dibaber arouezenn
@@ -80,7 +80,7 @@ Terminal=false
 X-DocPath=kcharselect/index.html
 Name=KCharSelect
 Name[af]=Kcharselect
-Name[ar]=منتقي محارفك
+Name[ar]=حرف
 Name[ast]=KCharSelect
 Name[bg]=CharSelect
 Name[br]=KCharSelect
