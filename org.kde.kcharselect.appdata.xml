@@ -92,6 +92,7 @@
     <p xml:lang="pl">KCharSelect jest narzędziem do wybierania i kopiowania do schowka znaków specjalnych z wgranych czcionek.</p>
     <p xml:lang="pt">O KCharSelect é uma ferramenta para seleccionar caracteres especiais de todos os tipos de letra instalados e copiá-los para a área de transferência.</p>
     <p xml:lang="pt-BR">KCharSelect é uma ferramenta para selecionar caracteres especiais de todas as fontes instaladas e copiá-los para a área de transferência.</p>
+    <p xml:lang="ro">KCharSelect este o unealtă pentru a alege caractere speciale din toate fonturile instalate și a le copia în clipboard.</p>
     <p xml:lang="ru">KCharSelect служит для выбора и копирования в буфер обмена символов, которые содержатся в шрифтах, но отсутствуют на клавиатуре.</p>
     <p xml:lang="sk">KCharSelect je nástroj na výber špeciálnych znakov zo všetkých nainštalovaných písiem a skopírovanie do schránky.</p>
     <p xml:lang="sl">KCharSelect je orodje za izbiro posebnih znakov iz vseh nameščenih pisav in njihovo kopiranje v odložišče.</p>
@@ -124,6 +125,7 @@
     <p xml:lang="pl">Możesz przeglądać znaki po ich kategorii lub szybko znaleźć jakiś znak wyszukując po jego nazwie.</p>
     <p xml:lang="pt">Poderá navegar pelos caracteres de acordo com a sua categoria ou descobrir rapidamente um dado carácter, pesquisando pelo seu nome.</p>
     <p xml:lang="pt-BR">Você pode navegar pelos caracteres pela sua categoria, ou localizar rapidamente por um determinado caractere, pesquisando pelo seu nome.</p>
+    <p xml:lang="ro">Puteți răsfoi caracterele după categorie sau găsi rapid un anumit caracter căutându-l după denumire.</p>
     <p xml:lang="ru">Приложение позволяет просматривать категории символов</p>
     <p xml:lang="sk">Môžete prehliadať znaky podľa ich kategórií alebo rýchlo nájsť určitý znak hľadaním pomocou jeho názvu.</p>
     <p xml:lang="sl">Po znakih lahko brskate po njihovi kategoriji ali hitro poiščete določen znak z iskanjem po njegovem imenu.</p>
@@ -156,6 +158,7 @@
     <p xml:lang="pl">KCharSelect wyświetla różne informacje o wybranym znaku. Zawiera nie tylko nazwę znaku Unikodu, lecz także aliasy, ogólne uwagi i odwołania do podobnych znaków</p>
     <p xml:lang="pt">O KCharSelect mostra diversas informações sobre o carácter seleccionado. Isto inclui não só o nome do carácter em Unicode, como também nomes alternativos, notas gerais e referências cruzadas para outros caracteres semelhantes.</p>
     <p xml:lang="pt-BR">O KCharSelect mostra várias informações sobre o caractere selecionado. Isso inclui não somente o nome do caractere Unicode, mas também os seus nomes alternativos, as notas gerais e as referências cruzadas para outros caracteres semelhantes.</p>
+    <p xml:lang="ro">KCharSelect afișează diverse informații despre caracterul ales. Aceasta include nu doar denumirea Unicode a caracterului, dar și aliasuri, note generale și referințe încrucișate cu alte caractere.</p>
     <p xml:lang="ru">KCharSelect отображает следующую информацию о выбранном символе: код символа, название, общие сведения и перекрёстные ссылки на похожие символы.</p>
     <p xml:lang="sk">KCharSelect zobrazuje rôzne informácie o vybratom znaku. Toto zahŕňa nielen názvy v Unicode ale aj aliasy, všeobecné poznámky a odkazy na podobné znaky.</p>
     <p xml:lang="sl">KCharSelect prikazuje različne informacije o izbranem znaku. To ne vključuje samo imena znaka Unicode, temveč tudi vzdevke, splošne opombe in navzkrižne reference na podobne znake.</p>
@@ -188,6 +191,7 @@
     <p xml:lang="pl">Ze względów technicznych, wyświetlane są różne przedstawienia znaku.</p>
     <p xml:lang="pt">Para uso técnico, são apresentadas diferentes representações do mesmo carácter.</p>
     <p xml:lang="pt-BR">Para uso técnico, são apresentadas as diferentes representações do mesmo caractere.</p>
+    <p xml:lang="ro">Pentru uz tehnic, sunt arătate diferite reprezentări ale caracterului.</p>
     <p xml:lang="ru">Приложение выводит сведения о различных представлениях символа.</p>
     <p xml:lang="sk">Pre technické použitie sa zobrazujú rôzne reprezentácie znakov.</p>
     <p xml:lang="sl">Za tehnično uporabo so prikazane različne predstavitve znaka.</p>
@@ -220,6 +224,7 @@
     <p xml:lang="pl">KCharSelect zawiera także dane Unihan dla wschodnioazjatyckich znaków do wyświetlania definicji po angielsku i różnych wymów.</p>
     <p xml:lang="pt">O KCharSelect também contém os dados Unihan, dos caracteres da Ásia Oriental, para mostrar as definições em Inglês e as diferentes pronúncias.</p>
     <p xml:lang="pt-BR">O KCharSelect também contém os dados Unihan dos caracteres asiáticos, para mostrar as definições em inglês e as diferentes pronúncias.</p>
+    <p xml:lang="ro">KCharSelect conține și date Unihan despre caracterele est-asiatice pentru a afișa definiții în engleză și diferite pronunțări.</p>
     <p xml:lang="ru">В составе KCharSelect также есть данные от проекта UniHan, среди которых — английские толкования и варианты чтения иероглифов.</p>
     <p xml:lang="sk">KCharSelect tiež obsahuje Unihan údaje pre Východo-ázijske znaky na zobrazenie definícií a rôznych výslovností</p>
     <p xml:lang="sl">KCharSelect vsebuje tudi podatke Unihana za znake vzhodne Azije za prikaz angleških definicij in različnih izgovorov.</p>
