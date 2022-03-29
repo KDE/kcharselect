@@ -28,6 +28,7 @@ find_package (Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
 
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     Bookmarks
+    CoreAddons
     Crash
     I18n
     WidgetsAddons
@@ -62,6 +63,7 @@ target_sources(kcharselect PRIVATE
 
 target_link_libraries(kcharselect
     KF5::Bookmarks
+    KF5::CoreAddons
     KF5::Crash
     KF5::I18n
     KF5::WidgetsAddons
