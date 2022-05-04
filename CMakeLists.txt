@@ -20,6 +20,7 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 include(ECMSetupVersion)
 include(KDEClangFormat)
 include(KDEGitCommitHooks)
+include(ECMInstallIcons)
 
 find_package (Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
     Core
@@ -81,6 +82,7 @@ endif()
 
 ki18n_install(po)
 
+ecm_install_icons(ICONS sc-apps-org.kde.kcharselect.svg DESTINATION ${KDE_INSTALL_ICONDIR})
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 

@@ -59,7 +59,7 @@ int main(int argc, char **argv)
     aboutData.addCredit(i18n("Bryce Nesbitt"), i18n("RTL support"));
 
     KAboutData::setApplicationData(aboutData);
-    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("accessories-character-map")));
+    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.kcharselect")));
 
     QCommandLineParser parser;
     aboutData.setupCommandLine(&parser);
