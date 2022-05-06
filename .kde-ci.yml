@@ -12,3 +12,5 @@ Dependencies:
     'frameworks/kbookmarks': '@stable'
     'frameworks/kxmlgui': '@stable'
     'frameworks/kcrash': '@stable'
+Options:
+  require-passing-tests-on: [ 'Linux', 'FreeBSD']
