@@ -77,6 +77,7 @@ install(FILES org.kde.kcharselect.appdata.xml DESTINATION ${KDE_INSTALL_METAINFO
 
 if (KF5DocTools_FOUND)
     add_subdirectory(doc)
+    kdoctools_install(po)
 endif()
 
 ki18n_install(po)
