@@ -252,6 +252,7 @@
   <url type="donation">https://www.kde.org/community/donations/?app=kcharselect&amp;source=appdata</url>
   <url type="help">https://docs.kde.org/?application=kcharselect</url>
   <url type="homepage">https://utils.kde.org/projects/kcharselect/</url>
+  <content_rating type="oars-1.1"/>
   <screenshots>
     <screenshot type="default">
       <image>https://www.kde.org/images/screenshots/kcharselect.png</image>
