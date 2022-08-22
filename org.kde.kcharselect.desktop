@@ -77,7 +77,6 @@ GenericName[zh_TW]=字元選擇器
 Exec=kcharselect --qwindowtitle %c
 Icon=accessories-character-map
 Type=Application
-Terminal=false
 X-DocPath=kcharselect/index.html
 Name=KCharSelect
 Name[af]=Kcharselect
