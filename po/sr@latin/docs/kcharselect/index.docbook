@@ -1,0 +1,114 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+
+  <!ENTITY kappname-n '<application>K‑birač-znakova</application>'>
+  <!ENTITY kappname-g '<application>K‑birača-znakova</application>'>
+  <!ENTITY kappname-d '<application>K‑biraču-znakova</application>'>
+  <!ENTITY kappname-a '<application>K‑birač-znakova</application>'>
+  <!ENTITY kappname-i '<application>K‑biračem-znakova</application>'>
+  <!ENTITY kappname-l '<application>K‑biraču-znakova</application>'>
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Serbian-Latin "INCLUDE">
+]>
+
+<article id="kcharselect" lang="&language;">
+
+<articleinfo>
+<title
+>K‑birač-znakova</title>
+<authorgroup>
+<author
+><firstname
+>Danijel</firstname
+> <surname
+>Lajdig</surname
+> <address
+><email
+>laidig@kde.org</email
+></address
+> </author>
+
+<othercredit role="translator"
+><firstname
+>Dragan</firstname
+><surname
+>Pantelić</surname
+><affiliation
+><address
+><email
+>falcon-10@gmx.de</email
+></address
+></affiliation
+><contrib
+>prevod</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>25. 4. 2016.</date>
+<releaseinfo
+>1.12 (Programi KDE‑a 16.04)</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>znak</keyword>
+<keyword
+>font</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+><application
+>K‑birač-znakova</application
+> je alatka za biranje posebnih znakova iz svih instaliranih fontova i njihovo kopiranje u klipbord, u jednom od nekoliko formata (obični tekst, Unicode ili HTML).</para>
+
+<para
+>Dvoklikom na znak u pregledu, ili pritiskom na <keycap
+>Enter</keycap
+>, dodajete znak u traku ispod pregleda fonta. Ova mogućnost služi da biste sastavili celu reč, zapravo bilo kakvu grupu znakova, i kopirali je izjedna u klipbord.</para
+> 
+<para
+>Pomoću <guimenuitem
+>Prevrni tekst</guimenuitem
+> možete da obrnete redosled nanizanih znakova.</para>
+<para
+>Podrazumevano, znakovi se dodaju na desnom kraju grupe ili desno od kursora. Pomoću <guimenuitem
+>Okreni usmerenje</guimenuitem
+> možete obrnuti ovo ponašanje, tako da se znakovi dodaju sleva.</para>
+
+<para>
+<screenshot>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="kcharselect.png" format="PNG"/>
+    </imageobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Znakove možete pregledati po kategorijama, ili brzo pronaći određeni znak po imenu. <application
+>K‑birač-znakova</application
+> prikazuje razne podatke o izabranom znaku, kao što su njegovo Unicode ime, alijasi, opšte napomene i upućivanja na slične znakove. </para>
+<para
+>Za tehničke potrebe date su i različite predstave znaka. <application
+>K‑birač-znakova</application
+> takođe sadrži podatke iz Unihana za istočnoazijske znakove, radi prikazivanja definicija na engleskom i različitih izgovora. </para>
+
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

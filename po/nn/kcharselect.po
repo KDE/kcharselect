@@ -1,0 +1,198 @@
+# Translation of kcharselect to Norwegian Nynorsk
+#
+# Gaute Hvoslef Kvalnes <gaute@verdsveven.com>, 1999, 2000, 2002.
+# Karl Ove Hufthammer <karl@huftis.org>, 2007, 2008, 2009, 2016.
+# Eirik U. Birkeland <eirbir@gmail.com>, 2008.
+# Øystein Steffensen-Alværvik <oysteins.omsetting@protonmail.com>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcharselect\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-12-23 00:47+0000\n"
+"PO-Revision-Date: 2018-07-31 16:15+0100\n"
+"Last-Translator: Øystein Steffensen-Alværvik <ystein@posteo.net>\n"
+"Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Gaute Hvoslef Kvalnes,Karl Ove Hufthammer"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "gaute@verdsveven.com,karl@huftis.org"
+
+#: kcharselectdia.cc:120 kcharselectdia.cc:130
+#, kde-format
+msgid "&To Clipboard"
+msgstr "&Til utklippstavla"
+
+#: kcharselectdia.cc:136
+#, kde-format
+msgid "To Clipboard &UTF-8"
+msgstr "Til utklippstavla i &UTF-8"
+
+#: kcharselectdia.cc:139
+#, kde-format
+msgid "To Clipboard &HTML"
+msgstr "Til utklippstavla som &HTML"
+
+#: kcharselectdia.cc:143
+#, kde-format
+msgid "&From Clipboard"
+msgstr "&Frå utklippstavla"
+
+#: kcharselectdia.cc:148
+#, kde-format
+msgid "From Clipboard UTF-8"
+msgstr "Frå utklippstavla i UTF-8"
+
+#: kcharselectdia.cc:151
+#, kde-format
+msgid "From Clipboard HTML"
+msgstr "Frå utklippstavla som HTML"
+
+#: kcharselectdia.cc:154
+#, kde-format
+msgid "&Flip Text"
+msgstr "&Snu teksten"
+
+#: kcharselectdia.cc:157
+#, kde-format
+msgid "&Reverse Direction"
+msgstr "&Omvend retning"
+
+#: kcharselectdia.cc:178
+#, kde-format
+msgid "Bookmarks"
+msgstr "Bokmerke"
+
+#. i18n: ectx: Menu (edit)
+#: kcharselectui.rc:4
+#, kde-format
+msgid "&Edit"
+msgstr "&Rediger"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kcharselectui.rc:17
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Hovudverktøylinje"
+
+#: main.cc:38
+#, kde-format
+msgid "KCharSelect"
+msgstr "KCharSelect"
+
+#: main.cc:40
+#, kde-format
+msgid "KDE character selection utility"
+msgstr "KDE-verktøy for teiknval"
+
+#: main.cc:43
+#, kde-format
+msgid "A wrapper around the KCharSelect widget."
+msgstr "Eit programomslag for KCharSelect-elementet."
+
+#: main.cc:46
+#, kde-format
+msgid "Christoph Feck"
+msgstr "Christoph Feck"
+
+#: main.cc:46
+#, kde-format
+msgid "KF5 port and current maintainer"
+msgstr "Port til KF5 og noverande vedlikehaldar"
+
+#: main.cc:47 main.cc:50
+#, kde-format
+msgid "Daniel Laidig"
+msgstr "Daniel Laidig"
+
+#: main.cc:47
+#, kde-format
+msgid "Author and previous maintainer"
+msgstr "Utviklar og tidlegare vedlikehaldar"
+
+#: main.cc:48
+#, kde-format
+msgid "Reginald Stadlbauer"
+msgstr "Reginald Stadlbauer"
+
+#: main.cc:48
+#, kde-format
+msgid "Author"
+msgstr "Opphavsperson"
+
+#: main.cc:51
+#, kde-format
+msgid ""
+"New GUI, Unicode information, incremental search, and general improvements"
+msgstr ""
+"Nytt brukargrensesnitt, Unicode-informasjon, støtte for direktesøk og "
+"generelle forbetringar"
+
+#: main.cc:54
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: main.cc:54
+#, kde-format
+msgid "Porting help"
+msgstr "Hjelp med porting"
+
+#: main.cc:55
+#, kde-format
+msgid "Constantin Berzan"
+msgstr "Constantin Berzan"
+
+#: main.cc:55
+#, kde-format
+msgid "Previous maintainer"
+msgstr "Tidlegare vedlikehaldar"
+
+#: main.cc:56
+#, kde-format
+msgid "Nadeem Hasan"
+msgstr "Nadeem Hasan"
+
+#: main.cc:56 main.cc:57
+#, kde-format
+msgid "GUI cleanup and fixes"
+msgstr "GUI-opprydding og fiksing"
+
+#: main.cc:57
+#, kde-format
+msgid "Ryan Cumming"
+msgstr "Ryan Cumming"
+
+#: main.cc:58
+#, kde-format
+msgid "Benjamin C. Meyer"
+msgstr "Benjamin C. Meyer"
+
+#: main.cc:58
+#, kde-format
+msgid "XMLUI conversion"
+msgstr "XMLUI-konvertering"
+
+#: main.cc:59
+#, kde-format
+msgid "Bryce Nesbitt"
+msgstr "Bryce Nesbitt"
+
+#: main.cc:59
+#, kde-format
+msgid "RTL support"
+msgstr "Støtte for høgre-til-venstre-tekst"

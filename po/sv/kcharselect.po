@@ -1,0 +1,192 @@
+# translation of kcharselect.po to Swedish
+# Copyright (C).
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2004, 2007, 2008, 2009, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcharselect\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-12-23 00:47+0000\n"
+"PO-Revision-Date: 2016-09-02 12:10+0100\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Karl Backström,Mattias Newzella"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "backstrom@kde.org,newzella@linux.nu"
+
+#: kcharselectdia.cc:120 kcharselectdia.cc:130
+#, kde-format
+msgid "&To Clipboard"
+msgstr "&Till klippbordet"
+
+#: kcharselectdia.cc:136
+#, kde-format
+msgid "To Clipboard &UTF-8"
+msgstr "Till klippbordet &UTF-8"
+
+#: kcharselectdia.cc:139
+#, kde-format
+msgid "To Clipboard &HTML"
+msgstr "Till klippbordet &HTML"
+
+#: kcharselectdia.cc:143
+#, kde-format
+msgid "&From Clipboard"
+msgstr "&Från klippbord"
+
+#: kcharselectdia.cc:148
+#, kde-format
+msgid "From Clipboard UTF-8"
+msgstr "Från klippbord UTF-8"
+
+#: kcharselectdia.cc:151
+#, kde-format
+msgid "From Clipboard HTML"
+msgstr "Från klippbord HTML"
+
+#: kcharselectdia.cc:154
+#, kde-format
+msgid "&Flip Text"
+msgstr "&Vänd text"
+
+#: kcharselectdia.cc:157
+#, kde-format
+msgid "&Reverse Direction"
+msgstr "Omvänd &riktning"
+
+#: kcharselectdia.cc:178
+#, kde-format
+msgid "Bookmarks"
+msgstr "Bokmärken"
+
+#. i18n: ectx: Menu (edit)
+#: kcharselectui.rc:4
+#, kde-format
+msgid "&Edit"
+msgstr "&Redigera"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kcharselectui.rc:17
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Huvudverktygsrad"
+
+#: main.cc:38
+#, kde-format
+msgid "KCharSelect"
+msgstr "Kcharselect"
+
+#: main.cc:40
+#, kde-format
+msgid "KDE character selection utility"
+msgstr "Teckenvalverktyg för KDE"
+
+#: main.cc:43
+#, kde-format
+msgid "A wrapper around the KCharSelect widget."
+msgstr "En omgivning för den grafiska komponenten Kcharselect."
+
+#: main.cc:46
+#, kde-format
+msgid "Christoph Feck"
+msgstr "Christoph Feck"
+
+#: main.cc:46
+#, kde-format
+msgid "KF5 port and current maintainer"
+msgstr "Konvertering till KF5 och nuvarande underhåll"
+
+#: main.cc:47 main.cc:50
+#, kde-format
+msgid "Daniel Laidig"
+msgstr "Daniel Laidig"
+
+#: main.cc:47
+#, kde-format
+msgid "Author and previous maintainer"
+msgstr "Upphovsman och tidigare underhåll"
+
+#: main.cc:48
+#, kde-format
+msgid "Reginald Stadlbauer"
+msgstr "Reginald Stadlbauer"
+
+#: main.cc:48
+#, kde-format
+msgid "Author"
+msgstr "Upphovsman"
+
+#: main.cc:51
+#, kde-format
+msgid ""
+"New GUI, Unicode information, incremental search, and general improvements"
+msgstr ""
+"Nytt grafiskt gränssnitt, information om Unicode, inkrementell sökning och "
+"allmänna förbättringar"
+
+#: main.cc:54
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: main.cc:54
+#, kde-format
+msgid "Porting help"
+msgstr "Konverteringshjälp"
+
+#: main.cc:55
+#, kde-format
+msgid "Constantin Berzan"
+msgstr "Constantin Berzan"
+
+#: main.cc:55
+#, kde-format
+msgid "Previous maintainer"
+msgstr "Tidigare underhåll"
+
+#: main.cc:56
+#, kde-format
+msgid "Nadeem Hasan"
+msgstr "Nadeem Hasan"
+
+#: main.cc:56 main.cc:57
+#, kde-format
+msgid "GUI cleanup and fixes"
+msgstr "Upprensning av det grafiska gränssnittet och rättningar"
+
+#: main.cc:57
+#, kde-format
+msgid "Ryan Cumming"
+msgstr "Ryan Cumming"
+
+#: main.cc:58
+#, kde-format
+msgid "Benjamin C. Meyer"
+msgstr "Benjamin C. Meyer"
+
+#: main.cc:58
+#, kde-format
+msgid "XMLUI conversion"
+msgstr "Konvertering till grafiskt användargränssnitt med XML"
+
+#: main.cc:59
+#, kde-format
+msgid "Bryce Nesbitt"
+msgstr "Bryce Nesbitt"
+
+#: main.cc:59
+#, kde-format
+msgid "RTL support"
+msgstr "Stöd för språk skrivna från höger till vänster"

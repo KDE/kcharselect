@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+
+  <!ENTITY kappname "&kcharselect;">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Portuguese "INCLUDE">
+]>
+
+<article id="kcharselect" lang="&language;">
+
+<articleinfo>
+<title
+>KCharSelect</title>
+<authorgroup>
+<author
+><firstname
+>Daniel</firstname
+> <surname
+>Laidig</surname
+> <address
+><email
+>laidig@kde.org</email
+></address
+> </author>
+
+<othercredit role="translator"
+><firstname
+>José</firstname
+><surname
+>Pires</surname
+><affiliation
+><address
+><email
+>zepires@gmail.com</email
+></address
+></affiliation
+><contrib
+>Tradução</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2016-04-25</date>
+<releaseinfo
+>1.12 (Aplicações 16.04)</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>carácter</keyword>
+<keyword
+>tipo de letra</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>O &kcharselect; é uma ferramenta para seleccionar os caracteres especiais de todos os tipos de letra instalados e copiá-los em diferentes formatos (texto simples, Unicode ou &HTML;) para a área de transferência.</para>
+
+<para
+>Se fizer duplo-click sobre um carácter na antevisão ou se carregar em &Enter;, irá adicioná-lo à barra por baixo da antevisão do texto. Esta funcionalidade permite recolher uma palavra ou grupo de vários caracteres e copiá-los em conjunto para a área de transferência.</para
+> 
+<para
+>Use o <guimenuitem
+>Inverter o Texto</guimenuitem
+> para inverter a ordem dos caracteres escolhidos.</para>
+<para
+>Por omissão, os caracteres são adicionados à direita do grupo ou da posição do cursor. Com a opção <guimenuitem
+>Direcção Inversa</guimenuitem
+>, poderá alterar este comportamento e adicionar os caracteres do lado esquerdo.</para>
+
+<para>
+<screenshot>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="kcharselect.png" format="PNG"/>
+    </imageobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Poderá navegar pelos caracteres, com base na sua categoria, ou procurar rapidamente por um dado carácter, procurando pelo seu nome. O &kcharselect; mostra várias informações acerca do carácter seleccionado. Isto inclui não só o nome do carácter Unicode, mas também os seus nomes alternativos, as notas gerais e as referências cruzadas para outros caracteres semelhantes. </para>
+<para
+>Para um uso técnico, são apresentadas as diferentes representações do carácter. O &kcharselect; também contém os dados Unihan dos caracteres asiáticos, para mostrar as definições em inglês e as diferentes pronúncias. </para>
+
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

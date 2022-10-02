@@ -1,0 +1,196 @@
+# Translation of kcharselect to Norwegian Bokmål
+#
+# Hans Petter Bieker <bieker@kde.org>, 1998, 1999, 2000, 2002.
+# Nils Kristian Tomren <slx@nilsk.net>, 2005.
+# Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2008, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcharselect\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-12-23 00:47+0000\n"
+"PO-Revision-Date: 2009-09-06 19:46+0200\n"
+"Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
+"Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Christian A. Strømmen,Axel Bojer,Nils Kristian Tomren"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "number1@realityx.net,fri_programvare@bojer.no,slx@nilsk.net"
+
+#: kcharselectdia.cc:120 kcharselectdia.cc:130
+#, kde-format
+msgid "&To Clipboard"
+msgstr "&Til utklippstavla"
+
+#: kcharselectdia.cc:136
+#, kde-format
+msgid "To Clipboard &UTF-8"
+msgstr "Til utklippstavla &UTF-8"
+
+#: kcharselectdia.cc:139
+#, kde-format
+msgid "To Clipboard &HTML"
+msgstr "Til utklippstavla &HTML"
+
+#: kcharselectdia.cc:143
+#, kde-format
+msgid "&From Clipboard"
+msgstr "Fra utklippstavla"
+
+#: kcharselectdia.cc:148
+#, kde-format
+msgid "From Clipboard UTF-8"
+msgstr "Fra utklippstavla UTF-8"
+
+#: kcharselectdia.cc:151
+#, kde-format
+msgid "From Clipboard HTML"
+msgstr "Fra utklippstavla HTML"
+
+#: kcharselectdia.cc:154
+#, kde-format
+msgid "&Flip Text"
+msgstr "&Snu tekst"
+
+#: kcharselectdia.cc:157
+#, kde-format
+msgid "&Reverse Direction"
+msgstr "&Snu retning"
+
+#: kcharselectdia.cc:178
+#, kde-format
+msgid "Bookmarks"
+msgstr "Bokmerker"
+
+#. i18n: ectx: Menu (edit)
+#: kcharselectui.rc:4
+#, kde-format
+msgid "&Edit"
+msgstr "&Rediger"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kcharselectui.rc:17
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Hovedverktøylinje"
+
+#: main.cc:38
+#, kde-format
+msgid "KCharSelect"
+msgstr "KCharSelect"
+
+#: main.cc:40
+#, kde-format
+msgid "KDE character selection utility"
+msgstr "KDE verktøy for tegnvalg"
+
+#: main.cc:43
+#, kde-format
+msgid "A wrapper around the KCharSelect widget."
+msgstr "Et grensesnitt til skjermelementet KCharSelect."
+
+#: main.cc:46
+#, kde-format
+msgid "Christoph Feck"
+msgstr ""
+
+#: main.cc:46
+#, kde-format
+msgid "KF5 port and current maintainer"
+msgstr ""
+
+#: main.cc:47 main.cc:50
+#, kde-format
+msgid "Daniel Laidig"
+msgstr "Daniel Laidig"
+
+#: main.cc:47
+#, kde-format
+msgid "Author and previous maintainer"
+msgstr ""
+
+#: main.cc:48
+#, kde-format
+msgid "Reginald Stadlbauer"
+msgstr "Reginald Stadlbauer"
+
+#: main.cc:48
+#, kde-format
+msgid "Author"
+msgstr "Forfatter"
+
+#: main.cc:51
+#, kde-format
+msgid ""
+"New GUI, Unicode information, incremental search, and general improvements"
+msgstr ""
+"Nytt GUI, Unicode-informasjon, fortløpende søk og generelle forbedringer"
+
+#: main.cc:54
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: main.cc:54
+#, kde-format
+msgid "Porting help"
+msgstr ""
+
+#: main.cc:55
+#, kde-format
+msgid "Constantin Berzan"
+msgstr "Constantin Berzan"
+
+#: main.cc:55
+#, kde-format
+msgid "Previous maintainer"
+msgstr "Forrige vedlikeholder"
+
+#: main.cc:56
+#, kde-format
+msgid "Nadeem Hasan"
+msgstr "Nadeem Hasan"
+
+#: main.cc:56 main.cc:57
+#, kde-format
+msgid "GUI cleanup and fixes"
+msgstr "GUI opprydding og reparasjon"
+
+#: main.cc:57
+#, kde-format
+msgid "Ryan Cumming"
+msgstr "Ryan Cumming"
+
+#: main.cc:58
+#, kde-format
+msgid "Benjamin C. Meyer"
+msgstr "Benjamin C. Meyer"
+
+#: main.cc:58
+#, kde-format
+msgid "XMLUI conversion"
+msgstr "XMLUI konvertering"
+
+#: main.cc:59
+#, kde-format
+msgid "Bryce Nesbitt"
+msgstr "Bryce Nesbitt"
+
+#: main.cc:59
+#, kde-format
+msgid "RTL support"
+msgstr "RTL-støtte"

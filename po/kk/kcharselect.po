@@ -1,0 +1,197 @@
+# translation of kcharselect.po to Kazakh
+#
+# Sairan Kikkarin <sairan@computer.org>, 2006.
+# Sairan Kikkarin <sairan@computer.org>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcharselect\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-12-23 00:47+0000\n"
+"PO-Revision-Date: 2010-07-03 09:27+0600\n"
+"Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
+"Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Сайран Киккарин"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sairan@computer.org"
+
+#: kcharselectdia.cc:120 kcharselectdia.cc:130
+#, kde-format
+msgid "&To Clipboard"
+msgstr "&Алмасу буферіне"
+
+#: kcharselectdia.cc:136
+#, kde-format
+msgid "To Clipboard &UTF-8"
+msgstr "&UTF-8 түрде алмасу буферіне"
+
+#: kcharselectdia.cc:139
+#, kde-format
+msgid "To Clipboard &HTML"
+msgstr "&HTML түрде алмасу буферіне"
+
+#: kcharselectdia.cc:143
+#, kde-format
+msgid "&From Clipboard"
+msgstr "Алмасу &буферінен"
+
+#: kcharselectdia.cc:148
+#, kde-format
+msgid "From Clipboard UTF-8"
+msgstr "UTF-8 түрде алмасу буферінен"
+
+#: kcharselectdia.cc:151
+#, kde-format
+msgid "From Clipboard HTML"
+msgstr "HTML түрде алмасу буферінен"
+
+#: kcharselectdia.cc:154
+#, kde-format
+msgid "&Flip Text"
+msgstr "Мәтін &ретін керілеу"
+
+#: kcharselectdia.cc:157
+#, kde-format
+msgid "&Reverse Direction"
+msgstr "Жазу &бағытын керілеу"
+
+#: kcharselectdia.cc:178
+#, kde-format
+msgid "Bookmarks"
+msgstr ""
+
+#. i18n: ectx: Menu (edit)
+#: kcharselectui.rc:4
+#, kde-format
+msgid "&Edit"
+msgstr "&Өңдеу"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kcharselectui.rc:17
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Негізгі құралдары"
+
+#: main.cc:38
+#, kde-format
+msgid "KCharSelect"
+msgstr "KCharSelect"
+
+#: main.cc:40
+#, kde-format
+msgid "KDE character selection utility"
+msgstr "KDE таңба тергіш утилитасы"
+
+#: main.cc:43
+#, kde-format
+msgid "A wrapper around the KCharSelect widget."
+msgstr "KCharSelect виджеттің орамасы."
+
+#: main.cc:46
+#, kde-format
+msgid "Christoph Feck"
+msgstr ""
+
+#: main.cc:46
+#, fuzzy, kde-format
+#| msgid "Author and maintainer"
+msgid "KF5 port and current maintainer"
+msgstr "Авторы және жетілдірушісі"
+
+#: main.cc:47 main.cc:50
+#, kde-format
+msgid "Daniel Laidig"
+msgstr "Daniel Laidig"
+
+#: main.cc:47
+#, fuzzy, kde-format
+#| msgid "Author and maintainer"
+msgid "Author and previous maintainer"
+msgstr "Авторы және жетілдірушісі"
+
+#: main.cc:48
+#, kde-format
+msgid "Reginald Stadlbauer"
+msgstr "Reginald Stadlbauer"
+
+#: main.cc:48
+#, kde-format
+msgid "Author"
+msgstr "Авторы"
+
+#: main.cc:51
+#, kde-format
+msgid ""
+"New GUI, Unicode information, incremental search, and general improvements"
+msgstr "Жаңа GUI, Unicode мәліметі, инкременттік іздеу, жалпы жақсартулар"
+
+#: main.cc:54
+#, kde-format
+msgid "Laurent Montel"
+msgstr ""
+
+#: main.cc:54
+#, kde-format
+msgid "Porting help"
+msgstr ""
+
+#: main.cc:55
+#, kde-format
+msgid "Constantin Berzan"
+msgstr "Constantin Berzan"
+
+#: main.cc:55
+#, kde-format
+msgid "Previous maintainer"
+msgstr "Бұрынғы жетілдірушісі"
+
+#: main.cc:56
+#, kde-format
+msgid "Nadeem Hasan"
+msgstr "Nadeem Hasan"
+
+#: main.cc:56 main.cc:57
+#, kde-format
+msgid "GUI cleanup and fixes"
+msgstr "Интерфейсті жетілдіру мен түзеу"
+
+#: main.cc:57
+#, kde-format
+msgid "Ryan Cumming"
+msgstr "Ryan Cumming"
+
+#: main.cc:58
+#, kde-format
+msgid "Benjamin C. Meyer"
+msgstr "Benjamin C. Meyer"
+
+#: main.cc:58
+#, kde-format
+msgid "XMLUI conversion"
+msgstr "XMLUI түрлендіруі"
+
+#: main.cc:59
+#, kde-format
+msgid "Bryce Nesbitt"
+msgstr "Bryce Nesbitt"
+
+#: main.cc:59
+#, kde-format
+msgid "RTL support"
+msgstr "RTL қолдауы"
+
+#~ msgid "&Alignment"
+#~ msgstr "&Байланыстыру"

@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+
+  <!ENTITY kappname "&kcharselect;">
+  <!ENTITY package "kdeutils">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Galician  "INCLUDE">
+]>
+
+<article lang="&language;">
+
+<articleinfo>
+<title
+>KCharSelect</title>
+<authorgroup>
+<author
+><firstname
+>Daniel</firstname
+> <surname
+>Laidig</surname
+> <address
+><email
+>laidig@kde.org</email
+></address
+> </author>
+
+<othercredit role="translator"
+><firstname
+>Xosé</firstname
+><surname
+>Calvo</surname
+> <affiliation
+><address
+><email
+>xosecalvo@edu.xunta.es</email
+></address
+></affiliation
+> <contrib
+>Tradutor do proxecto Trasno</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2010-07-23</date>
+<releaseinfo
+>v1.8 (&kde; 4.5)</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>character</keyword>
+<keyword
+>font</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>&kcharselect; is a tool to select special characters from all installed fonts and copy them into the clipboard.</para>
+
+<para>
+<screenshot>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="kcharselect.png" format="PNG"/>
+    </imageobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>You can browse characters by their category or quickly find a certain character by searching for its name. &kcharselect; displays various information about the selected character. This includes not only the Unicode character name, but also aliases, general notes and cross references to similar characters. </para>
+<para
+>For technical use, different representations of the character are shown. &kcharselect; also contains Unihan data for East Asian characters to display English definitions and different pronunciations. </para>
+
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

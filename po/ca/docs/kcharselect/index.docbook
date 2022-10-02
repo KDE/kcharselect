@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+
+  <!ENTITY kappname "&kcharselect;">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Catalan  "INCLUDE">
+]>
+
+<article id="kcharselect" lang="&language;">
+
+<articleinfo>
+<title
+>KCharSelect</title>
+<authorgroup>
+<author
+><firstname
+>Daniel</firstname
+> <surname
+>Laidig</surname
+> <address
+><email
+>laidig@kde.org</email
+></address
+> </author>
+
+<othercredit role="translator"
+><firstname
+>Albert</firstname
+><surname
+>Astals Cid</surname
+><affiliation
+><address
+><email
+>aacid@kde.org</email
+></address
+></affiliation
+><contrib
+>Traductor</contrib
+></othercredit
+> &traductor.Antoni.Bella; 
+</authorgroup>
+
+<date
+>25 d'abril de 2016</date>
+<releaseinfo
+>1.12 (Aplicacions 16.04)</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>caràcter</keyword>
+<keyword
+>tipus de lletra</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>&kcharselect; és una eina per seleccionar els caràcters especials de tots els tipus de lletra instal·lats i els copia en diferents formats (text net, Unicode o &HTML;) al porta-retalls.</para>
+
+<para
+>Feu doble clic sobre un caràcter a la vista prèvia o premeu &Intro; per afegir-lo a la barra de sota de la vista prèvia de tipus de lletra. Aquesta característica permet recollir una paraula o un grup de caràcters diversos i copiar-los conjuntament al porta-retalls.</para
+> 
+<para
+>Useu <guimenuitem
+>Gira el text</guimenuitem
+> per a revertir l'ordre dels caràcters triats.</para>
+<para
+>Per omissió els caràcters s'afegeixen a l'extrem dret de la posició del grup o cursor. Amb <guimenuitem
+>Direcció inversa</guimenuitem
+> podeu canviar aquest comportament i afegir els caràcters en la direcció cap a l'esquerra.</para>
+
+<para>
+<screenshot>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="kcharselect.png" format="PNG"/>
+    </imageobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Podeu navegar pels caràcters per categoria o trobar ràpidament un cert caràcter mitjançant la cerca del seu nom. &kcharselect; mostra diversa informació sobre el caràcter seleccionat. Això inclou no només el nom de caràcter Unicode, sinó també els seus àlies, notes generals i referències a caràcters similars. </para>
+<para
+>Per a ús tècnic, es mostren diferents representacions del caràcter. &kcharselect; també conté dades Unihan per a caràcters asiàtics orientals, mostrant les definicions angleses i pronunciacions diferents. </para>
+
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

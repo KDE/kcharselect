@@ -1,0 +1,202 @@
+# Translation of kcharselect.po to Slovenian
+# SLOVENIAN TRANSLATION OF KCHARSELECT.
+# Copyright (C) 2000,2003, 2005 Free Software Foundation, Inc.
+# $Id: kcharselect.po 1615671 2021-12-23 01:30:29Z scripty $
+# $Source$
+#
+# Roman Maurer <roman.maurer@hermes.si>, 2000.
+# Gregor Rakar <gregor.rakar@kiss.uni-lj.si>, 2003.
+# Gregor Rakar <gregor.rakar@kiss.si>, 2005.
+# Jaka Kranjc <lynxlynxlynx@sourcemage.org>, 2007.
+# Jure Repinc <jlp@holodeck1.com>, 2008, 2010.
+# Andrej Mernik <andrejm@ubuntu.si>, 2013, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcharselect\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-12-23 00:47+0000\n"
+"PO-Revision-Date: 2016-09-04 09:26+0200\n"
+"Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Roman Maurer,Gregor Rakar,Matjaž Horvat,Andrej Mernik"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"roman.maurer@amis.net,gregor.rakar@kiss.si,matjaz85@yahoo.com,andrejm@ubuntu."
+"si"
+
+#: kcharselectdia.cc:120 kcharselectdia.cc:130
+#, kde-format
+msgid "&To Clipboard"
+msgstr "&Na odložišče"
+
+#: kcharselectdia.cc:136
+#, kde-format
+msgid "To Clipboard &UTF-8"
+msgstr "Na odložišče (&UTF-8)"
+
+#: kcharselectdia.cc:139
+#, kde-format
+msgid "To Clipboard &HTML"
+msgstr "Na odložišče (&HTML)"
+
+#: kcharselectdia.cc:143
+#, kde-format
+msgid "&From Clipboard"
+msgstr "&Z odložišča"
+
+#: kcharselectdia.cc:148
+#, kde-format
+msgid "From Clipboard UTF-8"
+msgstr "Z odložišča (UTF-8)"
+
+#: kcharselectdia.cc:151
+#, kde-format
+msgid "From Clipboard HTML"
+msgstr "Z odložišča (HTML)"
+
+#: kcharselectdia.cc:154
+#, kde-format
+msgid "&Flip Text"
+msgstr "O&brni besedilo"
+
+#: kcharselectdia.cc:157
+#, kde-format
+msgid "&Reverse Direction"
+msgstr "&Obrni smer"
+
+#: kcharselectdia.cc:178
+#, kde-format
+msgid "Bookmarks"
+msgstr "Zaznamki"
+
+#. i18n: ectx: Menu (edit)
+#: kcharselectui.rc:4
+#, kde-format
+msgid "&Edit"
+msgstr "&Uredi"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kcharselectui.rc:17
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Glavna orodna vrstica"
+
+#: main.cc:38
+#, kde-format
+msgid "KCharSelect"
+msgstr "KCharSelect"
+
+#: main.cc:40
+#, kde-format
+msgid "KDE character selection utility"
+msgstr "Pripomoček za izbiranje znakov v KDE"
+
+#: main.cc:43
+#, kde-format
+msgid "A wrapper around the KCharSelect widget."
+msgstr "Ovijalnik okoli gradnika KCharSelect."
+
+#: main.cc:46
+#, kde-format
+msgid "Christoph Feck"
+msgstr "Christoph Feck"
+
+#: main.cc:46
+#, kde-format
+msgid "KF5 port and current maintainer"
+msgstr "Predelava za KF5 in trenutni vzdrževalec"
+
+#: main.cc:47 main.cc:50
+#, kde-format
+msgid "Daniel Laidig"
+msgstr "Daniel Laidig"
+
+#: main.cc:47
+#, kde-format
+msgid "Author and previous maintainer"
+msgstr "Avtor in predhodni vzdrževalec"
+
+#: main.cc:48
+#, kde-format
+msgid "Reginald Stadlbauer"
+msgstr "Reginald Stadlbauer"
+
+#: main.cc:48
+#, kde-format
+msgid "Author"
+msgstr "Avtor"
+
+#: main.cc:51
+#, kde-format
+msgid ""
+"New GUI, Unicode information, incremental search, and general improvements"
+msgstr "Nov vmesnik, podatki Unicode, postopno iskanje in splošne izboljšave"
+
+#: main.cc:54
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: main.cc:54
+#, kde-format
+msgid "Porting help"
+msgstr "Pomoč pri predelavi"
+
+#: main.cc:55
+#, kde-format
+msgid "Constantin Berzan"
+msgstr "Constantin Berzan"
+
+#: main.cc:55
+#, kde-format
+msgid "Previous maintainer"
+msgstr "Prejšnji vzdrževalec"
+
+#: main.cc:56
+#, kde-format
+msgid "Nadeem Hasan"
+msgstr "Nadeem Hasan"
+
+#: main.cc:56 main.cc:57
+#, kde-format
+msgid "GUI cleanup and fixes"
+msgstr "Izboljšave vmesnika in popravki"
+
+#: main.cc:57
+#, kde-format
+msgid "Ryan Cumming"
+msgstr "Ryan Cumming"
+
+#: main.cc:58
+#, kde-format
+msgid "Benjamin C. Meyer"
+msgstr "Benjamin C. Meyer"
+
+#: main.cc:58
+#, kde-format
+msgid "XMLUI conversion"
+msgstr "Pretvorba XMLUI"
+
+#: main.cc:59
+#, kde-format
+msgid "Bryce Nesbitt"
+msgstr "Bryce Nesbitt"
+
+#: main.cc:59
+#, kde-format
+msgid "RTL support"
+msgstr "Podpora za pisanje z desne proti levi"

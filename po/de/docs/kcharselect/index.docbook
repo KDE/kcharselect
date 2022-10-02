@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+
+  <!ENTITY kappname "&kcharselect;">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE">
+]>
+
+<article id="kcharselect" lang="&language;">
+
+<articleinfo>
+<title
+>KCharSelect</title>
+<authorgroup>
+<author
+><firstname
+>Daniel</firstname
+> <surname
+>Laidig</surname
+> <address
+><email
+>laidig@kde.org</email
+></address
+> </author>
+
+<othercredit role="translator"
+><firstname
+>Gregor</firstname
+><surname
+>Zumstein</surname
+><affiliation
+><address
+><email
+>zumstein@ssd.ethz.ch</email
+></address
+></affiliation
+><contrib
+>Deutsche Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2016-04-25</date>
+<releaseinfo
+>1.12 (Anwendungen 16.04)</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Zeichen</keyword>
+<keyword
+>Schrift</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>&kcharselect; ist ein Hilfsprogramm um Sonderzeichen aus allen installierten Schriftarten auszuwählen und in verschieden Formaten (Einfacher Text, Unicode oder &HTML;) in die Zwischenablage zu kopieren.</para>
+
+<para
+>Ein Doppelklick auf ein Zeichen oder das Drücken der Taste &Enter; fügt es in das Textfeld unter der Zeichenvorschau ein. Die ermöglicht es, eine Wort oder eine Gruppe von mehreren Zeichen zusammenzustellen und Sie gemeinsam in die Zwischenablage zu kopieren.</para
+> 
+<para
+>Benutzen Sie <guimenuitem
+>Text umkehren</guimenuitem
+>, um die Reihenfolge der ausgewählten Zeichen um zudrehen.</para>
+<para
+>In der Voreinstellung werden die Zeichen rechts von der Gruppe oder der Position des Cursors eingefügt. Mit <guimenuitem
+>Richtung umkehren</guimenuitem
+> können Sie dies Verhalten ändern und Zeichen nach links hinzufügen.</para>
+
+<para>
+<screenshot>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="kcharselect.png" format="PNG"/>
+    </imageobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Sie können Zeichen nach Kategorien durchsehen oder direkt ein bestimmtes Zeichen finden, indem Sie den Namen suchen. &kcharselect; zeigt verschiedene Informationen über das ausgewählte Zeichen an: den Unicodenamen, Anmerkungen und Querverweise zu ähnlichen Zeichen, allgemeine Zeichen-Eigenschaften und verschiedene nützliche Repräsentationen. </para>
+<para
+>Für den technischen Gebrauch werden verschiedene Repräsentationen des Zeichens (UTF-8, UTF-16, XML-Dezimal-Entität) angezeigt. &kcharselect; enthält außerdem Unihan-Daten für Ostasiatische Zeichen, damit sind für diese Zeichen englische Definitionen und verschiedene Ausprachen verfügbar. </para>
+
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

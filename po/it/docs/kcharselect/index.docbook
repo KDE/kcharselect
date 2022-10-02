@@ -1,0 +1,117 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+
+  <!ENTITY kappname "&kcharselect;">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Italian "INCLUDE">
+]>
+
+<article id="kcharselect" lang="&language;">
+
+<articleinfo>
+<title
+>KCharSelect</title>
+<authorgroup>
+<author
+><firstname
+>Daniel</firstname
+> <surname
+>Laidig</surname
+> <address
+><email
+>laidig@kde.org</email
+></address
+> </author>
+
+<othercredit role="translator"
+><firstname
+>Federico</firstname
+><surname
+>Zenith</surname
+><affiliation
+><address
+><email
+>federico.zenith@member.fsf.org</email
+></address
+></affiliation
+><contrib
+>Traduzione della documentazione</contrib
+></othercredit
+><othercredit role="translator"
+><firstname
+>Nicola</firstname
+><surname
+>Ruggero</surname
+><contrib
+>Traduzione della documentazione</contrib
+></othercredit
+><othercredit role="translator"
+><firstname
+>Federico</firstname
+><surname
+>Cozzi</surname
+><contrib
+>Traduzione della documentazione</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>25/04/2016</date>
+<releaseinfo
+>1.12 (Applications 16.04)</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>carattere</keyword>
+<keyword
+>tipo di carattere</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>&kcharselect; è uno strumento per selezionare caratteri speciali da tutti i tipi di carattere installati e copiarli in diversi formati (testo semplice, Unicode o &HTML;) negli appunti.</para>
+
+<para
+>Fare doppio clic su un carattere nell'anteprima o premere &Enter; lo aggiunge alla barra sotto l'anteprima del carattere. Questa funzionalità permette di mettere assieme una parola o raggruppare diversi caratteri, e copiarli assieme negli appunti.</para
+> 
+<para
+>Usa <guimenuitem
+>Ribalta testo</guimenuitem
+> per invertire l'ordine dei caratteri scelti.</para>
+<para
+>Normalmente i caratteri sono aggiunti a destra del gruppo o della posizione del cursore. Con <guimenuitem
+>Direzione inversa</guimenuitem
+> puoi cambiare questo comportamento e aggiungere i caratteri sulla sinistra.</para>
+
+<para>
+<screenshot>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="kcharselect.png" format="PNG"/>
+    </imageobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Puoi sfogliare i caratteri per categoria o trovarne velocemente uno in particolare cercandone il nome. &kcharselect; visualizza varie informazioni sul carattere selezionato, incluso non solo il nome del carattere, ma anche alias, note generiche e riferimenti incrociati a caratteri simili. </para>
+<para
+>Per l'uso tecnico, vengono visualizzate diverse rappresentazioni del carattere. &kcharselect; contiene anche dati Unihan per i caratteri asiatici orientali per visualizzare le definizioni inglesi e le diverse pronunce. </para>
+
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

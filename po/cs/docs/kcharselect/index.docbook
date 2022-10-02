@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+
+  <!ENTITY kappname "&kcharselect;">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Czech "INCLUDE">
+]>
+
+<article id="kcharselect" lang="&language;">
+
+<articleinfo>
+<title
+>KCharSelect</title>
+<authorgroup>
+<author
+><firstname
+>Daniel</firstname
+> <surname
+>Laidig</surname
+> <address
+><email
+>laidig@kde.org</email
+></address
+> </author>
+
+<othercredit role="translator"
+><firstname
+>Lukáš</firstname
+><surname
+>Vlček</surname
+><affiliation
+><address
+><email
+>lukas.vlcek777@gmail.com</email
+></address
+></affiliation
+><contrib
+>Překlad</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2016-04-25</date>
+<releaseinfo
+>1.12 (Aplikace 16.04)</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>znak</keyword>
+<keyword
+>písmo</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>&kcharselect; je nástroj pro výběr speciálních znaků ze všech nainstalovaných písem a pro jejich zkopírování do schránky v několika možných formátech (čistý text, text v kódování Unicode nebo jako &HTML; entity).</para>
+
+<para
+>Dvojklikem na znak v náhledu nebo stisknutím klávesy &Enter;, jej přidáte do lišty níže pro náhled. Tato vlastnost umožňuje spojit slova nebo skupinu různých znaků a společně je zkopírovat do schránky.</para
+> 
+<para
+>Chcete-li převrátit pořadí vybraných znaků, použijte položku hlavní nabídky <guimenuitem
+>Prohodit text</guimenuitem
+></para>
+<para
+>Ve výchozím nastavení jsou znaky přidávány k pravému konci skupiny znaků nebo na pozici kurzoru. Pomocí položky hlavní nabídky <guimenuitem
+>Opačný směr</guimenuitem
+> můžete změnit toto chování. Znaky budou přidávány v levém směru.</para>
+
+<para>
+<screenshot>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="kcharselect.png" format="PNG"/>
+    </imageobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Můžete procházet skupinou znaků nebo rychle vyhledat zadaný znak vyhledáním jeho názvu. &kcharselect; zobrazuje různé informace o vybraném znaku. To nezahrnuje pouze názve znaku Unicode, ale také aliasy, obecné vlastnosti a křížové odkazy na podobné znaky. </para>
+<para
+>K technickému využití jsou uvedeny různé reprezentace znaku. &kcharselect; obsahuje i data Unihan pro východoasijské znaky na displeji, anglické definice a rozdílné výslovnosti. </para>
+
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

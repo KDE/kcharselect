@@ -1,0 +1,200 @@
+# translation of kcharselect.po to Nepali
+# Kapil Timilsina <lipak21@gmail.com>, 2006.
+# shyam krishna bal <shyamkrishna_bal@yahoo.com>, 2007.
+# Nabin Gautam <nabin@mpp.org.np>, 2007.
+# Narayan Kumar Magar <narayan@mpp.org.np>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcharselect\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-12-23 00:47+0000\n"
+"PO-Revision-Date: 2007-08-26 17:36+0545\n"
+"Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
+"Language-Team: Nepali <info@mpp.org.np>\n"
+"Language: ne\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n !=1\n"
+"\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Kapil Timilsina, श्यामकृष्ण बल, नारायण कुमार मगर"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "lipak21@gmail.com, shyamkrishna_bal@yahoo.com, narayan@mpp.org.np"
+
+#: kcharselectdia.cc:120 kcharselectdia.cc:130
+#, kde-format
+msgid "&To Clipboard"
+msgstr "क्लिपबोर्डमा"
+
+#: kcharselectdia.cc:136
+#, kde-format
+msgid "To Clipboard &UTF-8"
+msgstr "क्लिपबोर्ड UTF-8 मा"
+
+#: kcharselectdia.cc:139
+#, kde-format
+msgid "To Clipboard &HTML"
+msgstr "क्लिपबोर्ड HTML मा"
+
+#: kcharselectdia.cc:143
+#, kde-format
+msgid "&From Clipboard"
+msgstr "क्लिपबोर्डबाट"
+
+#: kcharselectdia.cc:148
+#, kde-format
+msgid "From Clipboard UTF-8"
+msgstr "क्लिपबोर्ड UTF-८ बाट"
+
+#: kcharselectdia.cc:151
+#, kde-format
+msgid "From Clipboard HTML"
+msgstr "क्लिपबोर्ड HTML बाट"
+
+#: kcharselectdia.cc:154
+#, fuzzy, kde-format
+#| msgid "&Flip"
+msgid "&Flip Text"
+msgstr "फ्लिप"
+
+#: kcharselectdia.cc:157
+#, kde-format
+msgid "&Reverse Direction"
+msgstr ""
+
+#: kcharselectdia.cc:178
+#, kde-format
+msgid "Bookmarks"
+msgstr ""
+
+#. i18n: ectx: Menu (edit)
+#: kcharselectui.rc:4
+#, kde-format
+msgid "&Edit"
+msgstr "सम्पादन"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kcharselectui.rc:17
+#, kde-format
+msgid "Main Toolbar"
+msgstr ""
+
+#: main.cc:38
+#, kde-format
+msgid "KCharSelect"
+msgstr "केडीई क्यारेक्टर चयन"
+
+#: main.cc:40
+#, kde-format
+msgid "KDE character selection utility"
+msgstr "केडीई क्यारेक्टर चयन उपयोगिता"
+
+#: main.cc:43
+#, kde-format
+msgid "A wrapper around the KCharSelect widget."
+msgstr ""
+
+#: main.cc:46
+#, kde-format
+msgid "Christoph Feck"
+msgstr ""
+
+#: main.cc:46
+#, kde-format
+msgid "KF5 port and current maintainer"
+msgstr ""
+
+#: main.cc:47 main.cc:50
+#, kde-format
+msgid "Daniel Laidig"
+msgstr ""
+
+#: main.cc:47
+#, kde-format
+msgid "Author and previous maintainer"
+msgstr ""
+
+#: main.cc:48
+#, kde-format
+msgid "Reginald Stadlbauer"
+msgstr "रेगिनाल्ड स्टाड्ल्बाउर"
+
+#: main.cc:48
+#, kde-format
+msgid "Author"
+msgstr ""
+
+#: main.cc:51
+#, kde-format
+msgid ""
+"New GUI, Unicode information, incremental search, and general improvements"
+msgstr ""
+
+#: main.cc:54
+#, kde-format
+msgid "Laurent Montel"
+msgstr ""
+
+#: main.cc:54
+#, kde-format
+msgid "Porting help"
+msgstr ""
+
+#: main.cc:55
+#, kde-format
+msgid "Constantin Berzan"
+msgstr ""
+
+#: main.cc:55
+#, kde-format
+msgid "Previous maintainer"
+msgstr ""
+
+#: main.cc:56
+#, kde-format
+msgid "Nadeem Hasan"
+msgstr "नदीम हसन"
+
+#: main.cc:56 main.cc:57
+#, kde-format
+msgid "GUI cleanup and fixes"
+msgstr "GUI प्रष्टता र निर्धारण"
+
+#: main.cc:57
+#, kde-format
+msgid "Ryan Cumming"
+msgstr "रायन कुमिङ"
+
+#: main.cc:58
+#, kde-format
+msgid "Benjamin C. Meyer"
+msgstr "बेन्जामिन सी. मेयेर"
+
+#: main.cc:58
+#, kde-format
+msgid "XMLUI conversion"
+msgstr "XMLUI रूपानान्तरण"
+
+#: main.cc:59
+#, kde-format
+msgid "Bryce Nesbitt"
+msgstr ""
+
+#: main.cc:59
+#, kde-format
+msgid "RTL support"
+msgstr ""
+
+#~ msgid "&Alignment"
+#~ msgstr "पङ्क्तिबद्धता"
+
+#~ msgid "(c) 1999, Reginald Stadlbauer"
+#~ msgstr "(c) 1999, रेगिनाल्ड स्टाड्ल्बाउर"

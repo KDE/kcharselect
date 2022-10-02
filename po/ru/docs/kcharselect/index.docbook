@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY kappname "&kcharselect;">
+  <!ENTITY package "kdeutils">
+  <!ENTITY % Russian "INCLUDE">
+  <!ENTITY % addindex "IGNORE">
+]>
+
+<book lang="&language;">
+
+<bookinfo>
+<title
+>Руководство &kcharselect;</title>
+
+<authorgroup>
+<author
+><firstname
+></firstname
+> <othername
+></othername
+> <surname
+></surname
+> <affiliation
+> <address
+><email
+></email
+></address>
+</affiliation>
+</author>
+<othercredit role="translator"
+><firstname
+>Григорий</firstname
+><surname
+>Мохин</surname
+><affiliation
+><address
+><email
+>mok@kde.ru</email
+></address
+></affiliation
+><contrib
+>Перевод на русский</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2001-01-20</date>
+<releaseinfo
+>0.00.00</releaseinfo>
+
+<abstract>
+<para
+>&kcharselect; входит в состав пакета kdeutils. </para>
+</abstract>
+
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdeutils</keyword>
+<keyword
+>kcharselect</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Введение</title>
+<para
+>Документация &kappname; еще не готова.</para
+> 
+<para
+>Проверьте, доступны ли обновления на сайте <ulink url="http://www.kde.org"
+>KDE</ulink
+>, или отправьте вопрос в <ulink url="mailto:kde@kde.org"
+>рассылку пользователей &kde;</ulink
+>.</para>
+<para
+><emphasis
+>Команда &kde;</emphasis
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index; 
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes: nil
+sgml-general-insert-case: lower
+End:
+-->
+

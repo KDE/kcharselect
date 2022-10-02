@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+
+  <!ENTITY kappname "&kcharselect;">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Swedish "INCLUDE">
+]>
+
+<article id="kcharselect" lang="&language;">
+
+<articleinfo>
+<title
+>Kcharselect</title>
+<authorgroup>
+<author
+><firstname
+>Daniel</firstname
+> <surname
+>Laidig</surname
+> <address
+><email
+>laidig@kde.org</email
+></address
+> </author>
+
+<othercredit role="translator"
+> <firstname
+>Stefan</firstname
+> <surname
+>Asserhäll</surname
+> <affiliation
+><address
+><email
+>stefan.asserhall@bredband.net</email
+></address
+></affiliation
+> <contrib
+>Översättare</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2016-04-25</date>
+<releaseinfo
+>1.12 (Program 16.04)</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>tecken</keyword>
+<keyword
+>teckensnitt</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>&kcharselect; är ett verktyg för att välja specialtecken från alla installerade teckensnitt och kopiera dem till klippbordet med olika format (vanlig text, Unicode eller &HTML;).</para>
+
+<para
+>Att dubbelklicka på ett tecken i förhandsgranskningen eller trycka på returtangenten lägger till det på raden under teckengranskningen. Funktionen gör det möjligt att skapa ett ord eller en grupp av flera tecken och kopiera dem tillsammans till klippbordet.</para
+> 
+<para
+>Använd <guimenuitem
+>Vänd text</guimenuitem
+> för att byta ordning på de valda tecknen.</para>
+<para
+>Normalt läggs tecken till på höger sida av gruppen eller markörpositionen. Med <guimenuitem
+>Omvänd riktning</guimenuitem
+> kan beteendet ändras så att tecken läggs till på vänster sida.</para>
+
+<para>
+<screenshot>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="kcharselect.png" format="PNG"/>
+    </imageobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Man kan bläddra bland tecken enligt kategori, eller snabbt hitta ett visst tecken genom att söka efter dess namn. &kcharselect; visar diverse information om det valda tecknet. Det omfattar inte bara teckennamnet i Unicode, utan också alias, allmänna anmärkningar och korsreferenser till liknande tecken. </para>
+<para
+>Olika representation av tecknet visas för teknisk användning, &kcharselect; innehåller också Unihan-information för östasiatiska tecken för att visa engelska definitioner och olika uttal. </para>
+
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

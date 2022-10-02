@@ -1,0 +1,199 @@
+# Translation of kcharselect.po into Serbian.
+# Ljubisa Radivojevic <claw@claw.co.yu>, 2000.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2003, 2005, 2009, 2011, 2016.
+# Toplica Tanaskovic <toptan@kde.org.yu>, 2003.
+# Slobodan Simic <slsimic@gmail.com>, 2008, 2009.
+# Dalibor Djuric <daliborddjuric@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcharselect\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-04-20 03:32+0200\n"
+"PO-Revision-Date: 2016-11-23 19:27+0100\n"
+"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Environment: kde\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Милош Пузовић,Часлав Илић,Слободан Симић"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "m.puzovic@etoncollege.org.uk,caslav.ilic@gmx.net,slsimic@gmail.com"
+
+#: kcharselectdia.cc:128 kcharselectdia.cc:138
+#, kde-format
+msgid "&To Clipboard"
+msgstr "&У клипборд"
+
+#: kcharselectdia.cc:144
+#, kde-format
+msgid "To Clipboard &UTF-8"
+msgstr "У &клипборд, УТФ‑8"
+
+#: kcharselectdia.cc:147
+#, kde-format
+msgid "To Clipboard &HTML"
+msgstr "У к&липборд, ХТМЛ"
+
+#: kcharselectdia.cc:151
+#, kde-format
+msgid "&From Clipboard"
+msgstr "&Из клипборда"
+
+#: kcharselectdia.cc:156
+#, kde-format
+msgid "From Clipboard UTF-8"
+msgstr "Из клипборда, УТФ‑8"
+
+#: kcharselectdia.cc:159
+#, kde-format
+msgid "From Clipboard HTML"
+msgstr "Из клипборда, ХТМЛ"
+
+#: kcharselectdia.cc:162
+#, kde-format
+msgid "&Flip Text"
+msgstr "&Преврни текст"
+
+#: kcharselectdia.cc:165
+#, kde-format
+msgid "&Reverse Direction"
+msgstr "Ок&рени усмерење"
+
+#: kcharselectdia.cc:186
+#, kde-format
+msgid "Bookmarks"
+msgstr "Обележивачи"
+
+#. i18n: ectx: Menu (edit)
+#: kcharselectui.rc:4
+#, kde-format
+msgid "&Edit"
+msgstr "&Уређивање"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kcharselectui.rc:17
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Главна трака"
+
+#: main.cc:45
+#, kde-format
+msgid "KCharSelect"
+msgstr "К‑бирач-знакова"
+
+#: main.cc:46
+#, kde-format
+msgid "KDE character selection utility"
+msgstr "КДЕ‑ова алатка за избор знакова"
+
+#: main.cc:47
+#, kde-format
+msgid "A wrapper around the KCharSelect widget."
+msgstr "Омотач око виџета К‑бирача-знакова."
+
+#: main.cc:49
+#, kde-format
+msgid "Christoph Feck"
+msgstr "Кристоф Фек"
+
+#: main.cc:49
+#, kde-format
+msgid "KF5 port and current maintainer"
+msgstr "Пренос на КФ5 и тренутни одржавалац"
+
+#: main.cc:50 main.cc:53
+#, kde-format
+msgid "Daniel Laidig"
+msgstr "Данијел Лајдиг"
+
+#: main.cc:50
+#, kde-format
+msgid "Author and previous maintainer"
+msgstr "Аутор и претходни одржавалац"
+
+#: main.cc:51
+#, kde-format
+msgid "Reginald Stadlbauer"
+msgstr "Региналд Стадлбауер"
+
+#: main.cc:51
+#, kde-format
+msgid "Author"
+msgstr "Аутор"
+
+#: main.cc:53
+#, kde-format
+msgid ""
+"New GUI, Unicode information, incremental search, and general improvements"
+msgstr ""
+"Ново корисничко сучеље, уникодски подаци, постепено претраживање и општа "
+"побољшања"
+
+#: main.cc:55
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Лорен Монтел"
+
+#: main.cc:55
+#, kde-format
+msgid "Porting help"
+msgstr "Помоћ у преношењу"
+
+#: main.cc:56
+#, kde-format
+msgid "Constantin Berzan"
+msgstr "Константин Берзан"
+
+#: main.cc:56
+#, kde-format
+msgid "Previous maintainer"
+msgstr "Претходни одржавалац"
+
+#: main.cc:57
+#, kde-format
+msgid "Nadeem Hasan"
+msgstr "Надим Хасан"
+
+#: main.cc:57 main.cc:59
+#, kde-format
+msgid "GUI cleanup and fixes"
+msgstr "Чишћење корисничког сучеља и исправке"
+
+#: main.cc:59
+#, kde-format
+msgid "Ryan Cumming"
+msgstr "Рајан Каминг"
+
+#: main.cc:61
+#, kde-format
+msgid "Benjamin C. Meyer"
+msgstr "Бенџамин К. Мејер"
+
+#: main.cc:61
+#, kde-format
+msgid "XMLUI conversion"
+msgstr "Претварање сучеља у ИксМЛ"
+
+#: main.cc:63
+#, kde-format
+msgid "Bryce Nesbitt"
+msgstr "Брус Несбит"
+
+#: main.cc:63
+#, kde-format
+msgid "RTL support"
+msgstr "Подршка за ДнЛ"

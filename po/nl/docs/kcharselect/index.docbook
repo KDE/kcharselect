@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+
+  <!ENTITY kappname "&kcharselect;">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Dutch "INCLUDE">
+]>
+
+<article id="kcharselect" lang="&language;">
+
+<articleinfo>
+<title
+>KCharSelect</title>
+<authorgroup>
+<author
+><firstname
+>Daniel</firstname
+> <surname
+>Laidig</surname
+> <address
+><email
+>laidig@kde.org</email
+></address
+> </author>
+
+&Tom.Albers; 
+</authorgroup>
+
+<date
+>2016-04-25</date>
+<releaseinfo
+>1.12 (Applications 16.04)</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>teken</keyword>
+<keyword
+>lettertype</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>&kcharselect; is een hulpmiddel om speciale tekens uit alle geïnstalleerde lettertypen te selecteren en deze in verschillende formaten (platte tekst, Unicode of &HTML;) naar het klembord te kopiëren.</para>
+
+<para
+>Dubbelklikken op een teken in het voorbeeld of op &Enter; drukken voegt het toe aan de balk onder het voorbeeld lettertype. Deze functie maakt het mogelijk een woord samen te stellen of een groep van een aantal tekens en ze samen naar het klembord te kopiëren.</para
+> 
+<para
+>Gebruik <guimenuitem
+>Tekst omkeren</guimenuitem
+> om de volgorde van de gekozen tekens om te draaien.</para>
+<para
+>Standaard worden tekens aan het rechter einde van de groep of cursorpositie toegevoegd. Met <guimenuitem
+>Richting omkeren</guimenuitem
+> kunt u dit gedrag omdraaien en tekens in het linker richting toevoegen.</para>
+
+<para>
+<screenshot>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="kcharselect.png" format="PNG"/>
+    </imageobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>U kunt tekens per category bekijken of snel een bepaald teken vinden door naar zijn naam te zoeken. &kcharselect; toont verschillende soorten informatie over het geselecteerde teken. Dit bevat niet alleen de tekennaam in Unicode, maar ook aliasen, algemene notities en kruisverwijzingen naar soortgelijke tekens. </para>
+<para
+>Verschillende representaties van het teken worden getoond voor technisch gebruik. &kcharselect; bevat ook Unihan-gegevens voor Oost-Aziatische tekens om Engelse definities te tonen en verschillen in uitspraak. </para>
+
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

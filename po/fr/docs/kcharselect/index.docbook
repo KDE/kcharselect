@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+
+  <!ENTITY kappname "&kcharselect;">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % French "INCLUDE">
+]>
+
+<article id="kcharselect" lang="&language;">
+
+<articleinfo>
+<title
+>KCharSelect</title>
+<authorgroup>
+<author
+><firstname
+>Daniel</firstname
+> <surname
+>Laidig</surname
+> <address
+><email
+>laidig@kde.org</email
+></address
+> </author>
+
+&traducteurRobertJacolin; &traducteurPeterPotrowl; 
+</authorgroup>
+
+<date
+>25/04/2016</date>
+<releaseinfo
+>1.12 (Applications 16.04)</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>caractère</keyword>
+<keyword
+>police</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>&kcharselect; est un outil pour sélectionner des caractères spéciaux depuis toutes les polices installées et les copier dans différents formats (texte en clair, Unicode ou &HTML;) vers le presse-papier.</para>
+
+<para
+>Double-cliquer sur un caractère dans l'aperçu ou appuyer sur &Entree; l'ajoute à la barre sous l'aperçu de la police. Cette fonctionnalité permet de saisir un mot ou un groupe de caractères et de les copier tous ensemble dans le presse-papier.</para
+> 
+<para
+>Utilisez <guimenuitem
+>Retourner le texte</guimenuitem
+> pour changer l'ordre des caractères choisis.</para>
+<para
+>Par défait, les caractères sont ajoutés du côté droit du groupe ou de la position du curseur. Avec <guimenuitem
+>Inverser l'ordre</guimenuitem
+>, vous pouvez changer ce comportement et ajouter les caractères à gauche.</para>
+
+<para>
+<screenshot>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="kcharselect.png" format="PNG"/>
+    </imageobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Vous pouvez parcourir les caractères par catégorie ou trouver rapidement un caractère particulier en recherchant son nom. &kcharselect; affiche de nombreuses informations à propos du caractère sélectionné. Ces informations contiennent non seulement le nom Unicode du caractère, mais aussi des alias, des notes générales et des références croisées vers des caractères similaires. </para>
+<para
+>Pour une utilisation pratique, différentes représentations du caractère sont affichées. &kcharselect; contient également les données Unihan pour afficher les définitions en anglais et les différentes prononciations des caractères de l'Est asiatique. </para>
+
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

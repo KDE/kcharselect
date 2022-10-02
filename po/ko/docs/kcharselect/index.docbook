@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+
+  <!ENTITY kappname "&kcharselect;">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Korean "INCLUDE">
+]>
+
+<article id="kcharselect" lang="&language;">
+
+<articleinfo>
+<title
+>KCharSelect</title>
+<authorgroup>
+<author
+><firstname
+>Daniel</firstname
+> <surname
+>Laidig</surname
+> <address
+><email
+>laidig@kde.org</email
+></address
+> </author>
+
+<othercredit lang="ko" role="translator"
+><surname
+>박</surname
+><firstname
+>신조</firstname
+><affiliation
+><address
+><email
+>kde@peremen.name</email
+></address
+></affiliation
+><contrib
+>한국어 번역</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2016-04-25</date>
+<releaseinfo
+>1.12(프로그램 16.04)</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>문자</keyword>
+<keyword
+>글꼴</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>&kcharselect;는 설치된 글꼴의 특수 문자를 선택하여 클립보드에 여러 형식(일반 텍스트, 유니코드, &HTML;)으로 복사하는 프로그램입니다.</para>
+
+<para
+>글자를 두 번 누르거나 &Enter; 키를 누르면 아래의 글꼴 미리 보기에 글자가 추가됩니다. 단어를 만들거나 여러 글자 그룹을 선택하여 클립보드에 한번에 복사할 수 있습니다.</para
+> 
+<para
+><guimenuitem
+>텍스트 뒤집기</guimenuitem
+> 항목을 선택하여 선택한 글자 순서를 반전할 수 있습니다.</para>
+<para
+>기본적으로 글자는 커서 위치 오른쪽에 추가됩니다. <guimenuitem
+>반대 방향</guimenuitem
+> 옵션을 사용하면 글자를 커서 왼쪽에 추가합니다.</para>
+
+<para>
+<screenshot>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="kcharselect.png" format="PNG"/>
+    </imageobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>글자를 분류별로 탐색하거나 이름으로 검색할 수 있습니다. &kcharselect;에서는 선택한 글자의 다양한 정보를 표시합니다. 유니코드 글자 이름, 별명, 설명, 비슷한 글자 참조 등 정보를 표시합니다. </para>
+<para
+>기술적인 목적으로 다양하게 사용할 수 있는 표현을 아래에 표시합니다. &kcharselect;는 한중일 통합 한자 정보인 Unihan 데이터를 지원하여 한자의 뜻과 지역별 발음 정보를 표시합니다. </para>
+
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

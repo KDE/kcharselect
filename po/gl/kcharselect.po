@@ -1,0 +1,293 @@
+# translation of kcharselect.po to Galician
+#
+# Xosé <xosecalvo@gmail.com>, 2008, 2012.
+# mvillarino <mvillarino@users.sourceforge.net>, 2008.
+# Adrian Chaves Fernandez <adriyetichaves@gmail.com>, 2013.
+# Marce Villarino <mvillarino@kde-espana.org>, 2014.
+# Adrián Chaves <adrian@chaves.io>, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcharselect\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-12-23 00:47+0000\n"
+"PO-Revision-Date: 2017-07-24 16:05+0100\n"
+"Last-Translator: Adrián Chaves <adrian@chaves.io>\n"
+"Language-Team: Galician <kde-i18n-doc@kde.org>\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Adrián Chaves Fernández"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "adrian@chaves.io"
+
+#: kcharselectdia.cc:120 kcharselectdia.cc:130
+#, kde-format
+msgid "&To Clipboard"
+msgstr "Ao por&tapapeis"
+
+#: kcharselectdia.cc:136
+#, kde-format
+msgid "To Clipboard &UTF-8"
+msgstr "Ao portapapeis en &UTF-8"
+
+#: kcharselectdia.cc:139
+#, kde-format
+msgid "To Clipboard &HTML"
+msgstr "Ao portapapeis en &HTML"
+
+#: kcharselectdia.cc:143
+#, kde-format
+msgid "&From Clipboard"
+msgstr "&Do portapapeis"
+
+#: kcharselectdia.cc:148
+#, kde-format
+msgid "From Clipboard UTF-8"
+msgstr "Do portapapeis en UTF-8"
+
+#: kcharselectdia.cc:151
+#, kde-format
+msgid "From Clipboard HTML"
+msgstr "Do portapapeis en HTML"
+
+#: kcharselectdia.cc:154
+#, kde-format
+msgid "&Flip Text"
+msgstr "&Voltear o texto"
+
+#: kcharselectdia.cc:157
+#, kde-format
+msgid "&Reverse Direction"
+msgstr "&Inverter a dirección"
+
+#: kcharselectdia.cc:178
+#, kde-format
+msgid "Bookmarks"
+msgstr "Marcadores"
+
+#. i18n: ectx: Menu (edit)
+#: kcharselectui.rc:4
+#, kde-format
+msgid "&Edit"
+msgstr "&Editar"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kcharselectui.rc:17
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Barra de ferramentas principal"
+
+#: main.cc:38
+#, kde-format
+msgid "KCharSelect"
+msgstr "KCharSelect"
+
+#: main.cc:40
+#, kde-format
+msgid "KDE character selection utility"
+msgstr "Utilidade de selección de caracteres de KDE"
+
+#: main.cc:43
+#, kde-format
+msgid "A wrapper around the KCharSelect widget."
+msgstr "Unha envoltura para o trebello KCharSelect."
+
+#: main.cc:46
+#, kde-format
+msgid "Christoph Feck"
+msgstr "Christoph Feck"
+
+#: main.cc:46
+#, kde-format
+msgid "KF5 port and current maintainer"
+msgstr "Adaptación a KF5 e mantedor actual."
+
+#: main.cc:47 main.cc:50
+#, kde-format
+msgid "Daniel Laidig"
+msgstr "Daniel Laidig"
+
+#: main.cc:47
+#, kde-format
+msgid "Author and previous maintainer"
+msgstr "Autor e mantedor anterior."
+
+#: main.cc:48
+#, kde-format
+msgid "Reginald Stadlbauer"
+msgstr "Reginald Stadlbauer"
+
+#: main.cc:48
+#, kde-format
+msgid "Author"
+msgstr "Autor."
+
+#: main.cc:51
+#, kde-format
+msgid ""
+"New GUI, Unicode information, incremental search, and general improvements"
+msgstr ""
+"Nova interface, información unicode, busca incrementar, e melloras en xeral."
+
+#: main.cc:54
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: main.cc:54
+#, kde-format
+msgid "Porting help"
+msgstr "Adaptación da axuda."
+
+#: main.cc:55
+#, kde-format
+msgid "Constantin Berzan"
+msgstr "Constantin Berzan"
+
+#: main.cc:55
+#, kde-format
+msgid "Previous maintainer"
+msgstr "Mantedor anterior."
+
+#: main.cc:56
+#, kde-format
+msgid "Nadeem Hasan"
+msgstr "Nadeem Hasan"
+
+#: main.cc:56 main.cc:57
+#, kde-format
+msgid "GUI cleanup and fixes"
+msgstr "Limpeza da interface e solución de erros."
+
+#: main.cc:57
+#, kde-format
+msgid "Ryan Cumming"
+msgstr "Ryan Cumming"
+
+#: main.cc:58
+#, kde-format
+msgid "Benjamin C. Meyer"
+msgstr "Benjamin C. Meyer"
+
+#: main.cc:58
+#, kde-format
+msgid "XMLUI conversion"
+msgstr "Conversión a XMLU."
+
+#: main.cc:59
+#, kde-format
+msgid "Bryce Nesbitt"
+msgstr "Bryce Nesbitt"
+
+#: main.cc:59
+#, kde-format
+msgid "RTL support"
+msgstr "Compatibilidade con idiomas que se len de dereita a esquerda (RTL)."
+
+#~ msgid ""
+#~ "<firstname>Daniel</firstname> <surname>Laidig</surname> "
+#~ "<address><email>laidig@kde.org</email></address>"
+#~ msgstr ""
+#~ "<firstname>Daniel</firstname> <surname>Laidig</surname> "
+#~ "<address><email>laidig@kde.org</email></address>"
+
+#~ msgid "ROLES_OF_TRANSLATORS"
+#~ msgstr ""
+#~ "<othercredit role=\"translator\"><firstname>Xosé</"
+#~ "firstname><surname>Calvo</surname> "
+#~ "<affiliation><address><email>xosecalvo@edu.xunta.es</email></address></"
+#~ "affiliation> <contrib>Tradutor do proxecto Trasno</contrib></othercredit>"
+
+#~ msgid "2010-07-23"
+#~ msgstr "2010-07-23"
+
+#~ msgid "v1.8 (&kde; 4.5)"
+#~ msgstr "v1.8 (&kde; 4.5)"
+
+#~ msgid "<keyword>KDE</keyword>"
+#~ msgstr "<keyword>KDE</keyword>"
+
+#~| msgid "kcharselect"
+#~ msgid "character"
+#~ msgstr "carácter"
+
+#~ msgid "font"
+#~ msgstr "tipo de letra"
+
+#~ msgid ""
+#~ "&kcharselect; is a tool to select special characters from all installed "
+#~ "fonts and copy them into the clipboard."
+#~ msgstr ""
+#~ "O &kcharselect; é unha ferramenta para escoller caracteres especiais de "
+#~ "todos os tipos de letra instalados e copialos ao portarretallos."
+
+#~ msgid ""
+#~ "You can browse characters by their category or quickly find a certain "
+#~ "character by searching for its name. &kcharselect; displays various "
+#~ "information about the selected character. This includes not only the "
+#~ "Unicode character name, but also aliases, general notes and cross "
+#~ "references to similar characters."
+#~ msgstr ""
+#~ "Pódense examinar os caracteres pola categoría ou atopar rapidamente "
+#~ "determinado carácter buscándoo polo nome. O &kcharselect; mostra "
+#~ "información diversa sobre o carácter seleccionado. Isto inclúe non só o "
+#~ "nome do carácter en Unicode, mais tamén os seus alcumes, notas xerais e "
+#~ "referencias cruzadas a caracteres semellantes."
+
+#~ msgid ""
+#~ "For technical use, different representations of the character are shown. "
+#~ "&kcharselect; also contains Unihan data for East Asian characters to "
+#~ "display English definitions and different pronunciations."
+#~ msgstr ""
+#~ "Para un uso técnico, móstranse diferentes representacións do carácter. O "
+#~ "&kcharselect; contén tamén datos de Unihan para que os caracteres do "
+#~ "leste asiático mostren definicións en inglés e diferentes pronuncias."
+
+#~ msgid "The &kcharselect; Handbook"
+#~ msgstr "Manual do &kcharselect;"
+
+#~ msgid "Yet unknown"
+#~ msgstr "Ainda descoñecido"
+
+#~ msgid "&kcharselect; is part of the kdeutils package."
+#~ msgstr "O &kcharselect; é parte do paquete kdeutils."
+
+#~ msgid "kdeutils"
+#~ msgstr "kdeutils"
+
+#~ msgid "Introduction"
+#~ msgstr "Introdución"
+
+#~ msgid ""
+#~ "The documentation for &kcharselect; was not finished when &kde; was "
+#~ "installed on this computer."
+#~ msgstr ""
+#~ "A documentación do &kcharselect; non estaba terminada cando se instalou o "
+#~ "&kde; neste computador."
+
+#~ msgid ""
+#~ "If you need help, please check <ulink url=\"http://www.kde.org\">The "
+#~ "&kde; Web site</ulink> for updates, or by submitting your question to "
+#~ "<ulink url=\"mailto:kde@kde.org\">The &kde; User Mailing list</ulink>."
+#~ msgstr ""
+#~ "Se necesita axuda, procure na <ulink url=\"http://www.kde.org\">Páxina "
+#~ "web do &kde;</ulink> actualizacións deste documento ou envíe as súas  dúvidas á <ulink url=\"mailto:kde@kde.org\">lista de correo dos  usuarios do &kde;</ulink>."
+
+#~ msgid "The &kde; Team"
+#~ msgstr "A Equipa do &kde;"
+
+#~ msgid "CREDIT_FOR_TRANSLATORS"
+#~ msgstr ""
+#~ "<para>Tradución da documentación: Xosé Calvo - http://trasno.net/</para>"
+
+#~ msgid "&underFDL; &underGPL;"
+#~ msgstr "&underFDL; &underGPL;"

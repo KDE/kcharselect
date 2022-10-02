@@ -1,0 +1,206 @@
+# translation of kcharselect.po to
+# Copyright (C) 2002, 2004, 2006, 2007 Free Software Foundation, Inc.
+# Mohammed Gamal <f2c2001@yahoo.com>, 2002.
+# Ahmad M. Zawawi <azawawi@emirates.net.ae>, 2004.
+# Khaled Hosny <dr.khaled.hosny@gmail.com>, 2006.
+# Fahad Al-Saidi <fahad.alsaidi@gmail.com>, 2007.
+# Youssef Chahibi <chahibi@gmail.com>, 2007.
+# Youness BOUTYOUR <niceboy@linuxac.org>, 2008.
+# Zayed Al-Saidi <zayed.alsaidi@gmail.com>, 2010, 2022.
+# Safa Alfulaij <safa1996alfulaij@gmail.com>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcharselect\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-12-23 00:47+0000\n"
+"PO-Revision-Date: 2022-01-03 19:55+0400\n"
+"Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
+"Language-Team: ar\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 21.07.70\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "محمد جمال,محمد عَصَر,خالد حسني,فهد السعيدي,يونس بوطيور,صفا الفليج"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"f2c2001@yahoo.com,aser@arabeyes.org,dr.khaled.hosny@gmail.com,Fahad."
+"alsaidi@gmail.com, niceboy120@gmail.com,safa1996alfulaij@gmail.com"
+
+#: kcharselectdia.cc:120 kcharselectdia.cc:130
+#, kde-format
+msgid "&To Clipboard"
+msgstr "إلى ال&حافظة"
+
+#: kcharselectdia.cc:136
+#, kde-format
+msgid "To Clipboard &UTF-8"
+msgstr "إلى الحافظة &كَ‍ UTF-8"
+
+#: kcharselectdia.cc:139
+#, kde-format
+msgid "To Clipboard &HTML"
+msgstr "إلى الحافظ&ة كَ‍ HTML"
+
+#: kcharselectdia.cc:143
+#, kde-format
+msgid "&From Clipboard"
+msgstr "&من الحافظة"
+
+#: kcharselectdia.cc:148
+#, kde-format
+msgid "From Clipboard UTF-8"
+msgstr "من الحافظة كَ‍ UTF-8"
+
+#: kcharselectdia.cc:151
+#, kde-format
+msgid "From Clipboard HTML"
+msgstr "من الحافظة كَ‍ HTML"
+
+#: kcharselectdia.cc:154
+#, kde-format
+msgid "&Flip Text"
+msgstr "ا&قلب النّصّ"
+
+#: kcharselectdia.cc:157
+#, kde-format
+msgid "&Reverse Direction"
+msgstr "ا&عكس الاتّجاه"
+
+#: kcharselectdia.cc:178
+#, kde-format
+msgid "Bookmarks"
+msgstr "علامات"
+
+#. i18n: ectx: Menu (edit)
+#: kcharselectui.rc:4
+#, kde-format
+msgid "&Edit"
+msgstr "ت&حرير"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kcharselectui.rc:17
+#, kde-format
+msgid "Main Toolbar"
+msgstr "شريط الأدوات الرّئيسيّ"
+
+#: main.cc:38
+#, kde-format
+msgid "KCharSelect"
+msgstr "حرف"
+
+#: main.cc:40
+#, kde-format
+msgid "KDE character selection utility"
+msgstr "أداة كدي لانتقاء المحارف"
+
+#: main.cc:43
+#, kde-format
+msgid "A wrapper around the KCharSelect widget."
+msgstr "إزار حول ودجة حرف"
+
+#: main.cc:46
+#, kde-format
+msgid "Christoph Feck"
+msgstr "Christoph Feck"
+
+#: main.cc:46
+#, kde-format
+msgid "KF5 port and current maintainer"
+msgstr "النّقل إلى «أُطر العمل الخامسة» والمصين الحاليّ"
+
+#: main.cc:47 main.cc:50
+#, kde-format
+msgid "Daniel Laidig"
+msgstr "Daniel Laidig"
+
+#: main.cc:47
+#, kde-format
+msgid "Author and previous maintainer"
+msgstr "المؤلّف والمصين السّابق"
+
+#: main.cc:48
+#, kde-format
+msgid "Reginald Stadlbauer"
+msgstr "Reginald Stadlbauer"
+
+#: main.cc:48
+#, kde-format
+msgid "Author"
+msgstr "المؤلّف"
+
+#: main.cc:51
+#, kde-format
+msgid ""
+"New GUI, Unicode information, incremental search, and general improvements"
+msgstr "واجهة رسوميّة جديدة، ومعلومات يونيكود، والبحث التّزايديّ وتحسينات عامّة"
+
+#: main.cc:54
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: main.cc:54
+#, kde-format
+msgid "Porting help"
+msgstr "نقل المساعدة"
+
+#: main.cc:55
+#, kde-format
+msgid "Constantin Berzan"
+msgstr "Constantin Berzan"
+
+#: main.cc:55
+#, kde-format
+msgid "Previous maintainer"
+msgstr "المصين السّابق"
+
+#: main.cc:56
+#, kde-format
+msgid "Nadeem Hasan"
+msgstr "Nadeem Hasan"
+
+#: main.cc:56 main.cc:57
+#, kde-format
+msgid "GUI cleanup and fixes"
+msgstr "تنظيف الواجهة الرّسوميّة وإصلاحات متفرّقة عليها"
+
+#: main.cc:57
+#, kde-format
+msgid "Ryan Cumming"
+msgstr "Ryan Cumming"
+
+#: main.cc:58
+#, kde-format
+msgid "Benjamin C. Meyer"
+msgstr "Benjamin C. Meyer"
+
+#: main.cc:58
+#, kde-format
+msgid "XMLUI conversion"
+msgstr "التّحويل إلى XMLUI"
+
+#: main.cc:59
+#, kde-format
+msgid "Bryce Nesbitt"
+msgstr "Bryce Nesbitt"
+
+#: main.cc:59
+#, kde-format
+msgid "RTL support"
+msgstr "دعم اللغات المكتوبة من اليمين إلى اليسار"
+
+#~ msgid "&Alignment"
+#~ msgstr "&حاذي"
+
+#~ msgid "(c) 1999, Reginald Stadlbauer"
+#~ msgstr "الحقوق محفوظة (c) 1999, Reginald Stadlbauer"

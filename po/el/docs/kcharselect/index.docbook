@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+
+  <!ENTITY kappname "&kcharselect;">
+  <!ENTITY package "kdeutils">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Greek "INCLUDE">
+]>
+
+<article id="kcharselect" lang="&language;">
+
+<articleinfo>
+<title
+>KCharSelect</title>
+<authorgroup>
+<author
+><firstname
+>Daniel</firstname
+> <surname
+>Laidig</surname
+> <address
+><email
+>laidig@kde.org</email
+></address
+> </author>
+
+<othercredit role="translator"
+><firstname
+>Δημήτριος</firstname
+><surname
+>Γλενταδάκης</surname
+><affiliation
+><address
+><email
+>dglent@gmail.com</email
+></address
+></affiliation
+><contrib
+>Μεταφραστής</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2010-07-23</date>
+<releaseinfo
+>v1.8 (&kde; 4.5)</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>χαρακτήρας</keyword>
+<keyword
+>γραμματοσειρά</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>Το &kcharselect; είναι ένα εργαλείο που σας επιτρέπει την επιλογή ειδικών χαρακτήρων μεταξύ όλων των εγκατεστημένων γραμματοσειρών και την αντιγραφή τους στο πρόχειρο.</para>
+
+<para>
+<screenshot>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="kcharselect.png" format="PNG"/>
+    </imageobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Μπορείτε να αναζητήσετε χαρακτήρες ανά κατηγορία ή να βρείτε ένα συγκεκριμένο χαρακτήρα γρήγορα αναζητώντας με το όνομά του. Το &kcharselect; εμφανίζει διάφορες πληροφορίες σχετικά με τον επιλεγμένο χαρακτήρα, όχι μόνο το όνομα Unicode του χαρακτήρα αλλά επίσης τις εναλλακτικές ονομασίες, γενικές σημειώσεις και παραπομπές σε παρόμοιους χαρακτήρες. </para>
+<para
+>Για τεχνική χρήση, εμφανίζονται διαφορετικές αναπαραστάσεις του χαρακτήρα. Το &kcharselect; περιέχει επίσης δεδομένα Unihan για χαρακτήρες της Ανατολικής Ασίας για την εμφάνιση των ορισμών στα αγγλικά και διάφορων προφορών. </para>
+
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+
+  <!ENTITY kappname "&kcharselect;">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Ukrainian "INCLUDE">
+]>
+
+<article id="kcharselect" lang="&language;">
+
+<articleinfo>
+<title
+>KCharSelect</title>
+<authorgroup>
+<author
+><firstname
+>Daniel</firstname
+> <surname
+>Laidig</surname
+> <address
+><email
+>laidig@kde.org</email
+></address
+> </author>
+
+<othercredit role="translator"
+><firstname
+>Юрій</firstname
+><surname
+>Чорноіван</surname
+><affiliation
+><address
+><email
+>yurchor@ukr.net</email
+></address
+></affiliation
+><contrib
+>Переклад українською</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>25 квітня 2016 року</date>
+<releaseinfo
+>1.12 (Програми 16.04)</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>символ</keyword>
+<keyword
+>шрифт</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>&kcharselect; — програма для вибору спеціальних символів з усіх встановлених шрифтів і копіювання цих символів у різних форматах (звичайному текстовому, форматі позиції у Unicode або коду &HTML;) до буфера обміну даними.</para>
+
+<para
+>Двічі клацніть на символів у полі таблиці символів або натисніть клавішу &Enter;, щоб додати символ до поля редагування, розташованого під таблицею символів. Так можна зібрати слово або групу певних символів, щоб потім скопіювати їх разом до буфера обміну даними.</para
+> 
+<para
+>Скористайтеся пунктом <guimenuitem
+>Віддзеркалити текст</guimenuitem
+>, щоб обернути порядок вибраних символів.</para>
+<para
+>Типово, символи додаються у праву частину запису групи символів або за позицією курсора у групі. За допомогою пункту меню «Зміни» <guimenuitem
+>У зворотному напрямку</guimenuitem
+> ви можете наказати програмі додавати символи у ліву частину групи.</para>
+
+<para>
+<screenshot>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="kcharselect.png" format="PNG"/>
+    </imageobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Ви можете переглядати символи за категоріями або швидко знайти певний символ за його назвою. Програма &kcharselect; здатна показувати різноманітну інформацію щодо позначеного символу. Серед показаних даних буде не лише назва символу Unicode, але і його альтернативні назви, загальні нотатки та посилання на подібні символи. </para>
+<para
+>З метою технічного використання буде показано різноманітні представлення позначеного символу. Крім того, &kcharselect; показує дані Unihan для східноазійських мов, зокрема визначень англійською та різноманітних вимов. </para>
+
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
