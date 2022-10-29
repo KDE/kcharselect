@@ -34,18 +34,18 @@ protected:
     QLineEdit *lined;
     QPushButton *bClip;
 
-    uint vChr;
+    char32_t vChr;
     QFont vFont;
     bool _rtl;
 
 protected Q_SLOTS:
-    void charChanged(uint _chr);
+    void charChanged(char32_t _chr);
     void fontSelected(const QFont &_font);
     void add()
     {
         add(vChr);
     }
-    void add(uint _chr);
+    void add(char32_t _chr);
     void toClip();
     void toClipUTF8();
     void toClipHTML();

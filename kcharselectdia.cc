@@ -39,7 +39,7 @@ public:
 
     QString currentTitle() const override
     {
-        uint ucs4 = d->charSelect->currentCodePoint();
+        char32_t ucs4 = d->charSelect->currentCodePoint();
         if (QChar::isPrint(ucs4)) {
             return QString::fromUcs4(&ucs4, 1) + QLatin1Char(' ') + formatCodePoint(ucs4);
         } else {
@@ -56,7 +56,7 @@ public:
     {
         QString c = bm.url().toString(QUrl::PreferLocalFile | QUrl::RemoveScheme);
         if (c.startsWith(QLatin1String("U+"))) {
-            uint uc = c.midRef(2).toUInt(nullptr, 16);
+            uint uc = QStringView(c).mid(2).toUInt(nullptr, 16);
             d->charSelect->setCurrentCodePoint(uc);
         }
     }
@@ -102,7 +102,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent)
     charSelect->setCurrentFont(vFont);
     charSelect->resize(charSelect->sizeHint());
     connect(charSelect, &KCharSelect::currentCodePointChanged, this, &KCharSelectDia::charChanged);
-    connect(charSelect, SIGNAL(codePointSelected(uint)), SLOT(add(uint)));
+    connect(charSelect, &KCharSelect::codePointSelected, this, qOverload<char32_t>(&KCharSelectDia::add));
 
     connect(charSelect, &KCharSelect::currentFontChanged, this, &KCharSelectDia::fontSelected);
     grid->addWidget(charSelect, 0, 0, 1, 4);
@@ -194,14 +194,14 @@ void KCharSelectDia::closeEvent(QCloseEvent *event)
     KConfigGroup gr = config->group("General");
 
     gr.writeEntry("selectedFont", vFont);
-    gr.writeEntry("char", vChr);
+    gr.writeEntry("char", (uint)vChr);
     gr.writeEntry("rtl", _rtl);
 
     KXmlGuiWindow::closeEvent(event);
 }
 
 //==================================================================
-void KCharSelectDia::charChanged(uint _chr)
+void KCharSelectDia::charChanged(char32_t _chr)
 {
     vChr = _chr;
 }
@@ -215,7 +215,7 @@ void KCharSelectDia::fontSelected(const QFont &_font)
 }
 
 //==================================================================
-void KCharSelectDia::add(uint _chr)
+void KCharSelectDia::add(char32_t _chr)
 {
     charChanged(_chr);
 
