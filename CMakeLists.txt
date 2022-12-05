@@ -45,7 +45,7 @@ set_package_properties(KF5DocTools PROPERTIES DESCRIPTION
 
 ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KCHARSELECT VERSION_HEADER kcharselect_version.h)
 
-ecm_set_disabled_deprecation_versions(QT 5.15.2 KF 5.100.0)
+ecm_set_disabled_deprecation_versions(QT 5.15.2 KF 5.101.0)
 
 add_executable(kcharselect)
 
