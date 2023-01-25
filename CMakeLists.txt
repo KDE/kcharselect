@@ -9,7 +9,7 @@ set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_
 project(kcharselect VERSION ${RELEASE_SERVICE_VERSION})
 
 set (QT_MIN_VERSION "5.15.2")
-set (KF_MIN_VERSION "5.91.0")
+set (KF_MIN_VERSION "5.102.0")
 
 find_package (ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -26,8 +26,15 @@ find_package (Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
     Core
     Widgets
 )
+if (QT_MAJOR_VERSION STREQUAL "6")
+    set(QT_MIN_VERSION "6.4.0")
+    set(KF_MIN_VERSION "5.240.0")
+    set(KF_MAJOR_VERSION "6")
+else()
+    set(KF_MAJOR_VERSION "5")
+endif()
 
-find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS
+find_package(KF${KF_MAJOR_VERSION} ${KF_MIN_VERSION} REQUIRED COMPONENTS
     Bookmarks
     CoreAddons
     Crash
@@ -36,7 +43,7 @@ find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     XmlGui
 )
 
-find_package(KF5DocTools ${KF_MIN_VERSION})
+find_package(KF${KF_MAJOR_VERSION}DocTools ${KF_MIN_VERSION})
 set_package_properties(KF5DocTools PROPERTIES DESCRIPTION
     "Tools to generate documentation"
     TYPE OPTIONAL
@@ -45,7 +52,7 @@ set_package_properties(KF5DocTools PROPERTIES DESCRIPTION
 
 ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KCHARSELECT VERSION_HEADER kcharselect_version.h)
 
-ecm_set_disabled_deprecation_versions(QT 5.15.2 KF 5.101.0)
+ecm_set_disabled_deprecation_versions(QT 6.4 KF 5.101.0)
 
 add_executable(kcharselect)
 
@@ -58,12 +65,12 @@ target_sources(kcharselect PRIVATE
 )
 
 target_link_libraries(kcharselect
-    KF5::Bookmarks
-    KF5::CoreAddons
-    KF5::Crash
-    KF5::I18n
-    KF5::WidgetsAddons
-    KF5::XmlGui
+    KF${KF_MAJOR_VERSION}::Bookmarks
+    KF${KF_MAJOR_VERSION}::CoreAddons
+    KF${KF_MAJOR_VERSION}::Crash
+    KF${KF_MAJOR_VERSION}::I18n
+    KF${KF_MAJOR_VERSION}::WidgetsAddons
+    KF${KF_MAJOR_VERSION}::XmlGui
 )
 
 install(TARGETS kcharselect ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
@@ -71,7 +78,7 @@ install(TARGETS kcharselect ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 install(FILES org.kde.kcharselect.desktop  DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.kcharselect.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 
-if (KF5DocTools_FOUND)
+if (KF${KF_MAJOR_VERSION}DocTools_FOUND)
     add_subdirectory(doc)
     kdoctools_install(po)
 endif()
