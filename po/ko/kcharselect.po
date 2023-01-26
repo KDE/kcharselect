@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-23 00:47+0000\n"
+"POT-Creation-Date: 2023-01-26 01:00+0000\n"
 "PO-Revision-Date: 2016-12-05 22:44+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -85,108 +85,108 @@ msgstr "편집(&E)"
 msgid "Main Toolbar"
 msgstr "주 도구 모음"
 
-#: main.cc:38
+#: main.cc:39
 #, kde-format
 msgid "KCharSelect"
 msgstr "KCharSelect"
 
-#: main.cc:40
+#: main.cc:41
 #, kde-format
 msgid "KDE character selection utility"
 msgstr "KDE 문자 선택 도구"
 
-#: main.cc:43
+#: main.cc:44
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
 msgstr "KCharSelect 위젯을 둘러싸는 래퍼."
 
-#: main.cc:46
+#: main.cc:47
 #, kde-format
 msgid "Christoph Feck"
 msgstr "Christoph Feck"
 
-#: main.cc:46
+#: main.cc:47
 #, kde-format
 msgid "KF5 port and current maintainer"
 msgstr "KF5 포팅 및 현재 관리자"
 
-#: main.cc:47 main.cc:50
+#: main.cc:48 main.cc:51
 #, kde-format
 msgid "Daniel Laidig"
 msgstr "Daniel Laidig"
 
-#: main.cc:47
+#: main.cc:48
 #, kde-format
 msgid "Author and previous maintainer"
 msgstr "작성자 및 이전 관리자"
 
-#: main.cc:48
+#: main.cc:49
 #, kde-format
 msgid "Reginald Stadlbauer"
 msgstr "Reginald Stadlbauer"
 
-#: main.cc:48
+#: main.cc:49
 #, kde-format
 msgid "Author"
 msgstr "작성자"
 
-#: main.cc:51
+#: main.cc:52
 #, kde-format
 msgid ""
 "New GUI, Unicode information, incremental search, and general improvements"
 msgstr "새로운 GUI, 유니코드 정보, 증분 검색, 일반적인 개선"
 
-#: main.cc:54
+#: main.cc:55
 #, kde-format
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: main.cc:54
+#: main.cc:55
 #, kde-format
 msgid "Porting help"
 msgstr "포팅 도움"
 
-#: main.cc:55
+#: main.cc:56
 #, kde-format
 msgid "Constantin Berzan"
 msgstr "Constantin Berzan"
 
-#: main.cc:55
+#: main.cc:56
 #, kde-format
 msgid "Previous maintainer"
 msgstr "이전 관리자"
 
-#: main.cc:56
+#: main.cc:57
 #, kde-format
 msgid "Nadeem Hasan"
 msgstr "Nadeem Hasan"
 
-#: main.cc:56 main.cc:57
+#: main.cc:57 main.cc:58
 #, kde-format
 msgid "GUI cleanup and fixes"
 msgstr "GUI 정리와 수리"
 
-#: main.cc:57
+#: main.cc:58
 #, kde-format
 msgid "Ryan Cumming"
 msgstr "Ryan Cumming"
 
-#: main.cc:58
+#: main.cc:59
 #, kde-format
 msgid "Benjamin C. Meyer"
 msgstr "Benjamin C. Meyer"
 
-#: main.cc:58
+#: main.cc:59
 #, kde-format
 msgid "XMLUI conversion"
 msgstr "XMLUI 변환"
 
-#: main.cc:59
+#: main.cc:60
 #, kde-format
 msgid "Bryce Nesbitt"
 msgstr "Bryce Nesbitt"
 
-#: main.cc:59
+#: main.cc:60
 #, kde-format
 msgid "RTL support"
 msgstr "RTL 지원"
