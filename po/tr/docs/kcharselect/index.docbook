@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+
+  <!ENTITY kappname "&kcharselect;">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Turkish "INCLUDE">
+]>
+
+<article id="kcharselect" lang="&language;">
+
+<articleinfo>
+<title
+>K Karakter Seç</title>
+<authorgroup>
+<author
+><firstname
+>Daniel</firstname
+> <surname
+>Laidig</surname
+> <address
+><email
+>laidig@kde.org</email
+></address
+> </author>
+
+<othercredit role="translator"
+><firstname
+>Kaan</firstname
+><surname
+>Özdinçer</surname
+><affiliation
+><address
+><email
+>kaanozdincer@gmail.com</email
+></address
+></affiliation
+><contrib
+>Çeviri</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2016-04-25</date>
+<releaseinfo
+>1.12 (Uygulamalar 16.04)</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>karakter</keyword>
+<keyword
+>yazıtipi</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>&kcharselect; kurulu tüm yazıtiplerinden özel karakterler seçmek ve bunları farklı biçimlerde (düz metin, Unicode veya &HTML;) panoya kopyalamak için kullanılan bir araçtır.</para>
+
+<para
+>Önizlemede bir karaktere çift tıklamak veya &Enter;'a basmak, onu yazıtipi önizlemesinin altındaki çubuğa ekler. Bu özellik, bir sözcüğü veya birkaç karakterden oluşan bir grubu toplamaya ve bunları birlikte panoya kopyalamaya izin verir.</para
+> 
+<para
+>Seçilen karakterlerin sırasını tersine çevirmek için <guimenuitem
+>Metni Çevir</guimenuitem
+>'i kullanın.</para>
+<para
+>Karakterler öntanımlı olarak grubun sağ ucuna veya imleç konumuna eklenir. <guimenuitem
+>Yönü Tersine Çevir</guimenuitem
+> ile bu davranışı değiştirebilir ve sol yönde karakter ekleyebilirsiniz.</para>
+
+<para>
+<screenshot>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="kcharselect.png" format="PNG"/>
+    </imageobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Karakterlere kategorilerine göre göz atabilir veya belirli bir karakteri adını arayarak hızlıca bulabilirsiniz. &kcharselect; seçilen karakter hakkında çeşitli bilgileri görüntüler. Bu, yalnızca Unicode karakter adını değil, aynı zamanda diğer adları, genel notları ve benzer karakterlere yapılan çapraz başvuruları da içerir. </para>
+<para
+>Teknik kullanım için karakterin farklı temsilleri gösterilir. &kcharselect; ayrıca İngilizce tanımları ve farklı telaffuzları görüntülemek için Doğu Asya karakterleri için Unihan verisini içerir. </para>
+
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

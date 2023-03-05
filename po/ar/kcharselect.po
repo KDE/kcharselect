@@ -101,7 +101,7 @@ msgstr "حرف"
 #: main.cc:41
 #, kde-format
 msgid "KDE character selection utility"
-msgstr "أداة كدي لانتقاء المحارف"
+msgstr "أداة كِيدِي لانتقاء المحارف"
 
 #: main.cc:44
 #, kde-format
