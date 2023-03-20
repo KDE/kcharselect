@@ -10,7 +10,7 @@
 
 <articleinfo>
 <title
->K Karakter Seç</title>
+>K Karakter Seçici</title>
 <authorgroup>
 <author
 ><firstname
@@ -56,7 +56,7 @@
 </articleinfo>
 
 <para
->&kcharselect; kurulu tüm yazıtiplerinden özel karakterler seçmek ve bunları farklı biçimlerde (düz metin, Unicode veya &HTML;) panoya kopyalamak için kullanılan bir araçtır.</para>
+>&kcharselect;, kurulu tüm yazıtiplerinden özel karakterler seçmek ve bunları farklı biçimlerde (düz metin, Unicode veya &HTML;) panoya kopyalamak için kullanılan bir araçtır.</para>
 
 <para
 >Önizlemede bir karaktere çift tıklamak veya &Enter;'a basmak, onu yazıtipi önizlemesinin altındaki çubuğa ekler. Bu özellik, bir sözcüğü veya birkaç karakterden oluşan bir grubu toplamaya ve bunları birlikte panoya kopyalamaya izin verir.</para
@@ -81,7 +81,7 @@
 </para>
 
 <para
->Karakterlere kategorilerine göre göz atabilir veya belirli bir karakteri adını arayarak hızlıca bulabilirsiniz. &kcharselect; seçilen karakter hakkında çeşitli bilgileri görüntüler. Bu, yalnızca Unicode karakter adını değil, aynı zamanda diğer adları, genel notları ve benzer karakterlere yapılan çapraz başvuruları da içerir. </para>
+>Karakterlere kategorilerine göre göz atabilir veya belirli bir karakteri adını arayarak hızlıca bulabilirsiniz. &kcharselect;, seçili karakter hakkında çeşitli bilgiyi görüntüler. Bu, yalnızca Unicode karakter adını değil, aynı zamanda diğer adları, genel notları ve benzer karakterlere yapılan çapraz başvuruları da içerir. </para>
 <para
 >Teknik kullanım için karakterin farklı temsilleri gösterilir. &kcharselect; ayrıca İngilizce tanımları ve farklı telaffuzları görüntülemek için Doğu Asya karakterleri için Unihan verisini içerir. </para>
 

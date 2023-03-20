@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kdeutils-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-26 01:00+0000\n"
-"PO-Revision-Date: 2023-02-01 21:17+0300\n"
+"PO-Revision-Date: 2023-03-19 21:32+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -90,17 +90,17 @@ msgstr "Ana Araç Çubuğu"
 #: main.cc:39
 #, kde-format
 msgid "KCharSelect"
-msgstr "K Karakter Seç"
+msgstr "K Karakter Seçici"
 
 #: main.cc:41
 #, kde-format
 msgid "KDE character selection utility"
-msgstr "KDE karakter seçme aracı"
+msgstr "KDE karakter seçme izlencesi"
 
 #: main.cc:44
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
-msgstr "K Karakter Seç araç takımı tabanlı bir uygulama."
+msgstr "K Karakter Seçici araç takımı tabanlı bir uygulama."
 
 #: main.cc:47
 #, kde-format
