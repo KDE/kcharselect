@@ -1,15 +1,15 @@
 # Esperantaj mesaghoj por kcharselect
 # Copyright (C) 1999 Free Software Foundation, Inc.
 # Wolfram Diestel <wolfram@steloj.de>, 1999.
+# Heiko Evermann <heiko@evermann.de>, 2002.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: $Id: kcharselect.po,v 1.1 1999/12/09 18:13:08 wolfram "
-"Exp $\n"
+"Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-26 01:00+0000\n"
-"PO-Revision-Date: 2002-09-05 22:24+0200\n"
-"Last-Translator: Heiko Evermann <heiko@evermann.de>\n"
+"PO-Revision-Date: 2023-03-20 22:43+0100\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
@@ -44,9 +44,9 @@ msgid "To Clipboard &HTML"
 msgstr "Enpoŝigu &HTML"
 
 #: kcharselectdia.cc:143
-#, fuzzy, kde-format
+#, kde-format
 msgid "&From Clipboard"
-msgstr "Elpoŝigu"
+msgstr "&El Tondujo"
 
 #: kcharselectdia.cc:148
 #, kde-format
@@ -59,20 +59,19 @@ msgid "From Clipboard HTML"
 msgstr "Elpoŝigu HTML"
 
 #: kcharselectdia.cc:154
-#, fuzzy, kde-format
-#| msgid "&Flip"
+#, kde-format
 msgid "&Flip Text"
-msgstr "&Ŝanĝu flankon"
+msgstr "R&enversi Tekston"
 
 #: kcharselectdia.cc:157
 #, kde-format
 msgid "&Reverse Direction"
-msgstr ""
+msgstr "&Renversa Direkto"
 
 #: kcharselectdia.cc:178
 #, kde-format
 msgid "Bookmarks"
-msgstr ""
+msgstr "Legosignoj"
 
 #. i18n: ectx: Menu (edit)
 #: kcharselectui.rc:4
@@ -107,10 +106,9 @@ msgid "Christoph Feck"
 msgstr ""
 
 #: main.cc:47
-#, fuzzy, kde-format
-#| msgid "Author and maintainer"
+#, kde-format
 msgid "KF5 port and current maintainer"
-msgstr "Aŭtoro kaj prizorganto"
+msgstr ""
 
 #: main.cc:48 main.cc:51
 #, kde-format
@@ -118,10 +116,9 @@ msgid "Daniel Laidig"
 msgstr "Daniel Laidig"
 
 #: main.cc:48
-#, fuzzy, kde-format
-#| msgid "Author and maintainer"
+#, kde-format
 msgid "Author and previous maintainer"
-msgstr "Aŭtoro kaj prizorganto"
+msgstr ""
 
 #: main.cc:49
 #, kde-format
@@ -155,9 +152,9 @@ msgid "Constantin Berzan"
 msgstr "Constantin Berzan"
 
 #: main.cc:56
-#, fuzzy, kde-format
+#, kde-format
 msgid "Previous maintainer"
-msgstr "Nuna retpoŝta agordo"
+msgstr "Antaŭa prizorganto"
 
 #: main.cc:57
 #, kde-format
@@ -192,7 +189,4 @@ msgstr "Bryce Nesbitt"
 #: main.cc:60
 #, kde-format
 msgid "RTL support"
-msgstr ""
-
-#~ msgid "&Alignment"
-#~ msgstr "&Aranĝo"
+msgstr "RTL-subteno"
