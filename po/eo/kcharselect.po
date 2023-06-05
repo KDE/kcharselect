@@ -1,14 +1,16 @@
-# Esperantaj mesaghoj por kcharselect
+# translation of kcharselect.pot to Esperanto
+# Esperantaj mesaĝoj por kcharselect
 # Copyright (C) 1999 Free Software Foundation, Inc.
 # Wolfram Diestel <wolfram@steloj.de>, 1999.
 # Heiko Evermann <heiko@evermann.de>, 2002.
+# Oliver Kellogg <okellogg@users.sourceforge.net>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-26 01:00+0000\n"
-"PO-Revision-Date: 2023-03-21 22:43+0100\n"
+"PO-Revision-Date: 2023-06-04 23:16+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto\n"
 "Language: eo\n"
@@ -98,17 +100,17 @@ msgstr "KDE-Signoelektilo"
 #: main.cc:44
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
-msgstr ""
+msgstr "Envolvaĵo ĉirkaŭ la KCharSelect-fenestraĵo."
 
 #: main.cc:47
 #, kde-format
 msgid "Christoph Feck"
-msgstr ""
+msgstr "Christoph Feck"
 
 #: main.cc:47
 #, kde-format
 msgid "KF5 port and current maintainer"
-msgstr ""
+msgstr "KF5-portado kaj aktuala prizorganto"
 
 #: main.cc:48 main.cc:51
 #, kde-format
@@ -118,7 +120,7 @@ msgstr "Daniel Laidig"
 #: main.cc:48
 #, kde-format
 msgid "Author and previous maintainer"
-msgstr ""
+msgstr "Aŭtoro kaj antaŭa prizorganto"
 
 #: main.cc:49
 #, kde-format
@@ -134,17 +136,17 @@ msgstr "Aŭtoro"
 #, kde-format
 msgid ""
 "New GUI, Unicode information, incremental search, and general improvements"
-msgstr ""
+msgstr "Nova GUI, Unikod-informo, dumtajpa serĉo kaj ĝeneralaj plibonigoj"
 
 #: main.cc:55
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "Laurent Montel"
 
 #: main.cc:55
 #, kde-format
 msgid "Porting help"
-msgstr ""
+msgstr "Helpo pri portado"
 
 #: main.cc:56
 #, kde-format
@@ -179,7 +181,7 @@ msgstr "Benjamin C. Meyer"
 #: main.cc:59
 #, kde-format
 msgid "XMLUI conversion"
-msgstr ""
+msgstr "Konverto de XMLUI"
 
 #: main.cc:60
 #, kde-format
