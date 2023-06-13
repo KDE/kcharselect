@@ -14,6 +14,7 @@
   <name xml:lang="de">KCharSelect</name>
   <name xml:lang="el">KCharSelect</name>
   <name xml:lang="en-GB">KCharSelect</name>
+  <name xml:lang="eo">KCharSelect</name>
   <name xml:lang="es">KCharSelect</name>
   <name xml:lang="et">KCharSelect</name>
   <name xml:lang="eu">KCharSelect</name>
@@ -52,6 +53,7 @@
   <summary xml:lang="de">Zeichenauswahl</summary>
   <summary xml:lang="el">Επιλογέας χαρακτήρων</summary>
   <summary xml:lang="en-GB">Character Selector</summary>
+  <summary xml:lang="eo">Signo-Elektilo</summary>
   <summary xml:lang="es">Selector de caracteres</summary>
   <summary xml:lang="et">Märgivalija</summary>
   <summary xml:lang="eu">Karaktere hautatzailea</summary>
