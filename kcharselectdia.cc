@@ -339,3 +339,5 @@ void KCharSelectDia::lineEditChanged()
             lined->setCursorPosition(lined->cursorPosition() - 1);
     }
 }
+
+#include "moc_kcharselectdia.cpp"
