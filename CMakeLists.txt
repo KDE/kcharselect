@@ -66,6 +66,10 @@ target_link_libraries(kcharselect
     KF6::XmlGui
 )
 
+if (QT_MAJOR_VERSION STREQUAL "6")
+    target_link_libraries(kcharselect KF6::BookmarksWidgets)
+endif()
+
 install(TARGETS kcharselect ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 install(FILES org.kde.kcharselect.desktop  DESTINATION ${KDE_INSTALL_APPDIR})
