@@ -172,7 +172,12 @@ KCharSelectDia::KCharSelectDia(QWidget *parent)
         QDir().mkpath(filename);
         filename += QStringLiteral("/bookmarks.xml");
     }
+
+#if QT_VERSION_MAJOR < 6
     KBookmarkManager *manager = KBookmarkManager::managerForFile(filename, QStringLiteral("kcharselect"));
+#else
+    KBookmarkManager *manager = KBookmarkManager::managerForFile(filename);
+#endif
 
     action = actionCollection()->addAction(QStringLiteral("bookmarks"));
     action->setText(i18n("Bookmarks"));
