@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-26 01:00+0000\n"
+"POT-Creation-Date: 2023-08-16 00:48+0000\n"
 "PO-Revision-Date: 2018-10-26 22:13+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -74,7 +74,7 @@ msgstr "&Символы в обратном порядке"
 msgid "&Reverse Direction"
 msgstr "&Обратное направление письма"
 
-#: kcharselectdia.cc:178
+#: kcharselectdia.cc:183
 #, kde-format
 msgid "Bookmarks"
 msgstr "Закладки"

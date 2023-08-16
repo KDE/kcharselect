@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-26 01:00+0000\n"
+"POT-Creation-Date: 2023-08-16 00:48+0000\n"
 "PO-Revision-Date: 2022-02-05 19:28+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian\n"
@@ -68,7 +68,7 @@ msgstr "&Răstoarnă textul"
 msgid "&Reverse Direction"
 msgstr "In&versează direcția"
 
-#: kcharselectdia.cc:178
+#: kcharselectdia.cc:183
 #, kde-format
 msgid "Bookmarks"
 msgstr "Semne de carte"
