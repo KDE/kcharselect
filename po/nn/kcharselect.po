@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-26 01:00+0000\n"
+"POT-Creation-Date: 2023-08-16 00:48+0000\n"
 "PO-Revision-Date: 2018-07-31 16:15+0100\n"
 "Last-Translator: Øystein Steffensen-Alværvik <ystein@posteo.net>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -72,7 +72,7 @@ msgstr "&Snu teksten"
 msgid "&Reverse Direction"
 msgstr "&Omvend retning"
 
-#: kcharselectdia.cc:178
+#: kcharselectdia.cc:183
 #, kde-format
 msgid "Bookmarks"
 msgstr "Bokmerke"
