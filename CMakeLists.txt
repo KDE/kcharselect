@@ -8,8 +8,8 @@ set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_
 
 project(kcharselect VERSION ${RELEASE_SERVICE_VERSION})
 
-set (QT_MIN_VERSION "5.15.2")
-set (KF_MIN_VERSION "5.102.0")
+set (QT_MIN_VERSION "6.5.0")
+set (KF_MIN_VERSION "5.240.0")
 
 find_package (ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -26,15 +26,8 @@ find_package (Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
     Core
     Widgets
 )
-if (QT_MAJOR_VERSION STREQUAL "6")
-    set(QT_MIN_VERSION "6.5.0")
-    set(KF_MIN_VERSION "5.240.0")
-    set(KF_MAJOR_VERSION "6")
-else()
-    set(KF_MAJOR_VERSION "5")
-endif()
 
-find_package(KF${KF_MAJOR_VERSION} ${KF_MIN_VERSION} REQUIRED COMPONENTS
+find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     Bookmarks
     CoreAddons
     Crash
@@ -43,7 +36,7 @@ find_package(KF${KF_MAJOR_VERSION} ${KF_MIN_VERSION} REQUIRED COMPONENTS
     XmlGui
 )
 
-find_package(KF${KF_MAJOR_VERSION}DocTools ${KF_MIN_VERSION})
+find_package(KF6DocTools ${KF_MIN_VERSION})
 set_package_properties(KF5DocTools PROPERTIES DESCRIPTION
     "Tools to generate documentation"
     TYPE OPTIONAL
@@ -65,12 +58,12 @@ target_sources(kcharselect PRIVATE
 )
 
 target_link_libraries(kcharselect
-    KF${KF_MAJOR_VERSION}::Bookmarks
-    KF${KF_MAJOR_VERSION}::CoreAddons
-    KF${KF_MAJOR_VERSION}::Crash
-    KF${KF_MAJOR_VERSION}::I18n
-    KF${KF_MAJOR_VERSION}::WidgetsAddons
-    KF${KF_MAJOR_VERSION}::XmlGui
+    KF6::Bookmarks
+    KF6::CoreAddons
+    KF6::Crash
+    KF6::I18n
+    KF6::WidgetsAddons
+    KF6::XmlGui
 )
 
 install(TARGETS kcharselect ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
@@ -78,7 +71,7 @@ install(TARGETS kcharselect ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 install(FILES org.kde.kcharselect.desktop  DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.kcharselect.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 
-if (KF${KF_MAJOR_VERSION}DocTools_FOUND)
+if (KF6DocTools_FOUND)
     add_subdirectory(doc)
     kdoctools_install(po)
 endif()
