@@ -1,7 +1,7 @@
 # Translation of kcharselect.po to Slovenian
 # SLOVENIAN TRANSLATION OF KCHARSELECT.
 # Copyright (C) 2000,2003, 2005 Free Software Foundation, Inc.
-# $Id: kcharselect.po 1658249 2023-08-16 01:26:24Z scripty $
+# $Id: kcharselect.po 1660270 2023-09-16 02:11:06Z scripty $
 # $Source$
 #
 # Roman Maurer <roman.maurer@hermes.si>, 2000.
@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-16 00:48+0000\n"
+"POT-Creation-Date: 2023-09-16 01:56+0000\n"
 "PO-Revision-Date: 2016-09-04 09:26+0200\n"
 "Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -78,7 +78,7 @@ msgstr "O&brni besedilo"
 msgid "&Reverse Direction"
 msgstr "&Obrni smer"
 
-#: kcharselectdia.cc:183
+#: kcharselectdia.cc:179
 #, kde-format
 msgid "Bookmarks"
 msgstr "Zaznamki"
