@@ -173,14 +173,14 @@ KCharSelectDia::KCharSelectDia(QWidget *parent)
         filename += QStringLiteral("/bookmarks.xml");
     }
 
-    KBookmarkManager *manager = KBookmarkManager::managerForFile(filename);
+    bookmarkManager = new KBookmarkManager(filename, this);
 
     action = actionCollection()->addAction(QStringLiteral("bookmarks"));
     action->setText(i18n("Bookmarks"));
     QMenu *bmmenu = new QMenu(this);
     action->setMenu(bmmenu);
 
-    KBookmarkMenu *bm = new KBookmarkMenu(manager, new KCharSelectBookmarkOwner(this), bmmenu);
+    KBookmarkMenu *bm = new KBookmarkMenu(bookmarkManager, new KCharSelectBookmarkOwner(this), bmmenu);
     actionCollection()->addActions(bmmenu->actions());
 
     bm->setParent(this);

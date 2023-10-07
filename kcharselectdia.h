@@ -10,6 +10,7 @@
 #include <QLineEdit>
 #include <QPushButton>
 
+#include <KBookmarkManager>
 #include <KCharSelect>
 #include <KXmlGuiWindow>
 
@@ -37,6 +38,7 @@ protected:
     char32_t vChr;
     QFont vFont;
     bool _rtl;
+    KBookmarkManager *bookmarkManager;
 
 protected Q_SLOTS:
     void charChanged(char32_t _chr);
