@@ -78,6 +78,7 @@
   <summary xml:lang="sk">Výber znakov</summary>
   <summary xml:lang="sl">Izbirnik znakov</summary>
   <summary xml:lang="sv">Teckenväljare</summary>
+  <summary xml:lang="ta">எழுத்துத் தேர்வி</summary>
   <summary xml:lang="tr">Karakter Seçicisi</summary>
   <summary xml:lang="uk">Таблиця символів</summary>
   <summary xml:lang="x-test">xxCharacter Selectorxx</summary>
@@ -118,6 +119,7 @@
     <p xml:lang="sk">KCharSelect je nástroj na výber špeciálnych znakov zo všetkých nainštalovaných písiem a skopírovanie do schránky.</p>
     <p xml:lang="sl">KCharSelect je orodje za izbiro posebnih znakov iz vseh nameščenih pisav in njihovo kopiranje v odložišče.</p>
     <p xml:lang="sv">Teckenväljaren är ett verktyg för att välja specialtecken från alla installerade teckensnitt och kopiera dem till klippbordet.</p>
+    <p xml:lang="ta">KCharSelect, நிறுவப்பட்டுள்ள எழுத்துருக்களிலிருந்து பயனர் தேர்ந்தெடுக்கும் குறியீடுகளை பிடிப்புப்பலகைக்கு நகலெடுக்கும் செயலியாகும்.</p>
     <p xml:lang="tr">K Karakterci, kurulu yazıtiplerinden karakter seçip panoya kopyalayan bir araçtır.</p>
     <p xml:lang="uk">KCharSelect — програма для вибору спеціальних символів з усіх встановлених шрифтів і копіювання цих символів до буфера обміну даними.</p>
     <p xml:lang="x-test">xxKCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.xx</p>
