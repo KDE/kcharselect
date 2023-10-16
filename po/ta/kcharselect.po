@@ -1,12 +1,12 @@
 # Copyright (C) 2021 Free Software Foundation, Inc.
 #
-# Kishore G <kishore96@gmail.com>, 2021.
+# SPDX-FileCopyrightText: 2021, 2023 Kishore G <kishore96@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-16 01:56+0000\n"
-"PO-Revision-Date: 2021-01-18 19:17+0530\n"
+"PO-Revision-Date: 2023-10-15 12:16+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.12.1\n"
+"X-Generator: Lokalize 23.08.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -36,49 +36,48 @@ msgstr "&பிடிப்புபலகைக்கு"
 #: kcharselectdia.cc:136
 #, kde-format
 msgid "To Clipboard &UTF-8"
-msgstr "பிடிப்புபலகைக்கு &UTF-8"
+msgstr "பி&டிப்புபலகைக்கு UTF-8"
 
 #: kcharselectdia.cc:139
 #, kde-format
 msgid "To Clipboard &HTML"
-msgstr "பிடிப்புபலகைக்கு &HTML"
+msgstr "பிடிப்புப&லகைக்கு HTML"
 
 #: kcharselectdia.cc:143
 #, kde-format
 msgid "&From Clipboard"
-msgstr "&பிடிப்புபலகையில் இருந்து"
+msgstr "பிடிப்புபலகையில் &இருந்து"
 
 #: kcharselectdia.cc:148
 #, kde-format
 msgid "From Clipboard UTF-8"
-msgstr "பிடிப்புபலகையிலிருந்து UTF-8"
+msgstr "பிடிப்புபலகை&யிலிருந்து UTF-8"
 
 #: kcharselectdia.cc:151
 #, kde-format
 msgid "From Clipboard HTML"
-msgstr "பிடிப்புபலகையிலிருந்து HTML"
+msgstr "பிடிப்புபலகையிலி&ருந்து HTML"
 
 #: kcharselectdia.cc:154
-#, fuzzy, kde-format
-#| msgid "&Flip"
+#, kde-format
 msgid "&Flip Text"
-msgstr "&சுண்டு"
+msgstr "&உரையை பரட்டு"
 
 #: kcharselectdia.cc:157
 #, kde-format
 msgid "&Reverse Direction"
-msgstr ""
+msgstr "&எழுதும் திசையை மாற்று"
 
 #: kcharselectdia.cc:179
 #, kde-format
 msgid "Bookmarks"
-msgstr ""
+msgstr "நினைவுக்குறிகள்"
 
 #. i18n: ectx: Menu (edit)
 #: kcharselectui.rc:4
 #, kde-format
 msgid "&Edit"
-msgstr ""
+msgstr "&திருத்து"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: kcharselectui.rc:17
@@ -89,12 +88,12 @@ msgstr "பிரதான கருவிப்பட்டை"
 #: main.cc:39
 #, kde-format
 msgid "KCharSelect"
-msgstr "Kஉருதேர்வு"
+msgstr ""
 
 #: main.cc:41
 #, kde-format
 msgid "KDE character selection utility"
-msgstr "KDE உரு தேர்வு பயன்பாடு"
+msgstr "KDE எழுத்துத் தேர்வு செயலி"
 
 #: main.cc:44
 #, kde-format
@@ -119,7 +118,7 @@ msgstr ""
 #: main.cc:48
 #, kde-format
 msgid "Author and previous maintainer"
-msgstr ""
+msgstr "இயற்றியவரும் முந்தைய பராமரிப்பாளரும்"
 
 #: main.cc:49
 #, kde-format
@@ -129,7 +128,7 @@ msgstr ""
 #: main.cc:49
 #, kde-format
 msgid "Author"
-msgstr ""
+msgstr "இயற்றியவர்"
 
 #: main.cc:52
 #, kde-format
