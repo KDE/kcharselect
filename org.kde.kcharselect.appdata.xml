@@ -106,6 +106,7 @@
     <p xml:lang="hu">A KCharSelect egy olyan segédprogram, amellyel különleges karaktereket kereshet a telepített betűkészletekben, és a vágólapra másolhatja azokat.</p>
     <p xml:lang="ia">KCharSelect es un intrumento pro seliger characteres ab fontes installate e copiar los in le area de transferentia.</p>
     <p xml:lang="id">KCharSelect adalah alat untuk memilih karakter khusus dari semua font yang diinstal dan menyalinnya ke papan-klip.</p>
+    <p xml:lang="is">Með KCharSelect er hægt að velja sérstafi úr öllum uppsettum leturgerðum og afrita þá á klippispjaldið.</p>
     <p xml:lang="it">KCharSelect è uno strumento per selezionare i caratteri speciali da tutti i tipi di carattere installati e per copiarli negli appunti.</p>
     <p xml:lang="ka">KCharSelect არის ხელსაწყო ყველა დაინსტალირებული ფონტიდან სპეციალური სიმბოლოების შესარჩევად და ბუფერში მათი კოპირებისთვის.</p>
     <p xml:lang="ko">KCharSelec는 설치된 글꼴에서 사용할 수 있는 특수 문자를 보고 복사하는 도구입니다.</p>
@@ -146,6 +147,7 @@
     <p xml:lang="hu">A karaktereket keresheti kategória vagy név szerint is.</p>
     <p xml:lang="ia">Tu pote cercar characteres per lor categoria o trovar rapidemente un certe character per cercar lo per le sue nomine.</p>
     <p xml:lang="id">Kamu bisa menelusuri karakter berdasarkan kategorinya atau dengan cepat menemukan karakter tertentu dengan mencari namanya.</p>
+    <p xml:lang="is">Þú getur skoða stafi eftir flokkum eða fundið tiltekinn staf með því að leita að nafninu á honum.</p>
     <p xml:lang="it">Puoi sfogliare i caratteri per categoria, oppure trovare facilmente determinati caratteri cercandoli per nome.</p>
     <p xml:lang="ka">თქვენ შეგიძლიათ დაათვალიეროთ სიმბოლოები მათი კატეგორიის მიხედვით ან სწრაფად იპოვოთ გარკვეული სიმბოლო მისი სახელის ძიებით.</p>
     <p xml:lang="ko">분류별로 문자 목록을 보거나 이름으로 검색할 수 있습니다.</p>
@@ -185,6 +187,7 @@
     <p xml:lang="hu">A KCharSelect különböző információkat is megjelenít a kiválasztott karakterről. Nem csak a Unicode karakternevet, hanem az álneveit, általános megjegyzéseket és kereszthivatkozásokat más, hasonló karakterekre.</p>
     <p xml:lang="ia">KCharSelect monstra varie information re le character seligite. Isto include non solmente nomine de character Unicode, sed tamben aliases, notas general e referentias cruciate per simil characteres.</p>
     <p xml:lang="id">KCharSelect menampilkan berbagai informasi tentang karakter yang dipilih. Ini tidak hanya mencakup nama karakter Unicode, tetapi juga alias, catatan umum dan referensi silang ke karakter yang serupa.</p>
+    <p xml:lang="is">KCharSelect birtir ýmsar upplýsingar um stafinn sem þú velur. Ekki einungis Unicode-heiti stafsins, heldur einnig samheiti, almennar upplýsingar og tengsl við áþekka stafi.</p>
     <p xml:lang="it">KCharSelect visualizza numerose informazioni sul carattere selezionato; queste includono non solo il nome Unicode, ma anche gli alias, le note generali ed i riferimenti incrociati ai caratteri simili.</p>
     <p xml:lang="ka">KCharSelect აჩვენებს სხვადასხვა ინფორმაციას არჩეული სიმბოლოს შესახებ. ეს მოიცავს არა მხოლოდ უნიკოდის სიმბოლოების სახელს, არამედ მეტსახელებს, ზოგად შენიშვნებს და მსგავსი სიმბოლოების ჯვარედინი მითითებებს.</p>
     <p xml:lang="ko">KCharSelect는 유니코드 글자 이름, 별명, 일반 설명 및 비슷한 글자 참조 등 선택한 글자의 정보를 보여 줍니다.</p>
@@ -224,6 +227,7 @@
     <p xml:lang="hu">Technikai használathoz a karakter különböző reprezentációi is megjelennek.</p>
     <p xml:lang="ia">Per uso technic, on monstra differente rappresentationes del character.</p>
     <p xml:lang="id">Untuk penggunaan teknis, berbagai representasi karakter ditampilkan.</p>
+    <p xml:lang="is">Ólíkar birtingarmyndir stafsins eru sýndar til tæknilegra nota.</p>
     <p xml:lang="it">Per l'uso tecnico vengono visualizzate diverse rappresentazioni del carattere.</p>
     <p xml:lang="ka">ტექნიკური გამოყენებისთვის სიმბოლოს სხვადასხვა წარმოდგენებია ნაჩვენები.</p>
     <p xml:lang="ko">글자를 표시할 수 있는 다른 기술적인 방법도 표시합니다.</p>
@@ -263,6 +267,7 @@
     <p xml:lang="hu">A KCharSelect tartalmazza a kelet-ázsiai karakterek Unihan adatait is az angol definíció és a különböző kiejtések megjelenítéséhez.</p>
     <p xml:lang="ia">KCharSelect anque contine datos de Unihan per characteres de Asia Oriental per monstrar definitiones de Anglese e pronuntiationes differente.</p>
     <p xml:lang="id">KCharSelect juga berisi data Unihan untuk karakter Asia Timur untuk menampilkan definisi bahasa Inggris dan pengucapan yang berbeda.</p>
+    <p xml:lang="is">KCharSelect inniheldur einnig Unihan-gögn fyrir stafi úr austur-asískum stafrófum til að birta skilgreiningu á ensku og mismunandi framburð.</p>
     <p xml:lang="it">KCharSelect contiene anche i dati Unihan per i caratteri dell'est asiatico, per visualizzare le definizioni inglesi e per le varie pronunce.</p>
     <p xml:lang="ka">KCharSelect ასევე შეიცავს უნიჰანის მონაცემებს აღმოსავლეთ აზიის სიმბოლოებისთვის, რათა აჩვენოს ინგლისური განმარტებები და სხვადასხვა გამოთქმა.</p>
     <p xml:lang="ko">KCharSelect는 Unihan 한자 데이터베이스를 지원하며 각 글자의 뜻 및 지역별 발음을 표시합니다.</p>
