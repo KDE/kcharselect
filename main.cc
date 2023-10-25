@@ -21,7 +21,7 @@ int main(int argc, char **argv)
     QApplication app(argc, argv);
     KCrash::initialize();
 
-    KLocalizedString::setApplicationDomain("kcharselect");
+    KLocalizedString::setApplicationDomain(QByteArrayLiteral("kcharselect"));
 
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     /**
