@@ -84,7 +84,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent)
     : KXmlGuiWindow(parent)
 {
     KSharedConfig::Ptr config = KSharedConfig::openConfig();
-    KConfigGroup gr = config->group("General");
+    KConfigGroup gr = config->group(QStringLiteral("General"));
 
     vFont = gr.readEntry("selectedFont", QFontDatabase::systemFont(QFontDatabase::GeneralFont));
     vChr = gr.readEntry("char", 33);
@@ -192,7 +192,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent)
 void KCharSelectDia::closeEvent(QCloseEvent *event)
 {
     KSharedConfig::Ptr config = KSharedConfig::openConfig();
-    KConfigGroup gr = config->group("General");
+    KConfigGroup gr = config->group(QStringLiteral("General"));
 
     gr.writeEntry("selectedFont", vFont);
     gr.writeEntry("char", (uint)vChr);
