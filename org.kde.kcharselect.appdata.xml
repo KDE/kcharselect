@@ -47,6 +47,7 @@
   <name xml:lang="zh-TW">KCharSelect</name>
   <summary>Character Selector</summary>
   <summary xml:lang="ar">محدد الأحرف</summary>
+  <summary xml:lang="ast">Selector de caráuteres</summary>
   <summary xml:lang="be">Выбар знакаў</summary>
   <summary xml:lang="bg">Избор на символи</summary>
   <summary xml:lang="ca">Selector de caràcters</summary>
@@ -90,6 +91,7 @@
       KCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.
     </p>
     <p xml:lang="ar">حرف هي أداة لتحديد الأحرف الخاصة من جميع الخطوط المثبتة ونسخها في الحافظة.</p>
+    <p xml:lang="ast">KCharSelect ye una ferramienta que seleiciona caráuteres especiales de toles fontes instalaes ya cópiales nel cartafueyu.</p>
     <p xml:lang="be">KCharSelect - гэта інструмент для выбару знакаў з усіх усталяваных шрыфтоў і капіявання іх у буфер абмену.</p>
     <p xml:lang="bg">KCharSelect е инструмент за избор и  копиране в клипборда на специални символи от всички инсталирани шрифтове.</p>
     <p xml:lang="ca">El KCharSelect és una eina per a seleccionar els caràcters especials de totes les fonts instal·lades i els copia al porta-retalls.</p>
@@ -131,6 +133,7 @@
       You can browse characters by their category or quickly find a certain character by searching for its name.
     </p>
     <p xml:lang="ar">يمكنك تصفح الحروف حسب فئتها أو العثور بسرعة على حرف معينة بالبحث عن اسمها.</p>
+    <p xml:lang="ast">Pues restolar los caráuteres pola so categoría o atopar aína un caráuter determináu pente la busca del so nome.</p>
     <p xml:lang="be">Вы можаце праглядаць знакі па іх катэгорыях або шукаць іх па назве.</p>
     <p xml:lang="bg">Можете да преглеждате символите по категория или бързо да ги намирате по името.</p>
     <p xml:lang="ca">Podeu navegar pels caràcters per categoria o trobar ràpidament un caràcter determinat mitjançant la cerca del seu nom.</p>
