@@ -27,7 +27,7 @@ int main(int argc, char **argv)
                          KAboutLicense::GPL,
                          QString(),
                          i18n("A wrapper around the KCharSelect widget."),
-                         QStringLiteral("https://utils.kde.org/projects/kcharselect/"));
+                         QStringLiteral("https://apps.kde.org/kcharselect"));
 
     aboutData.addAuthor(i18n("Christoph Feck"), i18n("KF5 port and current maintainer"), QStringLiteral("cfeck@kde.org"));
     aboutData.addAuthor(i18n("Daniel Laidig"), i18n("Author and previous maintainer"), QStringLiteral("d.laidig@gmx.de"));
