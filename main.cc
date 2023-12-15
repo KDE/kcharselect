@@ -10,9 +10,6 @@
 #include <KAboutData>
 #include <KCrash>
 #include <KLocalizedString>
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-#include <Kdelibs4ConfigMigrator>
-#endif
 #include "kcharselect_version.h"
 #include "kcharselectdia.h"
 
@@ -22,18 +19,6 @@ int main(int argc, char **argv)
     KCrash::initialize();
 
     KLocalizedString::setApplicationDomain(QByteArrayLiteral("kcharselect"));
-
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    /**
-     * enable high dpi support
-     */
-    app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
-
-    Kdelibs4ConfigMigrator migrate(QStringLiteral("kcharselect"));
-    migrate.setConfigFiles(QStringList() << QStringLiteral("kcharselectrc"));
-    migrate.setUiFiles(QStringList() << QStringLiteral("kcharselectui.rc"));
-    migrate.migrate();
-#endif
 
     KAboutData aboutData(QStringLiteral("kcharselect"),
                          i18n("KCharSelect"),
