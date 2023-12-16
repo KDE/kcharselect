@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-16 01:56+0000\n"
+"POT-Creation-Date: 2023-12-16 01:39+0000\n"
 "PO-Revision-Date: 2009-03-01 12:25+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -86,110 +86,110 @@ msgstr "संपादन (&E)"
 msgid "Main Toolbar"
 msgstr "मुख्य औजार पट्टी"
 
-#: main.cc:39
+#: main.cc:24
 #, kde-format
 msgid "KCharSelect"
 msgstr "के-चर-सलेक्ट"
 
-#: main.cc:41
+#: main.cc:26
 #, kde-format
 msgid "KDE character selection utility"
 msgstr "केडीई अक्छर चयन यूटिलिटी"
 
-#: main.cc:44
+#: main.cc:29
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
 msgstr ""
 
-#: main.cc:47
+#: main.cc:32
 #, kde-format
 msgid "Christoph Feck"
 msgstr ""
 
-#: main.cc:47
+#: main.cc:32
 #, kde-format
 msgid "KF5 port and current maintainer"
 msgstr ""
 
-#: main.cc:48 main.cc:51
+#: main.cc:33 main.cc:36
 #, kde-format
 msgid "Daniel Laidig"
 msgstr "डेनियल लेडिग"
 
-#: main.cc:48
+#: main.cc:33
 #, fuzzy, kde-format
 #| msgid "Maintainer"
 msgid "Author and previous maintainer"
 msgstr "मेंटेनर"
 
-#: main.cc:49
+#: main.cc:34
 #, kde-format
 msgid "Reginald Stadlbauer"
 msgstr "रेजऊनाल्ड स्टाडबाउर"
 
-#: main.cc:49
+#: main.cc:34
 #, kde-format
 msgid "Author"
 msgstr "लेखक"
 
-#: main.cc:52
+#: main.cc:37
 #, kde-format
 msgid ""
 "New GUI, Unicode information, incremental search, and general improvements"
 msgstr ""
 
-#: main.cc:55
+#: main.cc:40
 #, kde-format
 msgid "Laurent Montel"
 msgstr ""
 
-#: main.cc:55
+#: main.cc:40
 #, kde-format
 msgid "Porting help"
 msgstr ""
 
-#: main.cc:56
+#: main.cc:41
 #, kde-format
 msgid "Constantin Berzan"
 msgstr "कान्सटेंटिन बेरजान"
 
-#: main.cc:56
+#: main.cc:41
 #, fuzzy, kde-format
 #| msgid "Maintainer"
 msgid "Previous maintainer"
 msgstr "मेंटेनर"
 
-#: main.cc:57
+#: main.cc:42
 #, kde-format
 msgid "Nadeem Hasan"
 msgstr "नदीम हसन"
 
-#: main.cc:57 main.cc:58
+#: main.cc:42 main.cc:43
 #, kde-format
 msgid "GUI cleanup and fixes"
 msgstr "जीयूआई साफ-सफाई अउ फिक्सेस"
 
-#: main.cc:58
+#: main.cc:43
 #, kde-format
 msgid "Ryan Cumming"
 msgstr "रायन कमिंग"
 
-#: main.cc:59
+#: main.cc:44
 #, kde-format
 msgid "Benjamin C. Meyer"
 msgstr "बेंजामिन से मेयर"
 
-#: main.cc:59
+#: main.cc:44
 #, kde-format
 msgid "XMLUI conversion"
 msgstr "एक्सएमएलयूआई रूपान्तरन"
 
-#: main.cc:60
+#: main.cc:45
 #, kde-format
 msgid "Bryce Nesbitt"
 msgstr "ब्रायस नेसबिट"
 
-#: main.cc:60
+#: main.cc:45
 #, kde-format
 msgid "RTL support"
 msgstr "जेवनी से डेरी समर्थन"

@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-16 01:56+0000\n"
+"POT-Creation-Date: 2023-12-16 01:39+0000\n"
 "PO-Revision-Date: 2023-10-01 22:14+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -96,108 +96,108 @@ msgstr "&עריכה"
 msgid "Main Toolbar"
 msgstr "סרגל כלים ראשי"
 
-#: main.cc:39
+#: main.cc:24
 #, kde-format
 msgid "KCharSelect"
 msgstr "KCharSelect"
 
-#: main.cc:41
+#: main.cc:26
 #, kde-format
 msgid "KDE character selection utility"
 msgstr "כלי ברירת התווים של KDE"
 
-#: main.cc:44
+#: main.cc:29
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
 msgstr "מעטפת על היישומון KCharSelect."
 
-#: main.cc:47
+#: main.cc:32
 #, kde-format
 msgid "Christoph Feck"
 msgstr "כריסטוף פק"
 
-#: main.cc:47
+#: main.cc:32
 #, kde-format
 msgid "KF5 port and current maintainer"
 msgstr "הסבה ל־KF5 ומתחזק נוכחי"
 
-#: main.cc:48 main.cc:51
+#: main.cc:33 main.cc:36
 #, kde-format
 msgid "Daniel Laidig"
 msgstr "דניאל ליידיג"
 
-#: main.cc:48
+#: main.cc:33
 #, kde-format
 msgid "Author and previous maintainer"
 msgstr "יוצר ומתחזק לשעבר"
 
-#: main.cc:49
+#: main.cc:34
 #, kde-format
 msgid "Reginald Stadlbauer"
 msgstr "רגינלד שטדבוייר"
 
-#: main.cc:49
+#: main.cc:34
 #, kde-format
 msgid "Author"
 msgstr "יוצר"
 
-#: main.cc:52
+#: main.cc:37
 #, kde-format
 msgid ""
 "New GUI, Unicode information, incremental search, and general improvements"
 msgstr "ממשק משתמש חדש, פרטי יוניקוד, חיפוש מצרפי ושיפורים כלליים"
 
-#: main.cc:55
+#: main.cc:40
 #, kde-format
 msgid "Laurent Montel"
 msgstr "לורנט מונטל"
 
-#: main.cc:55
+#: main.cc:40
 #, kde-format
 msgid "Porting help"
 msgstr "עזרה בהסבה"
 
-#: main.cc:56
+#: main.cc:41
 #, kde-format
 msgid "Constantin Berzan"
 msgstr "קונסטנטין ברזן"
 
-#: main.cc:56
+#: main.cc:41
 #, kde-format
 msgid "Previous maintainer"
 msgstr "מתחזק קודם"
 
-#: main.cc:57
+#: main.cc:42
 #, kde-format
 msgid "Nadeem Hasan"
 msgstr "נאדים חסן"
 
-#: main.cc:57 main.cc:58
+#: main.cc:42 main.cc:43
 #, kde-format
 msgid "GUI cleanup and fixes"
 msgstr "ניקויים ותיקונים בממשק המשתמש הגרפי"
 
-#: main.cc:58
+#: main.cc:43
 #, kde-format
 msgid "Ryan Cumming"
 msgstr "ראיין קאמינג"
 
-#: main.cc:59
+#: main.cc:44
 #, kde-format
 msgid "Benjamin C. Meyer"
 msgstr "בנג׳מין כ. מייר"
 
-#: main.cc:59
+#: main.cc:44
 #, kde-format
 msgid "XMLUI conversion"
 msgstr "המרה ל־XMLUI"
 
-#: main.cc:60
+#: main.cc:45
 #, kde-format
 msgid "Bryce Nesbitt"
 msgstr "ברייס נסביט"
 
-#: main.cc:60
+#: main.cc:45
 #, kde-format
 msgid "RTL support"
 msgstr "תמיכה בימין לשמאל"

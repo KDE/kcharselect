@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-16 01:56+0000\n"
+"POT-Creation-Date: 2023-12-16 01:39+0000\n"
 "PO-Revision-Date: 2010-01-31 10:28+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: ਪੰਜਾਬੀ <punjabi-users@lists.sf.net>\n"
@@ -85,110 +85,110 @@ msgstr "ਸੋਧ(&E)"
 msgid "Main Toolbar"
 msgstr "ਮੇਨ ਟੂਲਬਾਰ"
 
-#: main.cc:39
+#: main.cc:24
 #, kde-format
 msgid "KCharSelect"
 msgstr "ਕੇ-ਅੱਖਰ-ਚੁਣੋ"
 
-#: main.cc:41
+#: main.cc:26
 #, kde-format
 msgid "KDE character selection utility"
 msgstr "KDE ਅੱਖਰ ਚੋਣਕਾਰ ਸਹੂਲਤ"
 
-#: main.cc:44
+#: main.cc:29
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
 msgstr "KCharSelect ਵਿਦਜੈੱਟ ਦੁਆਲੇ ਰੈਪਰ ਹੈ।"
 
-#: main.cc:47
+#: main.cc:32
 #, kde-format
 msgid "Christoph Feck"
 msgstr ""
 
-#: main.cc:47
+#: main.cc:32
 #, fuzzy, kde-format
 #| msgid "Author and maintainer"
 msgid "KF5 port and current maintainer"
 msgstr "ਲੇਖਕ ਅਤੇ ਪਰਬੰਧਕ"
 
-#: main.cc:48 main.cc:51
+#: main.cc:33 main.cc:36
 #, kde-format
 msgid "Daniel Laidig"
 msgstr ""
 
-#: main.cc:48
+#: main.cc:33
 #, fuzzy, kde-format
 #| msgid "Author and maintainer"
 msgid "Author and previous maintainer"
 msgstr "ਲੇਖਕ ਅਤੇ ਪਰਬੰਧਕ"
 
-#: main.cc:49
+#: main.cc:34
 #, kde-format
 msgid "Reginald Stadlbauer"
 msgstr ""
 
-#: main.cc:49
+#: main.cc:34
 #, kde-format
 msgid "Author"
 msgstr "ਲੇਖਕ"
 
-#: main.cc:52
+#: main.cc:37
 #, kde-format
 msgid ""
 "New GUI, Unicode information, incremental search, and general improvements"
 msgstr "ਨਵਾਂ GUI, ਯੂਨੀਕੋਡ ਜਾਣਕਾਰੀ, ਲਗਾਤਾਰ ਖੋਜ ਅਤੇ ਆਮ ਸੁਧਾਰ"
 
-#: main.cc:55
+#: main.cc:40
 #, kde-format
 msgid "Laurent Montel"
 msgstr ""
 
-#: main.cc:55
+#: main.cc:40
 #, kde-format
 msgid "Porting help"
 msgstr ""
 
-#: main.cc:56
+#: main.cc:41
 #, kde-format
 msgid "Constantin Berzan"
 msgstr ""
 
-#: main.cc:56
+#: main.cc:41
 #, kde-format
 msgid "Previous maintainer"
 msgstr "ਪੁਰਾਣਾ ਪਰਬੰਧਕ"
 
-#: main.cc:57
+#: main.cc:42
 #, kde-format
 msgid "Nadeem Hasan"
 msgstr "ਨਦੀਮ ਹੁਸੈਨ"
 
-#: main.cc:57 main.cc:58
+#: main.cc:42 main.cc:43
 #, kde-format
 msgid "GUI cleanup and fixes"
 msgstr "GUI ਸਫ਼ਾਈ ਅਤੇ ਸਥਿਰ"
 
-#: main.cc:58
+#: main.cc:43
 #, kde-format
 msgid "Ryan Cumming"
 msgstr ""
 
-#: main.cc:59
+#: main.cc:44
 #, kde-format
 msgid "Benjamin C. Meyer"
 msgstr ""
 
-#: main.cc:59
+#: main.cc:44
 #, kde-format
 msgid "XMLUI conversion"
 msgstr "XMLUI ਬਦਲਾਅ"
 
-#: main.cc:60
+#: main.cc:45
 #, kde-format
 msgid "Bryce Nesbitt"
 msgstr ""
 
-#: main.cc:60
+#: main.cc:45
 #, kde-format
 msgid "RTL support"
 msgstr "RTL ਸਹਿਯੋਗ"
