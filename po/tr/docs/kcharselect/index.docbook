@@ -81,7 +81,7 @@
 </para>
 
 <para
->Karakterlere kategorilerine göre göz atabilir veya belirli bir karakteri adını arayarak hızlıca bulabilirsiniz. &kcharselect;, seçili karakter hakkında çeşitli bilgiyi görüntüler. Bu, yalnızca Unicode karakter adını değil, aynı zamanda diğer adları, genel notları ve benzer karakterlere yapılan çapraz başvuruları da içerir. </para>
+>Karakterlere kategorilerine göre göz atabilir veya belirli bir karakteri adını arayarak tez bulabilirsiniz. &kcharselect;, seçili karakter hakkında çeşitli bilgiyi görüntüler. Bu, yalnızca Unicode karakter adını değil, aynı zamanda diğer adları, genel notları ve benzer karakterlere yapılan çapraz başvuruları da içerir. </para>
 <para
 >Teknik kullanım için karakterin farklı temsilleri gösterilir. &kcharselect; ayrıca İngilizce tanımları ve farklı telaffuzları görüntülemek için Doğu Asya karakterleri için Unihan verisini içerir. </para>
 
