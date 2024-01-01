@@ -36,17 +36,17 @@ msgstr "quico@softcatala.org,aacid@kde.org"
 #: kcharselectdia.cc:120 kcharselectdia.cc:130
 #, kde-format
 msgid "&To Clipboard"
-msgstr "Al &porta-retalls"
+msgstr "A dins del &porta-retalls"
 
 #: kcharselectdia.cc:136
 #, kde-format
 msgid "To Clipboard &UTF-8"
-msgstr "Al porta-retalls en &UTF-8"
+msgstr "A dins del porta-retalls en &UTF-8"
 
 #: kcharselectdia.cc:139
 #, kde-format
 msgid "To Clipboard &HTML"
-msgstr "Al porta-retalls en &HTML"
+msgstr "A dins del porta-retalls en &HTML"
 
 #: kcharselectdia.cc:143
 #, kde-format
