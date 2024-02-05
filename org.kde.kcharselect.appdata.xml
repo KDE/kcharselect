@@ -34,6 +34,7 @@
   <name xml:lang="lv">KCharSelect</name>
   <name xml:lang="nl">KCharSelect</name>
   <name xml:lang="nn">KCharSelect</name>
+  <name xml:lang="pa">ਕੇ-ਅੱਖਰ-ਚੁਣੋ</name>
   <name xml:lang="pl">KCharSelect</name>
   <name xml:lang="pt">KCharSelect</name>
   <name xml:lang="pt-BR">KCharSelect</name>
@@ -76,6 +77,7 @@
   <summary xml:lang="lv">Rakstzīmju atlasītājs</summary>
   <summary xml:lang="nl">Speciale tekens</summary>
   <summary xml:lang="nn">Teiknveljar</summary>
+  <summary xml:lang="pa">ਅੱਖਰ ਚੋਣਕਾਰ</summary>
   <summary xml:lang="pl">Tablica znaków</summary>
   <summary xml:lang="pt">Selector de Caracteres</summary>
   <summary xml:lang="pt-BR">Seletor de caracteres</summary>
@@ -121,6 +123,7 @@
     <p xml:lang="lv">„KCharSelect“ ir rīks īpašo rakstzīmju atlasīšanai no visiem instalētajiem šriftiem un to kopēšanai starpliktuvē.</p>
     <p xml:lang="nl">KCharSelect is een hulpmiddel om speciale tekens uit alle geïnstalleerde lettertypen te selecteren en deze daarna naar het klembord te kopiëren.</p>
     <p xml:lang="nn">KCharSelect er eit verktøy for å finna spesialteikna i alle installerte skrifter og kopiera dei til utklippstavla.</p>
+    <p xml:lang="pa">ਕੇ-ਅੱਖਰ-ਚੋਣਕਾਰ ਸਭ ਚੁਣੇ ਹੋਏ ਫ਼ੋਂਟਾਂ ਤੋਂ ਖਾਸ ਅੱਖਰ ਚੁਣਨ ਅਤੇ ਉਹਨਾਂ ਨੂੰ ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਕਾਪੀ ਕਰਨ ਲਈ ਟੂਲ ਹੈ।</p>
     <p xml:lang="pl">KCharSelect jest narzędziem do wybierania i kopiowania do schowka znaków specjalnych z wgranych czcionek.</p>
     <p xml:lang="pt">O KCharSelect é uma ferramenta para seleccionar caracteres especiais de todos os tipos de letra instalados e copiá-los para a área de transferência.</p>
     <p xml:lang="pt-BR">KCharSelect é uma ferramenta para selecionar caracteres especiais de todas as fontes instaladas e copiá-los para a área de transferência.</p>
@@ -165,6 +168,7 @@
     <p xml:lang="lv">Šī programma ļauj pārlūkot rakstzīmes pēc kategorijas vai viegli atrast noteiktu rakstzīmi, meklējot pēc tās nosaukuma.</p>
     <p xml:lang="nl">U kunt tekens per category bekijken of snel een bepaald teken vinden door naar zijn naam te zoeken.</p>
     <p xml:lang="nn">Du kan finna teikn ved å bla gjennom teiknkategoriar eller ved å søkja etter namna på teikna.</p>
+    <p xml:lang="pa">ਤੁਸੀਂ ਅੱਖਰਾਂ ਦੀ ਕੈਟਾਗਰੀ ਰਾਹੀਂ ਅੱਖਰ ਦੀ ਝਲਕ ਵੇਖ ਜਾਂ ਇਸ ਦੇ ਨਾਂ ਨਾਲ ਖੋਜ ਕਰਕੇ ਖਾਸ ਅੱਖਰ ਫ਼ੌਰਨ ਲੱਭ ਸਕਦੇ ਹੋ।</p>
     <p xml:lang="pl">Możesz przeglądać znaki po ich kategorii lub szybko znaleźć jakiś znak wyszukując po jego nazwie.</p>
     <p xml:lang="pt">Poderá navegar pelos caracteres de acordo com a sua categoria ou descobrir rapidamente um dado carácter, pesquisando pelo seu nome.</p>
     <p xml:lang="pt-BR">Você pode navegar pelos caracteres pela sua categoria, ou localizar rapidamente por um determinado caractere, pesquisando pelo seu nome.</p>
@@ -249,6 +253,7 @@
     <p xml:lang="lv">Tehniskām vajadzībām programma parāda arī dažādas rakstzīmes reprezentācijas.</p>
     <p xml:lang="nl">Om technische redenen worden verschillende representaties van het teken getoond .</p>
     <p xml:lang="nn">Det viser òg ymse representasjonar av teikna for teknisk bruk.</p>
+    <p xml:lang="pa">ਤਕਨੀਕੀ ਵਰਤੋਂ ਲਈ ਅੱਖਰ ਦੀ ਵੱਖਰੀ ਪੇਸ਼ਕਾਰੀ ਵੇਖਾਈ ਜਾਂਦੀ ਹੈ।</p>
     <p xml:lang="pl">Ze względów technicznych, wyświetlane są różne przedstawienia znaku.</p>
     <p xml:lang="pt">Para uso técnico, são apresentadas diferentes representações do mesmo carácter.</p>
     <p xml:lang="pt-BR">Para uso técnico, são apresentadas as diferentes representações do mesmo caractere.</p>
