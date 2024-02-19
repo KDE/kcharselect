@@ -3,47 +3,46 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Ravishankar Shrivastava <raviratlami@yahoo.com>, 2008.
+# Raghavendra Kamath <raghu@raghukamath.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-16 01:39+0000\n"
-"PO-Revision-Date: 2008-02-03 12:41+0530\n"
-"Last-Translator: Ravishankar Shrivastava <aviratlami@aol.in>\n"
+"PO-Revision-Date: 2024-02-18 18:30+0530\n"
+"Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 22.12.3\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#, fuzzy, kde-format
-#| msgid "Your names"
+#, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "रविशंकर श्रीवास्तव, जी. करूणाकर"
+msgstr "रविशंकर श्रीवास्तव, जी. करूणाकर, आकाश कुमार, राघवेंद्र कामत"
 
-#, fuzzy, kde-format
-#| msgid "Your emails"
+#, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "raviratlami@aol.in"
+msgstr "raviratlami@aol.in, meakash7902@gmail.com, raghu@raghukamath.com"
 
 #: kcharselectdia.cc:120 kcharselectdia.cc:130
 #, kde-format
 msgid "&To Clipboard"
-msgstr "क्लिपबोर्ड को (&T)"
+msgstr "क्लिपबोर्ड में (&T)"
 
 #: kcharselectdia.cc:136
 #, kde-format
 msgid "To Clipboard &UTF-8"
-msgstr "क्लिपबोर्ड यूटीएफ-8 को (&U)"
+msgstr "क्लिपबोर्ड यूटीएफ-8 में (&U)"
 
 #: kcharselectdia.cc:139
 #, kde-format
 msgid "To Clipboard &HTML"
-msgstr "क्लिपबोर्ड एचटीएमएल को (&H)"
+msgstr "क्लिपबोर्ड एचटीएमएल में (&H)"
 
 #: kcharselectdia.cc:143
 #, kde-format
@@ -61,20 +60,19 @@ msgid "From Clipboard HTML"
 msgstr "क्लिपबोर्ड एचटीएमएल से"
 
 #: kcharselectdia.cc:154
-#, fuzzy, kde-format
-#| msgid "&Flip"
+#, kde-format
 msgid "&Flip Text"
-msgstr "पलटें (&F)"
+msgstr "पाठ पलटें (&F)"
 
 #: kcharselectdia.cc:157
 #, kde-format
 msgid "&Reverse Direction"
-msgstr ""
+msgstr "उल्टी दिशा (&R)"
 
 #: kcharselectdia.cc:179
 #, kde-format
 msgid "Bookmarks"
-msgstr ""
+msgstr "पुस्तचिन्ह"
 
 #. i18n: ectx: Menu (edit)
 #: kcharselectui.rc:4
@@ -86,42 +84,42 @@ msgstr "संपादन (&E)"
 #: kcharselectui.rc:17
 #, kde-format
 msgid "Main Toolbar"
-msgstr ""
+msgstr "मुख्य टूलबार"
 
 #: main.cc:24
 #, kde-format
 msgid "KCharSelect"
-msgstr "के-चर-सलेक्ट"
+msgstr "के-चार-सलेक्ट"
 
 #: main.cc:26
 #, kde-format
 msgid "KDE character selection utility"
-msgstr "केडीई अक्षर चयन यूटिलिटी"
+msgstr "केडीई अक्षर चयन उपयोगिता"
 
 #: main.cc:29
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
-msgstr ""
+msgstr "के-चार-सिलेक्ट विजेट के चारों ओर एक आवरण।"
 
 #: main.cc:32
 #, kde-format
 msgid "Christoph Feck"
-msgstr ""
+msgstr "क्रिस्टोफ़ फ़ेक"
 
 #: main.cc:32
 #, kde-format
 msgid "KF5 port and current maintainer"
-msgstr ""
+msgstr "KF5 पोर्ट और वर्तमान प्रबंधक"
 
 #: main.cc:33 main.cc:36
 #, kde-format
 msgid "Daniel Laidig"
-msgstr ""
+msgstr "डेनियल लैडिग"
 
 #: main.cc:33
 #, kde-format
 msgid "Author and previous maintainer"
-msgstr ""
+msgstr "लेखक और पिछले प्रबंधक"
 
 #: main.cc:34
 #, kde-format
@@ -131,33 +129,33 @@ msgstr "रेजिनॉल्ड स्टाडबाउर"
 #: main.cc:34
 #, kde-format
 msgid "Author"
-msgstr ""
+msgstr "लेखक"
 
 #: main.cc:37
 #, kde-format
 msgid ""
 "New GUI, Unicode information, incremental search, and general improvements"
-msgstr ""
+msgstr "नया ग्राफिक यूज़र इंटरफेस, यूनिकोड जानकारी, अनुक्रमात्मक खोज, और सामान्य सुधार"
 
 #: main.cc:40
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "लॉरेंट मोंटेल"
 
 #: main.cc:40
 #, kde-format
 msgid "Porting help"
-msgstr ""
+msgstr "पोर्टिंग मदद"
 
 #: main.cc:41
 #, kde-format
 msgid "Constantin Berzan"
-msgstr ""
+msgstr "कॉन्स्टेंटिन बर्ज़न"
 
 #: main.cc:41
 #, kde-format
 msgid "Previous maintainer"
-msgstr ""
+msgstr "पिछले प्रबंधक"
 
 #: main.cc:42
 #, kde-format
@@ -167,7 +165,7 @@ msgstr "नदीम हसन"
 #: main.cc:42 main.cc:43
 #, kde-format
 msgid "GUI cleanup and fixes"
-msgstr "जीयूआई साफ-सफाई तथा फिक्सेस"
+msgstr "जीयूआई साफ-सफाई तथा सुधार"
 
 #: main.cc:43
 #, kde-format
@@ -187,12 +185,12 @@ msgstr "एक्सएमएलयूआई रूपान्तरण"
 #: main.cc:45
 #, kde-format
 msgid "Bryce Nesbitt"
-msgstr ""
+msgstr "ब्राइस नेसबिट"
 
 #: main.cc:45
 #, kde-format
 msgid "RTL support"
-msgstr ""
+msgstr "RTL समर्थन"
 
 #~ msgid "&Alignment"
 #~ msgstr "पंक्तिबद्धता (&A)"
