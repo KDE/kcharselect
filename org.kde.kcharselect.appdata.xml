@@ -23,6 +23,7 @@
   <name xml:lang="fr">KCharSelect</name>
   <name xml:lang="gl">KCharSelect</name>
   <name xml:lang="he">KCharSelect</name>
+  <name xml:lang="hi">के-चार-सेलेक्ट</name>
   <name xml:lang="hu">KCharSelect</name>
   <name xml:lang="ia">KCharSelect</name>
   <name xml:lang="id">KCharSelect</name>
@@ -64,6 +65,7 @@
   <summary xml:lang="fr">Sélecteur de caractères</summary>
   <summary xml:lang="gl">Selector de caracteres</summary>
   <summary xml:lang="he">בורר תווים</summary>
+  <summary xml:lang="hi">वर्ण चयनकर्ता</summary>
   <summary xml:lang="hu">Karakterválasztó</summary>
   <summary xml:lang="ia">Selector de character</summary>
   <summary xml:lang="id">Pemilih Karakter</summary>
@@ -109,6 +111,7 @@
     <p xml:lang="fr">KCharSelect est un outil qui vous permet de sélectionner des caractères spéciaux parmi les polices de caractères installées et de les copier dans le presse-papiers.</p>
     <p xml:lang="gl">KCharSelect é unha ferramenta para seleccionar caracteres especiais de todas as fontes instaladas e copialos no portapapeis.</p>
     <p xml:lang="he">KCharSelect הוא כלי לבחירת תווים מיוחדים מכל הגופנים המותקנים ולהעתיק אותם ללוח הגזירים.</p>
+    <p xml:lang="hi">के-चार-सेलेक्ट सभी स्थापित फ़ॉन्ट्स से विशेष वर्णों का चयन करने और उन्हें क्लिपबोर्ड में नक़ल करने का एक  साधन है।</p>
     <p xml:lang="hu">A KCharSelect egy olyan segédprogram, amellyel különleges karaktereket kereshet a telepített betűkészletekben, és a vágólapra másolhatja azokat.</p>
     <p xml:lang="ia">KCharSelect es un intrumento pro seliger characteres ab fontes installate e copiar los in le area de transferentia.</p>
     <p xml:lang="id">KCharSelect adalah alat untuk memilih karakter khusus dari semua font yang diinstal dan menyalinnya ke papan-klip.</p>
@@ -152,6 +155,7 @@
     <p xml:lang="fr">Vous pouvez parcourir les caractères par catégorie ou trouver rapidement un caractère donné en cherchant son nom.</p>
     <p xml:lang="gl">Pode explorar os caracteres por categoría ou atopar un carácter concreto rapidamente buscándoo polo seu nome.</p>
     <p xml:lang="he">אפשר לעיין בתווים לפי הקטגוריה שלהם או לאתר תו בקלות על ידי חיפוש שמו.</p>
+    <p xml:lang="hi">आप पात्रों को उनकी श्रेणी के आधार पर ब्राउज़ कर सकते हैं या किसी निश्चित पात्र का नाम खोजकर उसे तुरंत ढूंढ सकते हैं।</p>
     <p xml:lang="hu">A karaktereket keresheti kategória vagy név szerint is.</p>
     <p xml:lang="ia">Tu pote cercar characteres per lor categoria o trovar rapidemente un certe character per cercar lo per le sue nomine.</p>
     <p xml:lang="id">Kamu bisa menelusuri karakter berdasarkan kategorinya atau dengan cepat menemukan karakter tertentu dengan mencari namanya.</p>
@@ -193,6 +197,7 @@
     <p xml:lang="fr">KCharSelect affiche des informations relatives au caractère sélectionné. Celles-ci incluent non seulement le nom Unicode du caractère, mais aussi ses alias, des remarques générales et des références à des caractères similaires.</p>
     <p xml:lang="gl">KCharSelect mostra diversa información sobre o carácter seleccionado. A información inclúe non só o nome do carácter Unicode, senón tamén nomes alternativos, notas xerais e referencias a caracteres similares.</p>
     <p xml:lang="he">KCharSelect מציג מידע מגון על התו הנבחר. כולל לא רק את שם התו ביוניקוד אלא גם כינויים, הערות כלליות והפניות לתווים דומים.</p>
+    <p xml:lang="hi">के-चार-सेलेक्ट चयनित अक्षर के बारे में विभिन्न जानकारी प्रदर्शित करता है। इसमें न केवल यूनिकोड वर्ण नाम, बल्कि उपनाम, सामान्य टिप्पणियाँ और समान वर्णों के प्रतिकूल संदर्भ भी शामिल हैं।</p>
     <p xml:lang="hu">A KCharSelect különböző információkat is megjelenít a kiválasztott karakterről. Nem csak a Unicode karakternevet, hanem az álneveit, általános megjegyzéseket és kereszthivatkozásokat más, hasonló karakterekre.</p>
     <p xml:lang="ia">KCharSelect monstra varie information re le character seligite. Isto include non solmente nomine de character Unicode, sed tamben aliases, notas general e referentias cruciate per simil characteres.</p>
     <p xml:lang="id">KCharSelect menampilkan berbagai informasi tentang karakter yang dipilih. Ini tidak hanya mencakup nama karakter Unicode, tetapi juga alias, catatan umum dan referensi silang ke karakter yang serupa.</p>
@@ -234,6 +239,7 @@
     <p xml:lang="fr">Pour un usage technique, plusieurs représentations du caractère sont affichées.</p>
     <p xml:lang="gl">Para uso técnico, amósanse distintas representacións do carácter.</p>
     <p xml:lang="he">לשימוש טכני, מוצגים מספר ייצוגים של התו.</p>
+    <p xml:lang="hi">वर्ण चयनकर्ता</p>
     <p xml:lang="hu">Technikai használathoz a karakter különböző reprezentációi is megjelennek.</p>
     <p xml:lang="ia">Per uso technic, on monstra differente rappresentationes del character.</p>
     <p xml:lang="id">Untuk penggunaan teknis, berbagai representasi karakter ditampilkan.</p>
@@ -275,6 +281,7 @@
     <p xml:lang="fr">KCharSelect contient également les données « Unihan » pour les caractères des langues d'Extrême-Orient, afin d'afficher leurs définitions en Anglais et leurs différentes prononciations.</p>
     <p xml:lang="gl">KCharSelect tamén contén datos de Unihan para que os caracteres de Asia do leste amosen definicións en inglés e distintas pronuncias.</p>
     <p xml:lang="he">KCharSelect מכיל גם נתוני Unihan (תקן אחוד לתווים מזרח אסייתיים) כדי להציג הגדרות באנגלית וצורות הגיה חלופיות.</p>
+    <p xml:lang="hi">के-चार-सेलेक्ट में अंग्रेजी परिभाषाओं और विभिन्न उच्चारणों को प्रदर्शित करने के लिए पूर्वी एशियाई पात्रों के लिए यूनिहान डेटा भी शामिल है।</p>
     <p xml:lang="hu">A KCharSelect tartalmazza a kelet-ázsiai karakterek Unihan adatait is az angol definíció és a különböző kiejtések megjelenítéséhez.</p>
     <p xml:lang="ia">KCharSelect anque contine datos de Unihan per characteres de Asia Oriental per monstrar definitiones de Anglese e pronuntiationes differente.</p>
     <p xml:lang="id">KCharSelect juga berisi data Unihan untuk karakter Asia Timur untuk menampilkan definisi bahasa Inggris dan pengucapan yang berbeda.</p>
