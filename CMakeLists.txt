@@ -14,6 +14,7 @@ set (KF_MIN_VERSION "5.240.0")
 find_package (ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
+include(ECMAddAppIcon)
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
@@ -48,6 +49,17 @@ ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KCHARSELECT VERSION
 ecm_set_disabled_deprecation_versions(QT 6.5 KF 5.240.0)
 
 add_executable(kcharselect)
+
+ecm_add_app_icon(kcharselect
+    ICONS
+        pics/16-apps-kcharselect.png
+        pics/32-apps-kcharselect.png
+        pics/64-apps-kcharselect.png
+        pics/128-apps-kcharselect.png
+        pics/256-apps-kcharselect.png
+        pics/512-apps-kcharselect.png
+        pics/1024-apps-kcharselect.png
+)
 
 target_sources(kcharselect PRIVATE
     kcharselectdia.cc
