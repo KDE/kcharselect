@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-16 01:39+0000\n"
-"PO-Revision-Date: 2024-03-30 19:36\n"
+"PO-Revision-Date: 2024-04-03 19:13\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -20,12 +20,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "KDE 中国"
+msgstr "Guo Yunhe, Henry Hu, Tyson Tan"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "kde-china@kde.org"
+msgstr "i@guoyunhe.me, henryhu@kde.org, tds00@qq.com"
 
 #: kcharselectdia.cc:120 kcharselectdia.cc:130
 #, kde-format
@@ -35,37 +35,37 @@ msgstr "复制到剪贴板(&T)"
 #: kcharselectdia.cc:136
 #, kde-format
 msgid "To Clipboard &UTF-8"
-msgstr "以 &UTF-8 编码复制到剪贴板"
+msgstr "复制到剪贴板(&UTF-8)"
 
 #: kcharselectdia.cc:139
 #, kde-format
 msgid "To Clipboard &HTML"
-msgstr "以 &HTML 复制到剪贴板"
+msgstr "复制到剪贴板(&HTML)"
 
 #: kcharselectdia.cc:143
 #, kde-format
 msgid "&From Clipboard"
-msgstr "从剪贴板复制(&F)"
+msgstr "粘贴剪贴板内容(&F)"
 
 #: kcharselectdia.cc:148
 #, kde-format
 msgid "From Clipboard UTF-8"
-msgstr "从剪贴板复制 UTF-8"
+msgstr "粘贴剪贴板内容(UTF-8)"
 
 #: kcharselectdia.cc:151
 #, kde-format
 msgid "From Clipboard HTML"
-msgstr "从剪贴板复制 HTML"
+msgstr "粘贴剪贴板内容(HTML)"
 
 #: kcharselectdia.cc:154
 #, kde-format
 msgid "&Flip Text"
-msgstr "翻转文字(&F)"
+msgstr "翻转文字顺序(&F)"
 
 #: kcharselectdia.cc:157
 #, kde-format
 msgid "&Reverse Direction"
-msgstr "反向(&R)"
+msgstr "反转书写方向(&R)"
 
 #: kcharselectdia.cc:179
 #, kde-format
@@ -87,7 +87,7 @@ msgstr "主工具栏"
 #: main.cc:24
 #, kde-format
 msgid "KCharSelect"
-msgstr "字符选取器"
+msgstr "KCharSelect 字符选择器"
 
 #: main.cc:26
 #, kde-format
@@ -97,7 +97,7 @@ msgstr "KDE 字符选择工具"
 #: main.cc:29
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
-msgstr "字符选取器部件的包装。"
+msgstr "字符选取器部件的封装程序。"
 
 #: main.cc:32
 #, kde-format
