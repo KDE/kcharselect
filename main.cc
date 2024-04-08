@@ -10,17 +10,35 @@
 #include <KAboutData>
 #include <KCrash>
 #include <KLocalizedString>
+
+#define HAVE_KICONTHEME __has_include(<KIconTheme>)
+#if HAVE_KICONTHEME
+#include <KIconTheme>
+#endif
+
+#define HAVE_STYLE_MANAGER __has_include(<KStyleManager>)
+#if HAVE_STYLE_MANAGER
+#include <KStyleManager>
+#endif
+
 #include "kcharselect_version.h"
 #include "kcharselectdia.h"
 
 int main(int argc, char **argv)
 {
+#if HAVE_KICONTHEME && (KICONTHEMES_VERSION >= QT_VERSION_CHECK(6, 3, 0))
+    KIconTheme::initTheme();
+#endif // HAVE_KICONTHEME && KICONTHEMES_VERSION >= QT_VERSION_CHECK(6, 3, 0)
+
     QApplication app(argc, argv);
     KCrash::initialize();
-
+#if HAVE_STYLE_MANAGER
+    KStyleManager::initStyle();
+#else // !HAVE_STYLE_MANAGER
 #if defined(Q_OS_MACOS) || defined(Q_OS_WIN)
     QApplication::setStyle(QStringLiteral("breeze"));
-#endif
+#endif // defined(Q_OS_MACOS) || defined(Q_OS_WIN)
+#endif // HAVE_STYLE_MANAGER
 
     KLocalizedString::setApplicationDomain(QByteArrayLiteral("kcharselect"));
 
