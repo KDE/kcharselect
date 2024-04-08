@@ -42,6 +42,7 @@ set_package_properties(KF6DocTools PROPERTIES DESCRIPTION
     "Tools to generate documentation"
     TYPE OPTIONAL
 )
+find_package(KF6ConfigWidgets ${KF_DEP_VERSION} QUIET)
 
 
 ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KCHARSELECT VERSION_HEADER kcharselect_version.h)
@@ -77,6 +78,11 @@ target_link_libraries(kcharselect
     KF6::WidgetsAddons
     KF6::XmlGui
 )
+
+if(TARGET KF6::ConfigWidgets)
+    target_link_libraries(kcharselect KF6::ConfigWidgets)
+    target_compile_definitions(kcharselect PRIVATE WITH_CONFIGWIDGET_LIB)
+endif()
 
 if (QT_MAJOR_VERSION STREQUAL "6")
     target_link_libraries(kcharselect KF6::BookmarksWidgets)

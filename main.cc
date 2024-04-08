@@ -18,6 +18,10 @@ int main(int argc, char **argv)
     QApplication app(argc, argv);
     KCrash::initialize();
 
+#if defined(Q_OS_MACOS) || defined(Q_OS_WIN)
+    QApplication::setStyle(QStringLiteral("breeze"));
+#endif
+
     KLocalizedString::setApplicationDomain(QByteArrayLiteral("kcharselect"));
 
     KAboutData aboutData(QStringLiteral("kcharselect"),

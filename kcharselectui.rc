@@ -1,5 +1,5 @@
 <!DOCTYPE gui SYSTEM "kpartgui.dtd">
-<gui name="kcharselect" version="3">
+<gui name="kcharselect" version="4">
 <MenuBar>
   <Menu name="edit"><text>&amp;Edit</text>
     <Action name="copy_clip"/>
@@ -10,7 +10,10 @@
     <Separator/>
     <Action name="flip"/>
     <Action name="rtl"/>
- </Menu>
+  </Menu>
+  <Menu name="settings"><text>&amp;Settings</text>
+    <Action name="colorscheme_menu"/>
+  </Menu>
  <Action name="bookmarks" />
 </MenuBar>
 <ToolBar name="mainToolBar" hidden="true">
