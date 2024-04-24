@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-16 01:39+0000\n"
+"POT-Creation-Date: 2024-04-24 00:41+0000\n"
 "PO-Revision-Date: 2007-08-26 17:36+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -29,48 +29,53 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "lipak21@gmail.com, shyamkrishna_bal@yahoo.com, narayan@mpp.org.np"
 
-#: kcharselectdia.cc:120 kcharselectdia.cc:130
+#: kcharselectdia.cc:126 kcharselectdia.cc:136
 #, kde-format
 msgid "&To Clipboard"
 msgstr "क्लिपबोर्डमा"
 
-#: kcharselectdia.cc:136
+#: kcharselectdia.cc:142
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "क्लिपबोर्ड UTF-8 मा"
 
-#: kcharselectdia.cc:139
+#: kcharselectdia.cc:145
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "क्लिपबोर्ड HTML मा"
 
-#: kcharselectdia.cc:143
+#: kcharselectdia.cc:149
 #, kde-format
 msgid "&From Clipboard"
 msgstr "क्लिपबोर्डबाट"
 
-#: kcharselectdia.cc:148
+#: kcharselectdia.cc:154
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "क्लिपबोर्ड UTF-८ बाट"
 
-#: kcharselectdia.cc:151
+#: kcharselectdia.cc:157
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "क्लिपबोर्ड HTML बाट"
 
-#: kcharselectdia.cc:154
+#: kcharselectdia.cc:160
 #, fuzzy, kde-format
 #| msgid "&Flip"
 msgid "&Flip Text"
 msgstr "फ्लिप"
 
-#: kcharselectdia.cc:157
+#: kcharselectdia.cc:163
 #, kde-format
 msgid "&Reverse Direction"
 msgstr ""
 
 #: kcharselectdia.cc:179
+#, kde-format
+msgid "&Window Color Scheme"
+msgstr ""
+
+#: kcharselectdia.cc:193
 #, kde-format
 msgid "Bookmarks"
 msgstr ""
@@ -81,114 +86,120 @@ msgstr ""
 msgid "&Edit"
 msgstr "सम्पादन"
 
+#. i18n: ectx: Menu (settings)
+#: kcharselectui.rc:14
+#, kde-format
+msgid "&Settings"
+msgstr ""
+
 #. i18n: ectx: ToolBar (mainToolBar)
-#: kcharselectui.rc:17
+#: kcharselectui.rc:20
 #, kde-format
 msgid "Main Toolbar"
 msgstr ""
 
-#: main.cc:24
+#: main.cc:28
 #, kde-format
 msgid "KCharSelect"
 msgstr "केडीई क्यारेक्टर चयन"
 
-#: main.cc:26
+#: main.cc:30
 #, kde-format
 msgid "KDE character selection utility"
 msgstr "केडीई क्यारेक्टर चयन उपयोगिता"
 
-#: main.cc:29
+#: main.cc:33
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
 msgstr ""
 
-#: main.cc:32
+#: main.cc:36
 #, kde-format
 msgid "Christoph Feck"
 msgstr ""
 
-#: main.cc:32
+#: main.cc:36
 #, kde-format
 msgid "KF5 port and current maintainer"
 msgstr ""
 
-#: main.cc:33 main.cc:36
+#: main.cc:37 main.cc:40
 #, kde-format
 msgid "Daniel Laidig"
 msgstr ""
 
-#: main.cc:33
+#: main.cc:37
 #, kde-format
 msgid "Author and previous maintainer"
 msgstr ""
 
-#: main.cc:34
+#: main.cc:38
 #, kde-format
 msgid "Reginald Stadlbauer"
 msgstr "रेगिनाल्ड स्टाड्ल्बाउर"
 
-#: main.cc:34
+#: main.cc:38
 #, kde-format
 msgid "Author"
 msgstr ""
 
-#: main.cc:37
+#: main.cc:41
 #, kde-format
 msgid ""
 "New GUI, Unicode information, incremental search, and general improvements"
 msgstr ""
 
-#: main.cc:40
+#: main.cc:44
 #, kde-format
 msgid "Laurent Montel"
 msgstr ""
 
-#: main.cc:40
+#: main.cc:44
 #, kde-format
 msgid "Porting help"
 msgstr ""
 
-#: main.cc:41
+#: main.cc:45
 #, kde-format
 msgid "Constantin Berzan"
 msgstr ""
 
-#: main.cc:41
+#: main.cc:45
 #, kde-format
 msgid "Previous maintainer"
 msgstr ""
 
-#: main.cc:42
+#: main.cc:46
 #, kde-format
 msgid "Nadeem Hasan"
 msgstr "नदीम हसन"
 
-#: main.cc:42 main.cc:43
+#: main.cc:46 main.cc:47
 #, kde-format
 msgid "GUI cleanup and fixes"
 msgstr "GUI प्रष्टता र निर्धारण"
 
-#: main.cc:43
+#: main.cc:47
 #, kde-format
 msgid "Ryan Cumming"
 msgstr "रायन कुमिङ"
 
-#: main.cc:44
+#: main.cc:48
 #, kde-format
 msgid "Benjamin C. Meyer"
 msgstr "बेन्जामिन सी. मेयेर"
 
-#: main.cc:44
+#: main.cc:48
 #, kde-format
 msgid "XMLUI conversion"
 msgstr "XMLUI रूपानान्तरण"
 
-#: main.cc:45
+#: main.cc:49
 #, kde-format
 msgid "Bryce Nesbitt"
 msgstr ""
 
-#: main.cc:45
+#: main.cc:49
 #, kde-format
 msgid "RTL support"
 msgstr ""

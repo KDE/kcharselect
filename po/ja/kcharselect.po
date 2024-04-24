@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-16 01:39+0000\n"
+"POT-Creation-Date: 2024-04-24 00:41+0000\n"
 "PO-Revision-Date: 2010-05-10 00:30-0700\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -31,50 +31,55 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "shinobo@leo.bekkoame.ne.jp"
 
-#: kcharselectdia.cc:120 kcharselectdia.cc:130
+#: kcharselectdia.cc:126 kcharselectdia.cc:136
 #, kde-format
 msgid "&To Clipboard"
 msgstr "クリップボードへ(&T)"
 
-#: kcharselectdia.cc:136
+#: kcharselectdia.cc:142
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "UTF-8 でクリップボードへ(&U)"
 
-#: kcharselectdia.cc:139
+#: kcharselectdia.cc:145
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "HTML でクリップボードへ(&H)"
 
-#: kcharselectdia.cc:143
+#: kcharselectdia.cc:149
 #, kde-format
 msgid "&From Clipboard"
 msgstr "クリップボードから(&F)"
 
 # ACCELERATOR added by translator
-#: kcharselectdia.cc:148
+#: kcharselectdia.cc:154
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "UTF-8 でクリップボードから(&C)"
 
 # ACCELERATOR added by translator
-#: kcharselectdia.cc:151
+#: kcharselectdia.cc:157
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "HTML でクリップボードから(&M)"
 
 # ACCELERATOR changed by translator
-#: kcharselectdia.cc:154
+#: kcharselectdia.cc:160
 #, kde-format
 msgid "&Flip Text"
 msgstr "文字の順序を反転(&L)"
 
-#: kcharselectdia.cc:157
+#: kcharselectdia.cc:163
 #, kde-format
 msgid "&Reverse Direction"
 msgstr "反対方向(&R)"
 
 #: kcharselectdia.cc:179
+#, kde-format
+msgid "&Window Color Scheme"
+msgstr ""
+
+#: kcharselectdia.cc:193
 #, kde-format
 msgid "Bookmarks"
 msgstr ""
@@ -85,116 +90,122 @@ msgstr ""
 msgid "&Edit"
 msgstr "編集(&E)"
 
+#. i18n: ectx: Menu (settings)
+#: kcharselectui.rc:14
+#, kde-format
+msgid "&Settings"
+msgstr ""
+
 #. i18n: ectx: ToolBar (mainToolBar)
-#: kcharselectui.rc:17
+#: kcharselectui.rc:20
 #, kde-format
 msgid "Main Toolbar"
 msgstr "メインツールバー"
 
-#: main.cc:24
+#: main.cc:28
 #, kde-format
 msgid "KCharSelect"
 msgstr "KCharSelect"
 
-#: main.cc:26
+#: main.cc:30
 #, kde-format
 msgid "KDE character selection utility"
 msgstr "KDE 文字選択ユーティリティ"
 
-#: main.cc:29
+#: main.cc:33
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
 msgstr "KCharSelect ウィジェットのラッパー"
 
-#: main.cc:32
+#: main.cc:36
 #, kde-format
 msgid "Christoph Feck"
 msgstr ""
 
-#: main.cc:32
+#: main.cc:36
 #, fuzzy, kde-format
 #| msgid "Author and maintainer"
 msgid "KF5 port and current maintainer"
 msgstr "作者とメンテナ"
 
-#: main.cc:33 main.cc:36
+#: main.cc:37 main.cc:40
 #, kde-format
 msgid "Daniel Laidig"
 msgstr "Daniel Laidig"
 
-#: main.cc:33
+#: main.cc:37
 #, fuzzy, kde-format
 #| msgid "Author and maintainer"
 msgid "Author and previous maintainer"
 msgstr "作者とメンテナ"
 
-#: main.cc:34
+#: main.cc:38
 #, kde-format
 msgid "Reginald Stadlbauer"
 msgstr "Reginald Stadlbauer"
 
-#: main.cc:34
+#: main.cc:38
 #, kde-format
 msgid "Author"
 msgstr "作者"
 
-#: main.cc:37
+#: main.cc:41
 #, kde-format
 msgid ""
 "New GUI, Unicode information, incremental search, and general improvements"
 msgstr "新しい GUI、Unicode 情報、インクリメンタル検索、全般的な改良"
 
-#: main.cc:40
+#: main.cc:44
 #, kde-format
 msgid "Laurent Montel"
 msgstr ""
 
-#: main.cc:40
+#: main.cc:44
 #, kde-format
 msgid "Porting help"
 msgstr ""
 
-#: main.cc:41
+#: main.cc:45
 #, kde-format
 msgid "Constantin Berzan"
 msgstr "Constantin Berzan"
 
-#: main.cc:41
+#: main.cc:45
 #, kde-format
 msgid "Previous maintainer"
 msgstr "前のメンテナ"
 
-#: main.cc:42
+#: main.cc:46
 #, kde-format
 msgid "Nadeem Hasan"
 msgstr "Nadeem Hasan"
 
-#: main.cc:42 main.cc:43
+#: main.cc:46 main.cc:47
 #, kde-format
 msgid "GUI cleanup and fixes"
 msgstr "GUI の整理と修正"
 
-#: main.cc:43
+#: main.cc:47
 #, kde-format
 msgid "Ryan Cumming"
 msgstr "Ryan Cumming"
 
-#: main.cc:44
+#: main.cc:48
 #, kde-format
 msgid "Benjamin C. Meyer"
 msgstr "Benjamin C. Meyer"
 
-#: main.cc:44
+#: main.cc:48
 #, kde-format
 msgid "XMLUI conversion"
 msgstr "XMLUI 変換"
 
-#: main.cc:45
+#: main.cc:49
 #, kde-format
 msgid "Bryce Nesbitt"
 msgstr "Bryce Nesbitt"
 
-#: main.cc:45
+#: main.cc:49
 #, kde-format
 msgid "RTL support"
 msgstr "RTL サポート"

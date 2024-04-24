@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-16 01:39+0000\n"
-"PO-Revision-Date: 2024-04-03 19:13\n"
+"POT-Creation-Date: 2024-04-24 00:41+0000\n"
+"PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -27,47 +27,52 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "i@guoyunhe.me, henryhu@kde.org, tds00@qq.com"
 
-#: kcharselectdia.cc:120 kcharselectdia.cc:130
+#: kcharselectdia.cc:126 kcharselectdia.cc:136
 #, kde-format
 msgid "&To Clipboard"
 msgstr "复制到剪贴板(&T)"
 
-#: kcharselectdia.cc:136
+#: kcharselectdia.cc:142
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "复制到剪贴板(&UTF-8)"
 
-#: kcharselectdia.cc:139
+#: kcharselectdia.cc:145
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "复制到剪贴板(&HTML)"
 
-#: kcharselectdia.cc:143
+#: kcharselectdia.cc:149
 #, kde-format
 msgid "&From Clipboard"
 msgstr "粘贴剪贴板内容(&F)"
 
-#: kcharselectdia.cc:148
+#: kcharselectdia.cc:154
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "粘贴剪贴板内容(UTF-8)"
 
-#: kcharselectdia.cc:151
+#: kcharselectdia.cc:157
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "粘贴剪贴板内容(HTML)"
 
-#: kcharselectdia.cc:154
+#: kcharselectdia.cc:160
 #, kde-format
 msgid "&Flip Text"
 msgstr "翻转文字顺序(&F)"
 
-#: kcharselectdia.cc:157
+#: kcharselectdia.cc:163
 #, kde-format
 msgid "&Reverse Direction"
 msgstr "反转书写方向(&R)"
 
 #: kcharselectdia.cc:179
+#, kde-format
+msgid "&Window Color Scheme"
+msgstr ""
+
+#: kcharselectdia.cc:193
 #, kde-format
 msgid "Bookmarks"
 msgstr "书签"
@@ -78,114 +83,120 @@ msgstr "书签"
 msgid "&Edit"
 msgstr "编辑(&E)"
 
+#. i18n: ectx: Menu (settings)
+#: kcharselectui.rc:14
+#, kde-format
+msgid "&Settings"
+msgstr ""
+
 #. i18n: ectx: ToolBar (mainToolBar)
-#: kcharselectui.rc:17
+#: kcharselectui.rc:20
 #, kde-format
 msgid "Main Toolbar"
 msgstr "主工具栏"
 
-#: main.cc:24
+#: main.cc:28
 #, kde-format
 msgid "KCharSelect"
 msgstr "KCharSelect 字符选择器"
 
-#: main.cc:26
+#: main.cc:30
 #, kde-format
 msgid "KDE character selection utility"
 msgstr "KDE 字符选择工具"
 
-#: main.cc:29
+#: main.cc:33
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
 msgstr "字符选取器部件的封装程序。"
 
-#: main.cc:32
+#: main.cc:36
 #, kde-format
 msgid "Christoph Feck"
 msgstr "Christoph Feck"
 
-#: main.cc:32
+#: main.cc:36
 #, kde-format
 msgid "KF5 port and current maintainer"
 msgstr "KF5 移植和当前维护者"
 
-#: main.cc:33 main.cc:36
+#: main.cc:37 main.cc:40
 #, kde-format
 msgid "Daniel Laidig"
 msgstr "Daniel Laidig"
 
-#: main.cc:33
+#: main.cc:37
 #, kde-format
 msgid "Author and previous maintainer"
 msgstr "作者和前任维护者"
 
-#: main.cc:34
+#: main.cc:38
 #, kde-format
 msgid "Reginald Stadlbauer"
 msgstr "Reginald Stadlbauer"
 
-#: main.cc:34
+#: main.cc:38
 #, kde-format
 msgid "Author"
 msgstr "作者"
 
-#: main.cc:37
+#: main.cc:41
 #, kde-format
 msgid ""
 "New GUI, Unicode information, incremental search, and general improvements"
 msgstr "新界面设计、Unicode 信息、增量搜索以及常规改进"
 
-#: main.cc:40
+#: main.cc:44
 #, kde-format
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: main.cc:40
+#: main.cc:44
 #, kde-format
 msgid "Porting help"
 msgstr "帮助移植"
 
-#: main.cc:41
+#: main.cc:45
 #, kde-format
 msgid "Constantin Berzan"
 msgstr "Constantin Berzan"
 
-#: main.cc:41
+#: main.cc:45
 #, kde-format
 msgid "Previous maintainer"
 msgstr "前任维护者"
 
-#: main.cc:42
+#: main.cc:46
 #, kde-format
 msgid "Nadeem Hasan"
 msgstr "Nadeem Hasan"
 
-#: main.cc:42 main.cc:43
+#: main.cc:46 main.cc:47
 #, kde-format
 msgid "GUI cleanup and fixes"
 msgstr "GUI 清理和修正"
 
-#: main.cc:43
+#: main.cc:47
 #, kde-format
 msgid "Ryan Cumming"
 msgstr "Ryan Cumming"
 
-#: main.cc:44
+#: main.cc:48
 #, kde-format
 msgid "Benjamin C. Meyer"
 msgstr "Benjamin C. Meyer"
 
-#: main.cc:44
+#: main.cc:48
 #, kde-format
 msgid "XMLUI conversion"
 msgstr "XMLUI 转换"
 
-#: main.cc:45
+#: main.cc:49
 #, kde-format
 msgid "Bryce Nesbitt"
 msgstr "Bryce Nesbitt"
 
-#: main.cc:45
+#: main.cc:49
 #, kde-format
 msgid "RTL support"
 msgstr "从右到左书写(RTL)支持"
