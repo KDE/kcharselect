@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-24 00:41+0000\n"
-"PO-Revision-Date: 2023-06-04 23:16+0100\n"
+"PO-Revision-Date: 2024-04-24 19:18+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto\n"
 "Language: eo\n"
@@ -53,7 +53,7 @@ msgstr "&El Tondujo"
 #: kcharselectdia.cc:154
 #, kde-format
 msgid "From Clipboard UTF-8"
-msgstr "Elpoŝigu UTF-8"
+msgstr "El Tondujo UTF-8"
 
 #: kcharselectdia.cc:157
 #, kde-format
@@ -73,7 +73,7 @@ msgstr "&Renversa Direkto"
 #: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
-msgstr ""
+msgstr "&Fenestra Kolorskemo"
 
 #: kcharselectdia.cc:193
 #, kde-format
@@ -90,7 +90,7 @@ msgstr "&Redakti"
 #: kcharselectui.rc:14
 #, kde-format
 msgid "&Settings"
-msgstr ""
+msgstr "&Agordoj"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: kcharselectui.rc:20

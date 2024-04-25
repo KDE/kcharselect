@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-24 00:41+0000\n"
-"PO-Revision-Date: 2022-05-26 06:51+0200\n"
+"PO-Revision-Date: 2024-04-24 06:57+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -71,7 +71,7 @@ msgstr "მიმართულების შებრუნება"
 #: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
-msgstr ""
+msgstr "&ფანჯრის ფერის სქემა"
 
 #: kcharselectdia.cc:193
 #, kde-format
@@ -88,7 +88,7 @@ msgstr "რ&ედაქტირება"
 #: kcharselectui.rc:14
 #, kde-format
 msgid "&Settings"
-msgstr ""
+msgstr "&მორგება"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: kcharselectui.rc:20
