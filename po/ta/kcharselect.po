@@ -1,12 +1,12 @@
 # Copyright (C) 2021 Free Software Foundation, Inc.
 #
-# SPDX-FileCopyrightText: 2021, 2023 Kishore G <kishore96@gmail.com>
+# SPDX-FileCopyrightText: 2021, 2023, 2024 Kishore G <kishore96@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-24 00:41+0000\n"
-"PO-Revision-Date: 2023-10-15 12:16+0530\n"
+"PO-Revision-Date: 2024-04-28 16:02+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.2\n"
+"X-Generator: Lokalize 24.02.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -71,7 +71,7 @@ msgstr "&எழுதும் திசையை மாற்று"
 #: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
-msgstr ""
+msgstr "&சாளரத்தின் நிறத்திட்டம்"
 
 #: kcharselectdia.cc:193
 #, kde-format
@@ -88,7 +88,7 @@ msgstr "&திருத்து"
 #: kcharselectui.rc:14
 #, kde-format
 msgid "&Settings"
-msgstr ""
+msgstr "&அமைப்புகள்"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: kcharselectui.rc:20
@@ -114,7 +114,7 @@ msgstr ""
 #: main.cc:36
 #, kde-format
 msgid "Christoph Feck"
-msgstr ""
+msgstr "கிரிஸ்டோப் ஃபெக்"
 
 #: main.cc:36
 #, kde-format
@@ -150,7 +150,7 @@ msgstr ""
 #: main.cc:44
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "லாரெண்டு மாண்டெல்"
 
 #: main.cc:44
 #, kde-format
@@ -165,7 +165,7 @@ msgstr ""
 #: main.cc:45
 #, kde-format
 msgid "Previous maintainer"
-msgstr ""
+msgstr "முந்தைய பராமரிப்பாளர்"
 
 #: main.cc:46
 #, kde-format
