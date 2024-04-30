@@ -3,20 +3,20 @@
 #
 # Zlatko Popov <zlatkopopov@fsa-bg.org>, 2006.
 # Yasen Pramatarov <yasen@lindeas.com>, 2011.
-# Mincho Kondarev <mkondarev@yahoo.de>, 2022.
+# SPDX-FileCopyrightText: 2022, 2024 Mincho Kondarev <mkondarev@yahoo.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-24 00:41+0000\n"
-"PO-Revision-Date: 2022-05-20 18:09+0200\n"
+"PO-Revision-Date: 2024-04-29 09:25+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
-"Language-Team: Bulgarian <dict@linux.zonebg.com>\n"
+"Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.04.0\n"
+"X-Generator: Lokalize 24.02.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -72,7 +72,7 @@ msgstr "Обръщане на &посоката"
 #: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
-msgstr ""
+msgstr "Цветова схема на &прозорците"
 
 #: kcharselectdia.cc:193
 #, kde-format
@@ -89,7 +89,7 @@ msgstr "&Редактиране"
 #: kcharselectui.rc:14
 #, kde-format
 msgid "&Settings"
-msgstr ""
+msgstr "&Настройки"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: kcharselectui.rc:20
