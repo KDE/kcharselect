@@ -1,14 +1,15 @@
 # translation of kcharselect.po to Italian
 # Copyright (C) 2005, 2008, 2009 Free Software Foundation, Inc.
-#
 # Federico Cozzi <federicocozzi@federicocozzi.it>, 2005.
 # Nicola Ruggero <nicola@nxnt.org>, 2008, 2009, 2010.
+# SPDX-FileCopyrightText: 2024 Vincenzo Reale <smart2128vr@gmail.com>
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-24 00:41+0000\n"
-"PO-Revision-Date: 2016-09-07 10:26+0200\n"
+"PO-Revision-Date: 2024-04-24 18:05+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 24.02.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -71,7 +72,7 @@ msgstr "Direzione Inve&rsa"
 #: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
-msgstr ""
+msgstr "Schema di colori delle &finestre"
 
 #: kcharselectdia.cc:193
 #, kde-format
@@ -88,7 +89,7 @@ msgstr "&Modifica"
 #: kcharselectui.rc:14
 #, kde-format
 msgid "&Settings"
-msgstr ""
+msgstr "Impo&stazioni"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: kcharselectui.rc:20
