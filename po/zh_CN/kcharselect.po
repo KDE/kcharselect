@@ -70,7 +70,7 @@ msgstr "反转书写方向(&R)"
 #: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
-msgstr ""
+msgstr "窗口配色方案(&W)"
 
 #: kcharselectdia.cc:193
 #, kde-format
@@ -87,7 +87,7 @@ msgstr "编辑(&E)"
 #: kcharselectui.rc:14
 #, kde-format
 msgid "&Settings"
-msgstr ""
+msgstr "设置(&S)"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: kcharselectui.rc:20
