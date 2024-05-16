@@ -3,7 +3,7 @@
 # Copyright (C) 1999 Free Software Foundation, Inc.
 # Wolfram Diestel <wolfram@steloj.de>, 1999.
 # Heiko Evermann <heiko@evermann.de>, 2002.
-# Oliver Kellogg <okellogg@users.sourceforge.net>, 2023.
+# Oliver Kellogg <olivermkellogg@gmail.com>, 2023.
 #
 msgid ""
 msgstr ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-24 00:41+0000\n"
 "PO-Revision-Date: 2024-04-24 19:18+0100\n"
-"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
+"Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
