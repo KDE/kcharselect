@@ -3,15 +3,15 @@
 # Copyright (C) 1999 Free Software Foundation, Inc.
 # Wolfram Diestel <wolfram@steloj.de>, 1999.
 # Heiko Evermann <heiko@evermann.de>, 2002.
-# Oliver Kellogg <okellogg@users.sourceforge.net>, 2023.
+# Oliver Kellogg <olivermkellogg@gmail.com>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-16 01:39+0000\n"
-"PO-Revision-Date: 2023-06-04 23:16+0100\n"
-"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
+"PO-Revision-Date: 2024-04-24 19:18+0100\n"
+"Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
@@ -53,7 +53,7 @@ msgstr "&El Tondujo"
 #: kcharselectdia.cc:148
 #, kde-format
 msgid "From Clipboard UTF-8"
-msgstr "Elpoŝigu UTF-8"
+msgstr "El Tondujo UTF-8"
 
 #: kcharselectdia.cc:151
 #, kde-format
