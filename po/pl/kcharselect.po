@@ -1,8 +1,8 @@
-# Version: $Revision: 1681059 $
+# Version: $Revision: 1681191 $
 # translation of kcharselect.po to Polish
+# SPDX-FileCopyrightText: 2015, 2016, 2024 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 # Michał Rudolf <mrudolf@kdewebdev.org>, 2002.
 # Michal Rudolf <mrudolf@kdewebdev.org>, 2003, 2005, 2007, 2008, 2009, 2010.
-# SPDX-FileCopyrightText: 2015, 2016, 2024 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
