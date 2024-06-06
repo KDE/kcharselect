@@ -108,7 +108,7 @@ msgstr "KDE 字符选择工具"
 #: main.cc:51
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
-msgstr "字符选取器部件的封装程序。"
+msgstr "一款通过封装 KCharSelect 字符选择器部件构建而成的工具应用。"
 
 #: main.cc:54
 #, kde-format
