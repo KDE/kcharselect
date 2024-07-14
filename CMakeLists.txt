@@ -8,8 +8,8 @@ set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_
 
 project(kcharselect VERSION ${RELEASE_SERVICE_VERSION})
 
-set (QT_MIN_VERSION "6.5.0")
-set (KF_MIN_VERSION "5.240.0")
+set (QT_MIN_VERSION "6.7.0")
+set (KF_MIN_VERSION "6.3.0")
 
 find_package (ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -47,7 +47,7 @@ find_package(KF6IconThemes ${KF_DEP_VERSION} QUIET)
 
 ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KCHARSELECT VERSION_HEADER kcharselect_version.h)
 
-ecm_set_disabled_deprecation_versions(QT 6.5 KF 5.240.0)
+ecm_set_disabled_deprecation_versions(QT 6.7 KF 6.4.0)
 
 add_executable(kcharselect)
 
