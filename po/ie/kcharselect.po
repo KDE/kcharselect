@@ -1,22 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the kcharselect package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# SPDX-FileCopyrightText: 2024 OIS <mistresssilvara@hotmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-21 00:41+0000\n"
-"PO-Revision-Date: 2022-11-01 10:55+0700\n"
+"PO-Revision-Date: 2024-08-04 17:11+0700\n"
 "Last-Translator: OIS <mistresssilvara@hotmail.com>\n"
-"Language-Team: Interlingue <kde-i18n-doc@kde.org>\n"
+"Language-Team: Interlingue <>\n"
 "Language: ie\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.12\n"
+"X-Generator: Lokalize 24.07.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -59,9 +58,9 @@ msgid "From Clipboard HTML"
 msgstr "HTML ex li Paperiere"
 
 #: kcharselectdia.cc:160
-#, fuzzy, kde-format
+#, kde-format
 msgid "&Flip Text"
-msgstr "Re_flecter verticalmen"
+msgstr "Re&flecter li textu"
 
 #: kcharselectdia.cc:163
 #, kde-format
@@ -71,7 +70,7 @@ msgstr "&Reversar li direction"
 #: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
-msgstr ""
+msgstr "Schema de colores del &fenestre"
 
 #: kcharselectdia.cc:193
 #, kde-format
@@ -88,7 +87,7 @@ msgstr "R&edacter"
 #: kcharselectui.rc:14
 #, kde-format
 msgid "&Settings"
-msgstr ""
+msgstr "&Parametres"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: kcharselectui.rc:20
@@ -104,7 +103,7 @@ msgstr "KCharSelect"
 #: main.cc:48
 #, kde-format
 msgid "KDE character selection utility"
-msgstr ""
+msgstr "Utensile por selecter caracteres de KDE"
 
 #: main.cc:51
 #, kde-format
@@ -117,9 +116,9 @@ msgid "Christoph Feck"
 msgstr "Christoph Feck"
 
 #: main.cc:54
-#, fuzzy, kde-format
+#, kde-format
 msgid "KF5 port and current maintainer"
-msgstr "Mantenetor, portage a KF5"
+msgstr "Portage a KF5 e actual mantenetor"
 
 #: main.cc:55 main.cc:58
 #, kde-format
@@ -127,9 +126,9 @@ msgid "Daniel Laidig"
 msgstr "Daniel Laidig"
 
 #: main.cc:55
-#, fuzzy, kde-format
+#, kde-format
 msgid "Author and previous maintainer"
-msgstr "Precedent mantenetor"
+msgstr "Autor e anteyan mantenetor"
 
 #: main.cc:56
 #, kde-format
@@ -153,9 +152,9 @@ msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
 #: main.cc:62
-#, fuzzy, kde-format
+#, kde-format
 msgid "Porting help"
-msgstr "(Auxilie)"
+msgstr "Auxilie con portage"
 
 #: main.cc:63
 #, kde-format
@@ -188,9 +187,9 @@ msgid "Benjamin C. Meyer"
 msgstr "Benjamin C. Meyer"
 
 #: main.cc:66
-#, fuzzy, kde-format
+#, kde-format
 msgid "XMLUI conversion"
-msgstr "Ínconosset convertion"
+msgstr "Convertion de XMLUI"
 
 #: main.cc:67
 #, kde-format
@@ -198,6 +197,6 @@ msgid "Bryce Nesbitt"
 msgstr "Bryce Nesbitt"
 
 #: main.cc:67
-#, fuzzy, kde-format
+#, kde-format
 msgid "RTL support"
-msgstr "Supporte"
+msgstr "Supporte de DaL"
