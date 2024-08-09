@@ -31,7 +31,6 @@ int main(int argc, char **argv)
 #endif // HAVE_KICONTHEME && KICONTHEMES_VERSION >= QT_VERSION_CHECK(6, 3, 0)
 
     QApplication app(argc, argv);
-    KCrash::initialize();
 #if HAVE_STYLE_MANAGER
     KStyleManager::initStyle();
 #else // !HAVE_STYLE_MANAGER
@@ -68,6 +67,7 @@ int main(int argc, char **argv)
 
     KAboutData::setApplicationData(aboutData);
     app.setWindowIcon(QIcon::fromTheme(QStringLiteral("accessories-character-map")));
+    KCrash::initialize();
 
     QCommandLineParser parser;
     aboutData.setupCommandLine(&parser);
