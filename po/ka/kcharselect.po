@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-21 00:41+0000\n"
+"POT-Creation-Date: 2024-08-10 00:45+0000\n"
 "PO-Revision-Date: 2024-04-24 06:57+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -96,109 +96,109 @@ msgstr "&მორგება"
 msgid "Main Toolbar"
 msgstr "ხელსაწყოთა მთავარი ზოლი"
 
-#: main.cc:46
+#: main.cc:45
 #, kde-format
 msgid "KCharSelect"
 msgstr "KCharSelect"
 
-#: main.cc:48
+#: main.cc:47
 #, kde-format
 msgid "KDE character selection utility"
 msgstr "KDE-ის სიმბოლოების არჩევის ხელსაწყო"
 
-#: main.cc:51
+#: main.cc:50
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
 msgstr "KCharSelect ვიჯეტის გარშემო დაწერილი პროგრამა."
 
-#: main.cc:54
+#: main.cc:53
 #, kde-format
 msgid "Christoph Feck"
 msgstr "Christoph Feck"
 
-#: main.cc:54
+#: main.cc:53
 #, kde-format
 msgid "KF5 port and current maintainer"
 msgstr "KF5-ზე პორტი და პროექტის მიმდინარე ხელმძღვანელი"
 
-#: main.cc:55 main.cc:58
+#: main.cc:54 main.cc:57
 #, kde-format
 msgid "Daniel Laidig"
 msgstr "Daniel Laidig"
 
-#: main.cc:55
+#: main.cc:54
 #, kde-format
 msgid "Author and previous maintainer"
 msgstr "ავტორი და პროექტის წინა ხელმძღვანელი"
 
-#: main.cc:56
+#: main.cc:55
 #, kde-format
 msgid "Reginald Stadlbauer"
 msgstr "Reginald Stadlbauer"
 
-#: main.cc:56
+#: main.cc:55
 #, kde-format
 msgid "Author"
 msgstr "ავტორი"
 
-#: main.cc:59
+#: main.cc:58
 #, kde-format
 msgid ""
 "New GUI, Unicode information, incremental search, and general improvements"
 msgstr ""
 "ახალი GUI, უნიკოდის ინფორმაცია, ინკრემენტული ძებნა და ზოგადი გაფართოებები"
 
-#: main.cc:62
+#: main.cc:61
 #, kde-format
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: main.cc:62
+#: main.cc:61
 #, kde-format
 msgid "Porting help"
 msgstr "დახმარების გადმოტანა"
 
-#: main.cc:63
+#: main.cc:62
 #, kde-format
 msgid "Constantin Berzan"
 msgstr "Constantin Berzan"
 
-#: main.cc:63
+#: main.cc:62
 #, kde-format
 msgid "Previous maintainer"
 msgstr "წინა ხელმძღვანელი"
 
-#: main.cc:64
+#: main.cc:63
 #, kde-format
 msgid "Nadeem Hasan"
 msgstr "Nadeem Hasan"
 
-#: main.cc:64 main.cc:65
+#: main.cc:63 main.cc:64
 #, kde-format
 msgid "GUI cleanup and fixes"
 msgstr "GUI-ის გაწმენდა და გასწორება"
 
-#: main.cc:65
+#: main.cc:64
 #, kde-format
 msgid "Ryan Cumming"
 msgstr "Ryan Cumming"
 
-#: main.cc:66
+#: main.cc:65
 #, kde-format
 msgid "Benjamin C. Meyer"
 msgstr "Benjamin C. Meyer"
 
-#: main.cc:66
+#: main.cc:65
 #, kde-format
 msgid "XMLUI conversion"
 msgstr "XMLUI გარდაქმნა"
 
-#: main.cc:67
+#: main.cc:66
 #, kde-format
 msgid "Bryce Nesbitt"
 msgstr "Bryce Nesbitt"
 
-#: main.cc:67
+#: main.cc:66
 #, kde-format
 msgid "RTL support"
 msgstr "RTL-ის მხარდაჭერა"
