@@ -47,7 +47,7 @@ find_package(KF6IconThemes ${KF_DEP_VERSION} QUIET)
 
 ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KCHARSELECT VERSION_HEADER kcharselect_version.h)
 
-ecm_set_disabled_deprecation_versions(QT 6.7 KF 6.4.0)
+ecm_set_disabled_deprecation_versions(QT 6.7 KF 6.5.0)
 
 add_executable(kcharselect)
 
