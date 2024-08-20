@@ -1,14 +1,14 @@
 # Translation of kcharselect to Korean.
 # Copyright (C) 2001, 2007-2008
 # Kim jaehwan <myri7@yahoo.co.kr>, 2001.
-# Shinjo Park <kde@peremen.name>, 2007, 2008, 2009, 2015, 2016.
+# SPDX-FileCopyrightText: 2007, 2008, 2009, 2015, 2016, 2024 Shinjo Park <kde@peremen.name>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-21 00:41+0000\n"
-"PO-Revision-Date: 2016-12-05 22:44+0100\n"
+"PO-Revision-Date: 2024-08-19 22:34+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -71,7 +71,7 @@ msgstr "반대 방향(&R)"
 #: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
-msgstr ""
+msgstr "창 색 구성표(&W)"
 
 #: kcharselectdia.cc:193
 #, kde-format
@@ -88,7 +88,7 @@ msgstr "편집(&E)"
 #: kcharselectui.rc:14
 #, kde-format
 msgid "&Settings"
-msgstr ""
+msgstr "설정(&S)"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: kcharselectui.rc:20
