@@ -1,8 +1,8 @@
+# SPDX-FileCopyrightText: 2009, 2024 Johannes Obermayr <johannesobermayr@gmx.de>
 # Gregor Zumstein <zumstein@ssd.ethz.ch>, 2003, 2005.
 # Stephan Johach <hunsum@gmx.de>, 2005.
 # Gregor Zumstein <gz@orchester-bremgarten.ch>, 2007, 2008, 2009.
 # Rolf Eike Beer <kde@opensource.sf-tec.de>, 2008.
-# Johannes Obermayr <johannesobermayr@gmx.de>, 2009.
 # Burkhard Lück <lueck@hube-lueck.de>, 2013.
 # Frederik Schwarzer <schwarzer@kde.org>, 2016.
 msgid ""
@@ -10,14 +10,15 @@ msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-10 00:45+0000\n"
-"PO-Revision-Date: 2016-09-10 14:28+0100\n"
-"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"PO-Revision-Date: 2024-08-25 21:32+0200\n"
+"Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 24.05.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -72,7 +73,7 @@ msgstr "&Richtung umkehren"
 #: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
-msgstr ""
+msgstr "&Fenster-Farbschema"
 
 #: kcharselectdia.cc:193
 #, kde-format
@@ -89,7 +90,7 @@ msgstr "&Bearbeiten"
 #: kcharselectui.rc:14
 #, kde-format
 msgid "&Settings"
-msgstr ""
+msgstr "&Einstellungen"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: kcharselectui.rc:20
