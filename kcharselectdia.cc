@@ -174,7 +174,11 @@ KCharSelectDia::KCharSelectDia(QWidget *parent)
 
 #if defined(WITH_CONFIGWIDGET_LIB)
     // Load themes
+#if KCOLORSCHEME_VERSION < QT_VERSION_CHECK(6, 6, 0)
     KColorSchemeManager *manager = new KColorSchemeManager(this);
+#else
+    KColorSchemeManager *manager = KColorSchemeManager::instance();
+#endif
     auto *colorSelectionMenu = KColorSchemeMenu::createMenu(manager, this);
     colorSelectionMenu->menu()->setTitle(i18n("&Window Color Scheme"));
     actionCollection()->addAction(QStringLiteral("colorscheme_menu"), colorSelectionMenu);
