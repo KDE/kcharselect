@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-10 00:45+0000\n"
+"POT-Creation-Date: 2024-09-02 00:41+0000\n"
 "PO-Revision-Date: 2024-05-02 10:55+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -75,12 +75,12 @@ msgstr "ا&قلب النّصّ"
 msgid "&Reverse Direction"
 msgstr "ا&عكس الاتّجاه"
 
-#: kcharselectdia.cc:179
+#: kcharselectdia.cc:183
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr "&مخطّط ألوان النافذة"
 
-#: kcharselectdia.cc:193
+#: kcharselectdia.cc:197
 #, kde-format
 msgid "Bookmarks"
 msgstr "علامات"

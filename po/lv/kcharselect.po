@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-10 00:45+0000\n"
+"POT-Creation-Date: 2024-09-02 00:41+0000\n"
 "PO-Revision-Date: 2024-06-27 21:34+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -70,12 +70,12 @@ msgstr "&Apmest tekstu"
 msgid "&Reverse Direction"
 msgstr "P&retējā virzienā"
 
-#: kcharselectdia.cc:179
+#: kcharselectdia.cc:183
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr "&Loga krāsu shēma"
 
-#: kcharselectdia.cc:193
+#: kcharselectdia.cc:197
 #, kde-format
 msgid "Bookmarks"
 msgstr "Grāmatzīmes"

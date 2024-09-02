@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-10 00:45+0000\n"
+"POT-Creation-Date: 2024-09-02 00:41+0000\n"
 "PO-Revision-Date: 2024-04-24 18:05+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -69,12 +69,12 @@ msgstr "&Ribalta testo"
 msgid "&Reverse Direction"
 msgstr "Direzione Inve&rsa"
 
-#: kcharselectdia.cc:179
+#: kcharselectdia.cc:183
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr "Schema di colori delle &finestre"
 
-#: kcharselectdia.cc:193
+#: kcharselectdia.cc:197
 #, kde-format
 msgid "Bookmarks"
 msgstr "Segnalibri"
