@@ -87,9 +87,7 @@ if(TARGET KF6::IconThemes)
     target_link_libraries(kcharselect KF6::IconThemes)
 endif ()
 
-if (QT_MAJOR_VERSION STREQUAL "6")
-    target_link_libraries(kcharselect KF6::BookmarksWidgets)
-endif()
+target_link_libraries(kcharselect KF6::BookmarksWidgets)
 
 install(TARGETS kcharselect ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
