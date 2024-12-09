@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-02 00:41+0000\n"
+"POT-Creation-Date: 2024-12-09 00:44+0000\n"
 "PO-Revision-Date: 2017-09-11 14:07+0100\n"
 "Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -67,12 +67,12 @@ msgstr "Prohod&it text"
 msgid "&Reverse Direction"
 msgstr "Opačný smě&r"
 
-#: kcharselectdia.cc:183
+#: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr "Barevné sc&héma okna"
 
-#: kcharselectdia.cc:197
+#: kcharselectdia.cc:193
 #, kde-format
 msgid "Bookmarks"
 msgstr "Záložky"

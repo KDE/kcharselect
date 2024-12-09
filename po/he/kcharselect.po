@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-02 00:41+0000\n"
+"POT-Creation-Date: 2024-12-09 00:44+0000\n"
 "PO-Revision-Date: 2024-04-24 07:50+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -79,12 +79,12 @@ msgstr "הי&פוך טקסט"
 msgid "&Reverse Direction"
 msgstr "היפוך &כיוון"
 
-#: kcharselectdia.cc:183
+#: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr "ערכת צבעי &חלון"
 
-#: kcharselectdia.cc:197
+#: kcharselectdia.cc:193
 #, kde-format
 msgid "Bookmarks"
 msgstr "סימניות"

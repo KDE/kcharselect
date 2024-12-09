@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-02 00:41+0000\n"
+"POT-Creation-Date: 2024-12-09 00:44+0000\n"
 "PO-Revision-Date: 2016-11-23 19:27+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -73,12 +73,12 @@ msgstr "&Преврни текст"
 msgid "&Reverse Direction"
 msgstr "Ок&рени усмерење"
 
-#: kcharselectdia.cc:183
+#: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr ""
 
-#: kcharselectdia.cc:197
+#: kcharselectdia.cc:193
 #, kde-format
 msgid "Bookmarks"
 msgstr "Обележивачи"

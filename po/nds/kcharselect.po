@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-02 00:41+0000\n"
+"POT-Creation-Date: 2024-12-09 00:44+0000\n"
 "PO-Revision-Date: 2009-08-29 00:29+0200\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -67,12 +67,12 @@ msgstr "Text ü&mdreihen"
 msgid "&Reverse Direction"
 msgstr "Ümdreiht Richt"
 
-#: kcharselectdia.cc:183
+#: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr ""
 
-#: kcharselectdia.cc:197
+#: kcharselectdia.cc:193
 #, kde-format
 msgid "Bookmarks"
 msgstr ""
