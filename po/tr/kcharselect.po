@@ -4,13 +4,13 @@
 # Translators:
 # Ömer Fadıl USTA <omer_fad@hotmail.com>, 2002.
 # obsoleteman <tulliana@gmail.com>, 2008-2009.
-# SPDX-FileCopyrightText: 2022, 2023, 2024 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeutils-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-02 00:41+0000\n"
-"PO-Revision-Date: 2024-04-24 14:37+0300\n"
+"PO-Revision-Date: 2025-03-07 23:32+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.07.70\n"
+"X-Generator: Lokalize 25.03.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -121,7 +121,7 @@ msgstr "Christoph Feck"
 #: main.cc:53
 #, kde-format
 msgid "KF5 port and current maintainer"
-msgstr "KF5 geçişi ve geçerli proje yürütücüsü"
+msgstr "KF5 geçişi ve şu anki bakımcı"
 
 #: main.cc:54 main.cc:57
 #, kde-format
@@ -131,7 +131,7 @@ msgstr "Daniel Laidig"
 #: main.cc:54
 #, kde-format
 msgid "Author and previous maintainer"
-msgstr "Yazar ve önceki proje yürütücüsü"
+msgstr "Yazar ve önceki bakımcı"
 
 #: main.cc:55
 #, kde-format
@@ -167,7 +167,7 @@ msgstr "Constantin Berzan"
 #: main.cc:62
 #, kde-format
 msgid "Previous maintainer"
-msgstr "Projeyi yürüten önceki geliştirici"
+msgstr "Önceki bakımcı"
 
 #: main.cc:63
 #, kde-format
