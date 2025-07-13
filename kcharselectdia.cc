@@ -25,12 +25,9 @@
 #include <KStandardAction>
 #include <KStandardShortcut>
 #include <KToggleAction>
-
-#ifdef WITH_CONFIGWIDGET_LIB
 #include <KActionMenu>
 #include <KColorSchemeManager>
 #include <KColorSchemeMenu>
-#endif
 
 class KCharSelectBookmarkOwner : public KBookmarkOwner
 {
@@ -172,13 +169,11 @@ KCharSelectDia::KCharSelectDia(QWidget *parent)
     else
         lined->setAlignment(Qt::AlignLeft);
 
-#if defined(WITH_CONFIGWIDGET_LIB)
     // Load themes
     KColorSchemeManager *manager = KColorSchemeManager::instance();
     auto *colorSelectionMenu = KColorSchemeMenu::createMenu(manager, this);
     colorSelectionMenu->menu()->setTitle(i18n("&Window Color Scheme"));
     actionCollection()->addAction(QStringLiteral("colorscheme_menu"), colorSelectionMenu);
-#endif
 
     QString filename = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("kcharselect/bookmarks.xml"));
     if (filename.isEmpty()) {
