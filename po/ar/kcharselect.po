@@ -126,7 +126,7 @@ msgstr "Christoph Feck"
 #: main.cc:37
 #, kde-format
 msgid "KF5 port and current maintainer"
-msgstr "النّقل إلى «أُطر العمل الخامسة» والمصين الحاليّ"
+msgstr "النّقل إلى «أُطر العمل الخامسة» والصائن الحاليّ"
 
 #: main.cc:38 main.cc:41
 #, kde-format
@@ -136,7 +136,7 @@ msgstr "Daniel Laidig"
 #: main.cc:38
 #, kde-format
 msgid "Author and previous maintainer"
-msgstr "المؤلّف والمصين السّابق"
+msgstr "المؤلّف والصائن السّابق"
 
 #: main.cc:39
 #, kde-format
@@ -172,7 +172,7 @@ msgstr "Constantin Berzan"
 #: main.cc:46
 #, kde-format
 msgid "Previous maintainer"
-msgstr "المصين السّابق"
+msgstr "الصائن السّابق"
 
 #: main.cc:47
 #, kde-format
