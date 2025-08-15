@@ -35,6 +35,8 @@ find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     I18n
     WidgetsAddons
     XmlGui
+    ConfigWidgets
+    IconThemes
 )
 
 find_package(KF6DocTools ${KF_MIN_VERSION})
@@ -42,8 +44,6 @@ set_package_properties(KF6DocTools PROPERTIES DESCRIPTION
     "Tools to generate documentation"
     TYPE OPTIONAL
 )
-find_package(KF6ConfigWidgets ${KF_DEP_VERSION} QUIET)
-find_package(KF6IconThemes ${KF_DEP_VERSION} QUIET)
 
 ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KCHARSELECT VERSION_HEADER kcharselect_version.h)
 
@@ -77,17 +77,10 @@ target_link_libraries(kcharselect
     KF6::I18n
     KF6::WidgetsAddons
     KF6::XmlGui
+    KF6::ConfigWidgets
+    KF6::IconThemes
+    KF6::BookmarksWidgets
 )
-
-if(TARGET KF6::ConfigWidgets)
-    target_link_libraries(kcharselect KF6::ConfigWidgets)
-    target_compile_definitions(kcharselect PRIVATE WITH_CONFIGWIDGET_LIB)
-endif()
-if(TARGET KF6::IconThemes)
-    target_link_libraries(kcharselect KF6::IconThemes)
-endif ()
-
-target_link_libraries(kcharselect KF6::BookmarksWidgets)
 
 install(TARGETS kcharselect ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
