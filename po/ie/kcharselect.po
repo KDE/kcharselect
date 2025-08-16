@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-04 00:44+0000\n"
+"POT-Creation-Date: 2025-08-16 02:42+0000\n"
 "PO-Revision-Date: 2024-08-04 17:11+0700\n"
 "Last-Translator: OIS <mistresssilvara@hotmail.com>\n"
 "Language-Team: Interlingue <>\n"
@@ -27,52 +27,52 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "mistresssilvara@hotmail.com"
 
-#: kcharselectdia.cc:126 kcharselectdia.cc:136
+#: kcharselectdia.cc:123 kcharselectdia.cc:133
 #, kde-format
 msgid "&To Clipboard"
 msgstr "&Al Paperiere"
 
-#: kcharselectdia.cc:142
+#: kcharselectdia.cc:139
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "&UTF-8 al Paperiere"
 
-#: kcharselectdia.cc:145
+#: kcharselectdia.cc:142
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "&HTML al Paperiere"
 
-#: kcharselectdia.cc:149
+#: kcharselectdia.cc:146
 #, kde-format
 msgid "&From Clipboard"
 msgstr "&Ex li Paperiere"
 
-#: kcharselectdia.cc:154
+#: kcharselectdia.cc:151
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "UTF-8 ex li paperiere"
 
-#: kcharselectdia.cc:157
+#: kcharselectdia.cc:154
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "HTML ex li Paperiere"
 
-#: kcharselectdia.cc:160
+#: kcharselectdia.cc:157
 #, kde-format
 msgid "&Flip Text"
 msgstr "Re&flecter li textu"
 
-#: kcharselectdia.cc:163
+#: kcharselectdia.cc:160
 #, kde-format
 msgid "&Reverse Direction"
 msgstr "&Reversar li direction"
 
-#: kcharselectdia.cc:179
+#: kcharselectdia.cc:175
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr "Schema de colores del &fenestre"
 
-#: kcharselectdia.cc:193
+#: kcharselectdia.cc:188
 #, kde-format
 msgid "Bookmarks"
 msgstr "Marca-págines"

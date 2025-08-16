@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-04 00:44+0000\n"
+"POT-Creation-Date: 2025-08-16 02:42+0000\n"
 "PO-Revision-Date: 2024-04-24 07:50+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -39,52 +39,52 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-l10n-he@kde.org"
 
-#: kcharselectdia.cc:126 kcharselectdia.cc:136
+#: kcharselectdia.cc:123 kcharselectdia.cc:133
 #, kde-format
 msgid "&To Clipboard"
 msgstr "&ללוח הגזירים"
 
-#: kcharselectdia.cc:142
+#: kcharselectdia.cc:139
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "ללוח הגזירים &כ־UTF-8"
 
-#: kcharselectdia.cc:145
+#: kcharselectdia.cc:142
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "ללוח ה&גזירים כ־HTML"
 
-#: kcharselectdia.cc:149
+#: kcharselectdia.cc:146
 #, kde-format
 msgid "&From Clipboard"
 msgstr "&מתוך לוח הגזירים"
 
-#: kcharselectdia.cc:154
+#: kcharselectdia.cc:151
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "מתוך לוח הגזירים בתור UTF-8"
 
-#: kcharselectdia.cc:157
+#: kcharselectdia.cc:154
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "מתוך לוח הגזירים בתור HTML"
 
-#: kcharselectdia.cc:160
+#: kcharselectdia.cc:157
 #, kde-format
 msgid "&Flip Text"
 msgstr "הי&פוך טקסט"
 
-#: kcharselectdia.cc:163
+#: kcharselectdia.cc:160
 #, kde-format
 msgid "&Reverse Direction"
 msgstr "היפוך &כיוון"
 
-#: kcharselectdia.cc:179
+#: kcharselectdia.cc:175
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr "ערכת צבעי &חלון"
 
-#: kcharselectdia.cc:193
+#: kcharselectdia.cc:188
 #, kde-format
 msgid "Bookmarks"
 msgstr "סימניות"

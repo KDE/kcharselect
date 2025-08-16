@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-04 00:44+0000\n"
+"POT-Creation-Date: 2025-08-16 02:42+0000\n"
 "PO-Revision-Date: 2024-05-07 17:01+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -31,52 +31,52 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "franklin@goodhorse.idv.tw, s8321414@gmail.com"
 
-#: kcharselectdia.cc:126 kcharselectdia.cc:136
+#: kcharselectdia.cc:123 kcharselectdia.cc:133
 #, kde-format
 msgid "&To Clipboard"
 msgstr "到剪貼簿(&T)"
 
-#: kcharselectdia.cc:142
+#: kcharselectdia.cc:139
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "到剪貼簿(UTF-8)(&U)"
 
-#: kcharselectdia.cc:145
+#: kcharselectdia.cc:142
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "到剪貼簿(HTML)(&H)"
 
-#: kcharselectdia.cc:149
+#: kcharselectdia.cc:146
 #, kde-format
 msgid "&From Clipboard"
 msgstr "從剪貼簿(&F)"
 
-#: kcharselectdia.cc:154
+#: kcharselectdia.cc:151
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "從剪貼簿(UTF-8)"
 
-#: kcharselectdia.cc:157
+#: kcharselectdia.cc:154
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "從剪貼簿(HTML)"
 
-#: kcharselectdia.cc:160
+#: kcharselectdia.cc:157
 #, kde-format
 msgid "&Flip Text"
 msgstr "反轉文字(&F)"
 
-#: kcharselectdia.cc:163
+#: kcharselectdia.cc:160
 #, kde-format
 msgid "&Reverse Direction"
 msgstr "反轉方向(&R)"
 
-#: kcharselectdia.cc:179
+#: kcharselectdia.cc:175
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr "視窗配色(&W)"
 
-#: kcharselectdia.cc:193
+#: kcharselectdia.cc:188
 #, kde-format
 msgid "Bookmarks"
 msgstr "書籤"

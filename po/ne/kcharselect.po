@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-04 00:44+0000\n"
+"POT-Creation-Date: 2025-08-16 02:42+0000\n"
 "PO-Revision-Date: 2007-08-26 17:36+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -29,53 +29,53 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "lipak21@gmail.com, shyamkrishna_bal@yahoo.com, narayan@mpp.org.np"
 
-#: kcharselectdia.cc:126 kcharselectdia.cc:136
+#: kcharselectdia.cc:123 kcharselectdia.cc:133
 #, kde-format
 msgid "&To Clipboard"
 msgstr "क्लिपबोर्डमा"
 
-#: kcharselectdia.cc:142
+#: kcharselectdia.cc:139
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "क्लिपबोर्ड UTF-8 मा"
 
-#: kcharselectdia.cc:145
+#: kcharselectdia.cc:142
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "क्लिपबोर्ड HTML मा"
 
-#: kcharselectdia.cc:149
+#: kcharselectdia.cc:146
 #, kde-format
 msgid "&From Clipboard"
 msgstr "क्लिपबोर्डबाट"
 
-#: kcharselectdia.cc:154
+#: kcharselectdia.cc:151
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "क्लिपबोर्ड UTF-८ बाट"
 
-#: kcharselectdia.cc:157
+#: kcharselectdia.cc:154
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "क्लिपबोर्ड HTML बाट"
 
-#: kcharselectdia.cc:160
+#: kcharselectdia.cc:157
 #, fuzzy, kde-format
 #| msgid "&Flip"
 msgid "&Flip Text"
 msgstr "फ्लिप"
 
-#: kcharselectdia.cc:163
+#: kcharselectdia.cc:160
 #, kde-format
 msgid "&Reverse Direction"
 msgstr ""
 
-#: kcharselectdia.cc:179
+#: kcharselectdia.cc:175
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr ""
 
-#: kcharselectdia.cc:193
+#: kcharselectdia.cc:188
 #, kde-format
 msgid "Bookmarks"
 msgstr ""

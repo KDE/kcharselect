@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-04 00:44+0000\n"
+"POT-Creation-Date: 2025-08-16 02:42+0000\n"
 "PO-Revision-Date: 2010-05-10 00:30-0700\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -31,55 +31,55 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "shinobo@leo.bekkoame.ne.jp"
 
-#: kcharselectdia.cc:126 kcharselectdia.cc:136
+#: kcharselectdia.cc:123 kcharselectdia.cc:133
 #, kde-format
 msgid "&To Clipboard"
 msgstr "クリップボードへ(&T)"
 
-#: kcharselectdia.cc:142
+#: kcharselectdia.cc:139
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "UTF-8 でクリップボードへ(&U)"
 
-#: kcharselectdia.cc:145
+#: kcharselectdia.cc:142
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "HTML でクリップボードへ(&H)"
 
-#: kcharselectdia.cc:149
+#: kcharselectdia.cc:146
 #, kde-format
 msgid "&From Clipboard"
 msgstr "クリップボードから(&F)"
 
 # ACCELERATOR added by translator
-#: kcharselectdia.cc:154
+#: kcharselectdia.cc:151
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "UTF-8 でクリップボードから(&C)"
 
 # ACCELERATOR added by translator
-#: kcharselectdia.cc:157
+#: kcharselectdia.cc:154
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "HTML でクリップボードから(&M)"
 
 # ACCELERATOR changed by translator
-#: kcharselectdia.cc:160
+#: kcharselectdia.cc:157
 #, kde-format
 msgid "&Flip Text"
 msgstr "文字の順序を反転(&L)"
 
-#: kcharselectdia.cc:163
+#: kcharselectdia.cc:160
 #, kde-format
 msgid "&Reverse Direction"
 msgstr "反対方向(&R)"
 
-#: kcharselectdia.cc:179
+#: kcharselectdia.cc:175
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr ""
 
-#: kcharselectdia.cc:193
+#: kcharselectdia.cc:188
 #, kde-format
 msgid "Bookmarks"
 msgstr ""

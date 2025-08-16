@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-04 00:44+0000\n"
+"POT-Creation-Date: 2025-08-16 02:42+0000\n"
 "PO-Revision-Date: 2002-11-06 12:09+0200\n"
 "Last-Translator: Fundile Majola <fundile@translate.org.za>\n"
 "Language-Team: xhosa <fundile@translate.org.za>\n"
@@ -39,53 +39,53 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "fundile@translate.org.za"
 
-#: kcharselectdia.cc:126 kcharselectdia.cc:136
+#: kcharselectdia.cc:123 kcharselectdia.cc:133
 #, kde-format
 msgid "&To Clipboard"
 msgstr " &Kwibhodi Yokuqhoboshela"
 
-#: kcharselectdia.cc:142
+#: kcharselectdia.cc:139
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "Kwibhodi Yokuqhoboshela &UTF-8"
 
-#: kcharselectdia.cc:145
+#: kcharselectdia.cc:142
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "Kwibhodi eqhotyoshwayo &HTML"
 
-#: kcharselectdia.cc:149
+#: kcharselectdia.cc:146
 #, fuzzy, kde-format
 msgid "&From Clipboard"
 msgstr "Evela Kwibhodi Yokuqhoboshela"
 
-#: kcharselectdia.cc:154
+#: kcharselectdia.cc:151
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "Ivela Kwibhodi Yokuqhoboshela UTF-8"
 
-#: kcharselectdia.cc:157
+#: kcharselectdia.cc:154
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "Ivela Kwibhodi Yokuqhoboshela HTML"
 
-#: kcharselectdia.cc:160
+#: kcharselectdia.cc:157
 #, fuzzy, kde-format
 #| msgid "&Flip"
 msgid "&Flip Text"
 msgstr "&Yenza"
 
-#: kcharselectdia.cc:163
+#: kcharselectdia.cc:160
 #, kde-format
 msgid "&Reverse Direction"
 msgstr ""
 
-#: kcharselectdia.cc:179
+#: kcharselectdia.cc:175
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr ""
 
-#: kcharselectdia.cc:193
+#: kcharselectdia.cc:188
 #, kde-format
 msgid "Bookmarks"
 msgstr ""
