@@ -49,7 +49,6 @@
   <name xml:lang="sv">Kcharselect</name>
   <name xml:lang="tr">K Karakterci</name>
   <name xml:lang="uk">KCharSelect</name>
-  <name xml:lang="x-test">xxKCharSelectxx</name>
   <name xml:lang="zh-CN">KCharSelect 字符选择器</name>
   <name xml:lang="zh-TW">KCharSelect</name>
   <summary>Character Selector</summary>
@@ -94,7 +93,6 @@
   <summary xml:lang="ta">எழுத்துத் தேர்வி</summary>
   <summary xml:lang="tr">Karakter Seçicisi</summary>
   <summary xml:lang="uk">Таблиця символів</summary>
-  <summary xml:lang="x-test">xxCharacter Selectorxx</summary>
   <summary xml:lang="zh-CN">字符选择器</summary>
   <summary xml:lang="zh-TW">符號選取器</summary>
   <description>
@@ -141,7 +139,6 @@
     <p xml:lang="ta">KCharSelect, நிறுவப்பட்டுள்ள எழுத்துருக்களிலிருந்து பயனர் தேர்ந்தெடுக்கும் குறியீடுகளை பிடிப்புப்பலகைக்கு நகலெடுக்கும் செயலியாகும்.</p>
     <p xml:lang="tr">K Karakterci, kurulu yazıtiplerinden karakter seçip panoya kopyalayan bir araçtır.</p>
     <p xml:lang="uk">KCharSelect — програма для вибору спеціальних символів з усіх встановлених шрифтів і копіювання цих символів до буфера обміну даними.</p>
-    <p xml:lang="x-test">xxKCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.xx</p>
     <p xml:lang="zh-CN">KCharSelect 是一款用于从所有已安装字体中选择特殊字符并把它们复制到剪贴板中的工具。</p>
     <p xml:lang="zh-TW">KCharSelect 是個能從所有安裝字型中選取特殊符號，並複製到剪貼簿的工具。</p>
     <p>
@@ -186,7 +183,6 @@
     <p xml:lang="sv">Det går att bläddra bland tecken enligt deras kategori eller snabbt hitta ett visst tecken genom att söka efter dess namn.</p>
     <p xml:lang="tr">Karakterlere kategoriye göre göz atabilir veya bir karakteri adıyla arayabilirsiniz.</p>
     <p xml:lang="uk">Ви можете переглядати символи за категоріями або швидко знайти певний символ за його назвою.</p>
-    <p xml:lang="x-test">xxYou can browse characters by their category or quickly find a certain character by searching for its name.xx</p>
     <p xml:lang="zh-CN">您可以根据类别来浏览字符，也可以输入某个字符的名称来进行快速查找。</p>
     <p xml:lang="zh-TW">您可以透過瀏覽分類來尋找字元，或是透過搜尋其名稱來快速找到特定字元。</p>
     <p>
@@ -229,7 +225,6 @@
     <p xml:lang="sv">Teckenväljaren visar diverse information om det valda tecknet. Det omfattar inte bara tecknets Unicode-namn, utan också alias, allmänna anmärkningar och korsreferenser till liknande tecken.</p>
     <p xml:lang="tr">K Karakterci, seçili karakter hakkında çeşitli bilgiler verir. Bu yalnızca Unicode adı olmayıp karakter armaları, genel notlar ve benzer karakterlere referansları da içerir.</p>
     <p xml:lang="uk">Програма KCharSelect здатна показувати різноманітну інформацію щодо позначеного символу. Серед показаних даних буде не лише назва символу Unicode, але і його альтернативні назви, загальні нотатки та посилання на подібні символи.</p>
-    <p xml:lang="x-test">xxKCharSelect displays various information about the selected character. This includes not only the Unicode character name, but also aliases, general notes and cross references to similar characters.xx</p>
     <p xml:lang="zh-CN">KCharSelect 能够显示选中字符的多种信息。这包括该字符的 Unicode 字符名称、别名、常规注释以及相似字符的交叉引用。</p>
     <p xml:lang="zh-TW">KCharSelect 顯示多種關於選定字元的資訊。不僅包含了 Unicode 字元名稱，也有別名、一般註釋與對類似字元的交叉引用。</p>
     <p>
@@ -273,7 +268,6 @@
     <p xml:lang="sv">För teknisk användning visas olika representationer av tecknet.</p>
     <p xml:lang="tr">Teknik kullanım için karakterlerin farklı simgelemleri de gösterilir.</p>
     <p xml:lang="uk">З метою технічного використання буде показано різноманітні представлення позначеного символу.</p>
-    <p xml:lang="x-test">xxFor technical use, different representations of the character are shown.xx</p>
     <p xml:lang="zh-CN">针对技术用途，字符的不同表达形态也会被显示。</p>
     <p xml:lang="zh-TW">對於技術用圖來說，也會顯示字元的不同表現型式。</p>
     <p>
@@ -316,7 +310,6 @@
     <p xml:lang="sv">Teckenväljaren innehåller också Unihan-data för östasiatiska tecken för att visa engelska definitioner och olika uttal.</p>
     <p xml:lang="tr">K Karakterci, aynı zamanda Uzak Asya karakterlerinin İngilizce tanımları ve değişik sesletimleri için Unihan verisi de içerir.</p>
     <p xml:lang="uk">Крім того, KCharSelect показує дані Unihan для східноазійських мов, зокрема визначень англійською та різноманітних вимов.</p>
-    <p xml:lang="x-test">xxKCharSelect also contains Unihan data for East Asian characters to display English definitions and different pronunciations.xx</p>
     <p xml:lang="zh-CN">KCharSelect 也包含了东亚字符的 Unihan (中日韩越统一表意文字) 数据以显示它们的英语定义和不同发音。</p>
     <p xml:lang="zh-TW">KCharSelect 也包含了用於東亞字元的中日韓統一表意文字資料，以顯示英文定義與不同的發音。</p>
   </description>
