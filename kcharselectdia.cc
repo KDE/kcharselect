@@ -5,6 +5,8 @@
  */
 
 #include "kcharselectdia.h"
+using namespace Qt::Literals::StringLiterals;
+
 
 #include <QAction>
 #include <QApplication>
@@ -71,7 +73,7 @@ private:
         while (c.length() < 4) {
             c.prepend(QLatin1Char('0'));
         }
-        return QStringLiteral("U+") + c;
+        return u"U+"_s + c;
     }
 
 private:
@@ -87,7 +89,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent)
     : KXmlGuiWindow(parent)
 {
     KSharedConfig::Ptr config = KSharedConfig::openConfig();
-    KConfigGroup gr = config->group(QStringLiteral("General"));
+    KConfigGroup gr = config->group(u"General"_s);
 
     vFont = gr.readEntry("selectedFont", QFontDatabase::systemFont(QFontDatabase::GeneralFont));
     vChr = gr.readEntry("char", 33);
@@ -121,7 +123,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent)
     grid->addWidget(lined, 1, 0, 1, 3);
 
     bClip = new QPushButton(i18n("&To Clipboard"), mainWidget);
-    bClip->setIcon(QIcon::fromTheme(QStringLiteral("edit-copy")));
+    bClip->setIcon(QIcon::fromTheme(u"edit-copy"_s));
     bClip->setFixedSize(bClip->sizeHint());
     connect(bClip, &QPushButton::clicked, this, &KCharSelectDia::toClip);
     grid->addWidget(bClip, 1, 3);
@@ -129,37 +131,37 @@ KCharSelectDia::KCharSelectDia(QWidget *parent)
     // Build menu
     KStandardAction::quit(this, SLOT(close()), actionCollection());
 
-    QAction *action = actionCollection()->addAction(QStringLiteral("copy_clip"));
+    QAction *action = actionCollection()->addAction(u"copy_clip"_s);
     action->setText(i18n("&To Clipboard"));
-    action->setIcon(QIcon::fromTheme(QStringLiteral("edit-copy")));
+    action->setIcon(QIcon::fromTheme(u"edit-copy"_s));
     connect(action, &QAction::triggered, this, &KCharSelectDia::toClip);
     actionCollection()->setDefaultShortcuts(action, KStandardShortcut::shortcut(KStandardShortcut::Copy));
 
-    action = actionCollection()->addAction(QStringLiteral("copy_utf_8"));
+    action = actionCollection()->addAction(u"copy_utf_8"_s);
     action->setText(i18n("To Clipboard &UTF-8"));
     connect(action, &QAction::triggered, this, &KCharSelectDia::toClipUTF8);
-    action = actionCollection()->addAction(QStringLiteral("copy_html"));
+    action = actionCollection()->addAction(u"copy_html"_s);
     action->setText(i18n("To Clipboard &HTML"));
     connect(action, &QAction::triggered, this, &KCharSelectDia::toClipHTML);
 
-    action = actionCollection()->addAction(QStringLiteral("from_clip"));
+    action = actionCollection()->addAction(u"from_clip"_s);
     action->setText(i18n("&From Clipboard"));
-    action->setIcon(QIcon::fromTheme(QStringLiteral("edit-paste")));
+    action->setIcon(QIcon::fromTheme(u"edit-paste"_s));
     connect(action, &QAction::triggered, this, &KCharSelectDia::fromClip);
     actionCollection()->setDefaultShortcuts(action, KStandardShortcut::shortcut(KStandardShortcut::Paste));
-    action = actionCollection()->addAction(QStringLiteral("from_clip_utf8"));
+    action = actionCollection()->addAction(u"from_clip_utf8"_s);
     action->setText(i18n("From Clipboard UTF-8"));
     connect(action, &QAction::triggered, this, &KCharSelectDia::fromClipUTF8);
 
     i18n("From Clipboard HTML"); // Intended for future use
 
-    action = actionCollection()->addAction(QStringLiteral("flip"));
+    action = actionCollection()->addAction(u"flip"_s);
     action->setText(i18n("&Flip Text"));
     connect(action, &QAction::triggered, this, &KCharSelectDia::flipText);
 
     action = new KToggleAction(i18n("&Reverse Direction"), this);
     action->setChecked(_rtl);
-    actionCollection()->addAction(QStringLiteral("rtl"), action);
+    actionCollection()->addAction(u"rtl"_s, action);
     connect(action, &QAction::toggled, this, &KCharSelectDia::setRtl);
 
     charSelect->setFocus();
@@ -173,18 +175,18 @@ KCharSelectDia::KCharSelectDia(QWidget *parent)
     KColorSchemeManager *manager = KColorSchemeManager::instance();
     auto *colorSelectionMenu = KColorSchemeMenu::createMenu(manager, this);
     colorSelectionMenu->menu()->setTitle(i18n("&Window Color Scheme"));
-    actionCollection()->addAction(QStringLiteral("colorscheme_menu"), colorSelectionMenu);
+    actionCollection()->addAction(u"colorscheme_menu"_s, colorSelectionMenu);
 
-    QString filename = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("kcharselect/bookmarks.xml"));
+    QString filename = QStandardPaths::locate(QStandardPaths::GenericDataLocation, u"kcharselect/bookmarks.xml"_s);
     if (filename.isEmpty()) {
-        filename = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QStringLiteral("/kcharselect");
+        filename = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + u"/kcharselect"_s;
         QDir().mkpath(filename);
-        filename += QStringLiteral("/bookmarks.xml");
+        filename += u"/bookmarks.xml"_s;
     }
 
     bookmarkManager = new KBookmarkManager(filename, this);
 
-    action = actionCollection()->addAction(QStringLiteral("bookmarks"));
+    action = actionCollection()->addAction(u"bookmarks"_s);
     action->setText(i18n("Bookmarks"));
     QMenu *bmmenu = new QMenu(this);
     action->setMenu(bmmenu);
@@ -201,7 +203,7 @@ KCharSelectDia::KCharSelectDia(QWidget *parent)
 void KCharSelectDia::closeEvent(QCloseEvent *event)
 {
     KSharedConfig::Ptr config = KSharedConfig::openConfig();
-    KConfigGroup gr = config->group(QStringLiteral("General"));
+    KConfigGroup gr = config->group(u"General"_s);
 
     gr.writeEntry("selectedFont", vFont);
     gr.writeEntry("char", (uint)vChr);
