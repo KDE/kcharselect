@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-21 00:45+0000\n"
+"POT-Creation-Date: 2025-10-02 00:45+0000\n"
 "PO-Revision-Date: 2016-11-23 19:27+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -33,52 +33,52 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "m.puzovic@etoncollege.org.uk,caslav.ilic@gmx.net,slsimic@gmail.com"
 
-#: kcharselectdia.cc:123 kcharselectdia.cc:133
+#: kcharselectdia.cc:125 kcharselectdia.cc:135
 #, kde-format
 msgid "&To Clipboard"
 msgstr "&У клипборд"
 
-#: kcharselectdia.cc:139
+#: kcharselectdia.cc:141
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "У &клипборд, УТФ‑8"
 
-#: kcharselectdia.cc:142
+#: kcharselectdia.cc:144
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "У к&липборд, ХТМЛ"
 
-#: kcharselectdia.cc:146
+#: kcharselectdia.cc:148
 #, kde-format
 msgid "&From Clipboard"
 msgstr "&Из клипборда"
 
-#: kcharselectdia.cc:151
+#: kcharselectdia.cc:153
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "Из клипборда, УТФ‑8"
 
-#: kcharselectdia.cc:154
+#: kcharselectdia.cc:156
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "Из клипборда, ХТМЛ"
 
-#: kcharselectdia.cc:157
+#: kcharselectdia.cc:159
 #, kde-format
 msgid "&Flip Text"
 msgstr "&Преврни текст"
 
-#: kcharselectdia.cc:160
+#: kcharselectdia.cc:162
 #, kde-format
 msgid "&Reverse Direction"
 msgstr "Ок&рени усмјерење"
 
-#: kcharselectdia.cc:175
+#: kcharselectdia.cc:177
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr ""
 
-#: kcharselectdia.cc:188
+#: kcharselectdia.cc:190
 #, kde-format
 msgid "Bookmarks"
 msgstr "Обиљеживачи"
@@ -101,52 +101,52 @@ msgstr ""
 msgid "Main Toolbar"
 msgstr "Главна трака"
 
-#: main.cc:29
+#: main.cc:31
 #, kde-format
 msgid "KCharSelect"
 msgstr "К‑бирач-знакова"
 
-#: main.cc:31
+#: main.cc:33
 #, kde-format
 msgid "KDE character selection utility"
 msgstr "КДЕ‑ова алатка за избор знакова"
 
-#: main.cc:34
+#: main.cc:36
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
 msgstr "Омотач око виџета К‑бирача-знакова."
 
-#: main.cc:37
+#: main.cc:39
 #, kde-format
 msgid "Christoph Feck"
 msgstr "Кристоф Фек"
 
-#: main.cc:37
+#: main.cc:39
 #, kde-format
 msgid "KF5 port and current maintainer"
 msgstr "Пренос на КФ5 и тренутни одржавалац"
 
-#: main.cc:38 main.cc:41
+#: main.cc:40 main.cc:43
 #, kde-format
 msgid "Daniel Laidig"
 msgstr "Данијел Лајдиг"
 
-#: main.cc:38
+#: main.cc:40
 #, kde-format
 msgid "Author and previous maintainer"
 msgstr "Аутор и претходни одржавалац"
 
-#: main.cc:39
+#: main.cc:41
 #, kde-format
 msgid "Reginald Stadlbauer"
 msgstr "Региналд Стадлбауер"
 
-#: main.cc:39
+#: main.cc:41
 #, kde-format
 msgid "Author"
 msgstr "Аутор"
 
-#: main.cc:42
+#: main.cc:44
 #, kde-format
 msgid ""
 "New GUI, Unicode information, incremental search, and general improvements"
@@ -154,57 +154,57 @@ msgstr ""
 "Ново корисничко сучеље, уникодски подаци, постепено претраживање и општа "
 "побољшања"
 
-#: main.cc:45
+#: main.cc:47
 #, kde-format
 msgid "Laurent Montel"
 msgstr "Лорен Монтел"
 
-#: main.cc:45
+#: main.cc:47
 #, kde-format
 msgid "Porting help"
 msgstr "Помоћ у преношењу"
 
-#: main.cc:46
+#: main.cc:48
 #, kde-format
 msgid "Constantin Berzan"
 msgstr "Константин Берзан"
 
-#: main.cc:46
+#: main.cc:48
 #, kde-format
 msgid "Previous maintainer"
 msgstr "Претходни одржавалац"
 
-#: main.cc:47
+#: main.cc:49
 #, kde-format
 msgid "Nadeem Hasan"
 msgstr "Надим Хасан"
 
-#: main.cc:47 main.cc:48
+#: main.cc:49 main.cc:50
 #, kde-format
 msgid "GUI cleanup and fixes"
 msgstr "Чишћење корисничког сучеља и исправке"
 
-#: main.cc:48
+#: main.cc:50
 #, kde-format
 msgid "Ryan Cumming"
 msgstr "Рајан Каминг"
 
-#: main.cc:49
+#: main.cc:51
 #, kde-format
 msgid "Benjamin C. Meyer"
 msgstr "Бенџамин К. Мејер"
 
-#: main.cc:49
+#: main.cc:51
 #, kde-format
 msgid "XMLUI conversion"
 msgstr "Претварање сучеља у ИксМЛ"
 
-#: main.cc:50
+#: main.cc:52
 #, kde-format
 msgid "Bryce Nesbitt"
 msgstr "Брус Несбит"
 
-#: main.cc:50
+#: main.cc:52
 #, kde-format
 msgid "RTL support"
 msgstr "Подршка за ДнЛ"

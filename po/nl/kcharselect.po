@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-21 00:45+0000\n"
+"POT-Creation-Date: 2025-10-02 00:45+0000\n"
 "PO-Revision-Date: 2024-04-24 11:15+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -37,52 +37,52 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ",wilbert@kde.nl,,kristof.bal@gmail.com,freekdekruijf@kde.nl"
 
-#: kcharselectdia.cc:123 kcharselectdia.cc:133
+#: kcharselectdia.cc:125 kcharselectdia.cc:135
 #, kde-format
 msgid "&To Clipboard"
 msgstr "&Naar klembord"
 
-#: kcharselectdia.cc:139
+#: kcharselectdia.cc:141
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "Naar klembord &UTF-8"
 
-#: kcharselectdia.cc:142
+#: kcharselectdia.cc:144
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "Naar klembord &HTML"
 
-#: kcharselectdia.cc:146
+#: kcharselectdia.cc:148
 #, kde-format
 msgid "&From Clipboard"
 msgstr "&Van klembord"
 
-#: kcharselectdia.cc:151
+#: kcharselectdia.cc:153
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "Van klembord UTF-8"
 
-#: kcharselectdia.cc:154
+#: kcharselectdia.cc:156
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "Van klembord HTML"
 
-#: kcharselectdia.cc:157
+#: kcharselectdia.cc:159
 #, kde-format
 msgid "&Flip Text"
 msgstr "Tekst omkeren"
 
-#: kcharselectdia.cc:160
+#: kcharselectdia.cc:162
 #, kde-format
 msgid "&Reverse Direction"
 msgstr "Omgekee&rde richting"
 
-#: kcharselectdia.cc:175
+#: kcharselectdia.cc:177
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr "Kleurenschema van &venster"
 
-#: kcharselectdia.cc:188
+#: kcharselectdia.cc:190
 #, kde-format
 msgid "Bookmarks"
 msgstr "Bladwijzers"
@@ -105,52 +105,52 @@ msgstr "In&stellingen"
 msgid "Main Toolbar"
 msgstr "Hoofdwerkbalk"
 
-#: main.cc:29
+#: main.cc:31
 #, kde-format
 msgid "KCharSelect"
 msgstr "KCharSelect"
 
-#: main.cc:31
+#: main.cc:33
 #, kde-format
 msgid "KDE character selection utility"
 msgstr "Speciale tekens"
 
-#: main.cc:34
+#: main.cc:36
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
 msgstr "Een wrapper rond het KCharSelect widget."
 
-#: main.cc:37
+#: main.cc:39
 #, kde-format
 msgid "Christoph Feck"
 msgstr "Christoph Feck"
 
-#: main.cc:37
+#: main.cc:39
 #, kde-format
 msgid "KF5 port and current maintainer"
 msgstr "Overzetten naar KF5 en onderhouder"
 
-#: main.cc:38 main.cc:41
+#: main.cc:40 main.cc:43
 #, kde-format
 msgid "Daniel Laidig"
 msgstr "Daniel Laidig"
 
-#: main.cc:38
+#: main.cc:40
 #, kde-format
 msgid "Author and previous maintainer"
 msgstr "Auteur en vorige onderhouder"
 
-#: main.cc:39
+#: main.cc:41
 #, kde-format
 msgid "Reginald Stadlbauer"
 msgstr "Reginald Stadlbauer"
 
-#: main.cc:39
+#: main.cc:41
 #, kde-format
 msgid "Author"
 msgstr "Auteur"
 
-#: main.cc:42
+#: main.cc:44
 #, kde-format
 msgid ""
 "New GUI, Unicode information, incremental search, and general improvements"
@@ -158,57 +158,57 @@ msgstr ""
 "Nieuwe GUI, informatie over Unicode, incrementeel zoeken en algemene "
 "verbeteringen"
 
-#: main.cc:45
+#: main.cc:47
 #, kde-format
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: main.cc:45
+#: main.cc:47
 #, kde-format
 msgid "Porting help"
 msgstr "Hulp bij overzetten"
 
-#: main.cc:46
+#: main.cc:48
 #, kde-format
 msgid "Constantin Berzan"
 msgstr "Constantin Berzan"
 
-#: main.cc:46
+#: main.cc:48
 #, kde-format
 msgid "Previous maintainer"
 msgstr "Vorige onderhouder"
 
-#: main.cc:47
+#: main.cc:49
 #, kde-format
 msgid "Nadeem Hasan"
 msgstr "Nadeem Hasan"
 
-#: main.cc:47 main.cc:48
+#: main.cc:49 main.cc:50
 #, kde-format
 msgid "GUI cleanup and fixes"
 msgstr "Opschonen en aanpassingen van de grafische interface"
 
-#: main.cc:48
+#: main.cc:50
 #, kde-format
 msgid "Ryan Cumming"
 msgstr "Ryan Cumming"
 
-#: main.cc:49
+#: main.cc:51
 #, kde-format
 msgid "Benjamin C. Meyer"
 msgstr "Benjamin C. Meyer"
 
-#: main.cc:49
+#: main.cc:51
 #, kde-format
 msgid "XMLUI conversion"
 msgstr "XMLUI-conversie"
 
-#: main.cc:50
+#: main.cc:52
 #, kde-format
 msgid "Bryce Nesbitt"
 msgstr "Bryce Nesbitt"
 
-#: main.cc:50
+#: main.cc:52
 #, kde-format
 msgid "RTL support"
 msgstr "Ondersteuning voor RTL"

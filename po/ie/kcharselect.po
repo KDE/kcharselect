@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-21 00:45+0000\n"
+"POT-Creation-Date: 2025-10-02 00:45+0000\n"
 "PO-Revision-Date: 2024-08-04 17:11+0700\n"
 "Last-Translator: OIS <mistresssilvara@hotmail.com>\n"
 "Language-Team: Interlingue <>\n"
@@ -27,52 +27,52 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "mistresssilvara@hotmail.com"
 
-#: kcharselectdia.cc:123 kcharselectdia.cc:133
+#: kcharselectdia.cc:125 kcharselectdia.cc:135
 #, kde-format
 msgid "&To Clipboard"
 msgstr "&Al Paperiere"
 
-#: kcharselectdia.cc:139
+#: kcharselectdia.cc:141
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "&UTF-8 al Paperiere"
 
-#: kcharselectdia.cc:142
+#: kcharselectdia.cc:144
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "&HTML al Paperiere"
 
-#: kcharselectdia.cc:146
+#: kcharselectdia.cc:148
 #, kde-format
 msgid "&From Clipboard"
 msgstr "&Ex li Paperiere"
 
-#: kcharselectdia.cc:151
+#: kcharselectdia.cc:153
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "UTF-8 ex li paperiere"
 
-#: kcharselectdia.cc:154
+#: kcharselectdia.cc:156
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "HTML ex li Paperiere"
 
-#: kcharselectdia.cc:157
+#: kcharselectdia.cc:159
 #, kde-format
 msgid "&Flip Text"
 msgstr "Re&flecter li textu"
 
-#: kcharselectdia.cc:160
+#: kcharselectdia.cc:162
 #, kde-format
 msgid "&Reverse Direction"
 msgstr "&Reversar li direction"
 
-#: kcharselectdia.cc:175
+#: kcharselectdia.cc:177
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr "Schema de colores del &fenestre"
 
-#: kcharselectdia.cc:188
+#: kcharselectdia.cc:190
 #, kde-format
 msgid "Bookmarks"
 msgstr "Marca-págines"
@@ -95,108 +95,108 @@ msgstr "&Parametres"
 msgid "Main Toolbar"
 msgstr "Panel de instrumentarium"
 
-#: main.cc:29
+#: main.cc:31
 #, kde-format
 msgid "KCharSelect"
 msgstr "KCharSelect"
 
-#: main.cc:31
+#: main.cc:33
 #, kde-format
 msgid "KDE character selection utility"
 msgstr "Utensile por selecter caracteres de KDE"
 
-#: main.cc:34
+#: main.cc:36
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
 msgstr ""
 
-#: main.cc:37
+#: main.cc:39
 #, kde-format
 msgid "Christoph Feck"
 msgstr "Christoph Feck"
 
-#: main.cc:37
+#: main.cc:39
 #, kde-format
 msgid "KF5 port and current maintainer"
 msgstr "Portage a KF5 e actual mantenetor"
 
-#: main.cc:38 main.cc:41
+#: main.cc:40 main.cc:43
 #, kde-format
 msgid "Daniel Laidig"
 msgstr "Daniel Laidig"
 
-#: main.cc:38
+#: main.cc:40
 #, kde-format
 msgid "Author and previous maintainer"
 msgstr "Autor e anteyan mantenetor"
 
-#: main.cc:39
+#: main.cc:41
 #, kde-format
 msgid "Reginald Stadlbauer"
 msgstr "Reginald Stadlbauer"
 
-#: main.cc:39
+#: main.cc:41
 #, kde-format
 msgid "Author"
 msgstr "Autor"
 
-#: main.cc:42
+#: main.cc:44
 #, kde-format
 msgid ""
 "New GUI, Unicode information, incremental search, and general improvements"
 msgstr ""
 
-#: main.cc:45
+#: main.cc:47
 #, kde-format
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: main.cc:45
+#: main.cc:47
 #, kde-format
 msgid "Porting help"
 msgstr "Auxilie con portage"
 
-#: main.cc:46
+#: main.cc:48
 #, kde-format
 msgid "Constantin Berzan"
 msgstr "Constantin Berzan"
 
-#: main.cc:46
+#: main.cc:48
 #, kde-format
 msgid "Previous maintainer"
 msgstr "Precedent mantenetor"
 
-#: main.cc:47
+#: main.cc:49
 #, kde-format
 msgid "Nadeem Hasan"
 msgstr "Nadeem Hasan"
 
-#: main.cc:47 main.cc:48
+#: main.cc:49 main.cc:50
 #, fuzzy, kde-format
 msgid "GUI cleanup and fixes"
 msgstr "GUI"
 
-#: main.cc:48
+#: main.cc:50
 #, kde-format
 msgid "Ryan Cumming"
 msgstr "Ryan Cumming"
 
-#: main.cc:49
+#: main.cc:51
 #, kde-format
 msgid "Benjamin C. Meyer"
 msgstr "Benjamin C. Meyer"
 
-#: main.cc:49
+#: main.cc:51
 #, kde-format
 msgid "XMLUI conversion"
 msgstr "Convertion de XMLUI"
 
-#: main.cc:50
+#: main.cc:52
 #, kde-format
 msgid "Bryce Nesbitt"
 msgstr "Bryce Nesbitt"
 
-#: main.cc:50
+#: main.cc:52
 #, kde-format
 msgid "RTL support"
 msgstr "Supporte de DaL"

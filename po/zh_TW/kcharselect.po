@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-21 00:45+0000\n"
+"POT-Creation-Date: 2025-10-02 00:45+0000\n"
 "PO-Revision-Date: 2024-05-07 17:01+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -31,52 +31,52 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "franklin@goodhorse.idv.tw, s8321414@gmail.com"
 
-#: kcharselectdia.cc:123 kcharselectdia.cc:133
+#: kcharselectdia.cc:125 kcharselectdia.cc:135
 #, kde-format
 msgid "&To Clipboard"
 msgstr "到剪貼簿(&T)"
 
-#: kcharselectdia.cc:139
+#: kcharselectdia.cc:141
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "到剪貼簿(UTF-8)(&U)"
 
-#: kcharselectdia.cc:142
+#: kcharselectdia.cc:144
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "到剪貼簿(HTML)(&H)"
 
-#: kcharselectdia.cc:146
+#: kcharselectdia.cc:148
 #, kde-format
 msgid "&From Clipboard"
 msgstr "從剪貼簿(&F)"
 
-#: kcharselectdia.cc:151
+#: kcharselectdia.cc:153
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "從剪貼簿(UTF-8)"
 
-#: kcharselectdia.cc:154
+#: kcharselectdia.cc:156
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "從剪貼簿(HTML)"
 
-#: kcharselectdia.cc:157
+#: kcharselectdia.cc:159
 #, kde-format
 msgid "&Flip Text"
 msgstr "反轉文字(&F)"
 
-#: kcharselectdia.cc:160
+#: kcharselectdia.cc:162
 #, kde-format
 msgid "&Reverse Direction"
 msgstr "反轉方向(&R)"
 
-#: kcharselectdia.cc:175
+#: kcharselectdia.cc:177
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr "視窗配色(&W)"
 
-#: kcharselectdia.cc:188
+#: kcharselectdia.cc:190
 #, kde-format
 msgid "Bookmarks"
 msgstr "書籤"
@@ -99,108 +99,108 @@ msgstr "設定(&S)"
 msgid "Main Toolbar"
 msgstr "主工具列"
 
-#: main.cc:29
+#: main.cc:31
 #, kde-format
 msgid "KCharSelect"
 msgstr "KCharSelect"
 
-#: main.cc:31
+#: main.cc:33
 #, kde-format
 msgid "KDE character selection utility"
 msgstr "KDE 字元選擇工具程式 "
 
-#: main.cc:34
+#: main.cc:36
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
 msgstr "KCharSelect 元件包裝。"
 
-#: main.cc:37
+#: main.cc:39
 #, kde-format
 msgid "Christoph Feck"
 msgstr "Christoph Feck"
 
-#: main.cc:37
+#: main.cc:39
 #, kde-format
 msgid "KF5 port and current maintainer"
 msgstr "移植到 KF5 與現任維護者"
 
-#: main.cc:38 main.cc:41
+#: main.cc:40 main.cc:43
 #, kde-format
 msgid "Daniel Laidig"
 msgstr "Daniel Laidig"
 
-#: main.cc:38
+#: main.cc:40
 #, kde-format
 msgid "Author and previous maintainer"
 msgstr "作者與前任維護者"
 
-#: main.cc:39
+#: main.cc:41
 #, kde-format
 msgid "Reginald Stadlbauer"
 msgstr "Reginald Stadlbauer"
 
-#: main.cc:39
+#: main.cc:41
 #, kde-format
 msgid "Author"
 msgstr "作者"
 
-#: main.cc:42
+#: main.cc:44
 #, kde-format
 msgid ""
 "New GUI, Unicode information, incremental search, and general improvements"
 msgstr "新的使用者介面、萬國碼資訊、遞增搜尋、許多改進"
 
-#: main.cc:45
+#: main.cc:47
 #, kde-format
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: main.cc:45
+#: main.cc:47
 #, kde-format
 msgid "Porting help"
 msgstr "協助移植"
 
-#: main.cc:46
+#: main.cc:48
 #, kde-format
 msgid "Constantin Berzan"
 msgstr "Constantin Berzan"
 
-#: main.cc:46
+#: main.cc:48
 #, kde-format
 msgid "Previous maintainer"
 msgstr "前任維護者"
 
-#: main.cc:47
+#: main.cc:49
 #, kde-format
 msgid "Nadeem Hasan"
 msgstr "Nadeem Hasan"
 
-#: main.cc:47 main.cc:48
+#: main.cc:49 main.cc:50
 #, kde-format
 msgid "GUI cleanup and fixes"
 msgstr "GUI 介面修正"
 
-#: main.cc:48
+#: main.cc:50
 #, kde-format
 msgid "Ryan Cumming"
 msgstr "Ryan Cumming"
 
-#: main.cc:49
+#: main.cc:51
 #, kde-format
 msgid "Benjamin C. Meyer"
 msgstr "Benjamin C. Meyer"
 
-#: main.cc:49
+#: main.cc:51
 #, kde-format
 msgid "XMLUI conversion"
 msgstr "XMLUI 轉換"
 
-#: main.cc:50
+#: main.cc:52
 #, kde-format
 msgid "Bryce Nesbitt"
 msgstr "Bryce Nesbitt"
 
-#: main.cc:50
+#: main.cc:52
 #, kde-format
 msgid "RTL support"
 msgstr "右到左文字支援"
