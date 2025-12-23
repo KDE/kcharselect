@@ -41,7 +41,7 @@
 </authorgroup>
 
 <date
->2016-04-25</date>
+>2016‒04‒25</date>
 <releaseinfo
 >1.12 (Uygulamalar 16.04)</releaseinfo>
 
@@ -59,12 +59,12 @@
 >&kcharselect;, kurulu tüm yazıtiplerinden özel karakterler seçmek ve bunları farklı biçimlerde (düz metin, Unicode veya &HTML;) panoya kopyalamak için kullanılan bir araçtır.</para>
 
 <para
->Önizlemede bir karaktere çift tıklamak veya &Enter;'a basmak, onu yazıtipi önizlemesinin altındaki çubuğa ekler. Bu özellik, bir sözcüğü veya birkaç karakterden oluşan bir grubu toplamaya ve bunları birlikte panoya kopyalamaya izin verir.</para
+>Önizlemede bir karaktere çift tıklamak veya &Enter;’e basmak, onu yazıtipi önizlemesinin altındaki çubuğa ekler. Bu özellik, bir sözcüğü veya birkaç karakterden oluşan bir grubu toplamaya ve bunları birlikte panoya kopyalamaya izin verir.</para
 > 
 <para
 >Seçilen karakterlerin sırasını tersine çevirmek için <guimenuitem
 >Metni Çevir</guimenuitem
->'i kullanın.</para>
+>’i kullanın.</para>
 <para
 >Karakterler öntanımlı olarak grubun sağ ucuna veya imleç konumuna eklenir. <guimenuitem
 >Yönü Tersine Çevir</guimenuitem
