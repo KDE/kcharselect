@@ -116,10 +116,9 @@ msgid "Christoph Feck"
 msgstr ""
 
 #: main.cc:39
-#, fuzzy, kde-format
-#| msgid "Author and maintainer"
+#, kde-format
 msgid "KF5 port and current maintainer"
-msgstr "Údar agus cothaitheoir"
+msgstr ""
 
 #: main.cc:40 main.cc:43
 #, kde-format
@@ -127,10 +126,9 @@ msgid "Daniel Laidig"
 msgstr "Daniel Laidig"
 
 #: main.cc:40
-#, fuzzy, kde-format
-#| msgid "Author and maintainer"
+#, kde-format
 msgid "Author and previous maintainer"
-msgstr "Údar agus cothaitheoir"
+msgstr ""
 
 #: main.cc:41
 #, kde-format
@@ -204,9 +202,3 @@ msgstr "Bryce Nesbitt"
 #, kde-format
 msgid "RTL support"
 msgstr "Tacaíocht RTL"
-
-#~ msgid "&Alignment"
-#~ msgstr "&Ailíniú"
-
-#~ msgid "(c) 1999, Reginald Stadlbauer"
-#~ msgstr "© 1999, Reginald Stadlbauer"
