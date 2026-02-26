@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:55+0000\n"
-"PO-Revision-Date: 2020-11-17 00:14+0200\n"
+"PO-Revision-Date: 2026-02-25 15:14+0200\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -19,17 +19,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 3.8\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Eugenijus Paulauskas"
+msgstr "Eugenijus Paulauskas, Moo"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "eugenijus@agvila.lt"
+msgstr "eugenijus@agvila.lt, <>"
 
 #: kcharselectdia.cc:125 kcharselectdia.cc:135
 #, kde-format
@@ -74,7 +74,7 @@ msgstr "&Apkeisti kryptį"
 #: kcharselectdia.cc:177
 #, kde-format
 msgid "&Window Color Scheme"
-msgstr ""
+msgstr "&Lango spalvų rinkinys"
 
 #: kcharselectdia.cc:190
 #, kde-format
@@ -85,19 +85,19 @@ msgstr "Žymelės"
 #: kcharselectui.rc:4
 #, kde-format
 msgid "&Edit"
-msgstr "&Keisti"
+msgstr "&Taisyti"
 
 #. i18n: ectx: Menu (settings)
 #: kcharselectui.rc:14
 #, kde-format
 msgid "&Settings"
-msgstr ""
+msgstr "Nuo&statos"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: kcharselectui.rc:20
 #, kde-format
 msgid "Main Toolbar"
-msgstr "Pagrindinė įrankinė"
+msgstr "Pagrindinė įrankių juosta"
 
 #: main.cc:31
 #, kde-format
@@ -112,7 +112,7 @@ msgstr "KDE simbolių parinkimo priemonė"
 #: main.cc:36
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
-msgstr "Darbai su KCharSelect valdikliu."
+msgstr "KCharSelect valdiklio įvynioklis."
 
 #: main.cc:39
 #, kde-format
@@ -148,7 +148,9 @@ msgstr "Autorius"
 #, kde-format
 msgid ""
 "New GUI, Unicode information, incremental search, and general improvements"
-msgstr "Nauja sąsaja, unikodo informacija ir kiti patobulinimai"
+msgstr ""
+"Nauja naudotojo sąsaja, unikodo informacija, prieauginė paieška ir bendri "
+"patobulinimai"
 
 #: main.cc:47
 #, kde-format
@@ -178,7 +180,7 @@ msgstr "Nadeem Hasan"
 #: main.cc:49 main.cc:50
 #, kde-format
 msgid "GUI cleanup and fixes"
-msgstr "GUI išvalymas ir pataisymai"
+msgstr "Naudotojo sąsajo sutvarkymas ir pataisymai"
 
 #: main.cc:50
 #, kde-format
@@ -203,4 +205,4 @@ msgstr "Bryce Nesbitt"
 #: main.cc:52
 #, kde-format
 msgid "RTL support"
-msgstr "RTL palaikymas"
+msgstr "Teksto iš dešinės į kairę palaikymas"
