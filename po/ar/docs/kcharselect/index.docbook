@@ -3,7 +3,7 @@
 
   <!ENTITY kappname "&kcharselect;">
   <!ENTITY % addindex "IGNORE">
-  <!ENTITY % English "INCLUDE">
+  <!ENTITY % Arabic "INCLUDE">
 ]>
 
 <article id="kcharselect" lang="&language;">

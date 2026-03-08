@@ -60,7 +60,7 @@ msgstr "粘贴剪贴板内容(HTML)"
 #: kcharselectdia.cc:159
 #, kde-format
 msgid "&Flip Text"
-msgstr "翻转文字顺序(&F)"
+msgstr "翻转文本顺序(&F)"
 
 #: kcharselectdia.cc:162
 #, kde-format
