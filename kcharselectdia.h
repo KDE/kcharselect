@@ -56,6 +56,9 @@ protected Q_SLOTS:
     void flipText();
     void setRtl(bool rtl);
     void lineEditChanged();
+
+private:
+    QString stringToCopy();
 };
 
 #endif

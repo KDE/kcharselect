@@ -16,6 +16,8 @@ using namespace Qt::Literals::StringLiterals;
 #include <QGridLayout>
 #include <QIcon>
 #include <QMenu>
+#include <QTextBrowser>
+#include <QTextDocumentFragment>
 
 #include <KActionCollection>
 #include <KBookmarkManager>
@@ -239,11 +241,32 @@ void KCharSelectDia::add(char32_t _chr)
 }
 
 //==================================================================
+QString KCharSelectDia::stringToCopy()
+{
+    // Copy selected text from the detail panel if available
+    QTextBrowser *detailBrowser = charSelect->findChild<QTextBrowser *>();
+    if (detailBrowser) {
+        QString selectedText = detailBrowser->textCursor().selection().toPlainText();
+        if (!selectedText.isEmpty()) {
+            return selectedText;
+        }
+    }
+
+    // Fall back to line edit
+    QString lineEditText = lined->text();
+    if (!lineEditText.isEmpty()) {
+        return lineEditText;
+    }
+
+    // Fall back to the current character
+    QString character = QString::fromUcs4(&vChr, 1);
+    return character;
+}
+
+//==================================================================
 void KCharSelectDia::toClip()
 {
-    QString str = lined->text();
-    if (str.isEmpty())
-        str = QString::fromUcs4(&vChr, 1);
+    QString str = stringToCopy();
     QClipboard *cb = QApplication::clipboard();
     cb->setText(str, QClipboard::Clipboard);
     cb->setText(str, QClipboard::Selection);
@@ -255,10 +278,8 @@ void KCharSelectDia::toClip()
 //
 void KCharSelectDia::toClipUTF8()
 {
+    QString str = stringToCopy();
     QClipboard *cb = QApplication::clipboard();
-    QString str = lined->text();
-    if (str.isEmpty())
-        str = QString::fromUcs4(&vChr, 1);
     cb->setText(QLatin1String(str.toUtf8()));
 }
 
@@ -270,20 +291,17 @@ void KCharSelectDia::toClipUTF8()
 //
 void KCharSelectDia::toClipHTML()
 {
+    QString str = stringToCopy();
     QClipboard *cb = QApplication::clipboard();
-    QString input;
+
     QString html;
     QChar tempchar;
     int i = 0;
-
-    input = lined->text();
-    if (input.isEmpty())
-        input = QString::fromUcs4(&vChr, 1);
-    const int inputLength = input.length();
+    const int inputLength = str.length();
     for (i = 0; i < inputLength; ++i) {
-        tempchar = input.at(i);
+        tempchar = str.at(i);
         if (tempchar.toLatin1() && ((tempchar.unicode() < 128) || (tempchar.unicode() >= 128 + 32))) {
-            html.append(input.at(i));
+            html.append(str.at(i));
         } else {
             html.append(QString::asprintf("&#x%x;", tempchar.unicode()));
         }
