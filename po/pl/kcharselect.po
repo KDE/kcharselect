@@ -1,4 +1,4 @@
-# Version: $Revision: 1723076 $
+# Version: $Revision: 1734990 $
 # translation of kcharselect.po to Polish
 # SPDX-FileCopyrightText: 2015, 2016, 2024 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 # Michał Rudolf <mrudolf@kdewebdev.org>, 2002.
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2026-04-21 00:49+0000\n"
 "PO-Revision-Date: 2024-04-28 11:36+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -28,52 +28,52 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "mrudolf@kdewebdev.org, nkuznik@yahoo.com, lukasz.wojnilowicz@gmail.com"
 
-#: kcharselectdia.cc:125 kcharselectdia.cc:135
+#: kcharselectdia.cc:127 kcharselectdia.cc:137
 #, kde-format
 msgid "&To Clipboard"
 msgstr "Do &schowka"
 
-#: kcharselectdia.cc:141
+#: kcharselectdia.cc:143
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "Do schowka jako &UTF-8"
 
-#: kcharselectdia.cc:144
+#: kcharselectdia.cc:146
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "Do schowka jako &HTML"
 
-#: kcharselectdia.cc:148
+#: kcharselectdia.cc:150
 #, kde-format
 msgid "&From Clipboard"
 msgstr "&Ze schowka"
 
-#: kcharselectdia.cc:153
+#: kcharselectdia.cc:155
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "Ze schowka jako UTF-8"
 
-#: kcharselectdia.cc:156
+#: kcharselectdia.cc:158
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "Ze schowka jako HTML"
 
-#: kcharselectdia.cc:159
+#: kcharselectdia.cc:161
 #, kde-format
 msgid "&Flip Text"
 msgstr "&Odwróć tekst"
 
-#: kcharselectdia.cc:162
+#: kcharselectdia.cc:164
 #, kde-format
 msgid "&Reverse Direction"
 msgstr "Odw&rotny kierunek"
 
-#: kcharselectdia.cc:177
+#: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr "Zestaw bar&w okien"
 
-#: kcharselectdia.cc:190
+#: kcharselectdia.cc:192
 #, kde-format
 msgid "Bookmarks"
 msgstr "Zakładki"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2026-04-21 00:49+0000\n"
 "PO-Revision-Date: 2024-08-25 21:32+0200\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -30,52 +30,52 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-i18n-de@kde.org"
 
-#: kcharselectdia.cc:125 kcharselectdia.cc:135
+#: kcharselectdia.cc:127 kcharselectdia.cc:137
 #, kde-format
 msgid "&To Clipboard"
 msgstr "&In die Zwischenablage"
 
-#: kcharselectdia.cc:141
+#: kcharselectdia.cc:143
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "In die Zwischenablage als &UTF-8"
 
-#: kcharselectdia.cc:144
+#: kcharselectdia.cc:146
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "In die Zwischenablage als &HTML"
 
-#: kcharselectdia.cc:148
+#: kcharselectdia.cc:150
 #, kde-format
 msgid "&From Clipboard"
 msgstr "Aus der &Zwischenablage"
 
-#: kcharselectdia.cc:153
+#: kcharselectdia.cc:155
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "Aus der Zwischenablage als UTF-&8"
 
-#: kcharselectdia.cc:156
+#: kcharselectdia.cc:158
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "Aus der Zwischenablage als HTML"
 
-#: kcharselectdia.cc:159
+#: kcharselectdia.cc:161
 #, kde-format
 msgid "&Flip Text"
 msgstr "Text &umkehren"
 
-#: kcharselectdia.cc:162
+#: kcharselectdia.cc:164
 #, kde-format
 msgid "&Reverse Direction"
 msgstr "&Richtung umkehren"
 
-#: kcharselectdia.cc:177
+#: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr "&Fenster-Farbschema"
 
-#: kcharselectdia.cc:190
+#: kcharselectdia.cc:192
 #, kde-format
 msgid "Bookmarks"
 msgstr "Lesezeichen"

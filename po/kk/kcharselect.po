@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2026-04-21 00:49+0000\n"
 "PO-Revision-Date: 2010-07-03 09:27+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -28,52 +28,52 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sairan@computer.org"
 
-#: kcharselectdia.cc:125 kcharselectdia.cc:135
+#: kcharselectdia.cc:127 kcharselectdia.cc:137
 #, kde-format
 msgid "&To Clipboard"
 msgstr "&Алмасу буферіне"
 
-#: kcharselectdia.cc:141
+#: kcharselectdia.cc:143
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "&UTF-8 түрде алмасу буферіне"
 
-#: kcharselectdia.cc:144
+#: kcharselectdia.cc:146
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "&HTML түрде алмасу буферіне"
 
-#: kcharselectdia.cc:148
+#: kcharselectdia.cc:150
 #, kde-format
 msgid "&From Clipboard"
 msgstr "Алмасу &буферінен"
 
-#: kcharselectdia.cc:153
+#: kcharselectdia.cc:155
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "UTF-8 түрде алмасу буферінен"
 
-#: kcharselectdia.cc:156
+#: kcharselectdia.cc:158
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "HTML түрде алмасу буферінен"
 
-#: kcharselectdia.cc:159
+#: kcharselectdia.cc:161
 #, kde-format
 msgid "&Flip Text"
 msgstr "Мәтін &ретін керілеу"
 
-#: kcharselectdia.cc:162
+#: kcharselectdia.cc:164
 #, kde-format
 msgid "&Reverse Direction"
 msgstr "Жазу &бағытын керілеу"
 
-#: kcharselectdia.cc:177
+#: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr ""
 
-#: kcharselectdia.cc:190
+#: kcharselectdia.cc:192
 #, kde-format
 msgid "Bookmarks"
 msgstr ""

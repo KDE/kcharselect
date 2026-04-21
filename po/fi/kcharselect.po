@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2026-04-21 00:49+0000\n"
 "PO-Revision-Date: 2024-10-22 18:35+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -38,52 +38,52 @@ msgstr ""
 "kim.enkovaara@iki.fi, ilpo@iki.fi, piippo@cc.helsinki.fi, "
 "translator@legisign.org, lasse.liehu@gmail.com, karvonen.jorma@gmail.com"
 
-#: kcharselectdia.cc:125 kcharselectdia.cc:135
+#: kcharselectdia.cc:127 kcharselectdia.cc:137
 #, kde-format
 msgid "&To Clipboard"
 msgstr "&Leikepöydälle"
 
-#: kcharselectdia.cc:141
+#: kcharselectdia.cc:143
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "Leikepöydälle &UTF-8"
 
-#: kcharselectdia.cc:144
+#: kcharselectdia.cc:146
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "Leikepöydälle &HTML"
 
-#: kcharselectdia.cc:148
+#: kcharselectdia.cc:150
 #, kde-format
 msgid "&From Clipboard"
 msgstr "&Leikepöydältä"
 
-#: kcharselectdia.cc:153
+#: kcharselectdia.cc:155
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "Leikepöydältä UTF-8"
 
-#: kcharselectdia.cc:156
+#: kcharselectdia.cc:158
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "Leikepöydältä HTML"
 
-#: kcharselectdia.cc:159
+#: kcharselectdia.cc:161
 #, kde-format
 msgid "&Flip Text"
 msgstr "&Peilaa teksti"
 
-#: kcharselectdia.cc:162
+#: kcharselectdia.cc:164
 #, kde-format
 msgid "&Reverse Direction"
 msgstr "&Käänteissuunta"
 
-#: kcharselectdia.cc:177
+#: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr "&Ikkunan väriteema"
 
-#: kcharselectdia.cc:190
+#: kcharselectdia.cc:192
 #, kde-format
 msgid "Bookmarks"
 msgstr "Kirjanmerkit"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2026-04-21 00:49+0000\n"
 "PO-Revision-Date: 2019-09-15 21:27+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -32,53 +32,53 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "H_Abrorova@rambler.ru"
 
-#: kcharselectdia.cc:125 kcharselectdia.cc:135
+#: kcharselectdia.cc:127 kcharselectdia.cc:137
 #, kde-format
 msgid "&To Clipboard"
 msgstr "&Ба Силули Мухобиротӣ"
 
-#: kcharselectdia.cc:141
+#: kcharselectdia.cc:143
 #, kde-format
 msgid "To Clipboard &UTF-8"
 msgstr "Ба Силули Мухобиротии &UTF-8"
 
-#: kcharselectdia.cc:144
+#: kcharselectdia.cc:146
 #, kde-format
 msgid "To Clipboard &HTML"
 msgstr "Ба Силули Мухобиротии &HTML"
 
-#: kcharselectdia.cc:148
+#: kcharselectdia.cc:150
 #, fuzzy, kde-format
 msgid "&From Clipboard"
 msgstr "Аз Силули Мухобиротӣ"
 
-#: kcharselectdia.cc:153
+#: kcharselectdia.cc:155
 #, kde-format
 msgid "From Clipboard UTF-8"
 msgstr "Аз Силули Мухобиротии UTF-8"
 
-#: kcharselectdia.cc:156
+#: kcharselectdia.cc:158
 #, kde-format
 msgid "From Clipboard HTML"
 msgstr "Аз Силули Мухобиротии HTML"
 
-#: kcharselectdia.cc:159
+#: kcharselectdia.cc:161
 #, fuzzy, kde-format
 #| msgid "&Flip"
 msgid "&Flip Text"
 msgstr "&Акс"
 
-#: kcharselectdia.cc:162
+#: kcharselectdia.cc:164
 #, kde-format
 msgid "&Reverse Direction"
 msgstr ""
 
-#: kcharselectdia.cc:177
+#: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
 msgstr ""
 
-#: kcharselectdia.cc:190
+#: kcharselectdia.cc:192
 #, kde-format
 msgid "Bookmarks"
 msgstr "Хатчӯбҳо"
