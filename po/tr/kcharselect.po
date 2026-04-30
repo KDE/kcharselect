@@ -4,13 +4,13 @@
 # Translators:
 # Ömer Fadıl USTA <omer_fad@hotmail.com>, 2002.
 # obsoleteman <tulliana@gmail.com>, 2008-2009.
-# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025, 2026 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeutils-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-21 00:49+0000\n"
-"PO-Revision-Date: 2025-03-07 23:32+0300\n"
+"PO-Revision-Date: 2026-04-29 15:10+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.03.70\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -101,7 +101,7 @@ msgstr "Ana Araç Çubuğu"
 #: main.cc:31
 #, kde-format
 msgid "KCharSelect"
-msgstr "K Karakterci"
+msgstr "Karakterseçer"
 
 #: main.cc:33
 #, kde-format
@@ -111,7 +111,7 @@ msgstr "KDE karakter seçme izlencesi"
 #: main.cc:36
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
-msgstr "K Karakterci araç takımı tabanlı bir sarmalayıcı."
+msgstr "Karakterseçer araç takımı tabanlı bir sarmalayıcı."
 
 #: main.cc:39
 #, kde-format
