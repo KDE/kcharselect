@@ -8,24 +8,25 @@ msgstr ""
 "Project-Id-Version: kcharselect\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-21 00:49+0000\n"
-"PO-Revision-Date: 2013-09-08 07:05+0900\n"
-"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
+"PO-Revision-Date: 2026-05-30 17:08-0400\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "ئابدۇقادىر ئابلىز, غەيرەت كەنجى"
+msgstr "ئابدۇقادىر ئابلىز، غەيرەت كەنجى"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "sahran.ug@gmail.com,  gheyret@gmail.com"
+msgstr "sahranbay@gmail.com, gheyret@gmail.com"
 
 #: kcharselectdia.cc:127 kcharselectdia.cc:137
 #, kde-format
@@ -70,12 +71,12 @@ msgstr ""
 #: kcharselectdia.cc:179
 #, kde-format
 msgid "&Window Color Scheme"
-msgstr ""
+msgstr "كۆزنەك رەڭ لايىھەسى(&W)"
 
 #: kcharselectdia.cc:192
 #, kde-format
 msgid "Bookmarks"
-msgstr ""
+msgstr "خەتكۈش"
 
 #. i18n: ectx: Menu (edit)
 #: kcharselectui.rc:4
@@ -87,7 +88,7 @@ msgstr "تەھرىر(&E)"
 #: kcharselectui.rc:14
 #, kde-format
 msgid "&Settings"
-msgstr ""
+msgstr "تەڭشەك(&S)"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: kcharselectui.rc:20
@@ -98,7 +99,7 @@ msgstr "ئاساسىي قورال بالداق"
 #: main.cc:31
 #, kde-format
 msgid "KCharSelect"
-msgstr "KCharSelect"
+msgstr "K ھەرپ تاللىغۇچ"
 
 #: main.cc:33
 #, kde-format
@@ -116,31 +117,29 @@ msgid "Christoph Feck"
 msgstr ""
 
 #: main.cc:39
-#, fuzzy, kde-format
-#| msgid "Author and maintainer"
+#, kde-format
 msgid "KF5 port and current maintainer"
-msgstr "ئاپتور ۋە مەسئۇل كىشى"
+msgstr ""
 
 #: main.cc:40 main.cc:43
 #, kde-format
 msgid "Daniel Laidig"
-msgstr "Daniel Laidig"
+msgstr ""
 
 #: main.cc:40
-#, fuzzy, kde-format
-#| msgid "Author and maintainer"
+#, kde-format
 msgid "Author and previous maintainer"
-msgstr "ئاپتور ۋە مەسئۇل كىشى"
+msgstr ""
 
 #: main.cc:41
 #, kde-format
 msgid "Reginald Stadlbauer"
-msgstr "Reginald Stadlbauer"
+msgstr ""
 
 #: main.cc:41
 #, kde-format
 msgid "Author"
-msgstr "ئاپتور"
+msgstr "يازغۇچى"
 
 #: main.cc:44
 #, kde-format
@@ -151,7 +150,7 @@ msgstr ""
 #: main.cc:47
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "Laurent Montel"
 
 #: main.cc:47
 #, kde-format
@@ -166,7 +165,7 @@ msgstr ""
 #: main.cc:48
 #, kde-format
 msgid "Previous maintainer"
-msgstr "ئالدىنقى مەسئۇل ئادەم"
+msgstr "ئالدىنقى ئاسرىغۇچى"
 
 #: main.cc:49
 #, kde-format
@@ -181,7 +180,7 @@ msgstr ""
 #: main.cc:50
 #, kde-format
 msgid "Ryan Cumming"
-msgstr "Ryan Cumming"
+msgstr ""
 
 #: main.cc:51
 #, kde-format
