@@ -49,6 +49,7 @@
   <name xml:lang="sl">KCharSelect</name>
   <name xml:lang="sv">Kcharselect</name>
   <name xml:lang="tr">Karakterseçer</name>
+  <name xml:lang="ug">K ھەرپ تاللىغۇچ</name>
   <name xml:lang="uk">KCharSelect</name>
   <name xml:lang="zh-CN">KCharSelect 字符选择器</name>
   <name xml:lang="zh-TW">KCharSelect</name>
@@ -95,6 +96,7 @@
   <summary xml:lang="sv">Teckenväljare</summary>
   <summary xml:lang="ta">எழுத்துத் தேர்வி</summary>
   <summary xml:lang="tr">Karakter seçicisi</summary>
+  <summary xml:lang="ug">ھەرپ تاللىغۇچ</summary>
   <summary xml:lang="uk">Таблиця символів</summary>
   <summary xml:lang="zh-CN">字符选择器</summary>
   <summary xml:lang="zh-TW">符號選取器</summary>
