@@ -6,7 +6,9 @@
     "rename-icon": "accessories-character-map",
     "sdk": "org.kde.Sdk",
     "command": "kcharselect",
-    "tags": ["nightly"],
+    "tags": [
+        "nightly"
+    ],
     "desktop-file-name-suffix": " (Nightly)",
     "finish-args": [
         "--device=dri",
@@ -17,7 +19,6 @@
     "cleanup": [
         "/share/app-info"
     ],
-
     "modules": [
         {
             "name": "kcharselect",
@@ -25,7 +26,12 @@
             "post-install": [
                 "install -D /usr/share/icons/breeze/apps/48/accessories-character-map.svg /app/share/icons/hicolor/scalable/apps/accessories-character-map.svg"
             ],
-            "sources": [ { "type": "dir", "path": "." } ]
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "."
+                }
+            ]
         }
     ]
 }
