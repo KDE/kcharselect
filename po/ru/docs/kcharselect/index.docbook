@@ -1,32 +1,28 @@
 <?xml version="1.0" ?>
-<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+
   <!ENTITY kappname "&kcharselect;">
-  <!ENTITY package "kdeutils">
-  <!ENTITY % Russian "INCLUDE">
   <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Russian "INCLUDE">
 ]>
 
-<book lang="&language;">
+<article id="kcharselect" lang="&language;">
 
-<bookinfo>
+<articleinfo>
 <title
->Руководство &kcharselect;</title>
-
+>KCharSelect</title>
 <authorgroup>
 <author
 ><firstname
-></firstname
-> <othername
-></othername
+>Daniel</firstname
 > <surname
-></surname
-> <affiliation
+>Laidig</surname
 > <address
 ><email
-></email
-></address>
-</affiliation>
-</author>
+>laidig@kde.org</email
+></address
+> </author>
+
 <othercredit role="translator"
 ><firstname
 >Григорий</firstname
@@ -44,56 +40,62 @@
 > 
 </authorgroup>
 
-<legalnotice
->&FDLNotice;</legalnotice>
-
 <date
->2001-01-20</date>
+>25 апреля 2016 г.</date>
 <releaseinfo
->0.00.00</releaseinfo>
-
-<abstract>
-<para
->&kcharselect; входит в состав пакета kdeutils. </para>
-</abstract>
-
+>1.12 (Приложения KDE 16.04)</releaseinfo>
 
 <keywordset>
 <keyword
 >KDE</keyword>
 <keyword
->kdeutils</keyword>
+>символ</keyword>
 <keyword
->kcharselect</keyword>
+>шрифт</keyword>
 </keywordset>
+</articleinfo>
 
-</bookinfo>
-
-<chapter id="introduction">
-<title
->Введение</title>
 <para
->Документация &kappname; еще не готова.</para
+>&kcharselect; — приложение для выбора специальных символов из всех установленных шрифтов и копирования их в буфер обмена в различных форматах (простой текст, Unicode или &HTML;).</para>
+
+<para
+>Двойной щелчок по символу в области предварительного просмотра или нажатие клавиши &Enter; добавляет его в строку под областью предварительного просмотра шрифта. Это позволяет собрать слово или несколько символов и скопировать их вместе в буфер обмена.</para
 > 
 <para
->Проверьте, доступны ли обновления на сайте <ulink url="http://www.kde.org"
->KDE</ulink
->, или отправьте вопрос в <ulink url="mailto:kde@kde.org"
->рассылку пользователей &kde;</ulink
+>Чтобы расположить выбранные символы в обратном порядке, выберите пункт <guimenuitem
+>Символы в обратном порядке</guimenuitem
 >.</para>
 <para
-><emphasis
->Команда &kde;</emphasis
-></para
-> &underFDL; &underGPL; </chapter>
+>По умолчанию символы добавляются справа от группы или от позиции курсора. Пункт <guimenuitem
+>Обратное направление письма</guimenuitem
+> позволяет изменить это поведение и добавлять символы слева.</para>
 
-&documentation.index; 
-</book>
+<para>
+<screenshot>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="kcharselect.png" format="PNG"/>
+    </imageobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Символы можно просматривать по категориям или быстро находить нужный символ, выполнив поиск по его названию. &kcharselect; показывает различные сведения о выбранном символе: не только название символа в стандарте Unicode, но и псевдонимы, общие примечания и перекрёстные ссылки на похожие символы. </para>
+<para
+>Для технических целей показываются различные представления символа. &kcharselect; также содержит данные Unihan для восточноазиатских символов, что позволяет показывать английские определения и варианты произношения. </para>
+
+</article>
+
 <!--
 Local Variables:
-mode: sgml
-sgml-minimize-attributes: nil
-sgml-general-insert-case: lower
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
 End:
--->
 
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
