@@ -67,7 +67,7 @@ msgstr "Вставить из буфера обмена в UTF-8"
 #: kcharselectdia.cc:158
 #, kde-format
 msgid "From Clipboard HTML"
-msgstr "Вставить в HTML"
+msgstr "Вставить из буфера обмена в HTML"
 
 #: kcharselectdia.cc:161
 #, kde-format
@@ -115,12 +115,12 @@ msgstr "KCharSelect"
 #: main.cc:33
 #, kde-format
 msgid "KDE character selection utility"
-msgstr "Выбор символа под KDE"
+msgstr "Приложение для выбора символов от KDE"
 
 #: main.cc:36
 #, kde-format
 msgid "A wrapper around the KCharSelect widget."
-msgstr "Графический элемент KCharSelect"
+msgstr "Оболочка для виджета KCharSelect."
 
 #: main.cc:39
 #, kde-format
