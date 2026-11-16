@@ -1,7 +1,7 @@
 # Translation of kcharselect.po to Slovenian
 # SLOVENIAN TRANSLATION OF KCHARSELECT.
 # Copyright (C) 2000,2003, 2005 Free Software Foundation, Inc.
-# $Id: kcharselect.po 1734990 2026-04-21 01:30:34Z scripty $
+# $Id$
 # $Source$
 #
 # Roman Maurer <roman.maurer@hermes.si>, 2000.
