@@ -1,4 +1,4 @@
-# Version: $Revision: 1734990 $
+# Version: $Revision$
 # translation of kcharselect.po to Polish
 # SPDX-FileCopyrightText: 2015, 2016, 2024 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 # Michał Rudolf <mrudolf@kdewebdev.org>, 2002.
