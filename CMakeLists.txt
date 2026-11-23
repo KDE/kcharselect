@@ -47,6 +47,9 @@ set_package_properties(KF6DocTools PROPERTIES DESCRIPTION
 
 ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KCHARSELECT VERSION_HEADER kcharselect_version.h)
 
+if(ECM_VERSION VERSION_GREATER_EQUAL "6.33.0")
+    add_definitions(-DQT_LEAN_HEADERS=2)
+endif()
 ecm_set_disabled_deprecation_versions(QT 6.10.0 KF 6.18.0)
 
 add_executable(kcharselect)
