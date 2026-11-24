@@ -51,22 +51,22 @@
 <keyword
 >karakter</keyword>
 <keyword
->yazıtipi</keyword>
+>yazı tipi</keyword>
 </keywordset>
 </articleinfo>
 
 <para
->&kcharselect;, kurulu tüm yazıtiplerinden özel karakterler seçmek ve bunları farklı biçimlerde (düz metin, Unicode veya &HTML;) panoya kopyalamak için kullanılan bir araçtır.</para>
+>&kcharselect;, kurulu tüm yazı tiplerinden özel karakterler seçmek ve bunları farklı biçimlerde (düz metin, Unicode veya &HTML;) panoya kopyalamak için kullanılan bir araçtır.</para>
 
 <para
->Önizlemede bir karaktere çift tıklamak veya &Enter;’e basmak, onu yazıtipi önizlemesinin altındaki çubuğa ekler. Bu özellik, bir sözcüğü veya birkaç karakterden oluşan bir grubu toplamaya ve bunları birlikte panoya kopyalamaya izin verir.</para
+>Ön izlemede bir karaktere çift tıklamak veya &Enter;’e basmak, onu yazı tipi ön izlemesinin altındaki çubuğa ekler. Bu özellik, bir sözcüğü veya birkaç karakterden oluşan bir grubu toplamaya ve bunları birlikte panoya kopyalamaya izin verir.</para
 > 
 <para
 >Seçilen karakterlerin sırasını tersine çevirmek için <guimenuitem
 >Metni Çevir</guimenuitem
 >’i kullanın.</para>
 <para
->Karakterler öntanımlı olarak grubun sağ ucuna veya imleç konumuna eklenir. <guimenuitem
+>Karakterler varsayılan olarak grubun sağ ucuna veya imleç konumuna eklenir. <guimenuitem
 >Yönü Tersine Çevir</guimenuitem
 > ile bu davranışı değiştirebilir ve sol yönde karakter ekleyebilirsiniz.</para>
 
