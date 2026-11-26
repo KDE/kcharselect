@@ -90,7 +90,7 @@ msgstr "Dü&zen"
 #: kcharselectui.rc:14
 #, kde-format
 msgid "&Settings"
-msgstr "&Ayarlar"
+msgstr "Ayar&lar"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: kcharselectui.rc:20
